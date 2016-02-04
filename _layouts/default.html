@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="qa-body-wrapper">
+      {% include header.html %}
+      <div class="qa-main-shadow">
+        <div class="qa-main-wrapper">
+          {{ content }}
+        </div>
+      </div>
+      {% include footer.html %}
+    </div>
+    {% include tracking.html %}
+  </body>
+</html>
