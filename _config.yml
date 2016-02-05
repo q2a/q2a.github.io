@@ -1,15 +1,9 @@
 # Site settings
-title: Question2Answer - Free Open Source Q&amp;A Software for PHP
-email: github.com@phor.net
-baseurl: "/question2answer.org/" # the subpath of your site, e.g. /blog/
-url: "https://fulldecent.github.io" # the base hostname & protocol for your site
+title: Question2Answer documentation
+url: http://docs.question2answer.org/
+baseurl: /
 
 # Build settings
 markdown: kramdown
 
 exclude: ['/vendor']
-
-#gems:
-#  - jekyll-redirect-from
-#whitelist:
-#  - jekyll-redirect-from
