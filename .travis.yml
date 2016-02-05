@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+- 2.2
+before_install: gem install jekyll html-proofer
+script: bundle exec jekyll build && htmlproof --disable-external --check-html ./_site
+
+# branch whitelist
+#branches:
+#  only:
+#  - gh-pages     # test the gh-pages branch
+#  - /pages-(.*)/ # test every branch which starts with "pages-"
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+# whitelist
+branches:
+  only:
+    - gh-pages
