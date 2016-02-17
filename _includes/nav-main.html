@@ -3,18 +3,13 @@
     <li class="qa-nav-main-item" style="">
       <a href="http://question2answer.org/sites.php" class="qa-nav-main-link">Sites</a>
     </li>
-    <li class="qa-nav-main-item" style="">
-      <a href="/install-basic/" class="qa-nav-main-link">Install</a>
-    </li>
-    <li class="qa-nav-main-item" style="">
-      <a href="/addons/" class="qa-nav-main-link">Add-Ons</a>
-    </li>
-    <li class="qa-nav-main-item" style="">
-      <a href="/developers/" class="qa-nav-main-link">Developers</a>
-    </li>
-    <li class="qa-nav-main-item" style="">
-      <a href="/services/" class="qa-nav-main-link">Services</a>
-    </li>
+
+    {% for page in site.nav.main %}
+      <li class="qa-nav-main-item" style="">
+        <a href="/{{ page.path }}/" class="qa-nav-main-link">{{ page.name }}</a>
+      </li>
+    {% endfor %}
+
     <li class="qa-nav-main-item" style="float:right;">
       <a href="http://www.question2answer.org/qa/" class="qa-nav-main-link">Question2Answer Q&amp;A</a>
     </li>

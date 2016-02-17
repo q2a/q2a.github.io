@@ -8,3 +8,14 @@ permalink: pretty
 markdown: kramdown
 
 exclude: ['/vendor']
+
+nav:
+  main:
+    - name: Install
+      path: install-basic
+    - name: Add-Ons
+      path: addons
+    - name: Developers
+      path: developers
+    - name: Services
+      path: services
