@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-developers
 title: "Question2Answer - Developers"
 redirect_from: /developers.php
 ---
