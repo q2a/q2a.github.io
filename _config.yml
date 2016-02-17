@@ -1,7 +1,8 @@
 # Site settings
 title: Question2Answer documentation
-url: http://docs.question2answer.org/
+url: http://docs.question2answer.org
 baseurl: /
+permalink: pretty
 
 # Build settings
 markdown: kramdown
