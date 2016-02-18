@@ -8,16 +8,13 @@ redirect_from: layers.php
 
 A plugin layer can modify the HTML output for any part of a page by overriding functions in `qa_html_theme_base`, the base theme class defined in `qa-theme-base.php`. The layer is implemented as a PHP file containing the following fixed declaration:
 
-<div>
+```php
+<?php
 
-<pre><?php
-
-	class qa_html_theme_layer extends qa_html_theme_base
-	{
-	}
-</pre>
-
-</div>
+class qa_html_theme_layer extends qa_html_theme_base
+{
+}
+```
 
 Layers work similarly to [advanced themes](/themes/), except multiple layers can be installed simultaneously via their respective plugins. The PHP code for each layer is automatically modified at runtime (by `qa_load_theme_class()` in `qa-app-format.php`) to build an inheritance chain of appropriately renamed classes. This process is transparent to you as a layer developer. If you wish to use non English characters in your layer, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 

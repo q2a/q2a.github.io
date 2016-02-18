@@ -6,8 +6,10 @@ permalink: pretty
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 
-exclude: ['/vendor']
+highlighter: rouge
 
 # Menu layout
 nav:
