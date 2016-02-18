@@ -5,7 +5,7 @@ title: "Question2Answer - Developers - Plugin Modules"
 
 # Page Modules
 
-[« Back to modules](developers-modules.html)
+[« Back to modules](/plugins/modules/)
 
 A page module adds one or more new pages to a Q2A installation. In Q2A, every page displayed has a corresponding `$request` string. For example, the `$request` for Q2A's page for user John Doe is `'user/John Doe'`. Page modules are able to control the output for particular `$request` strings in the same way. (Depending on the chosen URL structure for a Q2A installation, `$request` can be represented in different ways on the actual URL - you need not worry about this, nor should you make any assumptions.)
 
@@ -21,8 +21,8 @@ The PHP `class` for a page module can contain the following functions (all are o
     *   All elements within the nested `$qa_content` array should be made HTML safe - use `qa_html()` as appropriate.
     *   Use `$qa_content['title']` and `$qa_content['error']` to display a page title or error message respectively.
     *   To add some custom HTML to the page, add an element to `$qa_content` whose key begins with `custom`, e.g. `$qa_content['custom']` or `$qa_content['custom_2']`. The value of the element should contain the actual HTML.
-    *   To add a Q2A-style form to the page, add an element to `$qa_content` whose key begins with `form`, e.g. `$qa_content['form']` or `$qa_content['form_2']`. The value of the element should contain a Q2A form array, whose definition is also beyond the scope of this documentation, although see the [comments here](developers-modules.html).
+    *   To add a Q2A-style form to the page, add an element to `$qa_content` whose key begins with `form`, e.g. `$qa_content['form']` or `$qa_content['form_2']`. The value of the element should contain a Q2A form array, whose definition is also beyond the scope of this documentation, although see the [comments here](/plugins/modules/).
     *   Other possible types of structured content in `$qa_content` are question lists (keys starting `q_list`), question views (`q_view`), answer lists (`a_list`) and rankings (`ranking`). Look through the `qa-page-*.php` files for examples.
     *   The elements in `$qa_content` are displayed in array order, with a few exceptions such as page titles and errors.
 
-[« Back to modules](developers-modules.html)
+[« Back to modules](/plugins/modules/)

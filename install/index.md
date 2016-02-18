@@ -26,12 +26,12 @@ If you are not sure about this, please check with your web hosting provider.
 
 ## Installing Question2Answer for the first time (without single sign-on)
 
-The instructions below are for installing Question2Answer where it manages user accounts and logins for you. If you would like Question2Answer to integrate with your existing user database and account system, see the instructions for [single sign-on](install-single-sign-on.html) installation. From version 1.4, Question2Answer also offers easy [integration with a WordPress 3.x](install-wordpress.html) site and user database.
+The instructions below are for installing Question2Answer where it manages user accounts and logins for you. If you would like Question2Answer to integrate with your existing user database and account system, see the instructions for [single sign-on](/install/single-sign-on/) installation. From version 1.4, Question2Answer also offers easy [integration with a WordPress 3.x](/install/wordpress/) site and user database.
 
 1.  Download the [latest version of Question2Answer](https://github.com/q2a/question2answer/releases) to your computer or web server (also available [on GitHub](https://github.com/q2a/question2answer)).
 2.  Unzip the download using a tool such as [WinZip](http://www.winzip.com/) (or `unzip` in the Unix shell).
-3.  If you want to run a non-English site, check if the appropriate [language file](addons.html) is available. If so, download and install it in the `qa-lang` folder. If not, it's simple to [translate](developers-translate.html) Question2Answer for yourself.
-4.  Create a MySQL database, and a MySQL user with full permissions for that database.  
+3.  If you want to run a non-English site, check if the appropriate [language file](/addons/) is available. If so, download and install it in the `qa-lang` folder. If not, it's simple to [translate](/translate/) Question2Answer for yourself.
+4.  Create a MySQL database, and a MySQL user with full permissions for that database.
     <small>If you're interested, the [privileges](http://dev.mysql.com/doc/mysql/en/privilege-system.html) actually needed are: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES</small>
 5.  Note down the MySQL details: username, password, database name and server host name. If MySQL is running on the same server as your website, the server host name is likely to be `127.0.0.1` or `localhost`.
 6.  Find `qa-config-example.php` in the unzipped `question2answer` folder, and rename it to `qa-config.php`.
@@ -59,4 +59,4 @@ The instructions below are for upgrading from a previous version of Question2Ans
 
 ## Add-Ons
 
-See the [add-ons](addons.html) page for language files, themes and plugins created by Question2Answer users.
+See the [add-ons](/addons/) page for language files, themes and plugins created by Question2Answer users.

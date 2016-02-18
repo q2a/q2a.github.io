@@ -5,7 +5,7 @@ title: "Question2Answer - Developers - Event Modules"
 
 # Event Modules
 
-[« Back to modules](developers-modules.html)
+[« Back to modules](/plugins/modules/)
 
 An event module (requires Q2A 1.4+) is notified when something important happens within Q2A. It can be used to react to this event in any way it wishes. The PHP class for an event module must contain the following function to react to events:
 
@@ -48,4 +48,4 @@ Below is a list of possible values for `$event` and the event that each value de
 *   `'feedback'` when a message is sent via the Q2A feedback form, with more details in `$params`.
 *   `'search'` when a search is performed. The search query is in `$params['query']` and the start position in `$params['start']`.
 
-[« Back to modules](developers-modules.html)
+[« Back to modules](/plugins/modules/)

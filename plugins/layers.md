@@ -19,9 +19,9 @@ A plugin layer can modify the HTML output for any part of a page by overriding f
 
 </div>
 
-Layers work similarly to [advanced themes](developers-themes.html), except multiple layers can be installed simultaneously via their respective plugins. The PHP code for each layer is automatically modified at runtime (by `qa_load_theme_class()` in `qa-app-format.php`) to build an inheritance chain of appropriately renamed classes. This process is transparent to you as a layer developer. If you wish to use non English characters in your layer, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
+Layers work similarly to [advanced themes](/themes/), except multiple layers can be installed simultaneously via their respective plugins. The PHP code for each layer is automatically modified at runtime (by `qa_load_theme_class()` in `qa-app-format.php`) to build an inheritance chain of appropriately renamed classes. This process is transparent to you as a layer developer. If you wish to use non English characters in your layer, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 
-For more information on how to override theme functions in your layer class declaration, **start at step 3** of the documentation for [advanced themes](developers-themes.html). When overriding functions in your layer, you should use PHP's double colon (`::`) notation to call through to the parent class as much as possible. This will maximize the chance of your layer working well with advanced themes, layers in other plugins, and future versions of Question2Answer.
+For more information on how to override theme functions in your layer class declaration, **start at step 3** of the documentation for [advanced themes](/themes/). When overriding functions in your layer, you should use PHP's double colon (`::`) notation to call through to the parent class as much as possible. This will maximize the chance of your layer working well with advanced themes, layers in other plugins, and future versions of Question2Answer.
 
 Within a plugin's layer PHP file, the following pseudo-constants (substituted for strings at runtime) might prove useful:
 

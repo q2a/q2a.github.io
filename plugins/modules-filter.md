@@ -7,7 +7,7 @@ title: "Question2Answer - Developers - Filter Modules"
 
 <div class="onecolumn">
 
-[« Back to modules](developers-modules.html)
+[« Back to modules](/plugins/modules/)
 
 A filter module (requires Q2A 1.5+) enables plugins to validate and/or modify many different types of user input. This includes the content of posts as well as user information such as usernames and email addresses. Filter modules can also control whether or not the post is queued for moderation. Possible applications of filter modules include cleaning up user input, restricting users of a site, creating specialized Q&A applications, and advanced spam checking.
 
@@ -57,7 +57,7 @@ The PHP class for a filter module may contain the following functions (all are o
 
     <td>`'editor'`</td>
 
-    <td>The name of the [editor module](developers-modules-editor.html) used</td>
+    <td>The name of the [editor module](/plugins/modules-editor/) used</td>
 
     <td>No</td>
 
@@ -228,4 +228,4 @@ The PHP class for a filter module may contain the following functions (all are o
 *   `**filter_profile**(&$profile, &$errors, $user, $oldprofile)`. This allows a filter module to validate and/or modify information entered into the user profile fields for display on a user's page. The `$profile` parameter contains an array of entered profile information, with keys corresponding to the `fieldid` column in the `qa_userfields` table in the database. Elements of `$profile` can be modified in place to change their values. The function can also declare a field value invalid by adding a textual error report with the same key as the field to the `$errors` array. This textual error will be displayed to the user, and the corresponding part of the profile will not yet be saved. If the profile of an existing user is being edited, `$user` contains an array of information about the user, and `$oldprofile` contains the previous profile of the user, with the same keys as `$profile`. If the profile is for a new user who is currently registering, both `$user` and `$oldprofile` will be `null`.
 *   `**validate_password**($password, $olduser)`. This allows a filter module to validate an entered password for new or existing Q2A user accounts. The `$password` parameter contains the password entered. Note than unlike other filter module functions, `validate_password()` cannot modify a password, but rather only validate it. The function can declare the pssword invalid by returning a textual error, otherwise it should return `null`. For your reference, if the password is for an existing user, `$olduser` contains an array of information about the user, but this will not contain the user's previous password, since Q2A doesn't store passwords in their original form. If the password is for a new user, `$olduser` will be `null`.
 
-[« Back to modules](developers-modules.html)
+[« Back to modules](/plugins/modules/)

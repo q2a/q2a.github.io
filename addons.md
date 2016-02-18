@@ -6,11 +6,11 @@ redirect_from: /addons.php.html
 
 # Question2Answer is being extended by the community.
 
-This page links to add-ons created by Question2Answer users. These are not endorsed for quality or suitability, but we hope they are useful. If you have something to contribute, please [get in touch](feedback.html) - your help is much appreciated!
+This page links to add-ons created by Question2Answer users. These are not endorsed for quality or suitability, but we hope they are useful. If you have something to contribute, please [get in touch](http://www.question2answer.org/feedback.php) - your help is much appreciated!
 
 ## Language Files
 
-The language files below are marked by the corresponding Question2Answer version. You can safely install a language file from a different version, and [update it with the missing phrases](developers-translate.html). To install a language, place its directory (such as `fr` or `ru`) in Q2A's `qa-lang` directory, then open the General section of the Admin panel and choose the language from the menu provided.
+The language files below are marked by the corresponding Question2Answer version. You can safely install a language file from a different version, and [update it with the missing phrases](/translate/). To install a language, place its directory (such as `fr` or `ru`) in Q2A's `qa-lang` directory, then open the General section of the Admin panel and choose the language from the menu provided.
 
 *   [Q2A 1.7.x - Arabic (العربية)](https://github.com/alnnasr/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
 *   [Q2A 1.7.x - Brazilian Portuguese (Português)](third-party/question2answer-1.7-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
@@ -61,13 +61,13 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.6.x - Ukrainian (Українська)](http://sourceforge.net/projects/q2a-lang-uk/) by Andriy Bokiy.
 *   [Q2A 1.6.x - Vietnamese (Tiếng Việt)](http://annguyenco.com/hoidap/vi-qa-lang.zip) by [AnNguyenCo](http://www.annguyenco.com). Also: [Updated version](https://www.dropbox.com/s/z1gzuow0rz4rkyu/vi.zip?dl=0) by [NTHQ Team](https://namgivu.wordpress.com/2015/01/09/vietnamese-translation-for-question2answer-website/).
 
-*   _Click to show [older language files](addons.html)._
+*   _Click to show [older language files](/addons/)._
 
-If your language is not listed, or is out-of-date, you can [create or update language files](developers-translate.html) using a text editor.
+If your language is not listed, or is out-of-date, you can [create or update language files](/translate/) using a text editor.
 
 ## Themes
 
-To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](services.html)**. Below is a list of other recently updated themes:
+To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](/services/)**. Below is a list of other recently updated themes:
 
 *   [Brown-Clean](http://www.question2answer.org/qa/24972/new-free-theme-launched-brown-clean) by [Abhinav](http://www.question2answer.org/qa/user/abhik21).
 *   [Default Right-To-Left](third-party/question2answer-theme-Default-R2L.zip) (based on Q2A Default theme) by [Towhid Nategheian](http://TowhidN.com/) @ [AskWeb](http://askweb.ir/).
@@ -91,7 +91,7 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 *   [TwentyTwelve](https://github.com/Towhidn/Q2A-TwentyTwelve) by QA-Themes. Based on WordPress default theme, TwentyTwelve.
 *   [Twitter Bootstrap](https://github.com/harshjv/q2a-bootstrap) by [Harsh J. Vakharia](http://twitter.com/harshjv). For Q2A 1.5.3 only, since it heavily modifies the core to work with [Bootstrap](https://github.com/twitter/bootstrap).
 
-You can also [create your own themes](developers-themes.html) using CSS only, or (optionally) [modify the HTML code](developers-themes.html).
+You can also [create your own themes](/themes/) using CSS only, or (optionally) [modify the HTML code](/themes/#advanced).
 
 ## Clients
 
@@ -199,7 +199,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges.
 *   [Social Sharing Plugin](https://github.com/NoahY/q2a-share) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds social sharing buttons to question pages.
 *   [Sort Answers](https://github.com/amiyasahu/q2a-sort-answers) by [Amiya Sahu](http://amiyasahu.com/). Allows answers on a question page to be sorted by oldest, newest and highest voted.
-*   [Tag Descriptions Plugin](releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial](developers-plugins-tutorial.html). Allows tag descriptions to be shown on tag pages and in tooltips.
+*   [Tag Descriptions Plugin](releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial](/plugins/tutorial/). Allows tag descriptions to be shown on tag pages and in tooltips.
 *   [Theme Switcher Plugin](https://github.com/NoahY/q2a-theme-switcher) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to choose their own theme on their profile page.
 *   [User Signatures Plugin](https://github.com/NoahY/q2a-signatures) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to define a signature for all of their posts.
 *   [Warn on Leave](https://github.com/q2apro/q2apro-warn-on-leave) by [q2apro.com](http://www.q2apro.com/). Warns users before leaving a page with text they have entered (also support WYSIWYG editor).
@@ -250,4 +250,4 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Question Closing](https://github.com/NoahY/q2a-close) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be closed in Q2A 1.4.x.
 *   [XML Sitemap Generator](http://www.morphhome.net/sitemap-generator-fur-question2answer) by Simon Frerichs. Q2A 1.3 now includes a Sitemap generator so this may not be necessary.
 
-Click for documentation on [creating Q2A plugins](developers-plugins.html) (requires PHP programming).
+Click for documentation on [creating Q2A plugins](/plugins/) (requires PHP programming).

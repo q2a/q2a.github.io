@@ -6,9 +6,9 @@ redirect_from: /plugins-tutorial.php
 
 # Tutorial: Writing a Question2Answer plugin
 
-In this tutorial, we will create a Question2Answer (1.5+) [plugin](developers-plugins.html) from scratch. Our plugin will allow descriptions to be added to tags on a Q2A site. These descriptions will be displayed and edited on the page listing recent questions for each tag. They will also be shown in a tooltip when users mouse over a tag. The Q2A administrator will be able to decide who can edit tag descriptions.
+In this tutorial, we will create a Question2Answer (1.5+) [plugin](/plugins/) from scratch. Our plugin will allow descriptions to be added to tags on a Q2A site. These descriptions will be displayed and edited on the page listing recent questions for each tag. They will also be shown in a tooltip when users mouse over a tag. The Q2A administrator will be able to decide who can edit tag descriptions.
 
-The tutorial will touch on each of the main areas of Q2A plugin `function`ality. Tag descriptions will be stored in the Q2A database, using Q2A's tag metadata table. The descriptions will be displayed on a tag's page using a [widget module](developers-modules-widget.html). Tags will be edited on pages provided by a [page module](developers-modules-page.html). An [override](developers-overrides.html) will be used to show the tooltips, and then a [layer](developers-layers.html) will allow us to do this with fewer database queries. An admin form for the plugin will be displayed in the 'Plugins' section of the admin panel, with the corresponding settings stored by Q2A's options mechanism. At the end of this process, we will see how to make the plugin localizable.
+The tutorial will touch on each of the main areas of Q2A plugin `function`ality. Tag descriptions will be stored in the Q2A database, using Q2A's tag metadata table. The descriptions will be displayed on a tag's page using a [widget module](/plugins/modules-widget/). Tags will be edited on pages provided by a [page module](/plugins/modules-page/). An [override](/plugins/overrides/) will be used to show the tooltips, and then a [layer](/plugins/layers/) will allow us to do this with fewer database queries. An admin form for the plugin will be displayed in the 'Plugins' section of the admin panel, with the corresponding settings stored by Q2A's options mechanism. At the end of this process, we will see how to make the plugin localizable.
 
 This tutorial assumes you are familiar with the [PHP](http://www.php.net/) programming language as well as some basic [HTML](http://en.wikipedia.org/wiki/HTML) and [MySQL](http://www.mysql.com/).
 
@@ -22,7 +22,7 @@ In this first step we will set up the directory for the plugin and create the cr
 
 
 
-*   Create a new empty directory `tag-descriptions` in Q2A's `qa-plugin` directory - see [here](developers-plugins.html) for naming conventions.
+*   Create a new empty directory `tag-descriptions` in Q2A's `qa-plugin` directory - see [here](/plugins/) for naming conventions.
 
 
 *   Create an empty `qa-plugin.php` file inside this directory. This file is the core of the plugin. It registers each of the plugin's elements with Q2A and contains meta information for display in Q2A's admin interface.
@@ -54,7 +54,7 @@ In this first step we will set up the directory for the plugin and create the cr
     }
     </pre>
 
-    See [here](developers-plugins.html) for a detailed description of the metadata fields. The code below the metadata ensures that visitors to your Q2A site cannot request the `qa-plugin.php` page directly (even though doing so would cause no actual harm).
+    See [here](/plugins/) for a detailed description of the metadata fields. The code below the metadata ensures that visitors to your Q2A site cannot request the `qa-plugin.php` page directly (even though doing so would cause no actual harm).
 
 
 *   Reopen the 'Plugins' page of your Q2A site admin panel and check that the listing has been updated. We're on our way!
@@ -86,7 +86,7 @@ In this step we will create the initial version of the widget module which displ
     }
     </pre>
 
-    This is the beginning of the PHP class that will define the widget's functionality. The `allow_template()` function is one of three class functions required in a widget module ([more here](developers-modules-widget.html)). It is called by Q2A to determine which types of pages the widget can be displayed on. In this case, the widget can only be displayed on pages listing recent questions for a tag, so the function only returns `true` if the `$template` parameter is `'tag'`.
+    This is the beginning of the PHP class that will define the widget's functionality. The `allow_template()` function is one of three class functions required in a widget module ([more here](/plugins/modules-widget/)). It is called by Q2A to determine which types of pages the widget can be displayed on. In this case, the widget can only be displayed on pages listing recent questions for a tag, so the function only returns `true` if the `$template` parameter is `'tag'`.
 
 
 *   Add the following two additional functions **inside** the `class` definition in `qa-tag-desc-widget.php`:
@@ -115,7 +115,7 @@ In this step we will create the initial version of the widget module which displ
     );
     </pre>
 
-    Each parameter to `qa_register_plugin_module()` is explained by a comment in the code above - [more here](developers-plugins.html).
+    Each parameter to `qa_register_plugin_module()` is explained by a comment in the code above - [more here](/plugins/).
 
 
 *   Now it's time to test out the widget. Ensure you have saved/uploaded the `qa-plugin.php` and `qa-tag-desc-widget.php` files. Then open the 'Layout' section of your Q2A site admin panel. The list of available widgets should include the name 'Tag Descriptions'. Click 'add widget' next to it, and choose to display the widget somewhere on tag pages. Note how the options shown in the admin panel reflect the widget module's responses from `allow_template()` and `allow_region()`.
@@ -158,7 +158,7 @@ In this step we will create the page module that allows tag descriptions to be e
     }
     </pre>
 
-    The `match_request()` function let a page module decide if it will process a particular web page request. The `$request` parameter is always slash-separated, independent of the URL structure used by a particular Q2A site - [more here](developers-modules-page.html). We have decided that the URLs for our tag description editor will take the form `tag-edit/*` where `*` is the tag to be edited. For now, the `process_request()` function in the page module generates an empty page for these requests.
+    The `match_request()` function let a page module decide if it will process a particular web page request. The `$request` parameter is always slash-separated, independent of the URL structure used by a particular Q2A site - [more here](/plugins/modules-page/). We have decided that the URLs for our tag description editor will take the form `tag-edit/*` where `*` is the tag to be edited. For now, the `process_request()` function in the page module generates an empty page for these requests.
 
 
 *   Activate the page model within the plugin by pasting the following code at the end of your `qa-plugin.php` file:
@@ -184,7 +184,7 @@ In this step we will create the page module that allows tag descriptions to be e
       $parts=explode('/', $request);
       $tag=$parts[1];
 
-      $qa_content=qa_content_prepare();  
+      $qa_content=qa_content_prepare();
       $qa_content['title']='Edit the description for '.qa_html($tag);
 
       return $qa_content;
@@ -219,7 +219,7 @@ In this step we will get the tag description editing page up and working.
 
       'style' => 'tall', // could be 'wide'
 
-      'fields' => array(  
+      'fields' => array(
       array(
       'type' => 'text',
       'rows' => 4,
@@ -233,7 +233,7 @@ In this step we will get the tag description editing page up and working.
       'tags' => 'NAME="dosave"',
       'label' => 'Save Description',
       ),
-      ),  
+      ),
       );
 
       $qa_content['focusid']='tagdesc';
@@ -242,7 +242,7 @@ In this step we will get the tag description editing page up and working.
     There is a lot happening here, so let's go through it step by step:
 
 
-    *   First, we include the Q2A core file `qa-db-metas.php`, since we will need use some of its functions to access the Q2A database table for tag meta information. (If necessary, modules can also create their own database tables by implementing the `init_queries()` function - [more here](developers-modules.html)).
+    *   First, we include the Q2A core file `qa-db-metas.php`, since we will need use some of its functions to access the Q2A database table for tag meta information. (If necessary, modules can also create their own database tables by implementing the `init_queries()` function - [more here](/plugins/modules/)).
 
 
     *   The main work consists of adding an element with key `'form'` to the `$qa_content` array. This element describes a form on the page, which is converted by the Q2A theme class into appropriate HTML code. (To add more forms to the page, more elements could be added with keys `'form2'`, `'form_extra'`, or anything else beginning with `'form'`.)
@@ -325,7 +325,7 @@ In this step we will get the tag description editing page up and working.
       }
     </pre>
 
-    The `output_widget()` function now identifies which tag page is being requested, retrieves the appropriate tag description from the database, and displays it if it exists, after HTML escaping. An appropriate link to edit the description is also shown, using Q2A's `qa_path_html(...)` function to create an HTML-escaped relative URL to the tag editor page - [more here](developers-functions.html).
+    The `output_widget()` function now identifies which tag page is being requested, retrieves the appropriate tag description from the database, and displays it if it exists, after HTML escaping. An appropriate link to edit the description is also shown, using Q2A's `qa_path_html(...)` function to create an HTML-escaped relative URL to the tag editor page - [more here](/plugins/functions/).
 
 
 *   Save/upload as usual. If everything is in place, you should be able to view your descriptions on the tag page, click to edit them on a different page, and then click to save and view them back again on the tag page. Congratulations!
@@ -357,7 +357,7 @@ In this step we will implement the tooltips which display tag descriptions when 
     }
     </pre>
 
-    This `qa_tag_html()` function will override the standard version of that function, which we saw just before. However our version makes uses of the standard function by calling it using the name `qa_tag_html_base()` - [more here](developers-overrides.html). Instead of passing through the `$tag` as is, we add underscores before and after it, so that we can test that the override is working. Note that the optional `$favorited` parameter was added in Q2A 1.6, but this code will still work fine in Q2A 1.5.x, with PHP ignoring the extra unexpected parameter.
+    This `qa_tag_html()` function will override the standard version of that function, which we saw just before. However our version makes uses of the standard function by calling it using the name `qa_tag_html_base()` - [more here](/plugins/overrides/). Instead of passing through the `$tag` as is, we add underscores before and after it, so that we can test that the override is working. Note that the optional `$favorited` parameter was added in Q2A 1.6, but this code will still work fine in Q2A 1.5.x, with PHP ignoring the extra unexpected parameter.
 
 
 *   Activate the function override by pasting the following line at the end of your plugin's `qa-plugin.php`:
@@ -395,7 +395,7 @@ In this step we will implement the tooltips which display tag descriptions when 
     Let's explain this function step by step:
 
 
-    *   First, we call the standard version of the function using `qa_tag_html_base()` and store the standard HTML to represent a tag in the variable `$taghtml`. By calling through to the base function rather than copying its code here, we protect ourselves better against changes in future versions of Q2A. We also enable multiple plugins to override the same function for different purposes, with Q2A building an appropriate chain of renamed functions that call each other in turn. If possible, it is always a good idea to do this when overriding a function - [more here](developers-overrides.html).
+    *   First, we call the standard version of the function using `qa_tag_html_base()` and store the standard HTML to represent a tag in the variable `$taghtml`. By calling through to the base function rather than copying its code here, we protect ourselves better against changes in future versions of Q2A. We also enable multiple plugins to override the same function for different purposes, with Q2A building an appropriate chain of renamed functions that call each other in turn. If possible, it is always a good idea to do this when overriding a function - [more here](/plugins/overrides/).
 
 
     *   We retrieve the description for `$tag` from the database, using `qa_db_tagmeta_get()` in the same way as before.
@@ -487,12 +487,12 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
       if (count(@$plugin_tag_desc_list)) {
       $tags=array_keys($plugin_tag_desc_list);
-      echo '<H1>'.qa_html(implode(',', $tags)).'</H1>';  
+      echo '<H1>'.qa_html(implode(',', $tags)).'</H1>';
       $plugin_tag_desc_list=null;
       }
 
       qa_html_theme_base::post_tag_item($taghtml, $class);
-      }  
+      }
 
     }
     </pre>
@@ -512,7 +512,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
     *   Then `$plugin_tag_desc_list` is set to `null` so that this branch is skipped next time `post_tag_item(...)` is called.
 
 
-    *   Finally, we call through to the `post_tag_item()` function in Q2A's base theme class using PHP's double colon notation - [more here](developers-layers.html). Note how base functions are called differently for overrides and for layers.
+    *   Finally, we call through to the `post_tag_item()` function in Q2A's base theme class using PHP's double colon notation - [more here](/plugins/layers/). Note how base functions are called differently for overrides and for layers.
 
 
 
@@ -554,7 +554,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
       }
 
       qa_html_theme_base::post_tag_item($taghtml, $class);
-      }  
+      }
     </pre>
 
     Let's go through this one step at a time:
@@ -661,7 +661,7 @@ In this step, we will add an options form to the plugin which controls how the t
     The `admin_form()` function can also be added to any module, and enables that module to display a form on the 'Plugins' page of the Q2A admin panel. The function returns a Q2A form definition array for display on the page, after processing any appropriate user input. Most of this should be familiar from our earlier encounter with a Q2A form, but a few things are new:
 
 
-    *   We're using Q2A's `qa_opt()` function to both set and retrieve option values - [more here](developers-functions.html).
+    *   We're using Q2A's `qa_opt()` function to both set and retrieve option values - [more here](/plugins/functions/).
 
 
     *   An element `'ok'` is used to add a confirmation message at the top of the form.
@@ -837,7 +837,7 @@ In this final step we will make your plugin ready for localization into differen
     );
     </pre>
 
-    This sets up localization for your plugin. The `*` in the file name passed to `qa_register_plugin_phrases()` will be substituted for language codes such as `fr` or `ru`, or `default` to load the default phrases. The second parameter `'plugin_tag_desc'` sets the prefix for retrieving your language strings using Q2A's `qa_lang()` or `qa_lang_html()` functions - [more here](developers-plugins.html).
+    This sets up localization for your plugin. The `*` in the file name passed to `qa_register_plugin_phrases()` will be substituted for language codes such as `fr` or `ru`, or `default` to load the default phrases. The second parameter `'plugin_tag_desc'` sets the prefix for retrieving your language strings using Q2A's `qa_lang()` or `qa_lang_html()` functions - [more here](/plugins/).
 
 
 *   Find the line in `qa-tag-desc-widget.php` containing the phrase `Create tag description` and replace it with:
@@ -938,4 +938,4 @@ If you made it this far, congratulations! This completes the tutorial. To recap,
 To check you followed the instructions correctly, you can [download the completed plugin](releases/q2a-tag-descriptions-tutorial.zip).
 
 
-Now you can think about the plugin that **you** want to build and how to go about it. To get started, take a look at the different [types of module](developers-modules.html) that Q2A supports - as of Q2A 1.5, there are ten available, and we only covered two in this tutorial. You should also take a look at this list of useful [Q2A functions](developers-functions.html) and have a browse around the Q2A source code to learn about many more. Finally, take a look at the code of the [many plugins](addons.html) already developed for Q2A. Thank you and good luck!
+Now you can think about the plugin that **you** want to build and how to go about it. To get started, take a look at the different [types of module](/plugins/modules/) that Q2A supports - as of Q2A 1.5, there are ten available, and we only covered two in this tutorial. You should also take a look at this list of useful [Q2A functions](/plugins/functions/) and have a browse around the Q2A source code to learn about many more. Finally, take a look at the code of the [many plugins](/addons/) already developed for Q2A. Thank you and good luck!

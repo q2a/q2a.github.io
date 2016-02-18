@@ -45,4 +45,4 @@ From version 1.4, Question2Answer offers out-of-the-box integration with your [W
     *   If you installed Question2Answer in a subdirectory, `http://www.mysite.com/qa/`
     *   If you installed Question2Answer at the root of a domain, `http://qa.mysite.com/`
 8.  Follow the on-screen instructions to set up your database and Question2Answer functionality.
-9.  You can now integrate the styling of Question2Answer with your WordPress site by [creating a Question2Answer theme](developers-themes.html).
+9.  You can now integrate the styling of Question2Answer with your WordPress site by [creating a Question2Answer theme](/themes/).

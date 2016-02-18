@@ -6,7 +6,7 @@ redirect_from: /services.html
 
 # Question2Answer service providers
 
-The following websites and providers specialize in Question2Answer services and information. This information is provided as a free service to the community, and the listings are not endorsed. If you wish to be included here, please [contact us](feedback.html).
+The following websites and providers specialize in Question2Answer services and information. This information is provided as a free service to the community, and the listings are not endorsed. If you wish to be included here, please [contact us](http://www.question2answer.org/feedback.php).
 
 ## Q2A support and development
 
