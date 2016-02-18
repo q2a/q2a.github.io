@@ -30,7 +30,7 @@ Within a plugin's layer PHP file, the following pseudo-constants (substituted fo
 
 Below is an example layer which makes four changes to the standard theme. First, it removes the login and register links if they are to be displayed. Second, it includes a Javascript file from the plugin's directory on question pages. Third, it displays all question tags in alphabetical order. Fourth, it shows the usernames of specifically priviliged users in italics.
 
-<pre><?php
+	<?php
 
 	class qa_html_theme_layer extends qa_html_theme_base
 	{
@@ -76,4 +76,4 @@ Below is an example layer which makes four changes to the standard theme. First,
 			qa_html_theme_base::post_meta_who($post, $class);
 		}
 	}
-</pre>
+
