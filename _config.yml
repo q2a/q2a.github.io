@@ -13,40 +13,40 @@ exclude: ['/vendor']
 nav:
   main:
     - name: Install
-      path: /install-basic/
+      path: /install/
+    - name: Translate
+      path: /translate/
+    - name: Themes
+      path: /themes/
+    - name: Plugins
+      path: /plugins/
+    - name: Code
+      path: /code/external/
     - name: Add-Ons
       path: /addons/
-    - name: Developers
-      path: /developers/
     - name: Services
       path: /services/
+
   install:
     - name: Basic Install
-      path: /install-basic/
+      path: /install/
     - name: WordPress
-      path: /install-wordpress/
+      path: /install/wordpress/
     - name: Single Sign-On
-      path: /install-single-sign-on/
+      path: /install/single-sign-on/
     - name: Optimization
-      path: /install-optimize/
+      path: /install/optimize/
     - name: Security
-      path: /install-security/
+      path: /install/security/
+
   developers:
-    - name: Translate
-      path: /developers-translate/
-    - name: Themes
-      path: /developers-themes/
-    - name: External
-      path: /developers-external/
-    - name: Functions
-      path: /developers-functions/
     - name: Plugins
-      path: /developers-plugins/
-    - name: Plugin Tutorial
-      path: /developers-plugins-tutorial/
+      path: /plugins/
     - name: Modules
-      path: /developers-modules/
+      path: /plugins/modules/
     - name: Layers
-      path: /developers-layers/
+      path: /plugins/layers/
     - name: Overrides
-      path: /developers-overrides/
+      path: /plugins/overrides/
+    - name: Plugin Tutorial
+      path: /plugins/tutorial/

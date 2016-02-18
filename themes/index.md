@@ -1,5 +1,5 @@
 ---
-layout: page-developers
+layout: page
 title: "Question2Answer - Developers - Themes"
 redirect_from: /developers-themes.html
 ---

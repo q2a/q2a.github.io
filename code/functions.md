@@ -1,5 +1,5 @@
 ---
-layout: page-developers
+layout: page
 title: "Question2Answer - Developers - Selected Functions"
 redirect_from: /functions.php
 ---
@@ -37,7 +37,7 @@ Many of these functions take optional additional parameters which are not shown 
 *   `**qa_lang**($identifier)` and `**qa_lang_html**($identifier)` return a localized language phrase from the appropriate `qa-lang-*.php` file. For example, `qa_lang('main/cancel_button')` would return the phrase with key `'cancel_button'` from the file `qa-lang-main.php`. The phrase returned by `qa_lang_html()` is escaped for output in HTML. From Q2A 1.5+, language files can also be [registered by plugins](developers-plugins.html) and then accessed via these functions.
 *   `**qa_path_to_root**()` returns the URL to the root of the Q2A site, relative to the currently requested page. Requires Q2A 1.5+.
 *   `**qa_path**($request)` returns the URL for Q2A page `$request`, relative to the currently requested page. You can also call `**qa_path**($request, $params)` to add GET-style parameters to the URL, where `$params` is an array of parameter name `=>` parameter value, not yet urlencoded. **To ensure compatibility with different Q2A URL structures, please use this (or a related `qa_path_*()` function to build URLs instead of hard-coding their structure.**
-*   `**qa_path_html**($request)` and `**qa_path_html**($request, $params)` return the URL for Q2A page `$request` (with optional `$params`), relative to the currently requested page, escaped for output in HTML. Usage example:  
+*   `**qa_path_html**($request)` and `**qa_path_html**($request, $params)` return the URL for Q2A page `$request` (with optional `$params`), relative to the currently requested page, escaped for output in HTML. Usage example:
 
     `echo '<a href="'.qa_path_html('search', array('q' => 'reset password')).'">Resetting Password<A>';`
 *   `**qa_path_absolute**($request)` and `**qa_path_absolute**($request, $params)` return the absolute URL for Q2A page `$request` (with optional `$params`). Requires Q2A 1.6+.
