@@ -5,7 +5,9 @@ baseurl: /
 permalink: pretty
 
 # Build settings
-markdown: kramdown
+# temporarily use redcarpet (instead of kramdown) so we can use 'startinline' option
+markdown: redcarpet
+
 kramdown:
   input: GFM
 
