@@ -17,11 +17,11 @@ To create a new Question2Answer translation from scratch, follow the steps below
 3.  **Copy** (don't move!) all of the `qa-lang-*.php` files in Question2Answer's `qa-include` directory to the new language directory you created. This is currently a total of 8 files.
 4.  Log in to your Question2Answer site as an administrator, open the Admin panel, select your language, and click to save.
 5.  Now you can translate each of the copied `qa-lang-*.php` files that you created. To translate each file:
-    *   Open the file in a text editor using **UTF-8 encoding** and ensure you do not add a BOM (byte order mark).
-    *   In each line of the file, translate the phrase **after** the `=>` symbol to your language.
-    *   Pay attention to substitution points, which use the hat symbol (`^`). These can be moved but not removed. In some cases, the `^` symbol is followed by a number or word, such as `^1` or `^site_title`, and this should also be preserved.
-    *   If you are not sure how a phrase is used, you may search for its key in the Question2Answer source code. The key is the string in quotes before `=>` on each line.
-    *   To leave a particular phrase in US English, you may remove its line from the file. You may also choose to remove the files `qa-lang-admin.php` and `qa-lang-options.php` - these are only used for the admin interface and do not contain any phrases which are visible to normal users of Q2A.
+	*   Open the file in a text editor using **UTF-8 encoding** and ensure you do not add a BOM (byte order mark).
+	*   In each line of the file, translate the phrase **after** the `=>` symbol to your language.
+	*   Pay attention to substitution points, which use the hat symbol (`^`). These can be moved but not removed. In some cases, the `^` symbol is followed by a number or word, such as `^1` or `^site_title`, and this should also be preserved.
+	*   If you are not sure how a phrase is used, you may search for its key in the Question2Answer source code. The key is the string in quotes before `=>` on each line.
+	*   To leave a particular phrase in US English, you may remove its line from the file. You may also choose to remove the files `qa-lang-admin.php` and `qa-lang-options.php` - these are only used for the admin interface and do not contain any phrases which are visible to normal users of Q2A.
 6.  As you proceed with the translation, you can check your work by saving the `qa-lang-*.php` file you are working on, then viewing or refreshing the appropriate pages in your browser.
 7.  **`qa-check-lang.php` is your friend!** As you work, use your web browser to view the `qa-include/qa-check-lang.php` page within your Question2Answer site. This will check your language files for any omitted phrases or substitutions.
 8.  Please consider sending us your translation or making it available online, so that we can [link to it here](/addons/).
@@ -34,10 +34,10 @@ An incomplete Question2Answer translation may be available for your language, fo
 2.  Log in to your Question2Answer site as an administrator, open the Admin panel, select your language, and click to save.
 3.  **`qa-check-lang.php` is your best friend!** Use your web browser to view the `qa-include/qa-check-lang.php` page within your Question2Answer site. This will check your language files for errors and auto-generate the PHP code for missing phrases.
 4.  For each `qa-lang-*.php` file that needs attention:
-    *   Open the file in a text editor using **UTF-8 encoding** and ensure you do not add a BOM (byte order mark).
-    *   Copy and paste the appropriate PHP code from `qa-include/qa-check-lang.php` into the middle of this file.
-    *   For each line that you pasted, translate the phrase **after** the `=>` symbol to your language.
-    *   Pay attention to substitution points, which use the hat symbol (`^`). These can be moved but not removed.
+	*   Open the file in a text editor using **UTF-8 encoding** and ensure you do not add a BOM (byte order mark).
+	*   Copy and paste the appropriate PHP code from `qa-include/qa-check-lang.php` into the middle of this file.
+	*   For each line that you pasted, translate the phrase **after** the `=>` symbol to your language.
+	*   Pay attention to substitution points, which use the hat symbol (`^`). These can be moved but not removed.
 5.  As you work, refresh `qa-include/qa-check-lang.php` in your web browser and ensure that you resolve all issues shown. You can also browse around your Q2A site to see how the translated phrases are used in context.
 6.  Please consider sending us your translation or making it available online, so that we can [link to it here](/addons/).
 
@@ -50,28 +50,24 @@ Starting in version 1.5, it is also possible to customize specific language phra
 1.  Search the `qa-include/qa-lang-*.php` files to find the file and line containing the phrase.
 2.  Create a `qa-lang-*.php` file in Q2A's `qa-lang/custom` directory, with the same name as the file that you found in the previous step, and paste in the following code:
 
-    <div>
+	~~~php
+	<?php
 
-    <pre><?php
-
-    	return array(
-    		// custom phrases go here...
-    	);
-    </pre>
-
-    </div>
+	return array(
+		// custom phrases go here...
+	);
+	~~~
 
 3.  Copy the line containing your phrase from Q2A's `qa-lang-*.php` file into the middle of the `array( )` in your new file.
 4.  Change the text that comes after the `=>` symbol to suit your requirements. Pay attention to substitution points, which use the hat symbol (`^`). For non-English languages, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 
 Below is an example `qa-lang/custom/qa-lang-main.php` file which modifies the 'Hello [username]' and 'My Account' phrases:
 
-<div>
+~~~php
+<?php
 
-<pre><?php
-
-	return array(
-		'logged_in_x' => 'Welcome, ^!',
-		'nav_account' => 'My Settings',
-	);
-</pre>
+return array(
+	'logged_in_x' => 'Welcome, ^!',
+	'nav_account' => 'My Settings',
+);
+~~~

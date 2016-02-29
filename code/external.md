@@ -12,33 +12,36 @@ To access Q2A 1.3.2 or later from an external script, simply `require_once` the 
 
 Below is an example external script which outputs the username and email of the currently logged in Q2A user, if any:
 
-    <?php
+~~~php
+<?php
+require_once '/PATH/TO/qa-include/qa-base.php';
 
-    	require_once '/PATH/TO/qa-include/qa-base.php';
+require_once QA_INCLUDE_DIR.'qa-app-users.php';
 
-    	require_once QA_INCLUDE_DIR.'qa-app-users.php';
-
-    	if (qa_get_logged_in_userid()===null)
-    		echo 'not logged in';
-    	else
-    		echo qa_get_logged_in_handle().'<BR>'.qa_get_logged_in_email();
+if (qa_get_logged_in_userid() === null)
+	echo 'not logged in';
+else
+	echo qa_get_logged_in_handle() . '<br>' . qa_get_logged_in_email();
+~~~
 
 Below is an another example external script which creates a question by the currently logged in Q2A user:
 
-    <?php
+~~~php
+<?php
 
-    	require_once '/PATH/TO/qa-include/qa-base.php';
+require_once '/PATH/TO/qa-include/qa-base.php';
 
-    	require_once QA_INCLUDE_DIR.'qa-app-users.php';
-    	require_once QA_INCLUDE_DIR.'qa-app-posts.php';
+require_once QA_INCLUDE_DIR.'qa-app-users.php';
+require_once QA_INCLUDE_DIR.'qa-app-posts.php';
 
-    	$type='Q'; // question
-    	$parentid=null; // does not follow another answer
-    	$title='Why do birds sing?';
-    	$content='And why do they fall in love?';
-    	$format=''; // plain text
-    	$categoryid=null; // assume no category
-    	$tags=array('birds', 'sing', 'love');
-    	$userid=qa_get_logged_in_userid();
+$type = 'Q'; // question
+$parentid = null; // does not follow another answer
+$title = 'Why do birds sing?';
+$content = 'And why do they fall in love?';
+$format = ''; // plain text
+$categoryid = null; // assume no category
+$tags = array('birds', 'sing', 'love');
+$userid = qa_get_logged_in_userid();
 
-    	qa_post_create($type, $parentid, $title, $content, $format, $categoryid, $tags, $userid);
+qa_post_create($type, $parentid, $title, $content, $format, $categoryid, $tags, $userid);
+~~~

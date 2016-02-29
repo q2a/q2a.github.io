@@ -23,23 +23,25 @@ From version 1.4, Question2Answer offers out-of-the-box integration with your [W
 6.  Ensure that WordPress authentication cookies and redirections are compatible with Question2Answer, as follows:
     *   If Question2Answer is in a subdirectory of your WordPress site (e.g. `http://www.mysite.com/qa/` under `http://www.mysite.com/`) then nothing needs to be done.
     *   If Question2Answer is on the same domain but not in a subdirectory (e.g. `http://www.mysite.com/qa/` and `http://www.mysite.com/blog/`), then add the following line at the **start** of the WordPress `wp-config.php` file:
-
         `define('COOKIEPATH', '/');`
-
     *   If Question2Answer is on a different subdomain from your WordPress site (e.g. `http://qa.mysite.com/` and `http://blog.mysite.com/`) then it's a little more complicated:
         *   Add the following lines at the **start** of the WordPress `wp-config.php` file, replacing `**.mysite.com**` with a period (.) followed by the partial domain name which is shared by both sites:
 
-            <pre>define('COOKIEPATH', '/');
-            define('COOKIE_DOMAIN', **'.mysite.com'**);</pre>
+            ~~~php?start_inline=1
+            define('COOKIEPATH', '/');
+            define('COOKIE_DOMAIN', **'.mysite.com'**);
+            ~~~
 
         *   Add the following lines at the **end** of the WordPress `wp-config.php` file, replacing `**qa.mysite.com**` with the full domain name for your Q2A site:
 
-            <pre>/** To allow redirection from WordPress login to Question2Answer **/
+            ~~~php?start_inline=1
+            /* To allow redirection from WordPress login to Question2Answer */
             add_filter('allowed_redirect_hosts', 'qa_wordpress_redirect_hosts');
             function qa_wordpress_redirect_hosts($content) {
             	$content[] = **'qa.mysite.com'**;
             	return $content;
-            }</pre>
+            }
+            ~~~
 
 7.  Open the appropriate web page for Question2Answer in your web browser, for example:
     *   If you installed Question2Answer in a subdirectory, `http://www.mysite.com/qa/`
