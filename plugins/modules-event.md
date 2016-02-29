@@ -9,7 +9,7 @@ title: "Question2Answer - Developers - Event Modules"
 
 An event module (requires Q2A 1.4+) is notified when something important happens within Q2A. It can be used to react to this event in any way it wishes. The PHP class for an event module must contain the following function to react to events:
 
-*   `**process_event**($event, $userid, $handle, $cookieid, $params)`. The `$event` parameter is a string defining the type of event that happened - see the list below. The `$userid`, `$handle` and `$cookieid` parameters identify the user that caused the event to take place - some or all may be `null` if the user is not logged in or does not have an identifying browser cookie. Depending on the event that occurred, the `$params` array may contain additional relevant information.
+*   **`process_event($event, $userid, $handle, $cookieid, $params)`**. The `$event` parameter is a string defining the type of event that happened - see the list below. The `$userid`, `$handle` and `$cookieid` parameters identify the user that caused the event to take place - some or all may be `null` if the user is not logged in or does not have an identifying browser cookie. Depending on the event that occurred, the `$params` array may contain additional relevant information.
 
 Below is a list of possible values for `$event` and the event that each value describes. You can also use the Event Logger plugin that comes with Q2A to log all events that occur, and then read over these logs to see all elements in `$params`.
 

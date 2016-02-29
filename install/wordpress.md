@@ -1,7 +1,6 @@
 ---
 layout: page-install
 title: "Question2Answer - WordPress Integration"
-redirect_from: /wordpress.php
 ---
 
 # Installing Question2Answer with WordPress integration

@@ -11,14 +11,14 @@ A process module (requires Q2A 1.5+) can perform any task at specific stages of 
 
 The PHP `class` for a process module can define one or more of the following functions (all are optional):
 
-*   `**init_ajax**()` will be called at the start of an Ajax request, immediately after Q2A has initialized.
-*   `**init_blob**()` will be called at the start of a request to retrieve a binary object, immediately after Q2A has initialized.
-*   `**init_feed**()` will be called at the start of a request for an RSS feed, immediately after Q2A has initialized.
-*   `**init_image**()` will be called at the start of a request for an image/avatar, immediately after Q2A has initialized.
-*   `**init_install**()` will be called at the start of the install process, due either to a database error or a manual request.
-*   `**init_page**()` will be called at the start of a request for a web page, immediately after Q2A has initialized.
-*   `**db_connected**()` will be called immediately after Q2A connects to the database for the first time.
-*   `**db_disconnect**()` will be called immediately before Q2A disconnects from the database.
-*   `**shutdown**($reason)` will be called at the end of Q2A's response processing. The `$reason` parameter will be `'error'` if an error occurred, `'redirect'` if there was a redirection, otherwise it will be `null`. More values may be added in future.
+*   **`init_ajax()`** will be called at the start of an Ajax request, immediately after Q2A has initialized.
+*   **`init_blob()`** will be called at the start of a request to retrieve a binary object, immediately after Q2A has initialized.
+*   **`init_feed()`** will be called at the start of a request for an RSS feed, immediately after Q2A has initialized.
+*   **`init_image()`** will be called at the start of a request for an image/avatar, immediately after Q2A has initialized.
+*   **`init_install()`** will be called at the start of the install process, due either to a database error or a manual request.
+*   **`init_page()`** will be called at the start of a request for a web page, immediately after Q2A has initialized.
+*   **`db_connected()`** will be called immediately after Q2A connects to the database for the first time.
+*   **`db_disconnect()`** will be called immediately before Q2A disconnects from the database.
+*   **`shutdown($reason)`** will be called at the end of Q2A's response processing. The `$reason` parameter will be `'error'` if an error occurred, `'redirect'` if there was a redirection, otherwise it will be `null`. More values may be added in future.
 
 [« Back to modules](/plugins/modules/)

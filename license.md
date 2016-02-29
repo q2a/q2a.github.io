@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Question2Answer - Versions"
-redirect_from: /license.php
 ---
 
 # Question2Answer is free and open source.

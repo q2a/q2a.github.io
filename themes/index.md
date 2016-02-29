@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Question2Answer - Developers - Themes"
-redirect_from: /developers-themes.html
 ---
 
 # Creating themes for Question2Answer
@@ -30,7 +29,8 @@ Question2Answer supports multiple themes, and makes it easy for you to create yo
 
 6.  Please consider offering your theme online as a .zip file for others to download, then [telling us](http://www.question2answer.org/feedback.php) so we can [link to it here](/addons/).
 
-## Creating an advanced theme for Question2Answer
+
+## <a id="advanced"></a> Creating an advanced theme for Question2Answer
 
 To go beyond CSS-only themes, it is possible to make changes to the HTML that Question2Answer generates for particular elements of content. This requires some PHP programming, and is explained in detail below:
 

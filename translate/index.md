@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Question2Answer - Developers - Translation / Localization"
-redirect_from: /translate.php
 ---
 
 # Translating Question2Answer into another language

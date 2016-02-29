@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Question2Answer - Developers - Selected Functions"
-redirect_from: /functions.php
 ---
 
 # Selected functions in Question2Answer

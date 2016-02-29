@@ -1,7 +1,6 @@
 ---
 layout: page-install
 title: "Question2Answer - Install"
-redirect_from: /install.php
 ---
 
 # Question2Answer takes 5 minutes <span class="highlight">(or less!)</span> to install.

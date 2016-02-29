@@ -1,7 +1,6 @@
 ---
 layout: page-developers
 title: "Question2Answer - Developers - Layers Modules"
-redirect_from: layers.php
 ---
 
 # Implementing plugin layers

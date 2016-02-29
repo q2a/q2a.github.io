@@ -1,7 +1,6 @@
 ---
 layout: page-developers
 title: "Question2Answer - Developers - Creating Plugins"
-redirect_from: /plugins.php
 ---
 
 # Creating plugins for Question2Answer
@@ -31,7 +30,7 @@ Question2Answer plugins (introduced in Q2A 1.3) allow the platform to be modifie
 *   **[Layers](/plugins/layers/) modify the HTML output for some elements of a Q2A page**. Layers work similarly to [advanced themes](/themes/), by overriding some functions in the base theme class in `qa-theme-base.php`. Unlike advanced themes, multiple layers can be installed simultaneously via their respective plugins. Layers require Q2A 1.4+.
 *   **[Overrides](/plugins/overrides/) allow over 150 core Q2A functions to be modified**. Core functions can be replaced by the plugin's code, or they can be wrapped, with the plugin modifying the function's inputs and/or outputs. With wrapping, multiple overrides for the same function in different plugins can be active simultaneously. Overrides require Q2A 1.5+.
 
-The sections below explain the general principles behind plugins. You will also need to read about implementing [modules](/plugins/modules/), [layers](/plugins/layers/) and/or [overrides](/plugins/overrides/), as well as some [functions](/plugins/functions/) in Q2A that may be useful in developing your plugin.
+The sections below explain the general principles behind plugins. You will also need to read about implementing [modules](/plugins/modules/), [layers](/plugins/layers/) and/or [overrides](/plugins/overrides/), as well as some [functions](/code/functions/) in Q2A that may be useful in developing your plugin.
 
 An alternative is to work through the [plugin tutorial](/plugins/tutorial/), which introduces all of this material in a more gentle and gradual way.
 
@@ -73,7 +72,7 @@ Overrides are implemented as PHP files which contain the replacement function de
 
 ## Plugin localization
 
-Throughout Q2A, the [functions](/plugins/functions/) `qa_lang()` and `qa_lang_html()` are used to obtain localized language phrases. An identifier string is passed to these functions, which consists of a file prefix, a slash (`/`) and a phrase key. For example, the identifier `'main/cancel_button'` obtains the element with key `'cancel_button'` from the appropriate `qa-lang-main.php` language file. Each language file is a PHP script which returns an array mapping keys to phrases, e.g. see `qa-lang-main.php`. If you wish to use non English characters in your language files, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
+Throughout Q2A, the [functions](/code/functions/) `qa_lang()` and `qa_lang_html()` are used to obtain localized language phrases. An identifier string is passed to these functions, which consists of a file prefix, a slash (`/`) and a phrase key. For example, the identifier `'main/cancel_button'` obtains the element with key `'cancel_button'` from the appropriate `qa-lang-main.php` language file. Each language file is a PHP script which returns an array mapping keys to phrases, e.g. see `qa-lang-main.php`. If you wish to use non English characters in your language files, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 
 From Q2A 1.5+, plugins can add their own language prefixes and phrases by calling `qa_register_plugin_phrases()` from within `qa-plugin.php`, with the following parameters in order:
 

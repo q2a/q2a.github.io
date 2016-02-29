@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Question2Answer - Services"
-redirect_from: /services.html
 ---
 
 # Question2Answer service providers

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Question2Answer - Developers - External Access"
-redirect_from: /external.php
 ---
 
 # Accessing Question2Answer from external PHP code

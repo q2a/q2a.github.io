@@ -1,7 +1,6 @@
 ---
 layout: page-developers
 title: "Question2Answer - Developers - Overrides"
-redirect_from: overrides.php
 ---
 
 # Implementing plugin overrides

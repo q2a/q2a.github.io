@@ -1,7 +1,6 @@
 ---
 layout: page-install
 title: "Question2Answer - Optimization"
-redirect_from: /optimize.php
 ---
 
 # Optimizing the performance of Question2Answer

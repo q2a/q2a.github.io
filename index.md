@@ -13,7 +13,7 @@ This site is hosted via GitHub Pages, using the Jekyll static site generator. Ev
 
 ## Q2A is highly customisable with many awesome features
 
-- Takes 5 minutes (or less!) to [install](/install/basic/).
+- Takes 5 minutes (or less!) to [install](/install/).
 - Asking and answering questions (duh!)
 - Voting, comments, best answer selection, follow-on and closed questions.
 - Complete user management including points-based reputation management.

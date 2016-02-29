@@ -1,7 +1,6 @@
 ---
 layout: page-developers
 title: "Question2Answer - Developers - Tutorial - Writing a Plugin"
-redirect_from: /plugins-tutorial.php
 ---
 
 # Tutorial: Writing a Question2Answer plugin
@@ -299,7 +298,7 @@ In this step we will get the tag description editing page up and working.
     }
     ~~~
 
-    The `output_widget()` function now identifies which tag page is being requested, retrieves the appropriate tag description from the database, and displays it if it exists, after HTML escaping. An appropriate link to edit the description is also shown, using Q2A's `qa_path_html(...)` function to create an HTML-escaped relative URL to the tag editor page - [more here](/plugins/functions/).
+    The `output_widget()` function now identifies which tag page is being requested, retrieves the appropriate tag description from the database, and displays it if it exists, after HTML escaping. An appropriate link to edit the description is also shown, using Q2A's `qa_path_html(...)` function to create an HTML-escaped relative URL to the tag editor page - [more here](/code/functions/).
 
 
 *   Save/upload as usual. If everything is in place, you should be able to view your descriptions on the tag page, click to edit them on a different page, and then click to save and view them back again on the tag page. Congratulations!
@@ -609,7 +608,7 @@ In this step, we will add an options form to the plugin which controls how the t
     The `admin_form()` function can also be added to any module, and enables that module to display a form on the 'Plugins' page of the Q2A admin panel. The function returns a Q2A form definition array for display on the page, after processing any appropriate user input. Most of this should be familiar from our earlier encounter with a Q2A form, but a few things are new:
 
 
-    *   We're using Q2A's `qa_opt()` function to both set and retrieve option values - [more here](/plugins/functions/).
+    *   We're using Q2A's `qa_opt()` function to both set and retrieve option values - [more here](/code/functions/).
 
 
     *   An element `'ok'` is used to add a confirmation message at the top of the form.
@@ -845,4 +844,4 @@ If you made it this far, congratulations! This completes the tutorial. To recap,
 
 To check you followed the instructions correctly, you can [download the completed plugin](http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip).
 
-Now you can think about the plugin that **you** want to build and how to go about it. To get started, take a look at the different [types of module](/plugins/modules/) that Q2A supports - as of Q2A 1.5, there are ten available, and we only covered two in this tutorial. You should also take a look at this list of useful [Q2A functions](/plugins/functions/) and have a browse around the Q2A source code to learn about many more. Finally, take a look at the code of the [many plugins](/addons/) already developed for Q2A. Thank you and good luck!
+Now you can think about the plugin that **you** want to build and how to go about it. To get started, take a look at the different [types of module](/plugins/modules/) that Q2A supports - as of Q2A 1.5, there are ten available, and we only covered two in this tutorial. You should also take a look at this list of useful [Q2A functions](/code/functions/) and have a browse around the Q2A source code to learn about many more. Finally, take a look at the code of the [many plugins](/addons/) already developed for Q2A. Thank you and good luck!
