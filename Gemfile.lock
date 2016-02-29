@@ -139,6 +139,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-redirect-from
+  pygments.rb
 
 BUNDLED WITH
    1.11.2
