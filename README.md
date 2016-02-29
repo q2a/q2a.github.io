@@ -14,9 +14,7 @@ This repository holds the new site at [docs.question2answer.org](http://docs.que
 
 ## Project status
 
-- [ ] Link from question2answer.org to q2a.github.io (see https://github.com/q2a/question2answer/issues/374)
-- [ ] Remove content from question2answer.org which is also on q2a.github.io (see https://github.com/q2a/question2answer/issues/374)
-- [ ] Ensure all integration tests pass -- `htmlproof --disable-external _site/` or see Travis output
+- [ ] Redirect pages from question2answer.org to q2a.github.io (see https://github.com/q2a/question2answer/issues/374)
 
 
 ## How to Contribute
@@ -35,4 +33,4 @@ To run the validation suite:
 
 Then access:
 
- > http://localhost:4000/question2answer.org/
+ > http://localhost:4000/

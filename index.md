@@ -1,70 +1,49 @@
 ---
 layout: page
-title: "Question2Answer - Free Open Source Q&A Software for PHP"
+title: "Question2Answer documentation"
 ---
 
-# Question2Answer is being extended by the community.
+# Question2Answer documentation
 
-## What is a Question and Answer site?
+Welcome to the new Question2Answer docs! This is a community-focused initiative to improve the documentation for Q2A. The docs contains information about installing and using Q2A, as well as developing themes/plugins and an API reference.
 
-A Q&A site helps your online community to share knowledge. People with questions get the answers they need. The community is enriched by commenting, voting, notifications, points and rankings.
+This site is hosted via GitHub Pages, using the Jekyll static site generator. Everyone is welcome to contribute improvements - see [the README](https://github.com/q2a/q2a.github.io) for information about setting up Jekyll locally.
 
-## Why offer Q&A on my site?
 
-Your members will enjoy the interaction that Q&A enables, and will visit your site more regularly. In addition, many web searches are questions, so Q&A content will attract search engine traffic.
 
-## What is Question2Answer?
+## Q2A is highly customisable with many awesome features
 
-Question2Answer (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on [17,804 sites in 40 languages](http://sites.question2answer.org).
+- Takes 5 minutes (or less!) to [install](/install/basic/).
+- Asking and answering questions (duh!)
+- Voting, comments, best answer selection, follow-on and closed questions.
+- Complete user management including points-based reputation management.
+- Create experts, editors, moderators and admins.
+- Fast integrated search engine, plus checking for similar questions when asking.
+- Categories (up to 4 levels deep) and/or tagging.
+- Easy styling with [CSS themes](/themes/).
+- Supports [translation](/translate/) into any language.
+- Custom sidebar, widgets, pages and links.
+- SEO features such as neat URLs, microformats and [XML Sitemap](http://sitemaps.org/).
+- RSS, email notifications and personal news feeds.
+- User avatars (or [Gravatar](http://www.gravatar.com/)) and custom fields.
+- Private messages and public wall posts.
+- Log in via Facebook or others (using (using [plugins](/addons/)).
+- Out-of-the-box [WordPress 3+ integration](/install/wordpress/).
+- Custom [single sign-on](/install/single-sign-on/) support for other sites.
+- PHP/MySQL [scalable](/install/optimize/) to millions of users and posts.
+- [Safe from](/install/security/) XSS, CSRF and SQL injection attacks.
+- Beat spam with captchas, rate-limiting, moderation and/or flagging.
+- Block users, IP addresses, and censor words
 
-## How do I get Q2A?
+## Q2A also features an extensive plugin system
 
-[**Download Question2Answer 1.7.2**](https://github.com/q2a/question2answer/releases/download/v1.7.2/question2answer-1.7.2.zip), then read [how to install](/install/). Version 1.7.2 was [released](https://github.com/q2a/question2answer/releases) on November 17, 2015\. Also [on GitHub](https://github.com/q2a/question2answer).
-
-## What does Q2A need?
-
-*   [PHP](http://www.php.net/) 5.2 or later, with the [MySQLi](http://en.wikipedia.org/wiki/MySQLi) extension.
-*   [MySQL](http://www.mysql.com/) 4.1 or later, MySQL 5.x for best performance.
-
-## What's the license?
-
-<span class="highlight">Question2Answer is open source</span>, [licensed under GPL v2+](http://www.question2answer.org/license.php).
-
-## How can I help?
-
-Contribute [via Github](https://github.com/q2a/question2answer) or create a [theme](/themes/), [plugin](/plugins/tutorial/) or [translation](/translate/).
-
-## Easy to set up
-
-*   Q2A takes 5 minutes (or less!) to [install](/install/basic/).
-*   Easy styling with [CSS themes](/themes/).
-*   Supports [translation](/translate/) into any language.
-*   Custom sidebar, widgets, pages and links.
-*   SEO features such as [XML Sitemap](http://sitemaps.org/) and neat URLs.
-
-## Fast and secure
-
-*   PHP/MySQL [scalable](/install/optimize/) to millions of users and posts.
-*   [Safe from](/install/security/) XSS, CSRF and SQL injection attacks.
-*   Beat spam with captchas, moderation and/or flagging.
-
-## Core Q&A features
-
-*   Fast integrated search engine.
-*   Categories (up to 4 levels deep) and/or tagging.
-*   Voting, comments, follow-on and closed questions.
-*   Points-based reputation management.
-*   RSS, email notifications and personal news feeds.
-
-## Built-in user account management...
-
-*   Create experts, editors, moderators and admins.
-*   User avatars (or [Gravatar](http://www.gravatar.com/)) and custom fields.
-*   Private messages and public wall posts.
-*   Log in via Facebook or others (using [plugins](/addons/)).
-
-## ...or integrate with existing sites
-
-*   Out-of-the-box [WordPress 3+ integration](/install/wordpress/).
-*   Custom [single sign-on](/install/single-sign-on/) support for other sites.
-*   Deep integration and customization via [plugins](/plugins/).
+- Modify the HTML output for a page with *layers*.
+- Add custom pages to a Q2A site with *page modules*.
+- Add extra content in various places with *widget modules*.
+- Allow login via an external identity provider such as Facebook with *login modules*.
+- Integrate WYSIWYG or other text editors with *editor/viewer modules*.
+- Do something when certain actions take place with *event modules*.
+- Validate and/or modify many types of user input with *filter modules*.
+- Implement a custom search engine with *search modules*.
+- Add extra spam protection with *captcha modules*.
+- Extend many core Q2A functions using *function overrides*.
