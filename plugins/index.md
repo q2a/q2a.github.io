@@ -8,19 +8,13 @@ title: "Question2Answer - Developers - Creating Plugins"
 
 Question2Answer plugins (introduced in Q2A 1.3) allow the platform to be modified or extended without changing the Q2A core. Plugins can integrate with Q2A in one of three ways:
 
-*   **[Modules](/plugins/modules/) extend Q2A in a defined and specific way.** The following types of module are supported from Q2A 1.3+:
+*   **[Modules](/plugins/modules/) extend Q2A in a defined and specific way.** The following types of module are supported:
     *   [*page*](/plugins/modules-page/) modules add a new type of page to a Question2Answer site.
     *   [*login*](/plugins/modules-login/) modules allow users to log in to Q2A via an external identity provider such as Facebook.
     *   [*editor*](/plugins/modules-editor/) modules provide a web interface for writing and editing posts.
     *   [*viewer*](/plugins/modules-viewer/) modules render content as HTML or text, and often work together with an editor module.
-
-    From Q2A 1.4+:
-
     *   [*event*](/plugins/modules-event/) modules are notified when something important happens, such as content being posted or voted on.
     *   [*widget*](/plugins/modules-widget/) modules allow extra content to be shown on Q2A pages, as chosen by the site administrator.
-
-    From Q2A 1.5+:
-
     *   [*filter*](/plugins/modules-filter/) modules can validate and/or modify many types of user input, including the content of posts.
     *   [*search*](/plugins/modules-search/) modules can implement a custom indexer and/or search engine for a Q2A site.
     *   [*captcha*](/plugins/modules-captcha/) modules provide a web interface for human verification, such as reCAPTCHA.
