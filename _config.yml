@@ -27,6 +27,8 @@ nav:
       path: /plugins/
     - name: Code
       path: /code/external/
+    - name: Contribute
+      path: /contribute/
     - name: Add-Ons
       path: /addons/
     - name: Services
