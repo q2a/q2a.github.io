@@ -47,7 +47,7 @@ nav:
       path: /install/security/
 
   plugins:
-    - name: Plugins
+    - name: Overview
       path: /plugins/
     - name: Modules
       path: /plugins/modules/
@@ -63,4 +63,13 @@ nav:
       path: /code/external/
     - name: Functions
       path: /code/functions/
+
+  contribute:
+    - name: Issues
+      path: /contribute/
+    - name: Coding Style
+      path: /contribute/coding-style/
+    - name: Unit tests
+      path: /contribute/unit-tests/
+
 

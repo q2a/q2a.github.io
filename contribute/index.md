@@ -1,5 +1,6 @@
 ---
 layout: page
+menu: contribute
 title: "Contribute"
 ---
 
