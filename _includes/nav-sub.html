@@ -1,0 +1,16 @@
+{% if page.menu %}
+  <div class="qa-nav-sub">
+    <ul class="qa-nav-sub-list">
+      {% for navpage in site.nav[page.menu] %}
+        <li class="qa-nav-sub-item">
+          {% if page.url == navpage.path %}
+            <a href="{{ navpage.path }}" class="qa-nav-sub-link qa-nav-sub-selected">{{ navpage.name }}</a>
+          {% else %}
+            <a href="{{ navpage.path }}" class="qa-nav-sub-link">{{ navpage.name }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="qa-nav-main-clear"></div>
+  </div>
+{% endif %}

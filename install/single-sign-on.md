@@ -1,5 +1,6 @@
 ---
-layout: page-install
+layout: page
+menu: install
 title: "Question2Answer - Single Sign-On Integration"
 ---
 

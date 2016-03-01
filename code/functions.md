@@ -1,5 +1,6 @@
 ---
-layout: page-code
+layout: page
+menu: code
 title: "Question2Answer - Developers - Selected Functions"
 ---
 
