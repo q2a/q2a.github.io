@@ -44,7 +44,7 @@ nav:
     - name: Security
       path: /install/security/
 
-  developers:
+  plugins:
     - name: Plugins
       path: /plugins/
     - name: Modules
@@ -55,3 +55,10 @@ nav:
       path: /plugins/overrides/
     - name: Plugin Tutorial
       path: /plugins/tutorial/
+
+  code:
+    - name: External
+      path: /code/external/
+    - name: Functions
+      path: /code/functions/
+

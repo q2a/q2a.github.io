@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-code
 title: "Question2Answer - Developers - External Access"
 ---
 
