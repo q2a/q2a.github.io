@@ -12,7 +12,7 @@ To access Q2A 1.3.2 or later from an external script, simply `require_once` the 
 
 Below is an example external script which outputs the username and email of the currently logged in Q2A user, if any:
 
-~~~php
+```php
 <?php
 require_once '/PATH/TO/qa-include/qa-base.php';
 
@@ -22,11 +22,11 @@ if (qa_get_logged_in_userid() === null)
 	echo 'not logged in';
 else
 	echo qa_get_logged_in_handle() . '<br>' . qa_get_logged_in_email();
-~~~
+```
 
 Below is an another example external script which creates a question by the currently logged in Q2A user:
 
-~~~php
+```php
 <?php
 
 require_once '/PATH/TO/qa-include/qa-base.php';
@@ -44,4 +44,4 @@ $tags = array('birds', 'sing', 'love');
 $userid = qa_get_logged_in_userid();
 
 qa_post_create($type, $parentid, $title, $content, $format, $categoryid, $tags, $userid);
-~~~
+```

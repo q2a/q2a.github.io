@@ -85,7 +85,7 @@ The data is stored in a file `metadata.json` in each plugin's directory. The JSO
 
 All fields are optional (you can omit any whole line). Here's an example with all the possible keys and their descriptions:
 
-~~~json
+```json
 {
 	"name": "Human-readable name of your plugin",
 	"uri": "Web address for your plugin",
@@ -99,7 +99,7 @@ All fields are optional (you can omit any whole line). Here's an example with al
 	"min_q2a": "Numerical part only, e.g. 1.3",
 	"min_php": "Numerical part only, e.g. 5.1"
 }
-~~~
+```
 
 The `update_uri` key allows you to inform users about new versions of the plugin. Q2A will retrieve the content from the provided URL, and look for metadata in the same format as above. In other words, it should contain a URL to a JSON file. If you are using a public repository such as Github, you can link to the "raw" version of `metadata.json` in your own repo - this way, as soon as you push an updated `metadata.json` to your repo, the admin/plugins page will notify users of the new version.
 
@@ -107,7 +107,7 @@ The `update_uri` key allows you to inform users about new versions of the plugin
 
 In earlier Q2A versions, plugin metadata was registered using metadata in a PHP comment inside the `qa-plugin.php` file. Here is an equivalent example to the above:
 
-~~~php
+```php
 <?php
 /*
 	Plugin Name: Human-readable name of your plugin
@@ -122,6 +122,6 @@ In earlier Q2A versions, plugin metadata was registered using metadata in a PHP 
 	Plugin Minimum Question2Answer Version: Numerical part only, e.g. 1.3
 	Plugin Minimum PHP Version: Numerical part only, e.g. 5
 */
-~~~
+```
 
 For backwards compatibility, Q2A 1.7 will still read this old style of metadata, if no `metadata.json` file is present.

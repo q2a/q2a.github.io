@@ -28,7 +28,7 @@ Also check out the [PHPunit documentation](http://phpunit.de/getting-started.htm
 
 Unit tests are grouped according to the file in which the original functions reside. For example, tests for function from `qa-include/app/users.php` are in `AppUsersTest.php`. The file should contain a class of the same name, like this:
 
-~~~php
+```php
 <?php
 require_once QA_INCLUDE_DIR.'app/users.php';
 
@@ -36,7 +36,7 @@ class AppUsersTest extends PHPUnit_Framework_TestCase
 {
 	// test functions go here
 }
-~~~
+```
 
 Note that we include the original `app/users.php` file so that we can call the functions.
 
@@ -46,7 +46,7 @@ Optionally, multiple tests for the same function may be split into several test 
 
 Tests contain *assertions*, which are functions that compare the result you get from a function with your expected output. The main ones we use are `assertEquals` to check if two things are equal, `assertSame` to check they are equal and the same type, and ``assertTrue`/`assertFalse` to check if a result is true/false. Here's an example from `UtilStringTest.php`:
 
-~~~php
+```php
 <?php
 require_once QA_INCLUDE_DIR.'util/string.php';
 
@@ -60,7 +60,7 @@ class UtilStringTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals($expected, $test);
 	}
 }
-~~~
+```
 
 Take a look at the [PHPUnit docs](https://phpunit.de/manual/4.8/en/writing-tests-for-phpunit.html) and our existing tests to see more examples.
 
@@ -71,7 +71,7 @@ Tests must be able to run without the database, since of course everyone running
 
 First we need to check which options the function we're testing uses. Then we add some test values to the `$qa_options_cache` variable. This also means we can test Q2A functions with different configurations of options. Here's an example from `AppUsersTest.php`:
 
-~~~php?start_inline=1
+```php?start_inline=1
 public function test__qa_permit_value_error()
 {
 	// set options cache to bypass database
@@ -81,6 +81,6 @@ public function test__qa_permit_value_error()
 
 	// run tests using those options...
 }
-~~~
+```
 
 

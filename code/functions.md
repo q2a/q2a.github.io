@@ -10,9 +10,9 @@ Your external code and plugins are free to use any of the 700+ functions defined
 
 A selected of the most useful functions are described below, grouped by the PHP file in the `qa-include` directory in which they appear. With the exception of `qa-base.php`, which is loaded first, you must include a file as follows before using its functions:
 
-~~~php?start_inline=1
+```php?start_inline=1
 require_once QA_INCLUDE_DIR.'qa-XXX.php';
-~~~
+```
 
 Many of these functions take optional additional parameters which are not shown here - please consult the source code for details. Functions which are not marked with a version number are available from Q2A 1.3 or later.
 

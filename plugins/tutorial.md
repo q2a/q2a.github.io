@@ -29,7 +29,7 @@ In this first step we will set up the directory for the plugin and create the cr
 
 *   Now let's add some basic meta information about the plugin, so it can be listed more informatively in the admin section. Open `qa-plugin.php` in your favorite text editor, paste in the following code, then save/upload the file:
 
-    ~~~php
+    ```php
     <?php
     /*
       Plugin Name: Tag Descriptions Tutorial
@@ -48,7 +48,7 @@ In this first step we will set up the directory for the plugin and create the cr
       header('Location: ../../');
       exit;
     }
-    ~~~
+    ```
 
     See [here](/plugins/) for a detailed description of the metadata fields. The code below the metadata ensures that visitors to your Q2A site cannot request the `qa-plugin.php` page directly (even though doing so would cause no actual harm).
 
@@ -63,7 +63,7 @@ In this step we will create the initial version of the widget module which displ
 
 *   Create a new file named `qa-tag-desc-widget.php` in your plugin's `tag-descriptions` directory, and paste this in:
 
-    ~~~php
+    ```php
     <?php
 
     class qa_tag_descriptions_widget {
@@ -74,14 +74,14 @@ In this step we will create the initial version of the widget module which displ
         }
 
     }
-    ~~~
+    ```
 
     This is the beginning of the PHP class that will define the widget's functionality. The `allow_template()` function is one of three class functions required in a widget module ([more here](/plugins/modules-widget/)). It is called by Q2A to determine which types of pages the widget can be displayed on. In this case, the widget can only be displayed on pages listing recent questions for a tag, so the function only returns `true` if the `$template` parameter is `'tag'`.
 
 
 *   Add the following two additional functions **inside** the `class` definition in `qa-tag-desc-widget.php`:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function allow_region($region)
     {
         return true;
@@ -91,21 +91,21 @@ In this step we will create the initial version of the widget module which displ
     {
         echo 'just a test';
     }
-    ~~~
+    ```
 
     The `allow_region()` function allows the widget to restrict its display to specific areas of the page. In our case, we're not fussy, so we return `true` for any `$region` parameter. The `output_widget()` function tells our widget to actually display its content. For now, it will simply output a fixed test string.
 
 
 *   The skeleton of our widget module is now complete, and we need to activate it. Paste this at the end of `qa-plugin.php`:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     qa_register_plugin_module(
       'widget', // type of module
       'qa-tag-desc-widget.php', // PHP file containing module class
       'qa_tag_descriptions_widget', // module class name in that PHP file
       'Tag Descriptions' // human-readable name of module
     );
-    ~~~
+    ```
 
     Each parameter to `qa_register_plugin_module()` is explained by a comment in the code above - [more here](/plugins/).
 
@@ -122,7 +122,7 @@ In this step we will create the page module that allows tag descriptions to be e
 
 *   Create a new file named `qa-tag-desc-edit.php` in your `tag-descriptions` directory and paste this in:
 
-    ~~~php
+    ```php
     <?php
 
     class qa_tag_descriptions_edit_page {
@@ -140,28 +140,28 @@ In this step we will create the page module that allows tag descriptions to be e
         }
 
     }
-    ~~~
+    ```
 
     The `match_request()` function let a page module decide if it will process a particular web page request. The `$request` parameter is always slash-separated, independent of the URL structure used by a particular Q2A site - [more here](/plugins/modules-page/). We have decided that the URLs for our tag description editor will take the form `tag-edit/*` where `*` is the tag to be edited. For now, the `process_request()` function in the page module generates an empty page for these requests.
 
 
 *   Activate the page model within the plugin by pasting the following code at the end of your `qa-plugin.php` file:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     qa_register_plugin_module(
       'page', // type of module
       'qa-tag-desc-edit.php', // PHP file containing module class
       'qa_tag_descriptions_edit_page', // name of module class
       'Tag Description Edit Page' // human-readable name of module
     );
-    ~~~
+    ```
 
 *   Now save/upload all files and test the page module is working by clicking on a tag in your Q2A site, then replacing `tag` in the URL with `tag-edit`. An empty page should be generated, rather than a 'page not found' error.
 
 
 *   Now we will put something on the page. Replace the previous `process_request()` function with:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function process_request($request)
     {
         $parts=explode('/', $request);
@@ -172,7 +172,7 @@ In this step we will create the page module that allows tag descriptions to be e
 
         return $qa_content;
     }
-    ~~~
+    ```
 
     As in `match_request()` above, the new `process_request()` function begins by examining the `$request` parameter to determine which tag is being edited. It then calls Q2A's `qa_content_prepare()` function to create the initial page description in `$qa_content`, including navigation and widgets. After assigning a title to the page it returns `$qa_content` as a result. Note that the `$tag` is HTML-escaped by `qa_html()` for use in `$qa_content`, since it could contain characters like < or >.
 
@@ -187,7 +187,7 @@ In this step we will get the tag description editing page up and working.
 
 *   Go back to `process_request($request)` in `qa-tag-desc-edit.php` and paste this code **before** the final `return...` line:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     require_once QA_INCLUDE_DIR.'qa-db-metas.php';
 
     $qa_content['form']=array(
@@ -213,7 +213,7 @@ In this step we will get the tag description editing page up and working.
     );
 
     $qa_content['focusid']='tagdesc';
-    ~~~
+    ```
 
     There is a lot happening here, so let's go through it step by step:
 
@@ -253,7 +253,7 @@ In this step we will get the tag description editing page up and working.
 
 *   Go back again to the `process_request($request)` function in `qa-tag-desc-edit.php` and paste the following code immediately before the `$qa_content['form']` assignment:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     if (qa_clicked('dosave')) {
         require_once QA_INCLUDE_DIR.'qa-util-string.php';
 
@@ -261,7 +261,7 @@ In this step we will get the tag description editing page up and working.
         qa_db_tagmeta_set($taglc, 'description', qa_post_text('tagdesc'));
         qa_redirect('tag/'.$tag);
     }
-    ~~~
+    ```
 
     Let's go through this code step by step:
 
@@ -280,7 +280,7 @@ In this step we will get the tag description editing page up and working.
 
 *   Now open `qa-tag-desc-widget.php` and replace the previous `output_widget()` function with the following:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function output_widget($region, $place, $themeobject, $template, $request, $qa_content)
     {
         require_once QA_INCLUDE_DIR.'qa-db-metas.php';
@@ -297,7 +297,7 @@ In this step we will get the tag description editing page up and working.
         } else
             echo '<a href="'.$editurlhtml.'">Create tag description</a>';
     }
-    ~~~
+    ```
 
     The `output_widget()` function now identifies which tag page is being requested, retrieves the appropriate tag description from the database, and displays it if it exists, after HTML escaping. An appropriate link to edit the description is also shown, using Q2A's `qa_path_html(...)` function to create an HTML-escaped relative URL to the tag editor page - [more here](/code/functions/).
 
@@ -315,23 +315,23 @@ In this step we will implement the tooltips which display tag descriptions when 
 
 *   Create a new file `qa-tag-desc-overrides.php` in your plugin's `tag-descriptions` directory and paste the following:
 
-    ~~~php
+    ```php
     <?php
 
     function qa_tag_html($tag, $microformats=false, $favorited=false)
     {
         return qa_tag_html_base('_'.$tag.'_', $microformats, $favorited);
     }
-    ~~~
+    ```
 
     This `qa_tag_html()` function will override the standard version of that function, which we saw just before. However our version makes uses of the standard function by calling it using the name `qa_tag_html_base()` - [more here](/plugins/overrides/). Instead of passing through the `$tag` as is, we add underscores before and after it, so that we can test that the override is working. Note that the optional `$favorited` parameter was added in Q2A 1.6, but this code will still work fine in Q2A 1.5.x, with PHP ignoring the extra unexpected parameter.
 
 
 *   Activate the function override by pasting the following line at the end of your plugin's `qa-plugin.php`:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     qa_register_plugin_overrides('qa-tag-desc-overrides.php');
-    ~~~
+    ```
 
     This simply tells Q2A to apply function overrides in the file `qa-tag-desc-overrides.php` in your plugin directory.
 
@@ -341,7 +341,7 @@ In this step we will implement the tooltips which display tag descriptions when 
 
 *   Go back to `qa-tag-desc-overrides.php` and replace the function with the following:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function qa_tag_html($tag, $microformats=false, $favorited=false)
     {
         $taghtml=qa_tag_html_base($tag, $microformats, $favorited);
@@ -359,7 +359,7 @@ In this step we will implement the tooltips which display tag descriptions when 
 
         return $taghtml;
     }
-    ~~~
+    ```
 
     Let's explain this function step by step:
 
@@ -395,7 +395,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
 *   Go back to `qa-tag-desc-overrides.php` and modify the function as follows:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function qa_tag_html($tag, $microformats=false, $favorited=false)
     {
         global $plugin_tag_desc_list;
@@ -413,7 +413,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
         return $taghtml;
     }
-    ~~~
+    ```
 
     Here's an explanation of what we're doing now:
 
@@ -432,7 +432,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
 *   Now it's time to create a layer which replaces the `post_tag_item()` function in Q2A's base theme class. Create a new file `qa-tag-desc-layer.php` in your plugin directory and paste in the following code:
 
-    ~~~php
+    ```php
     <?php
 
     class qa_html_theme_layer extends qa_html_theme_base
@@ -452,7 +452,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
         }
 
     }
-    ~~~
+    ```
 
     Let's see what we're doing in this `post_tag_item()` function:
 
@@ -474,12 +474,12 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
 *   As with modules and overrides, we need to activate the layer by adding this in our plugin's `qa-plugin.php` file:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     qa_register_plugin_layer(
       'qa-tag-desc-layer.php', // PHP file containing layer
       'Tag Description Layer' // human-readable name of layer
     );
-    ~~~
+    ```
 
 
 *   Save/upload all files and refresh the page showing some tags. You should now see a comma-separated list of tags to be retrieved from the database, immediately before the first tag on the page.
@@ -487,7 +487,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
 *   Go back to `qa-tag-desc-layer.php` and replace `post_tag_item()` with the real version of the function:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function post_tag_item($taghtml, $class)
     {
         global $plugin_tag_desc_list, $plugin_tag_desc_map;
@@ -510,7 +510,7 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 
         qa_html_theme_base::post_tag_item($taghtml, $class);
     }
-    ~~~
+    ```
 
     Let's go through this one step at a time:
 
@@ -546,7 +546,7 @@ In this step, we will add an options form to the plugin which controls how the t
 
 *   Open `qa-tag-desc-widget.php` and paste the following function **inside** the class declaration:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function option_default($option)
     {
         if ($option=='plugin_tag_desc_max_len')
@@ -557,14 +557,14 @@ In this step, we will add an options form to the plugin which controls how the t
 
         return null;
     }
-    ~~~
+    ```
 
     Our plugin will use Q2A's options mechanism to store its settings. Each option has a name and value, which are stored in the `qa_options` table in the database. The `option_default()` function, which can be added to any module, allows defaults to be define for some Q2A options. In this case, we will use an option named `'plugin_tag_desc_max_len'` to set the maximum number of characters shown in a tag description tooltip, with a default of `250`. A second option named `'plugin_tag_desc_font_size'` sets the font size for the descriptions on tag pages, with a default of `18`.
 
 
 *   Paste this second function inside the widget module's class declaration:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     function admin_form(&$qa_content)
     {
         $saved=false;
@@ -604,7 +604,7 @@ In this step, we will add an options form to the plugin which controls how the t
             ),
         );
     }
-    ~~~
+    ```
 
     The `admin_form()` function can also be added to any module, and enables that module to display a form on the 'Plugins' page of the Q2A admin panel. The function returns a Q2A form definition array for display on the page, after processing any appropriate user input. Most of this should be familiar from our earlier encounter with a Q2A form, but a few things are new:
 
@@ -623,18 +623,18 @@ In this step, we will add an options form to the plugin which controls how the t
 
 *   Now it's time to apply these options in the rest of the plugin. If you skipped the previous step in this tutorial, open `qa-tag-desc-overrides.php` and focus on the function `qa_tag_html()`. Otherwise, open `qa-tag-desc-layer.php` and focus on the function `post_tag_item()`. In either case, paste the following at the start of the function:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     require_once QA_INCLUDE_DIR.'qa-util-string.php';
-    ~~~
+    ```
 
     We do this because we will be using a function defined in Q2A's `qa-util-string.php` file.
 
 
 *   Find the line in the same function which begins `$description=...` and paste the following line **immediately after**:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     $description=qa_shorten_string_line($description, qa_opt('plugin_tag_desc_max_len'));
-    ~~~
+    ```
 
     This line of code shortens `$description` to the number of characters in our option named `'plugin_tag_desc_max_len'`. (It is perfectly OK to call `qa_opt()` each time this function is called because option values are cached by Q2A.)
 
@@ -644,11 +644,11 @@ In this step, we will add an options form to the plugin which controls how the t
 
 *   Now open `qa-tag-desc-widget.php` and **replace** the line containing `echo qa_html($description);` with:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     echo '<SPAN style="font-size:'.(int)qa_opt('plugin_tag_desc_font_size').'px;">';
     echo qa_html($description);
     echo '</SPAN>';
-    ~~~
+    ```
 
     This wraps the tag description in an HTML `<SPAN>` which sets the font size as appropriate.
 
@@ -663,19 +663,19 @@ In this step we will add an option allowing the Q2A admin to control who can edi
 
 *   Open your `qa-tag-desc-widget.php` file, find the `admin_form()` function and paste this at the beginning:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     require_once QA_INCLUDE_DIR.'qa-app-admin.php';
     require_once QA_INCLUDE_DIR.'qa-app-options.php';
 
     $permitoptions=qa_admin_permit_options(QA_PERMIT_USERS, QA_PERMIT_SUPERS, false, false);
-    ~~~
+    ```
 
     This uses the `qa_admin_permit_options()` function from Q2A's `qa-app-admin.php` file to create an array of permission options in the variable `$permitoptions`. The parameters passed define the widest and narrowest permissions to include, based on constants defined in Q2A's `qa-app-options.php` file.
 
 
 *   Then, paste this inside the `'fields'` subarray in the same `admin_form()` function:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     array(
         'label' => 'Allow editing:',
         'type' => 'select',
@@ -683,26 +683,26 @@ In this step we will add an option allowing the Q2A admin to control who can edi
         'options' => $permitoptions,
         'tags' => 'NAME="plugin_tag_desc_pe_field"',
     ),
-    ~~~
+    ```
 
     This new field will control the permissions for editing tag descriptions. A Q2A form field of type `'select'` corresponds to an HTML `<SELECT>` menu, whose options are passed in the `'options'` subelement. Each `_code_ => _label_` in the `'options'` array is output as the HTML `<OPTION VALUE="_code_">_label_</OPTION>`. To specify the initial selection for the menu, set `'value'` to the corresponding `_label_` (rather than the `_code_`, as you might have expected).
 
 
 *   Add a line to store the setting in the same `admin_form()` function, within the `if (qa_clicked(...))` block:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     qa_opt('plugin_tag_desc_permit_edit', (int)qa_post_text('plugin_tag_desc_pe_field'));
-    ~~~
+    ```
 
 
 *   Finally, set a default value for this new option by pasting the following inside `option_default()`:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     if ($option=='plugin_tag_desc_permit_edit') {
         require_once QA_INCLUDE_DIR.'qa-app-options.php';
         return QA_PERMIT_EXPERTS;
     }
-    ~~~
+    ```
 
     This means that only experts or higher are permitted to edit tag descriptions by default.
 
@@ -712,12 +712,12 @@ In this step we will add an option allowing the Q2A admin to control who can edi
 
 *   Now we need to enforce this setting on the tag description editing page. Open your `qa-tag-desc-edit.php` file and paste the following in the `process_request()` function after the `$qa_content['title']=...` line:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     if (qa_user_permit_error('plugin_tag_desc_permit_edit')) {
         $qa_content['error']=qa_lang_html('users/no_permission');
         return $qa_content;
     }
-    ~~~
+    ```
 
     This calls Q2A's function `qa_user_permit_error()` to check if the current user has permission, relative to the `'plugin_tag_desc_permit_edit'` option. The `qa_user_permit_error()` function also tests if the user or IP address has been blocked - see the function's documentation in Q2A's `qa-app-users.php` file. If the user does not have permission, an error will be displayed on the page using a pre-existing Q2A string, and the function returns so that no form is displayed.
 
@@ -727,7 +727,7 @@ In this step we will add an option allowing the Q2A admin to control who can edi
 
 *   Finally, we don't want to display the link to create/edit tag descriptions on the tag page if the user does not have permission to do so. Open `qa-tag-desc-widget.php` and replace the last 7 lines of `output_widget()` with:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     $allowediting=!qa_user_permit_error('plugin_tag_desc_permit_edit');
 
     if (strlen($description)) {
@@ -738,7 +738,7 @@ In this step we will add an option allowing the Q2A admin to control who can edi
         echo ' - <a href="'.$editurlhtml.'">edit</a>';
     } elseif ($allowediting)
         echo '<a href="'.$editurlhtml.'">Create tag description</a>';
-    ~~~
+    ```
 
     Now we only show the link for creating or editing tag descriptions if the user has sufficient permission.
 
@@ -753,7 +753,7 @@ In this final step we will make your plugin ready for localization into differen
 
 *   Create a new file `qa-tag-desc-lang-default.php` in your plugin's `tag-descriptions` directory and paste the following:
 
-    ~~~php
+    ```php
     <?php
 
     return array(
@@ -761,28 +761,28 @@ In this final step we will make your plugin ready for localization into differen
         'save_desc_button' => 'Save Description',
         'create_desc_link' => 'Create tag description',
     );
-    ~~~
+    ```
 
     This file contains US English versions of your plugin's language strings, which will serve as the default.
 
 
 *   Paste the following in your plugin's `qa-plugin.php` file:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     qa_register_plugin_phrases(
         'qa-tag-desc-lang-*.php', // pattern for language files
         'plugin_tag_desc' // prefix to retrieve phrases
     );
-    ~~~
+    ```
 
     This sets up localization for your plugin. The `*` in the file name passed to `qa_register_plugin_phrases()` will be substituted for language codes such as `fr` or `ru`, or `default` to load the default phrases. The second parameter `'plugin_tag_desc'` sets the prefix for retrieving your language strings using Q2A's `qa_lang()` or `qa_lang_html()` functions - [more here](/plugins/).
 
 
 *   Find the line in `qa-tag-desc-widget.php` containing the phrase `Create tag description` and replace it with:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     echo '<a href="'.$editurlhtml.'">'.qa_lang_html('plugin_tag_desc/create_desc_link').'</a>';
-    ~~~
+    ```
 
     We have now substituted the previous hard-coded phrase for an HTML escaped version of the localized phrase. The function `qa_lang_html()` takes a single parameter with two parts, separated by a `/` slash. The first part is the language prefix, which matches that passed to `qa_register_plugin_phrases()` above. The second part is the keyin the corresponding language file (in our case, the last phrasse in `qa-tag-desc-lang-default.php`).
 
@@ -792,18 +792,18 @@ In this final step we will make your plugin ready for localization into differen
 
 *   Now let's use the other phrases. In `qa-tag-desc-edit.php`, replace the line `$qa_content['title']=...` with:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     $qa_content['title']=qa_lang_html_sub('plugin_tag_desc/edit_desc_for_x', qa_html($tag));
-    ~~~
+    ```
 
     This uses Q2A's `qa_lang_html_sub()` function which substitutes any `^` symbols in the localized phrase with the function's second parameter. The second parameter is treated as HTML and must already be escaped by the caller.
 
 
 *   Finally, replace the line in `qa-tag-desc-edit.php` containing `'Save Description'` with:
 
-    ~~~php?start_inline=1
+    ```php?start_inline=1
     'label' => qa_lang_html('plugin_tag_desc/save_desc_button'),
-    ~~~
+    ```
 
 
 *   Save/upload `qa-tag-desc-edit.php` and check that the tag description editing page is still labelled properly.
@@ -811,13 +811,13 @@ In this final step we will make your plugin ready for localization into differen
 
 *   Now let's add a localization for UK English. Create a file `qa-tag-desc-lang-en-GB.php` in your plugin directory and paste:
 
-    ~~~php
+    ```php
     <?php
 
     return array(
       'edit_desc_for_x' => 'What ho, a jolly good description for the ^ tag',
     );
-    ~~~
+    ```
 
 
 *   Save/upload `qa-tag-desc-lang-en-GB.php`. Then switch the language of your Q2A site to 'English (UK)' in the 'General' panel of the admin section, and refresh the page for editing a tag description. You should see this UK English page title. Note that we only included one phrase in the UK English localization, so the defaults will be used for the other two.

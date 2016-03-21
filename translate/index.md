@@ -49,24 +49,24 @@ Starting in version 1.5, it is also possible to customize specific language phra
 1.  Search the `qa-include/qa-lang-*.php` files to find the file and line containing the phrase.
 2.  Create a `qa-lang-*.php` file in Q2A's `qa-lang/custom` directory, with the same name as the file that you found in the previous step, and paste in the following code:
 
-	~~~php
+	```php
 	<?php
 
 	return array(
 		// custom phrases go here...
 	);
-	~~~
+	```
 
 3.  Copy the line containing your phrase from Q2A's `qa-lang-*.php` file into the middle of the `array( )` in your new file.
 4.  Change the text that comes after the `=>` symbol to suit your requirements. Pay attention to substitution points, which use the hat symbol (`^`). For non-English languages, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 
 Below is an example `qa-lang/custom/qa-lang-main.php` file which modifies the 'Hello [username]' and 'My Account' phrases:
 
-~~~php
+```php
 <?php
 
 return array(
 	'logged_in_x' => 'Welcome, ^!',
 	'nav_account' => 'My Settings',
 );
-~~~
+```

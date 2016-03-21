@@ -8,13 +8,13 @@ title: "Question2Answer - Developers - Layers Modules"
 
 A plugin layer can modify the HTML output for any part of a page by overriding functions in `qa_html_theme_base`, the base theme class defined in `qa-theme-base.php`. The layer is implemented as a PHP file containing the following fixed declaration:
 
-~~~php
+```php
 <?php
 
 class qa_html_theme_layer extends qa_html_theme_base
 {
 }
-~~~
+```
 
 Layers work similarly to [advanced themes](/themes/), except multiple layers can be installed simultaneously via their respective plugins. The PHP code for each layer is automatically modified at runtime (by `qa_load_theme_class()` in `qa-app-format.php`) to build an inheritance chain of appropriately renamed classes. This process is transparent to you as a layer developer. If you wish to use non English characters in your layer, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 
@@ -27,7 +27,7 @@ Within a plugin's layer PHP file, the following pseudo-constants (substituted fo
 
 Below is an example layer which makes four changes to the standard theme. First, it removes the login and register links if they are to be displayed. Second, it includes a Javascript file from the plugin's directory on question pages. Third, it displays all question tags in alphabetical order. Fourth, it shows the usernames of specifically priviliged users in italics.
 
-~~~php
+```php
 <?php
 
 class qa_html_theme_layer extends qa_html_theme_base
@@ -74,4 +74,4 @@ class qa_html_theme_layer extends qa_html_theme_base
 		qa_html_theme_base::post_meta_who($post, $class);
 	}
 }
-~~~
+```
