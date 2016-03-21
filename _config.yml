@@ -6,13 +6,10 @@ permalink: pretty
 exclude: [vendor]
 
 # Build settings
-# temporarily use redcarpet (instead of kramdown) so we can use 'startinline' option
-markdown: redcarpet
-
+markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
-
-highlighter: rouge
 
 # Menu layout
 nav:
