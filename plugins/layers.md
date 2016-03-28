@@ -32,46 +32,46 @@ Below is an example layer which makes four changes to the standard theme. First,
 
 class qa_html_theme_layer extends qa_html_theme_base
 {
-	function nav_list($navigation, $navtype) // remove login and register links
-	{
-		if ($navtype=='user') {
-			unset($navigation['login']);
-			unset($navigation['register']);
-		}
+    function nav_list($navigation, $navtype) // remove login and register links
+    {
+        if ($navtype=='user') {
+            unset($navigation['login']);
+            unset($navigation['register']);
+        }
 
-		qa_html_theme_base::nav_list($navigation, $navtype);
-	}
+        qa_html_theme_base::nav_list($navigation, $navtype);
+    }
 
-	function head_script() // add a Javascript file from plugin directory
-	{
-		if ($this->template=='question') // check it's a question page
-			$this->content['script'][]='<SCRIPT src="'.
-			qa_html(QA_HTML_THEME_LAYER_URLTOROOT.'my-script.js').
-			'" TYPE="text/javascript"></SCRIPT>';
+    function head_script() // add a Javascript file from plugin directory
+    {
+        if ($this->template=='question') // check it's a question page
+            $this->content['script'][]='<SCRIPT src="'.
+            qa_html(QA_HTML_THEME_LAYER_URLTOROOT.'my-script.js').
+            '" TYPE="text/javascript"></SCRIPT>';
 
-		qa_html_theme_base::head_script();
-	}
+        qa_html_theme_base::head_script();
+    }
 
-	function post_tag_list($post, $class) // show tags in alphabetical order
-	{
-		sort($post['q_tags'], SORT_STRING);
+    function post_tag_list($post, $class) // show tags in alphabetical order
+    {
+        sort($post['q_tags'], SORT_STRING);
 
-		qa_html_theme_base::post_tag_list($post, $class);
-	}
+        qa_html_theme_base::post_tag_list($post, $class);
+    }
 
-	function post_meta_who($post, $class) // show usernames of privileged users in italics
-	{
-		require_once QA_INCLUDE_DIR.'qa-app-users.php'; // for QA_USER_LEVEL_BASIC constant
+    function post_meta_who($post, $class) // show usernames of privileged users in italics
+    {
+        require_once QA_INCLUDE_DIR.'qa-app-users.php'; // for QA_USER_LEVEL_BASIC constant
 
-		if (isset($post['raw']['opostid'])) // if item refers to an answer or comment...
-			$level=@$post['raw']['olevel']; // ...take the level of answer or comment author
-		else
-			$level=@$post['raw']['level']; // otherwise take level of the question author
+        if (isset($post['raw']['opostid'])) // if item refers to an answer or comment...
+            $level=@$post['raw']['olevel']; // ...take the level of answer or comment author
+        else
+            $level=@$post['raw']['level']; // otherwise take level of the question author
 
-		if ($level>QA_USER_LEVEL_BASIC) // if level is more than basic user...
-			$post['who']['data']='<I>'.@$post['who']['data'].'</I>'; // ...add italics
+        if ($level>QA_USER_LEVEL_BASIC) // if level is more than basic user...
+            $post['who']['data']='<I>'.@$post['who']['data'].'</I>'; // ...add italics
 
-		qa_html_theme_base::post_meta_who($post, $class);
-	}
+        qa_html_theme_base::post_meta_who($post, $class);
+    }
 }
 ```

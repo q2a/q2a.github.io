@@ -87,17 +87,17 @@ All fields are optional (you can omit any whole line). Here's an example with al
 
 ```json
 {
-	"name": "Human-readable name of your plugin",
-	"uri": "Web address for your plugin",
-	"description": "Human-readable description of your plugin",
-	"version": "Your plugin version number",
-	"date": "Build date of your plugin in YYYY-MM-DD",
-	"author": "Human-readable name of plugin author",
-	"author_uri": "Web address for plugin author",
-	"license": "Short name of plugin license, e.g. GPLv2",
-	"update_uri": "Web address for Q2A to check for updates",
-	"min_q2a": "Numerical part only, e.g. 1.3",
-	"min_php": "Numerical part only, e.g. 5.1"
+    "name": "Human-readable name of your plugin",
+    "uri": "Web address for your plugin",
+    "description": "Human-readable description of your plugin",
+    "version": "Your plugin version number",
+    "date": "Build date of your plugin in YYYY-MM-DD",
+    "author": "Human-readable name of plugin author",
+    "author_uri": "Web address for plugin author",
+    "license": "Short name of plugin license, e.g. GPLv2",
+    "update_uri": "Web address for Q2A to check for updates",
+    "min_q2a": "Numerical part only, e.g. 1.3",
+    "min_php": "Numerical part only, e.g. 5.1"
 }
 ```
 
@@ -110,17 +110,17 @@ In earlier Q2A versions, plugin metadata was registered using metadata in a PHP 
 ```php
 <?php
 /*
-	Plugin Name: Human-readable name of your plugin
-	Plugin URI: Web address for your plugin
-	Plugin Description: Human-readable description of your plugin
-	Plugin Version: Your plugin version number
-	Plugin Date: Build date of your plugin in YYYY-MM-DD
-	Plugin Author: Human-readable name of plugin author
-	Plugin Author URI: Web address for plugin author
-	Plugin License: Short name of plugin license, e.g. GPLv2
-	Plugin Update Check URI: Web address for Q2A to check for updates
-	Plugin Minimum Question2Answer Version: Numerical part only, e.g. 1.3
-	Plugin Minimum PHP Version: Numerical part only, e.g. 5
+    Plugin Name: Human-readable name of your plugin
+    Plugin URI: Web address for your plugin
+    Plugin Description: Human-readable description of your plugin
+    Plugin Version: Your plugin version number
+    Plugin Date: Build date of your plugin in YYYY-MM-DD
+    Plugin Author: Human-readable name of plugin author
+    Plugin Author URI: Web address for plugin author
+    Plugin License: Short name of plugin license, e.g. GPLv2
+    Plugin Update Check URI: Web address for Q2A to check for updates
+    Plugin Minimum Question2Answer Version: Numerical part only, e.g. 1.3
+    Plugin Minimum PHP Version: Numerical part only, e.g. 5
 */
 ```
 

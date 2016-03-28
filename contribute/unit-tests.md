@@ -34,7 +34,7 @@ require_once QA_INCLUDE_DIR.'app/users.php';
 
 class AppUsersTest extends PHPUnit_Framework_TestCase
 {
-	// test functions go here
+    // test functions go here
 }
 ```
 
@@ -52,13 +52,13 @@ require_once QA_INCLUDE_DIR.'util/string.php';
 
 class UtilStringTest extends PHPUnit_Framework_TestCase
 {
-	public function test__qa_tags_to_tagstring()
-	{
-		$test = qa_tags_to_tagstring(array('Hello', 'World'));
-		$expected = 'Hello,World';
+    public function test__qa_tags_to_tagstring()
+    {
+        $test = qa_tags_to_tagstring(array('Hello', 'World'));
+        $expected = 'Hello,World';
 
-		$this->assertEquals($expected, $test);
-	}
+        $this->assertEquals($expected, $test);
+    }
 }
 ```
 
@@ -74,13 +74,11 @@ First we need to check which options the function we're testing uses. Then we ad
 ```php?start_inline=1
 public function test__qa_permit_value_error()
 {
-	// set options cache to bypass database
-	global $qa_options_cache;
-	$qa_options_cache['confirm_user_emails'] = '1';
-	$qa_options_cache['moderate_users'] = '0';
+    // set options cache to bypass database
+    global $qa_options_cache;
+    $qa_options_cache['confirm_user_emails'] = '1';
+    $qa_options_cache['moderate_users'] = '0';
 
-	// run tests using those options...
+    // run tests using those options...
 }
 ```
-
-

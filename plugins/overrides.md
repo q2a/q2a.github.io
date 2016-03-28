@@ -19,7 +19,7 @@ Functions are overridden by redefining them in a PHP file in your plugin directo
 
 function qa_retrieve_url($url)
 {
-	// implement some specialized code for retrieving a URL's contents
+    // implement some specialized code for retrieving a URL's contents
 }
 ```
 
@@ -30,10 +30,10 @@ In Q2A, overrides go beyond simple function replacement by allowing you to call 
 
 function qa_retrieve_url($url)
 {
-	if (substr($url, 0, 8)=='https://')
-		// specialized code for retrieving secure pages
-	else
-		return qa_retrieve_url_base($url);
+    if (substr($url, 0, 8)=='https://')
+        // specialized code for retrieving secure pages
+    else
+        return qa_retrieve_url_base($url);
 }
 ```
 

@@ -38,8 +38,8 @@ From version 1.4, Question2Answer offers out-of-the-box integration with your [W
             /* To allow redirection from WordPress login to Question2Answer */
             add_filter('allowed_redirect_hosts', 'qa_wordpress_redirect_hosts');
             function qa_wordpress_redirect_hosts($content) {
-            	$content[] = **'qa.mysite.com'**;
-            	return $content;
+                $content[] = **'qa.mysite.com'**;
+                return $content;
             }
             ```
 

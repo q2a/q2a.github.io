@@ -26,55 +26,57 @@ However, **please keep style-only changes to a separate commit!** For example if
 
 Here is an example of the old style. Even though the braces are technically optional (the foreach contains only one statement), they should be used here for clarity.
 
-	foreach ($thingarray as $thing)
-		if (isset($thing['id']))
-			if (strpos($thing['id'], 'Hello')===0)
-				$newthing='Goodbye';
-			elseif ($thing['id']=='World')
-				$newerthing='Galaxy';
-		else
-			return null;
+```php?start_inline=1
+foreach ($thingarray as $thing)
+    if (isset($thing['id']))
+        if (strpos($thing['id'], 'Hello')===0)
+            $newthing='Goodbye';
+        elseif ($thing['id']=='World')
+            $newthing='Galaxy';
+```
 
 It should be rewritten as:
 
-	foreach ($thingarray as $thing) {
-		if (isset($thing['id'])) {
-			if (strpos($thing['id'], 'Hello') === 0) {
-				$newthing = 'Goodbye';
-			} elseif ($thing['id'] == 'World') {
-				$newerthing = 'Galaxy';
-			}
-		} else {
-			return null;
-		}
-	}
+```php?start_inline=1
+foreach ($thingarray as $thing) {
+    if (isset($thing['id'])) {
+        if (strpos($thing['id'], 'Hello') === 0) {
+            $newthing = 'Goodbye';
+        } elseif ($thing['id'] == 'World') {
+            $newthing = 'Galaxy';
+        }
+    } else {
+        return null;
+    }
+}
+```
 
 Here is a class example showing the placement of braces, operators, and a DocBlock comment.
 
-	class qa_example
-	{
-		/**
-		 * Adds 1 to the supplied number.
-		 *
-		 * @param int $number The number to increment.
-		 *
-		 * @return int Returns the new number.
-		 */
-		public function add_one($number)
-		{
-			$result = $number + 1;
+```php?start_inline=1
+class qa_example
+{
+    /**
+     * Adds 1 to the supplied number.
+     *
+     * @param int $number The number to increment.
+     * @return int Returns the new number.
+     */
+    public function add_one($number)
+    {
+        $result = $number + 1;
 
-			return $result;
-		}
-	}
+        return $result;
+    }
+}
+```
 
 ## New autoloaded classes
 
-From version 1.7 some classes are autoloaded, so it's possible to use them without adding a `require_once` first. These loosely follow [PSR-0][PSR0] using faux namespaces. This is being done slowly and carefully to maintain backwards compatibility, and does not apply to plugins, themes, nor most of the core for that matter.
+From version 1.7 some classes are autoloaded, so it's possible to use them without adding a `require_once` first. These loosely follow [PSR-0](http://www.php-fig.org/psr/psr-0/) using faux namespaces. This is being done slowly and carefully to maintain backwards compatibility, and does not apply to plugins, themes, nor most of the core for that matter.
 
 Classes are stored in the `qa-include/Q2A` folder, and then in subfolders depending on their categorization.
 
 Class names should be of the form `Q2A_<Namespace>_<Class>`, e.g. `Q2A_Util_Debug`. There may be multiple "namespaces", e.g. `Q2A_Db_User_Messages`.
 
 Classes are mapped to PHP files with the underscores converted to directory separators. The `Q2A_Util_Debug` class is in the file `qa-include/Q2A/Util/Debug.php`. A class named `Q2A_Db_User_Messages` would be in a file `qa-include/Q2A/Db/User/Messages.php`.
-

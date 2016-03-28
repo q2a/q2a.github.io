@@ -19,9 +19,9 @@ require_once '/PATH/TO/qa-include/qa-base.php';
 require_once QA_INCLUDE_DIR.'qa-app-users.php';
 
 if (qa_get_logged_in_userid() === null)
-	echo 'not logged in';
+    echo 'not logged in';
 else
-	echo qa_get_logged_in_handle() . '<br>' . qa_get_logged_in_email();
+    echo qa_get_logged_in_handle() . '<br>' . qa_get_logged_in_email();
 ```
 
 Below is an another example external script which creates a question by the currently logged in Q2A user:
