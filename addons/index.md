@@ -155,7 +155,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ### Additional page types
 
 *   [Best Users per Month](https://github.com/q2apro/q2apro-best-users-per-month-free) by [q2apro.com](http://www.q2apro.com/). Displays the users with the most points each month. Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup).
-*   [Blog Post Plugin](http://siro.me.ke/qtoa) by [Jackson Siro](http://question2answer.org/qa/user/jaxila). Allows registered users to maintain an online journal on your Q2A site.
+*   [Blog Post Plugin](http://siro.me.ke/qtoa) by [Jackson Siro](http://www.question2answer.org/qa/user/jaxila). Allows registered users to maintain an online journal on your Q2A site.
 *   [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers.
 *   [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 *   [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
