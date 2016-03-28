@@ -18,7 +18,7 @@ Make sure you have:
 
 And make sure your web server is running:
 
-*   Web serving software such as [Apache](http://httpd.apache.org/).
+*   Web serving software such as [Apache](http://httpd.apache.org/) or [Nginx](http://nginx.org/).
 *   [PHP](http://www.php.net/) 5.2 or later, with the [MySQLi](http://en.wikipedia.org/wiki/MySQLi) extension.
 *   [MySQL](http://www.mysql.com/) 4.1 or later, MySQL 5.x for best performance.
 
