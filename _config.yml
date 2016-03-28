@@ -38,6 +38,8 @@ nav:
       path: /install/wordpress/
     - name: Single Sign-On
       path: /install/single-sign-on/
+    - name: Upgrading
+      path: /install/upgrade/
     - name: Optimization
       path: /install/optimize/
     - name: Security

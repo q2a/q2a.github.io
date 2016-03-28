@@ -44,18 +44,7 @@ The instructions below are for installing Question2Answer where it manages user 
     *   If you installed Question2Answer in a subdirectory, `http://www.mysite.com/qa/`
 10.  Follow the on-screen instructions to set up your database and administrator account. That's it!
 
-## Upgrading to the latest version of Question2Answer
-
-The instructions below are for upgrading from a previous version of Question2Answer. Click for a [full version history](https://github.com/q2a/question2answer/releases).
-
-1.  Before upgrading, it is recommended to make a backup of your MySQL database using `mysqldump` or a similar tool.
-2.  If you have modified any core Q2A files, or installed any extra themes, languages or plugins in the `qa-theme`, `qa-lang` or `qa-plugin` directories, make a copy of your whole Q2A directory, to help reapply your changes after upgrading.
-3.  Download the [latest version of Question2Answer](https://github.com/q2a/question2answer/releases) to your computer or web server (also available [on GitHub](https://github.com/q2a/question2answer)).
-4.  Unzip the download using a tool such as [WinZip](http://www.winzip.com/) (or `unzip` in the Unix shell).
-5.  Replace all the Question2Answer files and directories (**including .htaccess**) on your web server with the new ones.
-    *   Your custom `qa-config.php` file will not be affected, nor will your `qa-external` directory.
-    *   You will need to reapply any other changes and reinstall any themes, languages or plugins as appropriate.
-6.  Open the page for Question2Answer in your browser, and look around the admin center. If appropriate, you will be prompted to upgrade the database, so follow the on-screen instructions. You've now successfully upgraded - congratulations!
+See also: [Upgrading Question2Answer](/install/upgrade/)
 
 ## Add-Ons
 
