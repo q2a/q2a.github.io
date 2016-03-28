@@ -133,8 +133,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  kramdown
   pygments.rb
-  redcarpet
   rouge
 
 BUNDLED WITH
