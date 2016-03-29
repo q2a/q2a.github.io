@@ -21,10 +21,10 @@ To run this site locally, type:
 
     bundle exec jekyll serve
 
-To run the validation suite:
-
-    jekyll build && htmlproofer --disable-external --check-html ./_site
-
 Then access:
 
 > http://localhost:4000/
+
+To run the validation suite:
+
+    jekyll build && htmlproofer --disable-external --check-html ./_site
