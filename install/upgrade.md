@@ -43,11 +43,14 @@ Add the following to your `.htaccess` file (or the appropriate `<Directory>` blo
 <IfModule mod_rewrite.c>
 ErrorDocument 503 /503.html
 RewriteEngine On
+RewriteCond 1 0
 RewriteCond %{REMOTE_ADDR} !^127.0.0.1$
 RewriteCond %{REQUEST_URI} !^/503.html$
 RewriteRule .* - [R=503]
 </IfModule>
 ```
+
+Now the 503 response can be toggle by changing `RewriteCond 1 0` to `RewriteCond 1 1`
 
 ### Nginx
 
