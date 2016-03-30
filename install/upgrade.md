@@ -39,7 +39,7 @@ Here's how to set it up on different servers. In the following examples, replace
 
 Add the following to your `.htaccess` file (or the appropriate `<Directory>` block within your Virtual Host server config).
 
-```apache
+```conf
 <IfModule mod_rewrite.c>
 ErrorDocument 503 /503.html
 RewriteEngine On
