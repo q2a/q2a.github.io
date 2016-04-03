@@ -175,6 +175,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Logarithmic Tag Cloud](https://github.com/NoahY/q2a-log-tags) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a list of tags with logarithmic size indicating popularity.
 *   [Most Active Users](https://github.com/q2apro/q2apro-most-active-users) by [q2apro.com](http://www.q2apro.com/). Shows a list of users who were most active in the past week or month.
 *   [Online User Count](http://question2answer-farsi.com/files/plugins/en/show-online-user-count.zip) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Shows a list of users who are currently online as well as total visitors.
+*   [Popular Questions](http://www.q2apro.com/plugins/popular-questions) by [q2apro.com](http://www.q2apro.com/). Shows a list of the most viewed questions.
 *   [Publisher Tools (Ads)](http://www.lukehuffey.com/plugins-gallery/question2answer/) by [Luke Huffey](http://www.lukehuffey.com/). Easy embedding of ad networks like [Lijit](http://www.lijit.com/) and [Chitika](http://chitika.com/) on multiple pages.
 *   [Random Question Widget](https://github.com/NoahY/qa-random-question) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Displays a random question in the sidebar.
 *   [Recent Events Widget](https://github.com/q2apro/q2apro-recent-events-widget) by [q2apro.com](http://www.q2apro.com/). Displays all recent events in the sidebar or main area.
@@ -231,6 +232,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 *   [Admin Plus Plugin](https://github.com/NoahY/q2a-admin-plus) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Extends the admin area by allowing PHP commands to be executed. (Use with caution!)
 *   [Categorization Plugin](https://github.com/NoahY/q2a-cat) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows individual categorization of uncategorized posts via the categories admin panel.
+*   [Change Post Owner](https://github.com/q2apro/q2apro-change-post-owner/) by [q2apro.com](http://www.q2apro.com/). Allows the author of a post to be changed, or to make it anonymous.
 *   [Convert Comment to Answer](https://github.com/q2apro/q2apro-comment-to-answer) by [q2apro.com](http://www.q2apro.com/). Convert a comment to an answer, optionally move the succeeding comments.
 *   [Database Backup/Restore](https://github.com/KrzysztofKielce/q2a-backup) by [Krzysztof Kielce](http://www.question2answer.org/qa/user/Krzysztof+Kielce). An admin tool for one-click backup and restore of the Q2A instance or entire database.
 *   [Delete Hidden Posts](https://github.com/amiyasahu/q2a-delete-hidden-posts) by [Amiya Sahu](http://amiyasahu.com/). Enables all hidden posts (including those with dependencies) to be deleted.
