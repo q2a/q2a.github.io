@@ -23,6 +23,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.7.x - Finnish (Suomi)](https://github.com/q2a-suomi/q2a-suomikaannos) by [q2a-suomi](https://github.com/q2a-suomi).
 *   [Q2A 1.7.x - French (Français)](http://www.question2answer.org/third-party/question2answer-1.7-language-fr.zip) by Olivier Seree @ [2cv Q&A](http://2cv.solu.fr), updated by Pierre-Yves Aillet.
 *   [Q2A 1.7.x - Galician (Galego)](http://ftp.cixug.es/pub/q2a/gl.tar.gz) by [Oficina de Software Libre](http://www.cixug.es/).
+*   [Q2A 1.7.x - German (Deutsch)](https://github.com/ReichardtIT/q2a-lang-de) by Dominik @ [Reichardt Informationstechnik](http://www.reichardt-informationstechnik.de/).
 *   [Q2A 1.7.x - Greek (Ελληνικά)](https://github.com/zakkak/qa-lang-el) by [Foivos Zakkak](http://foivos.zakkak.net/). Also see the Greeklish URLs plugin.
 *   [Q2A 1.7.x - Japanese (日本語)](http://cmsbox.jp/archive/download.php?t=d&i=67) by sama55 @ [CMS Box](http://cmsbox.jp/).
 *   [Q2A 1.7.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
