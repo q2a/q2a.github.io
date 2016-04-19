@@ -25,7 +25,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.7.x - Galician (Galego)](http://ftp.cixug.es/pub/q2a/gl.tar.gz) by [Oficina de Software Libre](http://www.cixug.es/).
 *   [Q2A 1.7.x - German (Deutsch)](https://github.com/ReichardtIT/q2a-lang-de) by Dominik @ [Reichardt Informationstechnik](http://www.reichardt-informationstechnik.de/).
 *   [Q2A 1.7.x - Greek (Ελληνικά)](https://github.com/zakkak/qa-lang-el) by [Foivos Zakkak](http://foivos.zakkak.net/). Also see the Greeklish URLs plugin.
-*   [Q2A 1.7.x - Japanese (日本語)](http://cmsbox.jp/archive/download.php?t=d&i=67) by sama55 @ [CMS Box](http://cmsbox.jp/).
+*   [Q2A 1.7.x - Japanese (日本語)](https://github.com/naga0ka/Q2A-Japanese) by [naga0ka](https://github.com/naga0ka).
 *   [Q2A 1.7.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
 *   [Q2A 1.7.x - Norwegian (Norsk)](http://nettport.com/zipped/index.php?download=17295e0ce6c4ac7302f411f4b3d49b7b) by Sigma @ [Nettport](http://nettport.com/).
 *   [Q2A 1.7.x - Persian (فارسی)](http://question2answer-farsi.com/files/language/Fa-1.7.zip) by Ali Bakhshi ilani @ [Question2Answer Farsi](http://question2answer-farsi.com/). Also: Jalali Dates, Magic Words plugins.
@@ -55,7 +55,6 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.6.x - Hebrew (עברית)](http://www.question2answer.org/third-party/question2answer-1.6-language-he.zip) by Yoram Ben Abu @ [Fitlife](http://www.fitlife.co.il/).
 *   [Q2A 1.6.x - Indonesian (Bahasa Indonesia)](http://kttrack.com/q2a/question2answer-1.6-language-id.zip) by Rio Turnadi @ [KTTRACK](http://www.kttrack.com/).
 *   [Q2A 1.6.x - Italian (Italiano)](http://opzionibinarie1.altervista.org/qa-lang/it_1_6_2.rar) by Carlo @ [Oracle FAQ](http://oraclefaq.altervista.org/).
-*   [Q2A 1.6.x - Japanese (日本語)](http://cmsbox.jp/archive/download.php?t=d&i=47) by sama55 @ [CMS Box](http://cmsbox.jp/).
 *   [Q2A 1.6.x - Persian (فارسی)](http://question2answer-farsi.com/files/language/fa.zip) by Ali Bakhshi ilani @ [Question2Answer Farsi](http://question2answer-farsi.com/). Also: Jalali Dates, Magic Words plugins.
 *   [Q2A 1.6.x - Polish (Polski)](http://hoek.pl/pliki/q2a-pl.zip) by [Hoek](http://hoek.pl/).
 *   [Q2A 1.6.x - Russian (Русский)](https://github.com/ferasinka/q2a-lang-ru) by Andrey K. @ [Роборобо Android Q&A](http://roborobo.ru/).
