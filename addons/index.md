@@ -36,6 +36,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.7.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 *   [Q2A 1.7.x - Spanish - Spain (Español)](https://gitlab.com/midget/q2a-translation-es-ES) by Dario Minnucci.
 *   [Q2A 1.7.x - Turkish (Türkçe)](http://dts.msxlabs.org/NeutralizeR/tr.zip) by NeutralizeR @ [MsXLabs](https://www.msxlabs.org/). Also: [Turkish](http://turkdesk.org/downloads/Turkish-Q2A-1.7.x.zip) by Erkan @ [TurkDesk](http://turkdesk.org/).
+*   [Q2A 1.7.x - Vietnamese (Tiếng Việt)](https://github.com/vanduc1102/viet-hoa-q2a) by [Duc Nguyen](https://github.com/vanduc1102).
 
 ### Q2A 1.6
 
