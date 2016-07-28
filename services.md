@@ -25,4 +25,3 @@ Also check out [Cloudlook](http://www.cloudlook.com/) which can help you evaluat
 ## International sites
 
 *   [Question2Answer Farsi](http://question2answer-farsi.com/) – Persian information for Q2A users in Iran and beyond.
-*   [Question2Answer Japan](http://www.question2answer-jp.com/) – Japanese portal for Q2A users, with documentation and Q&A.
