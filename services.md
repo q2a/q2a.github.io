@@ -18,6 +18,7 @@ The following websites and providers specialize in Question2Answer services and 
 
 *   [LogicWeb](http://www.logicweb.com/question2answer-hosting/) – web hosting with one-click installation of Q2A.
 *   [CiviHosting](http://civihosting.com/question2answer-hosting) – web hosting with free installation of Q2A.
+*   [RoseHosting.com](https://www.rosehosting.com) – fully-managed web hosting with free 24/7 support. Contact their support team and they will install and configure Q2A for you for free. They have a [guide on their blog](https://www.rosehosting.com/blog/install-question2answer-on-an-ubuntu-14-04-vps/) too.
 
 Also check out [Cloudlook](http://www.cloudlook.com/) which can help you evaluate some popular cloud hosting providers.
 
