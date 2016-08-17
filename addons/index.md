@@ -127,7 +127,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ### Integration with other products
 
-*   [Ajax Chat](https://github.com/arjunsuresh/chat) by [Arjun](http://armi.in/arjun). Adds a sidebar widget and a page showing AJAX chat which is responsive and also has a log page for searching across old chats. There is a separate chat room for each category of Q2A.
+*   [Ajax Chat](https://github.com/arjunsuresh/chat) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a sidebar widget and a page showing AJAX chat which is responsive and also has a log page for searching across old chats. There is a separate chat room for each category of Q2A.
 *   [Amazon SES Email](https://github.com/fauguste/qa-mail-ses) by Frédéric AUGUSTE. Sends outgoing emails through [Amazon SES](http://aws.amazon.com/ses/) (Simple Email Service) rather than SMTP.
 *   [BuddyPress Integration](https://github.com/NoahY/q2a-buddypress) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Basic integration with the [BuddyPress](http://buddypress.org/) social networking plugin for [WordPress](http://wordpress.org/).
 *   [CloudFlare User IP](https://github.com/InfinityLF/q2a-cloudflare) by [InfinityLF](https://github.com/InfinityLF). Get visitors' real IP address instead of the IP address of the [CloudFlare](http://www.cloudflare.com) proxy.
@@ -137,7 +137,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [External Categories and Tags](http://www.question2answer.org/third-party/question2answer-external-cats-tags.zip) by Mélanie Gauthier of [Trisotech](http://www.trisotech.com/). Some modifications to enable integration with your existing database of categories and tags (in the same style as single sign-on).
 *   [Facebook Like Box](https://github.com/amiyasahu/q2a-facebook-like-box) by [Amiya Sahu](http://amiyasahu.com/). Basic widget for displaying a [Facebook](http://www.facebook.com/) like box.
 *   [Google Adsense Async](https://github.com/ganbox/ganbox-async-adsense) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Widget for displaying Google AdSense ads with asynchronous JavaScript code.
-*   [Google Custom Search](https://github.com/arjunsuresh/q2a-google-search) by [Arjun Suresh](http://armi.in/arjun). Replaces Q2A's default search functionality with [Google Custom Search](https://cse.google.com/cse/all). Useful for searching across a network of Q2A sites and also if you are using blogs in Q2A.
+*   [Google Custom Search](https://github.com/arjunsuresh/q2a-google-search) by [Arjun Suresh](http://gateoverflow.in/user/Arjun). Replaces Q2A's default search functionality with [Google Custom Search](https://cse.google.com/cse/all). Useful for searching across a network of Q2A sites and also if you are using blogs in Q2A.
 *   [Google Plus Badge](https://github.com/amiyasahu/q2a-google-plus-badge) by [Amiya Sahu](http://amiyasahu.com/). Basic widget for displaying a [Google Plus](https://plus.google.com/) badge.
 *   [HipChat Notifications](https://github.com/jhubert/qa-hipchat-notifications) by [Jeremy Baker](https://github.com/jhubert). Sends notifications to a [HipChat](https://www.hipchat.com/) room about new questions or answers.
 *   [IMAP Login](https://github.com/josebmera/q2a-imap-login) by Jose Mª Bermudo Mera. Replaces the Q2A login form with authentication against an email server via IMAP.
@@ -192,7 +192,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Advanced Tag Descriptions](https://github.com/Towhidn/q2a-tag-descriptions) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Add titles, icons and HTML descriptions to your tags.
 *   [Accept Rate Plugin](https://github.com/NoahY/q2a-accept-rate) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Shows the percentage of questions asked by a user which had an answer selected as the best.
 *   [Ajax User Search](http://www.q2apro.com/plugins/usersearch) by [q2apro](http://www.q2apro.com/). Adds a live search box at the top of the users page to search users by username.
-*   [Answer Hide](https://github.com/arjunsuresh/q2a-answerhide) by [Arjun](http://armi.in/arjun). Adds an option in user profile to disable answer list by default and allows viewing on button click. Useful for educational sites.  
+*   [Answer Hide](https://github.com/arjunsuresh/q2a-answerhide) by [Arjun](http://gateoverflow.in/user/Arjun). Adds an option in user profile to disable answer list by default and allows viewing on button click. Useful for educational sites.  
 *   [Ask Notices Plugin](https://github.com/svivian/q2a-ask-notices) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays warnings/hints for users asking questions with specific keywords.
 *   [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
 *   [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
@@ -200,14 +200,14 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 *   [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
 *   [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
-*   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun] (http://armi.in/arjun). Adds numbering to questions in question listing pages.
+*   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun] (http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 *   [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges.
 *   [Social Sharing Plugin](https://github.com/NoahY/q2a-share) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds social sharing buttons to question pages.
 *   [Sort Answers](https://github.com/amiyasahu/q2a-sort-answers) by [Amiya Sahu](http://amiyasahu.com/). Allows answers on a question page to be sorted by oldest, newest and highest voted.
-*   [Tag Search](https://github.com/arjunsuresh/tag-search) by [Arjun](http://armi.in/arjun). Allows tags to be searched via AJAX and with auto complete.
+*   [Tag Search](https://github.com/arjunsuresh/tag-search) by [Arjun](http://gateoverflow.in/user/Arjun). Allows tags to be searched via AJAX and with auto complete.
 *   [Tag Descriptions Plugin](http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial](/plugins/tutorial/). Allows tag descriptions to be shown on tag pages and in tooltips.
-*   [Theme Switcher Plugin](https://github.com/arjunsuresh/q2a-theme-switch) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://armi.in/arjun). Allows users to choose their own theme on their profile page for normal as well as mobile view.
-*   [Top Searches](https://github.com/arjunsuresh/q2a-top-search) by [Arjun](http://armi.in/arjun). Adds a widget to display the top searched words. Also have an option to display top seacrhed tags if using [Tag Search](https://github.com/arjunsuresh/tag-search) plugin.
+*   [Theme Switcher Plugin](https://github.com/arjunsuresh/q2a-theme-switch) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://gateoverflow.in/user/Arjun). Allows users to choose their own theme on their profile page for normal as well as mobile view.
+*   [Top Searches](https://github.com/arjunsuresh/q2a-top-search) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget to display the top searched words. Also have an option to display top seacrhed tags if using [Tag Search](https://github.com/arjunsuresh/tag-search) plugin.
 *   [User Signatures Plugin](https://github.com/NoahY/q2a-signatures) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to define a signature for all of their posts.
 *   [Warn on Leave](https://github.com/q2apro/q2apro-warn-on-leave) by [q2apro.com](http://www.q2apro.com/). Warns users before leaving a page with text they have entered (also support WYSIWYG editor).
 
