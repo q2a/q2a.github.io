@@ -200,7 +200,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 *   [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
 *   [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
-*   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun] (http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
+*   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 *   [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges.
 *   [Social Sharing Plugin](https://github.com/NoahY/q2a-share) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds social sharing buttons to question pages.
 *   [Sort Answers](https://github.com/amiyasahu/q2a-sort-answers) by [Amiya Sahu](http://amiyasahu.com/). Allows answers on a question page to be sorted by oldest, newest and highest voted.
