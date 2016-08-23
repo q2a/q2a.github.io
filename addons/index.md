@@ -115,6 +115,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 *   [BBCode Plugin](http://sourceforge.net/projects/iyesus.u/files/) by Yared Getachew of [Iyesus](http://iyesus.com/). Allows posts to be created using [BBCode](http://en.wikipedia.org/wiki/BBCode) format.
 *   [Code Prettifier](https://github.com/amiyasahu/q2a-code-prettify) by [Amiya Sahu](http://amiyasahu.com/). Code syntax highlighting with themes, based on [Google Code Prettify](https://code.google.com/p/google-code-prettify/).
+*   [CK Editor Modified](https://github.com/arjunsuresh/ckeditor-Q2A) by [Arjun Suresh](http://gateoverflow.in/user/Arjun). A modified version of ckeditor which includes MathJax editing and also Google Code Pretiffy. For rendering of both [this plugin](https://github.com/arjunsuresh/mathjax) is required.
 *   [Embed Youtube Plugin](https://github.com/NoahY/q2a-embed) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Converts links to YouTube videos into embedded videos when displaying questions, answers or comments.
 *   [Express Editor](https://github.com/amiyasahu/q2a-express-editor) by [Amiya Sahu](http://amiyasahu.com/). Recent version of [CKEditor](http://ckeditor.com/) bundled with [Ace Editor](http://ace.c9.io/) for smooth code editing.
 *   [Markdown Editor Plugin](http://codelair.co.uk/2011/markdown-editor-plugin-q2a/) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). [Markdown](http://en.wikipedia.org/wiki/Markdown) is a simple markup format that is readable as plain text.
