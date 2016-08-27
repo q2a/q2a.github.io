@@ -15,7 +15,6 @@ The language files below are marked by the corresponding Question2Answer version
 
 *   [Q2A 1.7.x - Arabic (العربية)](https://github.com/alnnasr/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
 *   [Q2A 1.7.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.7-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
-*   [Q2A 1.7.x - Bulgarian (Български)](http://www.investor-ad.com/opensource/question2answer-1.7-lang-bg.zip) by Nikolay Hamov @ [Investor AD, Bulgaria](http://www.investor-ad.com/).
 *   [Q2A 1.7.x - Catalan (Català)](https://github.com/pau-minoves/q2a-catalan-translation) by Lluís Minoves @ [Com Seria](http://com.seria.cat/).
 *   [Q2A 1.7.x - Chinese Simplified (简体中文)](http://androidren.com/download/qa_lang/zh1_7_x.zip) by [Fish](http://wx.fanfau.com), updated by forlong401 @ [Androidren](http://androidren.com/).
 *   [Q2A 1.7.x - Czech (Čeština)](http://www.question2answer.org/third-party/question2answer-1.7-language-cs.zip) by Ellcupakabra @ [Poradna online](http://czporadna.cz/).
@@ -79,14 +78,12 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 *   [Donut](https://github.com/amiyasahu/Donut) (responsive) by [Amiya Sahu](http://amiyasahu.com/).
 *   [Ejemplo de](http://www.ejemplode.com/q2a.zip) by Mauricio @ [Ejemplo de](http://www.ejemplode.com/preguntas/).
 *   [Esteem Theme](http://qa-themes.com/shop/steem-theme) (responsive) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
-*   [Facebook-style Theme](http://www.askoverflow.com/internet/facebook-style-question2answer-template/) by Robin Sharaya @ [Gumdi.com](http://www.gumdi.com/).
 *   [Google-style Mobile Theme](https://github.com/NoahY/q2a-google-mobile-theme) by [NoahY](http://www.question2answer.org/qa/user/NoahY).
 *   [IdeaBox Theme](http://qa-themes.com/shop/ideabox) (responsive) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
 *   [Metro Theme](https://github.com/Towhidn/Q2A-Metro-Theme) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
 *   [Minimalist Answer](http://www.question2answer.org/qa/30250/theme-minimalist-answer-light-weight-social-enabled-theme) by [Digitizor Media](http://www.digitizormedia.com/).
 *   [Mobile Theme](https://github.com/NoahY/q2a-mobile-theme) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Before Q2A 1.5, use the [Theme Switcher Plugin](https://github.com/NoahY/q2a-theme-switcher) to automatically switch themes for mobile users.
 *   [Parchment Theme](https://github.com/NoahY/q2a-parchment-theme) by [NoahY](http://www.question2answer.org/qa/user/NoahY).
-*   [Pixel n Grain Themes](http://store.q2amarket.com/blog/store/products/category/free-theme/) (Dark and Light) by [Q2A Market](http://www.q2amarket.com).
 *   [Sharp](http://qa-themes.com/shop/sharp-theme) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
 *   [Snow Extended](http://store.q2amarket.com/blog/store/products/category/free-theme/) (Light and Dark) by [Q2A Market](http://www.q2amarket.com).
 *   [Studio](http://qa-themes.com/shop/studio-theme) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
@@ -100,9 +97,9 @@ You can also [create your own themes](/themes/) using CSS only, or (optionally) 
 
 ## Clients
 
-There is now a [Q2A client for Android](https://github.com/NoahY/q2android), created by [NoahY](http://www.question2answer.org/qa/user/NoahY), and an [updated Q2A Android client](https://github.com/arjunsuresh/qaoverflow) by [Arjun Suresh](http://armi.in/arjun/).
+There is now a [Q2A client for Android](https://github.com/NoahY/q2android), created by [NoahY](http://www.question2answer.org/qa/user/NoahY), and an [updated Q2A Android client](https://github.com/arjunsuresh/qaoverflow) by [Arjun Suresh](http://gateoverflow.in/user/Arjun/).
 
-Both require the [XML-RPC](https://github.com/NoahY/q2a-xml-rpc) plugin to be installed on the Q2A site you're using.
+Both require the [XML-RPC](https://github.com/arjunsuresh/q2a-xml-rpc) plugin to be installed on the Q2A site you're using with permission given to users in Admin page.
 
 ## Plugins
 
@@ -118,9 +115,11 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 *   [BBCode Plugin](http://sourceforge.net/projects/iyesus.u/files/) by Yared Getachew of [Iyesus](http://iyesus.com/). Allows posts to be created using [BBCode](http://en.wikipedia.org/wiki/BBCode) format.
 *   [Code Prettifier](https://github.com/amiyasahu/q2a-code-prettify) by [Amiya Sahu](http://amiyasahu.com/). Code syntax highlighting with themes, based on [Google Code Prettify](https://code.google.com/p/google-code-prettify/).
+*   [CK Editor Modified](https://github.com/arjunsuresh/ckeditor-Q2A) by [Arjun Suresh](http://gateoverflow.in/user/Arjun). A modified version of ckeditor which includes MathJax editing and also Google Code Pretiffy. For rendering of both [this plugin](https://github.com/arjunsuresh/mathjax) is required.
 *   [Embed Youtube Plugin](https://github.com/NoahY/q2a-embed) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Converts links to YouTube videos into embedded videos when displaying questions, answers or comments.
 *   [Express Editor](https://github.com/amiyasahu/q2a-express-editor) by [Amiya Sahu](http://amiyasahu.com/). Recent version of [CKEditor](http://ckeditor.com/) bundled with [Ace Editor](http://ace.c9.io/) for smooth code editing.
 *   [Markdown Editor Plugin](http://codelair.co.uk/2011/markdown-editor-plugin-q2a/) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). [Markdown](http://en.wikipedia.org/wiki/Markdown) is a simple markup format that is readable as plain text.
+*   [Miranda](http://www.question2answer.org/qa/51849/tinymcewrapper-miranda-updated-most-powerful-editor-joins) [Tinymcse Wrapper](https://www.tinymce.com/) by Don Shakespeare. Adds Tinymcse to be used across posts as well as other text areas like messages, wall posts and is higly customizable.
 *   [Prevent Simultaneous Edits](https://github.com/q2apro/q2apro-prevent-simultaneous-edits) by [q2apro.com](http://www.q2apro.com/). Prevent two users editing the same post simultaneously. Also [forked](https://github.com/ElephantsGroup/q2a-prevent-simultaneous-edits) by [Jalal Jaberi](https://github.com/ElephantsGroup).
 *   [SCEditor Plugin](http://www.q2apro.com/plugins/sceditor) by [q2apro.com](http://www.q2apro.com/). Provides [SCEditor](http://www.sceditor.com) as a WYSIWYG rich text editor. Some functionality requires the Premium version.
 *   [Shortcode Plugin](https://github.com/NoahY/q2a-shortcode) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows posts to be displayed with text substitutions, including support for regular expressions.
@@ -129,6 +128,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ### Integration with other products
 
+*   [Ajax Chat](https://github.com/arjunsuresh/chat) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a sidebar widget and a page showing AJAX chat which is responsive and also has a log page for searching across old chats. There is a separate chat room for each category of Q2A.
 *   [Amazon SES Email](https://github.com/fauguste/qa-mail-ses) by Frédéric AUGUSTE. Sends outgoing emails through [Amazon SES](http://aws.amazon.com/ses/) (Simple Email Service) rather than SMTP.
 *   [BuddyPress Integration](https://github.com/NoahY/q2a-buddypress) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Basic integration with the [BuddyPress](http://buddypress.org/) social networking plugin for [WordPress](http://wordpress.org/).
 *   [CloudFlare User IP](https://github.com/InfinityLF/q2a-cloudflare) by [InfinityLF](https://github.com/InfinityLF). Get visitors' real IP address instead of the IP address of the [CloudFlare](http://www.cloudflare.com) proxy.
@@ -138,6 +138,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [External Categories and Tags](http://www.question2answer.org/third-party/question2answer-external-cats-tags.zip) by Mélanie Gauthier of [Trisotech](http://www.trisotech.com/). Some modifications to enable integration with your existing database of categories and tags (in the same style as single sign-on).
 *   [Facebook Like Box](https://github.com/amiyasahu/q2a-facebook-like-box) by [Amiya Sahu](http://amiyasahu.com/). Basic widget for displaying a [Facebook](http://www.facebook.com/) like box.
 *   [Google Adsense Async](https://github.com/ganbox/ganbox-async-adsense) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Widget for displaying Google AdSense ads with asynchronous JavaScript code.
+*   [Google Custom Search](https://github.com/arjunsuresh/q2a-google-search) by [Arjun Suresh](http://gateoverflow.in/user/Arjun). Replaces Q2A's default search functionality with [Google Custom Search](https://cse.google.com/cse/all). Useful for searching across a network of Q2A sites and also if you are using blogs in Q2A.
 *   [Google Plus Badge](https://github.com/amiyasahu/q2a-google-plus-badge) by [Amiya Sahu](http://amiyasahu.com/). Basic widget for displaying a [Google Plus](https://plus.google.com/) badge.
 *   [HipChat Notifications](https://github.com/jhubert/qa-hipchat-notifications) by [Jeremy Baker](https://github.com/jhubert). Sends notifications to a [HipChat](https://www.hipchat.com/) room about new questions or answers.
 *   [IMAP Login](https://github.com/josebmera/q2a-imap-login) by Jose Mª Bermudo Mera. Replaces the Q2A login form with authentication against an email server via IMAP.
@@ -152,12 +153,11 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Proxy SSO](https://github.com/larrykluger/Question-2-Answer-Proxy-SSO-Plugin) by Larry Kluger of [Master Agenda](http://www.masteragenda.com/). Lets your main website serve as a single sign-on authentication system for Q2A.
 *   [Socialcast Notifications](https://github.com/luxbet/qa-socialcast-notifications) by [Wei Feng](https://github.com/windix). Posts on the [Socialcast](http://www.socialcast.com) community platform when a new question is asked.
 *   [uLogin Login Plugin](https://github.com/saxap/ulogin-for-q2a) by [Sergey Astafev](http://dontforget.pro/). Allows logging in via [uLogin](http://ulogin.ru), which supports many identity providers popular in Russia.
-*   [XML-RPC Server](https://github.com/NoahY/q2a-xml-rpc) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows access to Q2A sites via the XML-RPC protocol, also used by the Android client.
+*   [XML-RPC Server](https://github.com/arjunsuresh/q2a-xml-rpc) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://gateoverflow.in/user/Arjun). Allows access to Q2A sites via the XML-RPC protocol, also used by the Android client.
 
 ### Additional page types
 
-*   [Best Users per Month](https://github.com/q2apro/q2apro-best-users-per-month-free) by [q2apro.com](http://www.q2apro.com/). Displays the users with the most points each month. Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup).
-*   [Blog Post Plugin](http://siro.me.ke/qtoa) by [Jackson Siro](http://www.question2answer.org/qa/user/jaxila). Allows registered users to maintain an online journal on your Q2A site.
+*   [Best Users per Month](https://github.com/q2apro/q2apro-best-users-per-month-free) by [q2apro.com](http://www.q2apro.com/). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup).
 *   [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers.
 *   [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 *   [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
@@ -178,13 +178,11 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Most Active Users](https://github.com/q2apro/q2apro-most-active-users) by [q2apro.com](http://www.q2apro.com/). Shows a list of users who were most active in the past week or month.
 *   [Online User Count](http://question2answer-farsi.com/files/plugins/en/show-online-user-count.zip) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Shows a list of users who are currently online as well as total visitors.
 *   [Popular Questions](http://www.q2apro.com/plugins/popular-questions) by [q2apro.com](http://www.q2apro.com/). Shows a list of the most viewed questions.
-*   [Publisher Tools (Ads)](http://www.lukehuffey.com/plugins-gallery/question2answer/) by [Luke Huffey](http://www.lukehuffey.com/). Easy embedding of ad networks like [Lijit](http://www.lijit.com/) and [Chitika](http://chitika.com/) on multiple pages.
 *   [Random Question Widget](https://github.com/NoahY/qa-random-question) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Displays a random question in the sidebar.
 *   [Recent Events Widget](https://github.com/q2apro/q2apro-recent-events-widget) by [q2apro.com](http://www.q2apro.com/). Displays all recent events in the sidebar or main area.
 *   [Recent Questions Widget](http://www.q2amarket.com/market/q2am-recent-questions/) by [Q2A Market](http://www.q2amarket.com/). Shows a list of recent questions in the sidebar or other locations.
 *   [RSS Feed Widget](https://github.com/mbentley3123/q2a-rss-feed) by [Mark Bentley](http://BentleyDesigns.thebentleys.ca/). Displays posts from an RSS feed in the sidebar.
 *   [Social Share](https://github.com/amiyasahu/q2a-social-share) by [Amiya Sahu](http://amiyasahu.com/). Adds clickable social sharing buttons below questions.
-*   [Social Widget](http://rahularyan.com/ra-social-q2a-social-widget/) by [Rahul Aryan](http://www.rahularyan.com/). Easily add any social site links to your site.
 *   [Tab Widget](https://github.com/Towhidn/Q2A-Tab-Widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows popular and recent questions in two tabs, responsive design.
 *   [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
 *   [Twitter Widget](https://github.com/Towhidn/q2a-twitter) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows recent tweets from your twitter account.
@@ -195,6 +193,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Advanced Tag Descriptions](https://github.com/Towhidn/q2a-tag-descriptions) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Add titles, icons and HTML descriptions to your tags.
 *   [Accept Rate Plugin](https://github.com/NoahY/q2a-accept-rate) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Shows the percentage of questions asked by a user which had an answer selected as the best.
 *   [Ajax User Search](http://www.q2apro.com/plugins/usersearch) by [q2apro](http://www.q2apro.com/). Adds a live search box at the top of the users page to search users by username.
+*   [Answer Hide](https://github.com/arjunsuresh/q2a-answerhide) by [Arjun](http://gateoverflow.in/user/Arjun). Adds an option in user profile to disable answer list by default and allows viewing on button click. Useful for educational sites.  
 *   [Ask Notices Plugin](https://github.com/svivian/q2a-ask-notices) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays warnings/hints for users asking questions with specific keywords.
 *   [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
 *   [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
@@ -202,11 +201,14 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 *   [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
 *   [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
+*   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 *   [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges.
 *   [Social Sharing Plugin](https://github.com/NoahY/q2a-share) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds social sharing buttons to question pages.
 *   [Sort Answers](https://github.com/amiyasahu/q2a-sort-answers) by [Amiya Sahu](http://amiyasahu.com/). Allows answers on a question page to be sorted by oldest, newest and highest voted.
+*   [Tag Search](https://github.com/arjunsuresh/tag-search) by [Arjun](http://gateoverflow.in/user/Arjun). Allows tags to be searched via AJAX and with auto complete.
 *   [Tag Descriptions Plugin](http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial](/plugins/tutorial/). Allows tag descriptions to be shown on tag pages and in tooltips.
-*   [Theme Switcher Plugin](https://github.com/NoahY/q2a-theme-switcher) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to choose their own theme on their profile page.
+*   [Theme Switcher Plugin](https://github.com/arjunsuresh/q2a-theme-switch) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://gateoverflow.in/user/Arjun). Allows users to choose their own theme on their profile page for normal as well as mobile view.
+*   [Top Searches](https://github.com/arjunsuresh/q2a-top-search) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget to display the top searched words. Also have an option to display top seacrhed tags if using [Tag Search](https://github.com/arjunsuresh/tag-search) plugin.
 *   [User Signatures Plugin](https://github.com/NoahY/q2a-signatures) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to define a signature for all of their posts.
 *   [Warn on Leave](https://github.com/q2apro/q2apro-warn-on-leave) by [q2apro.com](http://www.q2apro.com/). Warns users before leaving a page with text they have entered (also support WYSIWYG editor).
 
