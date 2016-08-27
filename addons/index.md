@@ -187,6 +187,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
 *   [Twitter Widget](https://github.com/Towhidn/q2a-twitter) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows recent tweets from your twitter account.
 *   [Widget Anywhere Plugin](https://github.com/svivian/q2a-widget-anywhere) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Allows custom content to be added on any page, in a variety of locations.
+*   [Simple Ads Manager](https://github.com/ProThoughts/q2a-simple-ads-manager) by [ProThoughts](http://ProThoughts.com). Allow you to add advertisements in [listed spots](https://github.com/ProThoughts/q2a-simple-ads-manager). You can use Google adsense or any HTML ad code.
 
 ### User interface
 
