@@ -179,6 +179,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ### Widgets
 *   [Breadcrumbs Widget](https://github.com/amiyasahu/q2a-breadcrumbs) by [Amiya Sahu](http://amiyasahu.com/). Displays navigational breadcrumbs showing the path to the currently viewed page.
+*   [Category Description](https://github.com/arjunsuresh/categorydescription) by [Arjun](http:\gateoverflow.in/user/Arjun). Allows HTML description to be added for Categories which gets displayed on top of Category Pages.
 *   [Feed Widget](https://github.com/Towhidn/Q2A-feed-widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Lists recent items from an external RSS feed. Useful for blog posts, articles, etc...
 *   [Logarithmic Tag Cloud](https://github.com/NoahY/q2a-log-tags) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a list of tags with logarithmic size indicating popularity.
 *   [Most Active Users](https://github.com/q2apro/q2apro-most-active-users) by [q2apro.com](http://www.q2apro.com/). Shows a list of users who were most active in the past week or month.
@@ -203,7 +204,6 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Answer Hide](https://github.com/arjunsuresh/q2a-answerhide) by [Arjun](http://gateoverflow.in/user/Arjun). Adds an option in user profile to disable answer list by default and allows viewing on button click. Useful for educational sites.  
 *   [Ask Notices Plugin](https://github.com/svivian/q2a-ask-notices) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays warnings/hints for users asking questions with specific keywords.
 *   [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
-*   [Category Description](https://github.com/arjunsuresh/categorydescription) by [Arjun](http:\gateoverflow.in/user/Arjun). Allows HTML description to be added for Categories which gets displayed on top of Category Pages.
 *   [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
 *   [Featured Questions](https://github.com/NoahY/q2a-featured) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows featured questions to be kept at the top of question lists.
 *   [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http:\gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
