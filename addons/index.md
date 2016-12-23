@@ -110,8 +110,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ### Major features
 
 *   [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides user badges which recognize users' activities and achievements.
-*   [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http:\gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins. 
-*   [Category Experts](https://github.com/arjunsuresh/q2a-categoryexperts) by [Arjun](http:\gateoverflow.in/user/Arjun). Adds a widget on Category pages showing the best performing users in that category. A good way to identify Category Experts. 
+*   [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http://gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins. 
+*   [Category Experts](https://github.com/arjunsuresh/q2a-categoryexperts) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget on Category pages showing the best performing users in that category. A good way to identify Category Experts. 
 *   [Comment Voting Plugin](https://github.com/NoahY/q2a-comment-voting) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows comments to be voted on, similarly to questions and answers.
 *   [Network Sites Plugin](https://github.com/NoahY/q2a-network) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows the creation of a network of interlinked Q2A sites.
 
@@ -164,7 +164,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ### Additional page types
 
 *   [Best Users per Month](https://github.com/q2apro/q2apro-best-users-per-month-free) by [q2apro.com](http://www.q2apro.com/). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup) which supports Jalali calendar.
-*   [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers. Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http:\gateoverflow.in/user/Arjun). which adds more question filtering options and better styling options. 
+*   [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers. Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http://gateoverflow.in/user/Arjun). which adds more question filtering options and better styling options. 
 *   [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 *   [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
 *   [Edit History](https://github.com/svivian/q2a-edit-history) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Stores all edits to posts and allows users to see what changed. Also [forked](https://github.com/ElephantsGroup/q2a-edit-history) by [Jalal Jaberi](https://github.com/ElephantsGroup).
@@ -172,14 +172,14 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Open Questions Plugin](https://github.com/nakov/q2a-plugin-open-questions) by [Svetlin Nakov](http://www.nakov.com/). Provides a page displaying all questions with no answers and which have not been closed.
 *   [Polls Plugin](https://github.com/NoahY/q2a-poll) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows some questions to be created as polls.
 *   [Print View Plugin](https://github.com/NoahY/q2a-print) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a simplified print view for questions.
-*   [Top Users per Month/Week](https://github.com/arjunsuresh/q2a-topusers-per-month) by [Arjun](http:\gateoverflow.in/user/Arjun). Functionality wise similar to Best Users per Month plugin but has better performance and also has a widget which displays best users per week. Does not require cronjob but works via MySQL scheduler which needs to be enabled on the server. 
+*   [Top Users per Month/Week](https://github.com/arjunsuresh/q2a-topusers-per-month) by [Arjun](http://gateoverflow.in/user/Arjun). Functionality wise similar to Best Users per Month plugin but has better performance and also has a widget which displays best users per week. Does not require cronjob but works via MySQL scheduler which needs to be enabled on the server. 
 *   [User Activity Plus](https://github.com/svivian/q2a-user-activity-plus) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Provides links on user pages to view all of the user's questions and answers.
 *   [User History Plugin](https://github.com/NoahY/q2a-history) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds an activity/points history to the user profile.
 *   [Wiki Plugin](https://github.com/NoahY/q2a-wiki) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a wiki to a Q2A site.
 
 ### Widgets
 *   [Breadcrumbs Widget](https://github.com/amiyasahu/q2a-breadcrumbs) by [Amiya Sahu](http://amiyasahu.com/). Displays navigational breadcrumbs showing the path to the currently viewed page.
-*   [Category Description](https://github.com/arjunsuresh/categorydescription) by [Arjun](http:\gateoverflow.in/user/Arjun). Allows HTML description to be added for Categories which gets displayed on top of Category Pages.
+*   [Category Description](https://github.com/arjunsuresh/categorydescription) by [Arjun](http://gateoverflow.in/user/Arjun). Allows HTML description to be added for Categories which gets displayed on top of Category Pages.
 *   [Feed Widget](https://github.com/Towhidn/Q2A-feed-widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Lists recent items from an external RSS feed. Useful for blog posts, articles, etc...
 *   [Logarithmic Tag Cloud](https://github.com/NoahY/q2a-log-tags) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a list of tags with logarithmic size indicating popularity.
 *   [Most Active Users](https://github.com/q2apro/q2apro-most-active-users) by [q2apro.com](http://www.q2apro.com/). Shows a list of users who were most active in the past week or month.
@@ -194,7 +194,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
 *   [Twitter Widget](https://github.com/Towhidn/q2a-twitter) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows recent tweets from your twitter account.
 *   [Widget Anywhere Plugin](https://github.com/svivian/q2a-widget-anywhere) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Allows custom content to be added on any page, in a variety of locations.
-*   [Simple Ads Manager](https://github.com/ProThoughts/q2a-simple-ads-manager) by [ProThoughts](http://ProThoughts.com). Allow you to add advertisements in [listed spots](https://github.com/ProThoughts/q2a-simple-ads-manager). You can use Google adsense or any HTML ad code. Also [forked](https://github.com/arjunsuresh/q2a-simple-ads-manager) by [Arjun](http:\gateoverflow.in/user/Arjun). to add more options like Ads after first question hiding ads for certain user level and above etc. 
+*   [Simple Ads Manager](https://github.com/ProThoughts/q2a-simple-ads-manager) by [ProThoughts](http://ProThoughts.com). Allow you to add advertisements in [listed spots](https://github.com/ProThoughts/q2a-simple-ads-manager). You can use Google adsense or any HTML ad code. Also [forked](https://github.com/arjunsuresh/q2a-simple-ads-manager) by [Arjun](http://gateoverflow.in/user/Arjun). to add more options like Ads after first question hiding ads for certain user level and above etc. 
 
 ### User interface
 
@@ -206,7 +206,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
 *   [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
 *   [Featured Questions](https://github.com/NoahY/q2a-featured) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows featured questions to be kept at the top of question lists.
-*   [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http:\gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
+*   [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http://gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
 *   [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 *   [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
 *   [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
