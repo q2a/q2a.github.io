@@ -97,11 +97,16 @@ All fields are optional (you can omit any whole line). Here's an example with al
     "license": "Short name of plugin license, e.g. GPLv2",
     "update_uri": "Web address for Q2A to check for updates",
     "min_q2a": "Numerical part only, e.g. 1.3",
-    "min_php": "Numerical part only, e.g. 5.1"
+    "min_php": "Numerical part only, e.g. 5.1",
+    "load_order": "Bootstrap moment in which the plugin will be loaded"
 }
 ```
 
 The `update_uri` key allows you to inform users about new versions of the plugin. Q2A will retrieve the content from the provided URL, and look for metadata in the same format as above. In other words, it should contain a URL to a JSON file. If you are using a public repository such as Github, you can link to the "raw" version of `metadata.json` in your own repo - this way, as soon as you push an updated `metadata.json` to your repo, the admin/plugins page will notify users of the new version.
+
+The `load_order` key was introduced in Q2A 1.8. It can have two possible values that define in which step of the Q2A bootstrap process the plugin is loaded. A plugin is considered "loaded" when its `qa-plugin.php` file is included and executed. It can have the following possible values:
+  * `before_db_init`: the plugin is loaded before any database access is performed. This setting does not allow plugins to be disabled from the `admin/plugins` page and forces them to always be executed. The only real need to use this setting is, most likely, to override how the database should be accessed (e.g., to override the `qa_db_allow_connect()` function that is called early in the bootstrap process).
+  * `after_db_init`: the plugin is loaded after the initial database connection succeeds. This setting allows plugins to be disabled from the `admin/plugins` page. Disabled plugins won't have a single line of code executed (their `qa-plugin.php` file will not be included during the bootstrap process). Enabled plugins will be executed normally.
 
 ### Plugin metadata prior to Q2A 1.7
 
