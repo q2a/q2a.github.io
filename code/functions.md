@@ -11,7 +11,7 @@ Your external code and plugins are free to use any of the 700+ functions defined
 A selected of the most useful functions are described below, grouped by the PHP file in the `qa-include` directory in which they appear. With the exception of `qa-base.php`, which is loaded first, you must include a file as follows before using its functions:
 
 ```php?start_inline=1
-require_once QA_INCLUDE_DIR.'qa-XXX.php';
+require_once QA_INCLUDE_DIR.'qa-XYZ.php';
 ```
 
 Many of these functions take optional additional parameters which are not shown here - please consult the source code for details. Functions which are not marked with a version number are available from Q2A 1.3 or later.
@@ -49,7 +49,7 @@ Many of these functions take optional additional parameters which are not shown 
 *   **`qa_redirect_raw($url)`** performs an HTTP redirect to `$url`, without processing the URL in any way. Generally you should use `qa_redirect()` however this function can be useful for [login modules](/plugins/modules-login/).
 *   **`qa_retrieve_url($url)`** returns the content of remote `$url`, using PHP's `file_get_contents()` or curl functions.
 *   **`qa_opt($name)`** gets the value of the option labelled `$name` from Q2A's internal options storage.
-*   **`qa_opt($name, $value)`** sets the option labelled `$name` to `$value` in Q2A's internal options storage. To prevent interference with Q2A or other plugins, your options should be named using a prefix which is unique to your plugin. Do not use this to store large pieces of content, since all options are retrieved for every Q2A page request - instead, look at `qa-app-blobs.php`.
+*   **`qa_opt($name, $value)`** sets the option labelled `$name` to `$value` in Q2A's internal options storage. To prevent interference with Q2A or other plugins, your options should be named using a prefix which is unique to your plugin. Do not use this to store large pieces of content, since all options are retrieved for every Q2A page request - instead, look at `app/blobs.php`.
 *   **`qa_suspend_event_reports($suspend)`** suspends the reporting of events to event modules if `$suspend` is `true`, and reinstates it if `$suspend` is `false`. This might be useful if you are programmatically creating or modifying a lot of content or other database information, and want to prevent logging and other inappropriate responses to these events.
 *   **`qa_report_event($event, $userid, $handle, $cookieid, $params)`** reports an event to all event modules registered by plugins. The five parameters are passed straight through to the `process_event()` function in each event module.
 
@@ -59,7 +59,7 @@ Many of these functions take optional additional parameters which are not shown 
 *   **`qa_db_query_raw($query)`** runs the raw SQL in `$query` on the Q2A database and returns a PHP result resource. Note that if the query fails due to a MySQL error, Q2A will stop normal execution and start checking the database for problems.
 *   **`qa_db_escape_string($string)`** returns `$string` escaped for safe inclusion in raw SQL.
 *   **`qa_db_query_sub($query, ...)`** runs the SQL in `$query` on the Q2A database after substituting the symbols `^`, `#` and `$`, returning a PHP result resource. This function is the **recommended way to run queries on the Q2A database**, and automatically escapes all substituted parameters for safe SQL. The `^` symbol is substituted for the appropriate Q2A table prefix set in `qa-config.php`, which is `qa_` by default. The `#` and `$` symbols are substituted for numerical and UTF-8 string values respectively, where these values are taken in order from the additional parameters to the function. If you want to retrieve the text from UTF-8 encoded columns from the database, you should use the `BINARY` modifier in front of the column name in your SQL, since Q2A does not explicitly set the character set of the database connection. Note that if the query fails due to a MySQL error, Q2A will stop normal execution and start checking the database for problems.
-*   **`qa_db_single_select($selectspec)`** reads and returns data from the database based on the `$selectspec` parameter. The `$selectspec` parameter defines the columns to be retrieved, the source tables and constraints, arguments for substitution, and the ordering and formatting of the results. It is documented in full in `qa-db.php` and you can see many examples in `qa-db-selects.php`.
+*   **`qa_db_single_select($selectspec)`** reads and returns data from the database based on the `$selectspec` parameter. The `$selectspec` parameter defines the columns to be retrieved, the source tables and constraints, arguments for substitution, and the ordering and formatting of the results. It is documented in full in `qa-db.php` and you can see many examples in `db/selects.php`.
 *   **`qa_db_multi_select($selectspecs)`** reads and returns data from the database for multiple `$selectspecs` simultaneously. Depending on the `QA_OPTIMIZE_*_DB` settings in `qa-config.php`, these may be executed as multiple SQL queries, or as a single query whose output is pulled apart within PHP. The keys of the data in the returned array match those of the `$selectspecs` parameter.
 *   **`qa_db_read_all_assoc($result)`** takes the PHP result resource `$result` returned from a database query, and returns all the resulting data in a nested array. The outer array contains one array element per data row, with keys numbered from zero. Each inner array contains one element per data column, with column names in the keys.
 *   **`qa_db_read_one_assoc($result, $allowempty)`** returns an array containing the first row in the PHP `$result` resource, with named columns. Set `$allowempty` to `true` if an empty result should not cause a fatal Q2A error.
@@ -67,23 +67,23 @@ Many of these functions take optional additional parameters which are not shown 
 *   **`qa_db_read_one_value($result, $allowempty)`** returns the first column of the first row in the PHP `$result` resource. Set `$allowempty` to `true` if an empty result should not cause a fatal Q2A error.
 *   **`qa_suspend_update_counts($suspend)`** suspends the updating of various cached counts in the database if `$suspend` is `true`, and reinstates it if `$suspend` is `false`. This might be useful if you are programmatically creating or modifying a lot of content or other database information, and want to speed up the process. Once you have finished with the database modifications, you should use the buttons at the bottom of the 'Stats' page of the 'Admin' panel to recalculate all counts.
 
-## Cookie management in `qa-app-cookies.php`
+## Cookie management in `app/cookies.php`
 
 *   **`qa_cookie_get()`** returns a string which identifies the user (not necessarily logged in) making the current Q2A request, if one is available from a browser cookie. Otherwise, it returns `null`.
 *   **`qa_cookie_get_create()`** works like `qa_cookie_get()`, but if a cookie is not available, a new one is created, set in the user's browser, and returned from the function.
 
-## Sending notifications in `qa-app-emails.php` and `qa-util-emailer.php`
+## Sending notifications in `app/emails.php`
 
 *   **`qa_send_notification($userid, $email, $handle, $subject, $body, $subs)`** sends an email to user `$userid`. You can provide the user's `$email` and/or `$handle`, or pass `null` for Q2A to retrieve these from the database. Several substitutions are performed on the `$subject` and `$body`. For example `^site_title` will be replaced by the name of the Q2A site set in the admin interface, and `^handle` and `^email` will be replaced by the recipient's handle or email. You can also pass additional substitutions in the array parameter `$subs` - each key in `$subs` will be substituted for its corresponding value.
 *   **`qa_suspend_notifications($suspend)`** suspends the sending of notifications to users if `$suspend` is `true`, or reinstates it if `$suspend` is `false`. This might be useful if you are programmatically creating or modifying content or other database information and want to avoid sending inappropriate emails.
 *   **`qa_send_email($params)`** sends an email as specified by the array `$params` and returns whether the operation was successful from the server's perspective (this does not guarantee delivery). The `$params` array should contain the elements `'fromemail'` (sender email), `'fromname'` (sender name), `'toemail'` (recipient email), `'toname'` (recipient name), `'subject'` (subject line), `'body'` (UTF-8 encoded email body) and `'html'` (`true` if `$params['body']` is HTML-formatted, `false` otherwise).
 
-## Option management in `qa-app-options.php`
+## Option management in `app/options.php`
 
 *   **`qa_get_options($names)`** returns an array mapping all the options in the `$names` array to their values. This may be easier than calling `qa_opt()` from `qa-base.php` many times.
 *   **`qa_using_tags()`** and **`qa_using_categories()`** respectively return whether Q2A is using tags or categories to classify questions. Note that it is possible to use both tags and categories simultaneously, or to use neither.
 
-## Post management in `qa-app-posts.php` and `qa-app-post-create.php`
+## Post management in `app/posts.php` and `app/post-create.php`
 
 Note that all `qa_post_...()` functions will send the appropriate email notifications and event reports, as well as update database indexes and counts. This can be prevented with the `qa_suspend...()` functions, described elsewhere on this page.
 
@@ -98,17 +98,17 @@ Note that all `qa_post_...()` functions will send the appropriate email notifica
 *   **`qa_post_get_full($postid)`** retrieves the full information from the database for `$postid`, returning it in an array.
 *   **`qa_suspend_post_indexing($suspend)`** suspends the indexing (and unindexing) of posts in the database if `$suspend` is `true`, and reinstates it if `$suspend` is `false`. This might be useful if you are programmatically creating or modifying a lot of content, and want to speed up the process, leaving Q2A's search results out of date. Once you have finished with the database modifications, you should use the button at the bottom of the 'Stats' page of the 'Admin' panel to reindex all posts.
 
-## User management in `qa-app-users.php`
+## User management in `app/users.php`
 
 *   **`qa_get_logged_in_userid()`** returns the userid of the currently logged in Q2A user, or `null` if no user is logged in.
 *   **`qa_get_logged_in_handle()`** returns the handle/username of the currently logged in user, or `null` if no user is logged in.
 *   **`qa_get_logged_in_email()`** returns the email address of the currently logged in user, or `null` if no user is logged in.
-*   **`qa_get_logged_in_flags()`** returns flags for the currently logged in user, or `null` if no user is logged in. The flag bit masks are defined in the `QA_USER_FLAGS_*` constants at the top of `qa-app-users.php`. If the `QA_USER_FLAGS_USER_BLOCKED` or `QA_USER_FLAGS_MUST_CONFIRM` (Q2A 1.5+) or `QA_USER_FLAGS_MUST_APPROVE` (Q2A 1.6+) bit is set, the user should be prevented from performing any actions that modify information in the database.
-*   **`qa_get_logged_in_level()`** returns a number representing the privilege level of the currently logged in user, or `null` if no user is logged in. You can compare this against the `QA_USER_LEVEL_*` constants defined at the top of `qa-app-users.php`.
+*   **`qa_get_logged_in_flags()`** returns flags for the currently logged in user, or `null` if no user is logged in. The flag bit masks are defined in the `QA_USER_FLAGS_*` constants at the top of `app/users.php`. If the `QA_USER_FLAGS_USER_BLOCKED` or `QA_USER_FLAGS_MUST_CONFIRM` (Q2A 1.5+) or `QA_USER_FLAGS_MUST_APPROVE` (Q2A 1.6+) bit is set, the user should be prevented from performing any actions that modify information in the database.
+*   **`qa_get_logged_in_level()`** returns a number representing the privilege level of the currently logged in user, or `null` if no user is logged in. You can compare this against the `QA_USER_LEVEL_*` constants defined at the top of `app/users.php`.
 *   **`qa_get_logged_in_points()`** returns the points of the currently logged in user, or `null` if no user is logged in.
 *   **`qa_is_logged_in()`** returns `true` if a user is logged in, `false` otherwise. Requires Q2A 1.5+.
 *   **`qa_handle_to_userid($handle)`** returns the userid for the user identified by `$handle` or `null` if no user matches. This requires Q2A 1.6+, but see also `qa_handles_to_userids(...)` and `qa_userids_to_handles(...)` which were added in Q2A 1.5.
-*   **`qa_user_level_for_post($post)`** returns the privilege level of the current user for `$post`, which contains information about a post retrieved from the database (e.g. via `qa_post_get_full(...)` in `qa-app-posts.php`). This can be higher than the level returned by `qa_get_logged_in_level(...)` if the user has special privileges in the post's category. Requires Q2A 1.6+.
+*   **`qa_user_level_for_post($post)`** returns the privilege level of the current user for `$post`, which contains information about a post retrieved from the database (e.g. via `qa_post_get_full(...)` in `app/posts.php`). This can be higher than the level returned by `qa_get_logged_in_level(...)` if the user has special privileges in the post's category. Requires Q2A 1.6+.
 *   **`qa_user_moderation_reason()`** returns whether the current user should have their new content queued for moderation. If moderation is required, one of the strings `'login'`, `'approve'` (Q2A 1.6+), `'confirm'` or `'points'` will be returned, with meanings explained in the function's documentation. If moderation is not required, the function returns `false`. Requires Q2A 1.5+.
 *   **`qa_get_form_security_code($action)`** can be used to prevent cross-site request forgery (CSRF) attacks on your forms. Pass an arbitrary string specific to your form in `$action` and this function returns a code which should be placed in a hidden field in your form. Then call **`qa_check_form_security_code($action, $value)`** when your form is submitted, with the same `$action` as before, and the `$value` obtained from the hidden field. If `$value` is valid and the request is safe, the function returns `true`. Otherwise, it returns `false` and logs the reason for the mismatch in your server's `error_log` file, if the reason is suspicious. Requires Q2A 1.6+.
 *   **`qa_get_avatar_blob_url($blobId, $size, $absolute)`** returns the URL to the given `$blobId` constraining it in width and height to the given `$size`. Requires Q2A 1.8+.
@@ -116,21 +116,21 @@ Note that all `qa_post_...()` functions will send the appropriate email notifica
 *   **`qa_get_user_avatar_source($flags, $email, $blobId)`** returns where the avatar will be fetched from for the given user `$flags`. The possible return values are `'gravatar'` for an avatar that will be fetched from Gravatar, `'local-user'` for an avatar fetched locally from the user's profile, `'local-default'` for an avatar fetched locally from the default avatar blob ID, and `NULL` if the avatar could not be fetched from any of these sources. Requires Q2A 1.8+.
 *   **`qa_get_user_avatar_url($flags, $email, $blobId, $size, $absolute)`** returns the avatar URL, either from Gravatar or from the given `$blobId`, constrained to `$size` pixels. Requires Q2A 1.8+.
 
-## Large object management in `qa-app-blobs.php`
+## Large object management in `app/blobs.php`
 
-*   **`qa_create_blob($content, $format)`** creates a new binary large object (BLOB) in the Q2A database or on disk and returns its `$blobid`, or `null` upon failure. The `$content` may contain up to 16 Mb of arbitrary data in any format, and the `$format` should contain the appropriate corresponding file extension, e.g. `'jpeg'`, `'gif'`, `'png'`, `'txt'`, `'doc'`, `'xls'`, `'pdf'`. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_create(...)` in `qa-db-blobs.php`.
-*   **`qa_read_blob($blobid)`** reads the object identified by `$blobid` from the database or disk and returns it in an array with the keys `'content'` and `'format'`. If the BLOB does not exist, it returns `null` instead. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_read(...)` in `qa-db-blobs.php`.
-*   **`qa_delete_blob($blobid)`** deletes the object identified by `$blobid` from the database, if it exists. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_delete(...)` in `qa-db-blobs.php`.
-*   **`qa_blob_exists($blobid)`** returns whether there is an object identified by `$blobid`. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_exists(...)` in `qa-db-blobs.php`.
+*   **`qa_create_blob($content, $format)`** creates a new binary large object (BLOB) in the Q2A database or on disk and returns its `$blobid`, or `null` upon failure. The `$content` may contain up to 16 Mb of arbitrary data in any format, and the `$format` should contain the appropriate corresponding file extension, e.g. `'jpeg'`, `'gif'`, `'png'`, `'txt'`, `'doc'`, `'xls'`, `'pdf'`. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_create(...)` in `db/blobs.php`.
+*   **`qa_read_blob($blobid)`** reads the object identified by `$blobid` from the database or disk and returns it in an array with the keys `'content'` and `'format'`. If the BLOB does not exist, it returns `null` instead. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_read(...)` in `db/blobs.php`.
+*   **`qa_delete_blob($blobid)`** deletes the object identified by `$blobid` from the database, if it exists. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_delete(...)` in `db/blobs.php`.
+*   **`qa_blob_exists($blobid)`** returns whether there is an object identified by `$blobid`. This function was added in Q2A 1.6\. For earlier versions of Q2A, use `qa_db_blob_exists(...)` in `db/blobs.php`.
 *   **`qa_get_blob_url($blobid, $absolute)`** returns a URL which can be used to view or download `$blobid`. If `$absolute` is `false`, this URL will be relative to the current Q2A page being requested, otherwise the URL will be absolute.
 
-## Upload management in `qa-app-upload.php` (Q2A 1.6+)
+## Upload management in `app/upload.php` (Q2A 1.6+)
 
 *   **`qa_get_max_upload_size()`** returns the maximum size in bytes of a BLOB that can be uploaded by a user, taking into account database constraints and PHP's `upload_max_filesize` parameter.
 *   **`qa_upload_file($localfilename, $sourcefilename)`** allows a file to be uploaded into Q2A's BLOB (large object) storage. Pass the `$localfilename` where the file is currently stored on the server (temporarily) and the `$sourcefilename` of the original file on the user's computer. If you are using PHP's usual file upload mechanism, these are obtained from `$_FILES[..]['tmp_name']` and `$_FILES[..]['name']` respectively. Additional parameters allow the upload to be restricted by size or to images only, and for images to be scaled. If an error occurred, the function returns an array with key `'error'` containing the error string. Otherwise it returns an array with an element `'blobid'` containing the id of the BLOB created and `'bloburl'` containing the URL that can be used to view or download the blob.
 *   **`qa_upload_file_one()`** uploads a file into Q2A's BLOB (large object) storage, taking the first element of PHP's `$_FILES` array automatically. It returns the same array of elements as `qa_upload_file()`.
 
-## Metadata management in `qa-db-metas.php` (Q2A 1.5+)
+## Metadata management in `db/metas.php` (Q2A 1.5+)
 
 *   **`qa_db_usermeta_set($userid, $key, $value)`** sets metadata `$key` for user `$userid` to `$value`. Each user can only have a single piece of metadata with a particular key. Keys beginning with `qa_` are reserved for the Q2A core.
 *   **`qa_db_usermeta_clear($userid, $key)`** clears metadata `$key` for user `$userid`. An array of keys can also be passed in `$key`, in which case the metadata for every key is removed.
@@ -139,24 +139,24 @@ Note that all `qa_post_...()` functions will send the appropriate email notifica
 *   The functions **`qa_db_categorymeta_set($categoryid, $key, $value)`**, **`qa_db_categorymeta_clear($categoryid, $key)`** and **`qa_db_categorymeta_get($categoryid, $key)`** work the same way for metadata on categories.
 *   The functions **`qa_db_tagmeta_set($tag, $key, $value)`**, **`qa_db_tagmeta_clear($tag, $key)`** and **`qa_db_tagmeta_get($tag, $key)`** work the same way for metadata on tags, where `$tag` is the text of a tag.
 
-## User notice management in `qa-db-notices.php` (Q2A 1.5+)
+## User notice management in `db/notices.php` (Q2A 1.5+)
 
 *   **`qa_db_usernotice_create($userid, $content, $format, $tags)`** creates a new notice to be displayed to user `$userid` and returns its `noticeid`. The notice will appear at the top of every page until the user dismisses it - this also deletes it from the database. The `$content` and `$format` parameters describe the content of the notice together - if `$format` is `''` then `$content` should be in plain UTF-8 text, and if `$format` is `'html'` then `$content` should be in UTF-8 HTML. You can use the `$tags` parameter to add some additional information to the notice which is stored in the database but not displayed to the user.
 *   **`qa_db_usernotice_delete($userid, $noticeid)`** deletes notice `$noticeid` for user `$userid`, if it exists in the database.
 *   **`qa_db_usernotices_list($userid)`** returns a nested array describing the notices which are being stored and displayed for user `$userid`. Each element in the returned array contains an array with three labelled values - `'noticeid'`, `'tags'` (as passed when the notice was created) and `'created'` (a Unix timestamp of the notice creation time).
 
-## Array manipulation in `qa-util-sort.php`
+## Array manipulation in `util/sort.php`
 
 *   **`qa_sort_by(&$array, $by1)`** sorts the nested array `$array` in place, by comparing the sub-element with key `$by1` of each inner array within `$array`. For example, if `$array=array(array('n'=>1,'w'=>'dog'), array('n'=>2,'w'=>'cat'))` then `qa_sort_by(&$array, 'n')` would leave `$array` unchanged, whereas `qa_sort_by(&$array, 'w')` would reverse its order. An additional parameter `$by2` can also be passed, to allow an additional comparison in cases where the first key matches.
 *   **`qa_array_insert(&$array, $beforekey, $addelements)`** inserts all the elements from the array `$addelements` into `$array`, preserving all keys in both arrays. The new elements are positioned together before key `$beforekey` in `$array` and their order is preserved. If `$beforekey` cannot be found in `$array`, the elements are appended at the end instead. Requires Q2A 1.4.2+.
 *   **`qa_array_reorder(...)`** allows some of the elements within an array to be moved together and/or reordered relative to each other. Please see the source code for documentation. Requires Q2A 1.6+.
 
-## String manipulation in `qa-util-string.php`
+## String manipulation in `util/string.php`
 
 *   **`qa_string_to_words($string)`** breaks `$string` up into words, and returns them in lower case in an array. The function contains several additional parameters that provide more control over this process - please see the source code.
 *   **`qa_string_remove_accents($string)`** returns `$string` with Roman accents removed, e.g. `mêlée` to `melee`. Requires Q2A 1.4+.
 *   **`qa_tags_to_tagstring($tags)`** takes an array of tags, and returns the string to be stored for those tags in the database.
 *   **`qa_tagstring_to_tags($tags)`** takes a list of tags from the database, and returns it as an array of tags.
 *   **`qa_shorten_string_line($string, $length)`** converts `$string` to a single line then removes words from the middle in order to make the total number of characters no more than `$length`. Useful for tooltips, etc...
-*   **`qa_block_words_replace($string, $wordspreg)`** replaces any words in `$string` censored by the site administrator with asterisks. Pass the output of `qa_get_block_words_preg()` (from `qa-app-options.php`) in the `$wordspreg` parameter.
+*   **`qa_block_words_replace($string, $wordspreg)`** replaces any words in `$string` censored by the site administrator with asterisks. Pass the output of `qa_get_block_words_preg()` (from `app/options.php`) in the `$wordspreg` parameter.
 *   **`qa_strlen($string)`**, **`qa_strtolower($string)`** and **`qa_substr($string, $start, $length)`** are wrappers for the standard and multibyte PHP string functions with similar names. If PHP was compiled with multibyte string support, PHP's `mb_*(...)` functions will be used with UTF-8 as the encoding for the `$string` parameter. Otherwise `$string` will be treated as ASCII.
