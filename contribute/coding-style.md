@@ -6,15 +6,11 @@ title: "Question2Answer Coding Style guidelines"
 
 # Question2Answer Coding Style guidelines
 
-From 1.7 onwards a new coding style is being implemented that is more in line with other projects. The core codebase is gradually being refactored, and any new code should use the guidelines below. When making changes it's encouraged to update the style of the surrounding code, e.g. the rest of the function being modified.
-
-However, **please keep style-only changes to a separate commit!** For example if you fix a bug, do that first in one commit, then optionally reformat the rest of the function's code and perform a second commit.
-
-## Guidelines
+From 1.7 onwards a new coding style has been implemented that is more in line with other projects. All PHP code should use these guidelines:
 
 - PHP code should start with `<?php` (almost always the very first line). The closing tag `?>` should be omitted to avoid accidental output.
 - PHP files should use UTF-8 encoding without BOM (this is usually default in most text editors).
-- Trailing whitespace (tabs or spaces at the end of lines) should be trimmed on save. Any advanced text editor should be able to do this. (For Sublime Text you can add the option `"trim_trailing_white_space_on_save": true` to your preferences. In Notepad++ you can press Alt+Shift+S.)
+- Trailing whitespace (tabs or spaces at the end of lines) should not be present. Any advanced text editor should be able to do this automatically when saving. (For Sublime Text you can add the option `"trim_trailing_white_space_on_save": true` to your preferences. In Notepad++ you can press Alt+Shift+S.)
 - Use tabs for indenting. Each file should start at level 0 (i.e. no indentation).
 - Functions should use a DocBlock-style comment.
 - Operators (`=`, `+` etc) should have a space either side.
@@ -22,20 +18,11 @@ However, **please keep style-only changes to a separate commit!** For example if
 - Opening braces for classes and functions should be on the next line.
 - Opening braces for control structures should be on the same line. All control structures should use braces.
 
-## Examples
+If in doubt, follow the style of the surrounding code.
 
-Here is an example of the old style. Even though the braces are technically optional (the foreach contains only one statement), they should be used here for clarity.
+### Examples
 
-```php?start_inline=1
-foreach ($thingarray as $thing)
-    if (isset($thing['id']))
-        if (strpos($thing['id'], 'Hello')===0)
-            $newthing='Goodbye';
-        elseif ($thing['id']=='World')
-            $newthing='Galaxy';
-```
-
-It should be rewritten as:
+Here is an example of the coding style.
 
 ```php?start_inline=1
 foreach ($thingarray as $thing) {
@@ -43,7 +30,7 @@ foreach ($thingarray as $thing) {
         if (strpos($thing['id'], 'Hello') === 0) {
             $newthing = 'Goodbye';
         } elseif ($thing['id'] == 'World') {
-            $newthing = 'Galaxy';
+            $newerthing = 'Galaxy';
         }
     } else {
         return null;
@@ -60,6 +47,7 @@ class qa_example
      * Adds 1 to the supplied number.
      *
      * @param int $number The number to increment.
+     *
      * @return int Returns the new number.
      */
     public function add_one($number)
@@ -70,6 +58,7 @@ class qa_example
     }
 }
 ```
+
 
 ## New autoloaded classes
 
