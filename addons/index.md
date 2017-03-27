@@ -22,6 +22,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.7.x - Finnish (Suomi)](https://github.com/q2a-suomi/q2a-suomikaannos) by [q2a-suomi](https://github.com/q2a-suomi).
 *   Q2A 1.7.x - French (Français) [older](http://www.question2answer.org/third-party/question2answer-1.7-language-fr.zip) or [newer](https://github.com/mrflos/q2a-lang-fr) by Olivier Seree @ [2cv Q&A](http://2cv.solu.fr), updated by Pierre-Yves Aillet and Florian Schmitt.
 *   [Q2A 1.7.x - Galician (Galego)](http://ftp.cixug.es/pub/q2a/gl.tar.gz) by [Oficina de Software Libre](http://www.cixug.es/).
+*   [Q2A 1.7.x - Georgian (ქართული)](https://github.com/comcoma/question2answerGE) by Giorgi Tsomaia.
 *   [Q2A 1.7.x - German (Deutsch)](https://github.com/ReichardtIT/q2a-lang-de) by Dominik @ [Reichardt Informationstechnik](http://www.reichardt-informationstechnik.de/). Also: [Formal German](http://www.trvb128.at/qa-lang/qa-lang-de-formal-174.zip) by Peter Chiochetti.
 *   [Q2A 1.7.x - Greek (Ελληνικά)](https://github.com/zakkak/qa-lang-el) by [Foivos Zakkak](http://foivos.zakkak.net/). Also see the Greeklish URLs plugin.
 *   [Q2A 1.7.x - Japanese (日本語)](https://github.com/naga0ka/Q2A-Japanese) by [naga0ka](https://github.com/naga0ka).
