@@ -15,6 +15,7 @@ The language files below are marked by the corresponding Question2Answer version
 
 *   [Q2A 1.7.x - Arabic (العربية)](https://github.com/alnnasr/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
 *   [Q2A 1.7.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.7-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
+*   [Q2A 1.7.x - Bulgarian (Български)](https://github.com/pazoff/q2a-lang-bg) by Plamen Vatev(Pazoff) @ [Popitai.me](http://popitai.me).
 *   [Q2A 1.7.x - Catalan (Català)](https://github.com/pau-minoves/q2a-catalan-translation) by Lluís Minoves @ [Com Seria](http://com.seria.cat/).
 *   [Q2A 1.7.x - Chinese Simplified (简体中文)](http://androidren.com/download/qa_lang/zh1_7_x.zip) by [Fish](http://wx.fanfau.com), updated by forlong401 @ [Androidren](http://androidren.com/).
 *   [Q2A 1.7.x - Czech (Čeština)](http://www.question2answer.org/third-party/question2answer-1.7-language-cs.zip) by Ellcupakabra @ [Poradna online](http://czporadna.cz/).
