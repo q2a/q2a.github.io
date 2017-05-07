@@ -35,6 +35,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.7.x - Polish (Polski)](https://github.com/PELock/Question2Answer) by Bartosz Wojcik @ [PELock](http://www.pelock.com).
 *   [Q2A 1.7.x - Portuguese (Português)](http://english-ingles.com/q2a-portuguese-pt_PT-translation.zip) by Tiago Marcelo @ [English Ingles](http://english-ingles.com/).
 *   [Q2A 1.7.x - Russian (Русский)](https://github.com/ferasinka/q2a-lang-ru) by Andrey K. @ [Роборобо Android Q&A](http://roborobo.ru/).
+*   [Q2A 1.7.x - Slovak (Slovenčina)](http://www.question2answer.org/third-party/question2answer-1.7-language-sk.zip) by Boris Sipos.
 *   [Q2A 1.7.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 *   [Q2A 1.7.x - Spanish - Spain (Español)](https://gitlab.com/midget/q2a-translation-es-ES) by Dario Minnucci.
 *   [Q2A 1.7.x - Swahili (Kiswahili)](https://github.com/masterjimmy83/swahiliq2a) by James Mmari.
