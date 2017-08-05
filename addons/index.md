@@ -26,6 +26,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.7.x - Georgian (ქართული)](https://github.com/comcoma/question2answerGE) by Giorgi Tsomaia.
 *   [Q2A 1.7.x - German (Deutsch)](https://github.com/ReichardtIT/q2a-lang-de) by Dominik @ [Reichardt Informationstechnik](http://www.reichardt-informationstechnik.de/). Also: [Formal German](http://www.trvb128.at/qa-lang/qa-lang-de-formal-174.zip) by Peter Chiochetti.
 *   [Q2A 1.7.x - Greek (Ελληνικά)](https://github.com/zakkak/qa-lang-el) by [Foivos Zakkak](http://foivos.zakkak.net/). Also see the Greeklish URLs plugin.
+*   [Q2A 1.7.x - Italian (Italiano)](http://www.question2answer.org/third-party/question2answer-1.7-language-it.zip) by Danilo Petrozzi @ [InnovArtisti](http://innovartisti.it/).
 *   [Q2A 1.7.x - Japanese (日本語)](https://github.com/naga0ka/Q2A-Japanese) by [naga0ka](https://github.com/naga0ka).
 *   [Q2A 1.7.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
 *   [Q2A 1.7.x - Kurdish (کوردی)](https://github.com/sardaren/Kurdish-Translation-for-Question2Answer) by Sardar Hussein @ [kitn.net](http://kitn.net/).
