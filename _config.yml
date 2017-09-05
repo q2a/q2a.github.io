@@ -70,5 +70,7 @@ nav:
       path: /contribute/coding-style/
     - name: Unit tests
       path: /contribute/unit-tests/
+    - name: Documentation
+      path: /contribute/docs/
 
 

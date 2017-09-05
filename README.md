@@ -13,18 +13,4 @@ This repository holds the new site at [docs.question2answer.org](http://docs.que
 
 ## How to Contribute
 
-This site is created and hosted on GitHub pages, which is built on Jekyll. Documentation for creating a local development environment with these tools is at:
-
-- https://help.github.com/articles/using-jekyll-with-pages/
-
-To run this site locally, type:
-
-    bundle exec jekyll serve
-
-Then access:
-
-> http://localhost:4000/
-
-To run the validation suite:
-
-    jekyll build && htmlproofer --disable-external --check-html ./_site
+This site is built with the Jekyll static site creator, and hosted on GitHub Pages. See [Contributing to the Q2A docs](http://docs.question2answer.org/contribute/docs/) for details on installing and running Jekyll.
