@@ -2153,6 +2153,10 @@ p,ul {margin-top:12px; margin-bottom:0;}
 .parameters td {margin:0; padding:3px 8px;}
 .parameters .titles td {background-color:#cfd1c4; font-weight:bold; margin:0; padding:3px 8px;}
 
+ul ul, ol ul {
+	margin-top: 0;
+}
+
 code {
     color: #393;
     font-size: 13px;

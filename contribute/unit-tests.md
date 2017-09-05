@@ -1,7 +1,7 @@
 ---
 layout: page
 menu: contribute
-title: "Question2Answer Coding Style guidelines"
+title: "Question2Answer unit test guidelines"
 ---
 
 # Writing unit tests for Question2Answer
