@@ -28,7 +28,9 @@ Below is a list of possible values for `$event` and the event that each value de
 *   `'q_claim'`, `'a_claim'`, `'c_claim'` when an anonymous question, answer or comment is claimed by a user with a matching cookie clicking 'I wrote this'. The ID of the post is in `$params['postid']`.
 *   `'q_move'` when a question is moved to a different category, with more details in `$params`.
 *   `'a_to_c'` when an answer is converted into a comment, with more details in `$params`.
-*   `'q_vote_up'`, `'q_vote_down'`, `'q_vote_nil'`, `'a_vote_up'`, `'a_vote_down'`, `'a_vote_nil'` when a question or answer is upvoted, downvoted or unvoted by a user. The ID of the post is in `$params['postid']`.
+*   `'q_vote_up'`, `'q_vote_down'`, `'q_vote_nil'`,  when a question is upvoted, downvoted or unvoted by a user. The ID of the post is in `$params['postid']`.
+*   `'a_vote_up'`, `'a_vote_down'`, `'a_vote_nil'`, when an answer is voted on, as above.
+*   `'c_vote_up'`, `'c_vote_down'`, `'c_vote_nil'`, when a comment is voted on, as above.
 *   `'q_favorite'` and `'q_unfavorite'` when a question is favorited or unfavorited by a user. The ID of the question is in `$params['postid']`. From Q2A 1.5+.
 *   `'u_register'` when a new user registers. The email is in `$params['email']` and the privilege level in `$params['level']`.
 *   `'u_login'` and `'u_logout'` when a user logs in or out of Q2A.
