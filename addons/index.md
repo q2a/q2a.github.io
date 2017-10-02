@@ -11,6 +11,10 @@ This page links to add-ons created by Question2Answer users. These are not endor
 
 The language files below are marked by the corresponding Question2Answer version. You can safely install a language file from a different version, and [update it with the missing phrases](/translate/). To install a language, place its directory (such as `fr` or `ru`) in Q2A's `qa-lang` directory, then open the General section of the Admin panel and choose the language from the menu provided.
 
+### Q2A 1.8 (beta)
+
+*   [Q2A 1.8.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.8-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
+
 ### Q2A 1.7
 
 *   [Q2A 1.7.x - Arabic (العربية)](https://github.com/alnnasr/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
