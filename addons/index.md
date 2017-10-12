@@ -140,6 +140,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ### Integration with other products
 
+*   [AddThis Social Sharing](https://github.com/PublicityPort/q2a-social-share-plugin) by [Publicity Port](https://publicityport.com/). Shows a pop-up message to encourage users to share their questions using the [AddThis](http://www.addthis.com) sharing widget.
 *   [Ajax Chat](https://github.com/arjunsuresh/chat) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a sidebar widget and a page showing AJAX chat which is responsive and also has a log page for searching across old chats. There is a separate chat room for each category of Q2A.
 *   [Amazon SES Email](https://github.com/fauguste/qa-mail-ses) by Frédéric AUGUSTE. Sends outgoing emails through [Amazon SES](http://aws.amazon.com/ses/) (Simple Email Service) rather than SMTP.
 *   [BuddyPress Integration](https://github.com/NoahY/q2a-buddypress) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Basic integration with the [BuddyPress](http://buddypress.org/) social networking plugin for [WordPress](http://wordpress.org/).
