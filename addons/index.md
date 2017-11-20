@@ -14,10 +14,11 @@ The language files below are marked by the corresponding Question2Answer version
 ### Q2A 1.8 (beta)
 
 *   [Q2A 1.8.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.8-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
+*   [Q2A 1.8.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 
 ### Q2A 1.7
 
-*   [Q2A 1.7.x - Arabic (العربية)](https://github.com/alnnasr/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
+*   [Q2A 1.7.x - Arabic (العربية)](https://github.com/pupi1985/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
 *   [Q2A 1.7.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.7-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
 *   [Q2A 1.7.x - Bulgarian (Български)](https://github.com/pazoff/q2a-lang-bg) by Plamen Vatev(Pazoff) @ [Popitai.me](http://popitai.me).
 *   [Q2A 1.7.x - Catalan (Català)](https://github.com/pau-minoves/q2a-catalan-translation) by Lluís Minoves @ [Com Seria](http://com.seria.cat/).
