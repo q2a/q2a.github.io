@@ -14,6 +14,7 @@ The language files below are marked by the corresponding Question2Answer version
 ### Q2A 1.8 (beta)
 
 *   [Q2A 1.8.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.8-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
+*   [Q2A 1.8.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 
 ### Q2A 1.7
 
