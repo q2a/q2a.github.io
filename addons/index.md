@@ -216,6 +216,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Ajax User Search](http://www.q2apro.com/plugins/usersearch) by [q2apro](http://www.q2apro.com/). Adds a live search box at the top of the users page to search users by username.
 *   [Answer Hide](https://github.com/arjunsuresh/q2a-answerhide) by [Arjun](http://gateoverflow.in/user/Arjun). Adds an option in user profile to disable answer list by default and allows viewing on button click. Useful for educational sites.  
 *   [Ask Notices Plugin](https://github.com/svivian/q2a-ask-notices) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays warnings/hints for users asking questions with specific keywords.
+*   [Ask with Tags List](https://github.com/PublicityPort/q2a-ask-with-tags-list) by [Publicity Port](https://publicityport.com/). Allows tags for a new question to be pre-filled using a URL parameter for the 'Ask a Question' page.
 *   [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
 *   [Closed Site Plugin](https://github.com/JackSiro/Q2A-Closed-Site-Plugin) by [Jackson Siro](http://github.com/JackSiro). Allows a Q2A site to be locked to allow in registered users only.
 *   [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
