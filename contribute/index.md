@@ -20,7 +20,7 @@ Note that general troubleshooting issues such as installation or how to use a fe
 
 ## Pull requests
 
-If you have found the cause of the bug in the Q2A code, you can submit the patch back to the Q2A repository. Create a fork of the repo, make the changes in your fork, then submit a pull request. Bug fix pull requessts must be made to the `dev` branch. PRs for new features must be made to the next version branch, for example `1.8`.
+If you have found the cause of the bug in the Q2A code, you can submit the patch back to the Q2A repository. Create a fork of the repo, make the changes in your fork, then submit a pull request. Bug fix pull requests must be targeted to the `bugfix` branch. PRs for new features or large code changes must be made to the `dev` branch.
 
 If you wish to implement a feature, you should start a discussion on the [Question2Answer Q&A][QA] first. We welcome all ideas but they may not be appropriate for the Q2A core. Consider whether your idea could be developed as a plugin.
 
