@@ -10,16 +10,15 @@ The following websites and providers specialize in Question2Answer services and 
 ## Q2A support and development
 
 *   [Q2A Market](http://www.q2amarket.com/) – premium themes and custom theme development.
-*   [Q&A Themes](http://QA-Themes.com/) – custom and premium themes, plugin development, support.
-*   [Q2A Store](http://q2astore.com/) – themes, plugins, customization services and support.
+*   [pupi1985](http://www.question2answer.org/qa/user/pupi1985) – custom plugin development and customizations. [Get a quote!](http://form.jotformz.com/63018196663662).
 
 ## Easy hosting for Q2A
 
 *   [LogicWeb](http://www.logicweb.com/question2answer-hosting/) – web hosting with one-click installation of Q2A.
 *   [CiviHosting](http://civihosting.com/question2answer-hosting) – web hosting with free installation of Q2A.
-*   [Publicity Port](https://publicityport.com/host-question-answer-site-easily-publicity-port) - web hosting with one-click installation of Q2A and supporting services.
+*   [Publicity Port](https://publicityport.com/host-question-answer-site-easily-publicity-port) – web hosting with one-click installation of Q2A and supporting services.
 *   [RoseHosting](https://www.rosehosting.com) – web hosting with free installation of Q2A (contact their support team or [follow their guide here](https://www.rosehosting.com/blog/install-question2answer-on-an-ubuntu-14-04-vps/)).
-*   [ThisHosting.Rocks](https://www.thishosting.rocks/support/q2a/) - web hosting with Q2A support services.
+*   [ThisHosting.Rocks](https://www.thishosting.rocks/support/q2a/) – web hosting with Q2A support services.
 
 Also check out [Cloudlook](http://www.cloudlook.com/) which can help you evaluate some popular cloud hosting providers.
 
