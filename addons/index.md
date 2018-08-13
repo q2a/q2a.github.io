@@ -209,6 +209,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Recent Events Widget](https://github.com/q2apro/q2apro-recent-events-widget) by [q2apro.com](http://www.q2apro.com/). Displays all recent events in the sidebar or main area.
 *   [Recent Questions Widget](http://www.q2amarket.com/market/q2am-recent-questions/) by [Q2A Market](http://www.q2amarket.com/). Shows a list of recent questions in the sidebar or other locations.
 *   [RSS Feed Widget](https://github.com/mbentley3123/q2a-rss-feed) by [Mark Bentley](http://BentleyDesigns.thebentleys.ca/). Displays posts from an RSS feed in the sidebar.
+*   [Simple Slider](https://github.com/JackSiro/Q2A-Simple-Slider-Plugin) by [Jackson Siro](http://github.com/JackSiro). A simple image slider for the tops of pages, showing titles, descriptions and links.
 *   [Social Share](https://github.com/amiyasahu/q2a-social-share) by [Amiya Sahu](http://amiyasahu.com/). Adds clickable social sharing buttons below questions.
 *   [Tab Widget](https://github.com/Towhidn/Q2A-Tab-Widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows popular and recent questions in two tabs, responsive design.
 *   [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
@@ -231,6 +232,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http://gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
 *   [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 *   [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
+*   [Private Message Adapter](https://github.com/JackSiro/Q2A-PM-Adapter-Plugin) by [Jackson Siro](http://github.com/JackSiro). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
 *   [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
 *   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 *   [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges. Also [forked](https://github.com/zakkak/q2a-role-markers) by [Zakkak](https://github.com/zakkak). 
