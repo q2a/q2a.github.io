@@ -10,8 +10,7 @@ The following websites and providers specialize in Question2Answer services and 
 ## Q2A support and development
 
 *   [Q2A Market](http://www.q2amarket.com/) – premium themes and custom theme development.
-*   [Q&A Themes](http://QA-Themes.com/) – custom and premium themes, plugin development, support.
-*   [Q2A Store](http://q2astore.com/) – themes, plugins, customization services and support.
+*   [Jacksiro](https://jacksiro.github.io/q2a/) – affordable custom and premium plugin development and support.
 
 ## Easy hosting for Q2A
 
