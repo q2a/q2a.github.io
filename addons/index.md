@@ -286,6 +286,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [SEO Links](https://github.com/Towhidn/Q2A-SEO-Links) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Make internal links "dofollow" and change "relation" attribute of other sites to pass SEO juice to them.
 *   [SEO Meta Tags](http://qcybb.com/question2answer-seo-meta-tags/) by [Dave Hannon](http://qcybb.com/). Uses meta robots tags to exclude some pages with duplicate content from search engines.
 *   [Tagging Tools Plugin](https://github.com/svivian/q2a-tagging-tools) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Allows admins to set tag synonyms so that unwanted or duplicate tags are changed or removed. Can also prevent low reputation users from creating new tags.
+*   [Translator](https://github.com/pedjas/q2a-translator) by [Pedja Supurovic](http://pedja.supurovic.net). Allows translations to be created online through pages in the administration interface.
 *   [Webmaster Tools](https://github.com/Towhidn/Q2A-Webmaster) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Reports include server info and memory usage, SEO analysis, security warnings.
 
 ### For older versions of Q2A
