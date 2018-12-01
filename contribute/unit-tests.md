@@ -44,7 +44,7 @@ The tests themselves should be named as `test__` followed by the original functi
 
 Optionally, multiple tests for the same function may be split into several test functions; each of these should have a suffix consisting of a double underscore and appropriate identifier. For example the tests for `qa_block_ip_match` are split into `test__qa_block_ip_match__ipv4` and `test__qa_block_ip_match__ipv6` for testing IPv4 and IPv6 values respectively.
 
-Tests contain *assertions*, which are functions that compare the result you get from a function with your expected output. The main ones we use are `assertEquals` to check if two things are equal, `assertSame` to check they are equal and the same type, and ``assertTrue`/`assertFalse` to check if a result is true/false. Here's an example from `UtilStringTest.php`:
+Tests contain *assertions*, which are functions that compare the result you get from a function with your expected output. The main ones we use are `assertEquals` to check if two things are equal, `assertSame` to check they are equal and the same type, and `assertTrue`/`assertFalse` to check if a result is true/false. Here's an example from `UtilStringTest.php`:
 
 ```php
 <?php
