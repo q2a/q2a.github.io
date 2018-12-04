@@ -20,7 +20,7 @@ From 1.7 onwards a new coding style has been implemented that is more in line wi
 
 If in doubt, follow the style of the surrounding code. The Q2A repository includes a set of rules in the test directory for use with [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (PHPCS) which checks several aspects of the coding style (some are currently omitted as we migrate the old style to new). It can be run using this command from the repository root:
 
-    php /path/to/phpcs.phar --report=emacs --extensions=php --standard=qa-tests/phpcs/ruleset.xml .
+	php /path/to/phpcs.phar --report=emacs --extensions=php --standard=qa-tests/phpcs/ruleset.xml .
 
 If nothing comes up, the coding style is good to go!
 
