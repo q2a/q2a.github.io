@@ -19,6 +19,7 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.8.x - Italian (Italiano)](https://github.com/forexUp/Question2Answer) by carlo10 @ [Opzioni Binarie](http://opzionibinarie1.altervista.org/).
 *   [Q2A 1.8.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
 *   [Q2A 1.8.x - Russian (Русский)](https://github.com/Dennwer/Q2A-russian-translation) by Dennwer @ [Вопрос – Ответ](https://abees.ru/). Also: [Russian](https://github.com/ferasinka/q2a-lang-ru) by Andrey K. @ [Роборобо Android Q&A](http://roborobo.ru/).
+*   [Q2A 1.8.x - Serbian (српски)](https://github.com/stefanmm/Q2A-serbian-translation) by Stefan Marjanov @ [Saznaj Novo](http://saznajnovo.com/).
 *   [Q2A 1.8.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 *   [Q2A 1.8.x - Spanish - Spain (Español)](https://gitlab.com/midget/q2a-translation-es-ES/tags/1.8.0-0) by Dario Minnucci.
 *   [Q2A 1.8.x - Swahili (Kiswahili)](https://github.com/JackSiro/Q2A-Swahili) by [Jackson Siro](https://jacksiro.github.io/q2a/).
