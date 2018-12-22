@@ -14,18 +14,18 @@ When your plugin logs in a user for the first time, a normal Q2A account is crea
 
 In order to log in a user, your plugin calls function `qa_log_in_external_user()` at the appropriate time. The same call is used whether the user is registering for the first time or logging in to an existing account. Q2A takes care of handling each case as appropriate. The function `qa_log_in_external_user()` takes the following parameters in order:
 
-1.  A `$source` string uniquely identifying your login method, such as `'facebook'` or `'openid'`, up to 16 ASCII characters in length.
+1. A `$source` string uniquely identifying your login method, such as `'facebook'` or `'openid'`, up to 16 ASCII characters in length.
 
-2.  An `$identifier` for the user supplied by the external identity provider, up to 1024 bytes in length, which will always be the same for that user. Generally this will be a numerical user ID, but it can also be a URL or any other unique identifier.
+2. An `$identifier` for the user supplied by the external identity provider, up to 1024 bytes in length, which will always be the same for that user. Generally this will be a numerical user ID, but it can also be a URL or any other unique identifier.
 
-3.  An array `$fields` of optional additional information about the user, which can contain any of the following elements:
+3. An array `$fields` of optional additional information about the user, which can contain any of the following elements:
 
-    *   `$fields['email']` for the user's email address. Beginning in Q2A 1.5.4, this will be ignored if there is already a user in the database with the same email address.
-    *   `$fields['confirmed']` can be `true` to indicate that the user has confirmed their email address.
-    *   `$fields['handle']` for a suggested username. Q2A will modify this sensibly if it clashes with another user.
-    *   `$fields['level']` for the user's privilege level. Use one of the `QA_USER_LEVEL_*` constants defined at the top of `qa-app-users.php`, e.g. `QA_USER_LEVEL_MODERATOR`. If omitted, `QA_USER_LEVEL_BASIC` is assumed.
-    *   `$fields['name']`, `$fields['location']`, `$fields['website']` and `$fields['about']` for the user's profile.
-    *   `$fields['avatar']` for the user's avatar picture. This should contain the raw JPEG/GIF/PNG image data. If necessary you can obtain this data from a URL using Q2A's `qa_retrieve_url()` function.
+    - `$fields['email']` for the user's email address. Beginning in Q2A 1.5.4, this will be ignored if there is already a user in the database with the same email address.
+    - `$fields['confirmed']` can be `true` to indicate that the user has confirmed their email address.
+    - `$fields['handle']` for a suggested username. Q2A will modify this sensibly if it clashes with another user.
+    - `$fields['level']` for the user's privilege level. Use one of the `QA_USER_LEVEL_*` constants defined at the top of `qa-app-users.php`, e.g. `QA_USER_LEVEL_MODERATOR`. If omitted, `QA_USER_LEVEL_BASIC` is assumed.
+    - `$fields['name']`, `$fields['location']`, `$fields['website']` and `$fields['about']` for the user's profile.
+    - `$fields['avatar']` for the user's avatar picture. This should contain the raw JPEG/GIF/PNG image data. If necessary you can obtain this data from a URL using Q2A's `qa_retrieve_url()` function.
 
 Each time you call `qa_log_in_external_user()` for a particular user, you should pass the exact same values for `$source` and `$identifier`. This enables Q2A to determine whether the user already has an account - if so, `$fields` will be ignored.
 
