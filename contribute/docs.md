@@ -27,4 +27,4 @@ The site can now be accessed from `http://localhost:4000/` in your web browser.
 
 To run the validation suite:
 
-	jekyll build && htmlproofer --disable-external --check-html ./_site
+	bundle exec jekyll build && htmlproofer --disable-external --check-html ./_site
