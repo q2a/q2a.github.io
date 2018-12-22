@@ -32,14 +32,14 @@ Below is an example layer which makes four changes to the standard theme. First,
 
 class qa_html_theme_layer extends qa_html_theme_base
 {
-    function nav_list($navigation, $navtype) // remove login and register links
+    function nav_list($navigation, $navtype, $level = null) // remove login and register links
     {
-        if ($navtype=='user') {
+        if ($navtype=='nav-user') {
             unset($navigation['login']);
             unset($navigation['register']);
         }
 
-        qa_html_theme_base::nav_list($navigation, $navtype);
+        qa_html_theme_base::nav_list($navigation, $navtype, $level);
     }
 
     function head_script() // add a Javascript file from plugin directory
