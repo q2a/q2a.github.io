@@ -13,7 +13,7 @@ Development of Question2Answer takes place through [GitHub](https://github.com/q
 
 If you find a bug (error) with Question2Answer, please [submit an issue here][Issues]. Be as descriptive as possible: include exactly what you did to make the bug appear, what you expect to happen, and what happened instead. Also include your PHP version and MySQL version. Remember to check for similar issues already reported.
 
-If you think you've found a security issue, you can responsibly disclose it to us using the [contact form here](http://www.question2answer.org/feedback.php).
+If you think you've found a security issue, you can responsibly disclose it to us using the [contact form here](https://www.question2answer.org/feedback.php).
 
 Note that general troubleshooting issues such as installation or how to use a feature should continue to be asked on the [Question2Answer Q&A][QA].
 

@@ -19,8 +19,10 @@ The language files below are marked by the corresponding Question2Answer version
 *   [Q2A 1.8.x - Italian (Italiano)](https://github.com/forexUp/Question2Answer) by carlo10 @ [Opzioni Binarie](http://opzionibinarie1.altervista.org/).
 *   [Q2A 1.8.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
 *   [Q2A 1.8.x - Russian (Русский)](https://github.com/Dennwer/Q2A-russian-translation) by Dennwer @ [Вопрос – Ответ](https://abees.ru/). Also: [Russian](https://github.com/ferasinka/q2a-lang-ru) by Andrey K. @ [Роборобо Android Q&A](http://roborobo.ru/).
+*   [Q2A 1.8.x - Serbian (srpski)](https://github.com/stefanmm/Q2A-serbian-translation) by Stefan Marjanov @ [Saznaj Novo](http://saznajnovo.com/).
 *   [Q2A 1.8.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 *   [Q2A 1.8.x - Spanish - Spain (Español)](https://gitlab.com/midget/q2a-translation-es-ES/tags/1.8.0-0) by Dario Minnucci.
+*   [Q2A 1.8.x - Swahili (Kiswahili)](https://github.com/JackSiro/Q2A-Swahili) by [Jackson Siro](https://jacksiro.github.io/q2a/).
 *   [Q2A 1.8.x - Turkish (Türkçe)](http://turkdesk.org/downloads/Turkish-Q2A-1.8.x.zip) by Erkan @ [TurkDesk](http://turkdesk.org/).
 
 ### Q2A 1.7
@@ -183,7 +185,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ### Additional page types
 
 *   [Best Users per Month](https://github.com/q2apro/q2apro-best-users-per-month-free) by [q2apro.com](http://www.q2apro.com/). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup) which supports Jalali calendar.
-*   [Blog Post Plugin](https://github.com/JackSiro/Q2A-Blog-Post-Plugin) by [Jackson Siro](https://github.com/JackSiro). Allows registered users to maintain an online journal or blog.
+*   [Blog Post Plugin](https://github.com/JackSiro/Q2A-Blog-Post-Plugin) by [Jackson Siro](https://jacksiro.github.io/q2a/). Allows registered users to maintain an online journal or blog.
 *   [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers. Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http://gateoverflow.in/user/Arjun). which adds more question filtering options and better styling options. 
 *   [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 *   [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
@@ -209,6 +211,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Recent Events Widget](https://github.com/q2apro/q2apro-recent-events-widget) by [q2apro.com](http://www.q2apro.com/). Displays all recent events in the sidebar or main area.
 *   [Recent Questions Widget](http://www.q2amarket.com/market/q2am-recent-questions/) by [Q2A Market](http://www.q2amarket.com/). Shows a list of recent questions in the sidebar or other locations.
 *   [RSS Feed Widget](https://github.com/mbentley3123/q2a-rss-feed) by [Mark Bentley](http://BentleyDesigns.thebentleys.ca/). Displays posts from an RSS feed in the sidebar.
+*   [Simple Slider](https://github.com/JackSiro/Q2A-Simple-Slider-Plugin) by [Jackson Siro](https://jacksiro.github.io/q2a/). A simple image slider for the tops of pages, showing titles, descriptions and links.
 *   [Social Share](https://github.com/amiyasahu/q2a-social-share) by [Amiya Sahu](http://amiyasahu.com/). Adds clickable social sharing buttons below questions.
 *   [Tab Widget](https://github.com/Towhidn/Q2A-Tab-Widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows popular and recent questions in two tabs, responsive design.
 *   [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
@@ -225,12 +228,13 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [Ask Notices Plugin](https://github.com/svivian/q2a-ask-notices) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays warnings/hints for users asking questions with specific keywords.
 *   [Ask with Tags List](https://github.com/PublicityPort/q2a-ask-with-tags-list) by [Publicity Port](https://publicityport.com/). Allows tags for a new question to be pre-filled using a URL parameter for the 'Ask a Question' page.
 *   [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
-*   [Closed Site Plugin](https://github.com/JackSiro/Q2A-Closed-Site-Plugin) by [Jackson Siro](http://github.com/JackSiro). Allows a Q2A site to be locked to allow in registered users only.
+*   [Closed Site Plugin](https://github.com/JackSiro/Q2A-Closed-Site-Plugin) by [Jackson Siro](https://jacksiro.github.io/q2a/). Allows a Q2A site to be locked to allow in registered users only.
 *   [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
 *   [Featured Questions](https://github.com/NoahY/q2a-featured) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows featured questions to be kept at the top of question lists.
 *   [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http://gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
 *   [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 *   [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
+*   [Private Message Adapter](https://github.com/JackSiro/Q2A-PM-Adapter-Plugin) by [Jackson Siro](https://jacksiro.github.io/q2a/). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
 *   [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
 *   [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 *   [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges. Also [forked](https://github.com/zakkak/q2a-role-markers) by [Zakkak](https://github.com/zakkak). 
@@ -283,6 +287,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 *   [SEO Links](https://github.com/Towhidn/Q2A-SEO-Links) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Make internal links "dofollow" and change "relation" attribute of other sites to pass SEO juice to them.
 *   [SEO Meta Tags](http://qcybb.com/question2answer-seo-meta-tags/) by [Dave Hannon](http://qcybb.com/). Uses meta robots tags to exclude some pages with duplicate content from search engines.
 *   [Tagging Tools Plugin](https://github.com/svivian/q2a-tagging-tools) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Allows admins to set tag synonyms so that unwanted or duplicate tags are changed or removed. Can also prevent low reputation users from creating new tags.
+*   [Translator](https://github.com/pedjas/q2a-translator) by [Pedja Supurovic](http://pedja.supurovic.net). Allows translations to be created online through pages in the administration interface.
 *   [Webmaster Tools](https://github.com/Towhidn/Q2A-Webmaster) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Reports include server info and memory usage, SEO analysis, security warnings.
 
 ### For older versions of Q2A

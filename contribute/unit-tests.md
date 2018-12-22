@@ -34,7 +34,7 @@ require_once QA_INCLUDE_DIR.'app/users.php';
 
 class AppUsersTest extends PHPUnit_Framework_TestCase
 {
-    // test functions go here
+	// test functions go here
 }
 ```
 
@@ -44,7 +44,7 @@ The tests themselves should be named as `test__` followed by the original functi
 
 Optionally, multiple tests for the same function may be split into several test functions; each of these should have a suffix consisting of a double underscore and appropriate identifier. For example the tests for `qa_block_ip_match` are split into `test__qa_block_ip_match__ipv4` and `test__qa_block_ip_match__ipv6` for testing IPv4 and IPv6 values respectively.
 
-Tests contain *assertions*, which are functions that compare the result you get from a function with your expected output. The main ones we use are `assertEquals` to check if two things are equal, `assertSame` to check they are equal and the same type, and ``assertTrue`/`assertFalse` to check if a result is true/false. Here's an example from `UtilStringTest.php`:
+Tests contain *assertions*, which are functions that compare the result you get from a function with your expected output. The main ones we use are `assertEquals` to check if two things are equal, `assertSame` to check they are equal and the same type, and `assertTrue`/`assertFalse` to check if a result is true/false. Here's an example from `UtilStringTest.php`:
 
 ```php
 <?php
@@ -52,13 +52,13 @@ require_once QA_INCLUDE_DIR.'util/string.php';
 
 class UtilStringTest extends PHPUnit_Framework_TestCase
 {
-    public function test__qa_tags_to_tagstring()
-    {
-        $test = qa_tags_to_tagstring(array('Hello', 'World'));
-        $expected = 'Hello,World';
+	public function test__qa_tags_to_tagstring()
+	{
+		$test = qa_tags_to_tagstring(array('Hello', 'World'));
+		$expected = 'Hello,World';
 
-        $this->assertEquals($expected, $test);
-    }
+		$this->assertEquals($expected, $test);
+	}
 }
 ```
 
@@ -74,11 +74,11 @@ First we need to check which options the function we're testing uses. Then we ad
 ```php?start_inline=1
 public function test__qa_permit_value_error()
 {
-    // set options cache to bypass database
-    global $qa_options_cache;
-    $qa_options_cache['confirm_user_emails'] = '1';
-    $qa_options_cache['moderate_users'] = '0';
+	// set options cache to bypass database
+	global $qa_options_cache;
+	$qa_options_cache['confirm_user_emails'] = '1';
+	$qa_options_cache['moderate_users'] = '0';
 
-    // run tests using those options...
+	// run tests using those options...
 }
 ```

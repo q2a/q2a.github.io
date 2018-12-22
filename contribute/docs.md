@@ -13,18 +13,18 @@ The Question2Answer docs are built with the Jekyll static site generator. They a
 
 Jekyll requires Ruby - the [official Ruby site](https://www.ruby-lang.org/en/downloads/) has instructions for installation. Jekyll is installed using this command in the terminal:
 
-    gem install jekyll bundler
+	gem install jekyll bundler
 
 Next you'll need to clone the Github repository to your machine. From the root directory install all the dependencies with:
 
-    bundle install
+	bundle install
 
 And then run Jekyll with:
 
-    bundle exec jekyll serve
+	bundle exec jekyll serve
 
 The site can now be accessed from `http://localhost:4000/` in your web browser.
 
 To run the validation suite:
 
-    jekyll build && htmlproofer --disable-external --check-html ./_site
+	jekyll build && htmlproofer --disable-external --check-html ./_site
