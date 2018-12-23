@@ -284,9 +284,9 @@ In this step we will implement the tooltips which display tag descriptions when 
     ```php
     <?php
 
-    function qa_tag_html($tag, $microformats=false, $favorited=false)
+    function qa_tag_html($tag, $microdata=false, $favorited=false)
     {
-        return qa_tag_html_base('_'.$tag.'_', $microformats, $favorited);
+        return qa_tag_html_base('_'.$tag.'_', $microdata, $favorited);
     }
     ```
 
@@ -305,9 +305,9 @@ In this step we will implement the tooltips which display tag descriptions when 
 - Go back to `qa-tag-desc-overrides.php` and replace the function with the following:
 
     ```php?start_inline=1
-    function qa_tag_html($tag, $microformats=false, $favorited=false)
+    function qa_tag_html($tag, $microdata=false, $favorited=false)
     {
-        $taghtml=qa_tag_html_base($tag, $microformats, $favorited);
+        $taghtml=qa_tag_html_base($tag, $microdata, $favorited);
 
         require_once QA_INCLUDE_DIR.'qa-db-metas.php';
 
@@ -350,11 +350,11 @@ In the second stage, a layer will replace the `post_tag_item()` function in Q2A'
 - Go back to `qa-tag-desc-overrides.php` and modify the function as follows:
 
     ```php?start_inline=1
-    function qa_tag_html($tag, $microformats=false, $favorited=false)
+    function qa_tag_html($tag, $microdata=false, $favorited=false)
     {
         global $plugin_tag_desc_list;
 
-        $taghtml=qa_tag_html_base($tag, $microformats, $favorited);
+        $taghtml=qa_tag_html_base($tag, $microdata, $favorited);
 
         require_once QA_INCLUDE_DIR.'qa-util-string.php';
 
