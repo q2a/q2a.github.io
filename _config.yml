@@ -62,6 +62,8 @@ nav:
       path: /code/external/
     - name: Functions
       path: /code/functions/
+    - name: App Structure
+      path: /code/structure/
 
   contribute:
     - name: Issues
