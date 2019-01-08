@@ -12,7 +12,7 @@ Question2Answer fully supports non-English languages and is easy to translate. B
 
 To create a new Question2Answer translation from scratch, follow the steps below:
 
-1. Open the file `qa-app-admin.php` inside Question2Answer's `qa-include` directory and look at the function `qa_admin_language_options()`. This contains an array which maps abbreviated language codes to their corresponding languages. For example, the abbreviation for Russian is `ru`. Note down the abbreviation for your language. If your language is not in the array, you may add it, but please also [tell us](http://www.question2answer.org/feedback.php) so we can include it in future versions.
+1. Open the file `admin.php` inside Question2Answer's `qa-include/app` directory and look at the function `qa_admin_language_options()`. This contains an array which maps abbreviated language codes to their corresponding languages. For example, the abbreviation for Russian is `ru`. Note down the abbreviation for your language. If your language is not in the array, you may add it, but please also [tell us](http://www.question2answer.org/feedback.php) so we can include it in future versions.
 
 2. Create a subdirectory inside Question2Answer's `qa-lang` directory, and name the subdirectory with the abbreviation for your language, keeping the original capitalization.
 
