@@ -44,6 +44,8 @@ nav:
       path: /install/optimize/
     - name: Security
       path: /install/security/
+    - name: .htaccess FAQ
+      path: /install/htaccess/
 
   plugins:
     - name: Overview
