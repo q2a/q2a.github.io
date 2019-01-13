@@ -34,9 +34,9 @@ The instructions below are for installing Question2Answer where it manages user 
 4.  Create a MySQL database, and a MySQL user with full permissions for that database.
     <small>If you're interested, the [privileges](http://dev.mysql.com/doc/mysql/en/privilege-system.html) actually needed are: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES</small>
 5.  Note down the MySQL details: username, password, database name and server host name. If MySQL is running on the same server as your website, the server host name is likely to be `127.0.0.1` or `localhost`.
-6.  Find `qa-config-example.php` in the unzipped `question2answer` folder, and rename it to `qa-config.php`.
+6.  Find `qa-config-example.php` and `.htaccess-example` in the unzipped `question2answer` folder, and rename them to `qa-config.php` and `.htaccess`, respectively.
 7.  Open `qa-config.php` in your text editor, insert the MySQL details at the top, and save the file. Do not use a word processor such as Microsoft Word for this, but rather Notepad or another appropriate [text editing program](http://en.wikipedia.org/wiki/List_of_text_editors).
-8.  Place all the Question2Answer files (**including .htaccess**) in the appropriate location on your web server:
+8.  Place all the Question2Answer files in the appropriate location on your web server:
     *   To serve Question2Answer at the root of a domain (e.g. `http://www.mysite.com/`), move or upload all the contents of the unzipped `question2answer` folder into the root directory for that domain on your web server.
     *   To serve Question2Answer in a subdirectory of a site (e.g. `http://www.mysite.com/qa/`), create the subdirectory inside the root directory for the site, then move or upload all the contents of the unzipped `question2answer` folder into this subdirectory.
 9.  Open the appropriate web page for Question2Answer in your web browser, for example:
