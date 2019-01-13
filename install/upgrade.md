@@ -18,8 +18,8 @@ Question2Answer regularly has [new releases](https://github.com/q2a/question2ans
 
 5. Turn on maintenance mode in your Q2A admin panel (General section). This will help prevent any errors showing to users while files are being uploaded.
 
-6. Replace all the Question2Answer files and directories (including .htaccess) on your web server with the new ones, via (S)FTP or whatever deployment strategy you use.
-      - Your custom `qa-config.php` file will not be affected, nor will your `qa-external` directory.
+6. Replace all the Question2Answer files and directories on your web server with the new ones, via (S)FTP or whatever deployment strategy you use.
+      - Your custom `qa-config.php` and `.htaccess` files will not be affected, nor will your `qa-external` directory.
       - You may need to reapply any other changes and reinstall any themes, languages or plugins as appropriate.
 
 7. Open your Question2Answer site in your browser, and go to the admin center. If appropriate, you will be prompted to upgrade the database, so follow the on-screen instructions.
