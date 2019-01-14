@@ -16,7 +16,7 @@ Question2Answer is designed to integrate with websites which have an existing us
     - If your website already uses a MySQL database, Question2Answer can share it. Simply ensure that the MySQL user you use has at least these [privileges](http://dev.mysql.com/doc/mysql/en/privilege-system.html): CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES.
     - Otherwise, create a new MySQL database and a MySQL user with the privileges: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES.
 
-4. Find `qa-config-example.php` in the unzipped `question2answer` folder, and rename it to `qa-config.php`.
+4. Find `qa-config-example.php` and `.htaccess-example` in the unzipped `question2answer` folder, and rename them to `qa-config.php` and `.htaccess`, respectively.
 
 5. Open `qa-config.php` in the text editor you use for PHP programming. Insert the MySQL details at the top, then scroll down and set `QA_EXTERNAL_USERS` to `true`, then save the file.
 
