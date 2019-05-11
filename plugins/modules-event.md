@@ -50,6 +50,8 @@ Below is a list of possible values for `$event` and the event that each value de
 
 - `'q_favorite'` and `'q_unfavorite'` when a question is favorited or unfavorited by a user. The ID of the question is in `$params['postid']`. From Q2A 1.5+.
 
+- `'cat_new'` and `'cat_edit'` when a category is created or edited. From Q2A 1.9+.
+
 - `'u_register'` when a new user registers. The email is in `$params['email']` and the privilege level in `$params['level']`.
 
 - `'u_login'` and `'u_logout'` when a user logs in or out of Q2A.
@@ -74,7 +76,7 @@ Below is a list of possible values for `$event` and the event that each value de
 
 - `'u_block'` and `'u_unblock'` when a user is blocked or unblocked by another user. See `'u_edit'` above for how the two users are identified.
 
-- `'u_delete'` when a user is deleted by another user. See `'u_edit'` above for how the two users are identified. From Q2A 1.5+.
+- `'u_delete_before'` and `'u_delete'` when a user is about to be deleted and once the user has been deleted by another user. See `'u_edit'` above for how the two users are identified. `'u_delete'` from Q2A 1.5+. `'u_delete_before'` from Q2A 1.8.4+.
 
 - `'u_favorite'` and `'u_unfavorite'` when a user is favorited or unfavorited by another user. The ID of the user being favorited or unfavorited is in `$params['userid']`. From Q2A 1.5+.
 
