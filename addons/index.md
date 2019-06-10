@@ -119,9 +119,9 @@ You can also [create your own themes](/themes/) using CSS only, or (optionally) 
 
 ## Clients
 
-There is a [Q2A client for Android](https://github.com/NoahY/q2android), created by [NoahY](http://www.question2answer.org/qa/user/NoahY), and an [updated Q2A Android client](https://github.com/arjunsuresh/qaoverflow) by [Arjun](http://gateoverflow.in/user/Arjun/).
+[Q2Andy](https://appsmata.github.io/Q2Andy/) by [Jacksiro](https://question2answer.org/qa/user/jacksiro) is a new Android client for Question2Answer sites which uses a simple custom API to provide web-based functionality within the app.
 
-Both require the [XML-RPC](https://github.com/arjunsuresh/q2a-xml-rpc) plugin to be installed on the Q2A site you're using with permission given to users in Admin page.
+Older Android clients include: [Q2A client for Android](https://github.com/NoahY/q2android) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and [Q2A Android client](https://github.com/arjunsuresh/qaoverflow) by [Arjun](http://gateoverflow.in/user/Arjun/). Both require the [XML-RPC](https://github.com/arjunsuresh/q2a-xml-rpc) plugin to be installed on the Q2A site you're using with permission given to users in Admin page.
 
 ## Plugins
 
