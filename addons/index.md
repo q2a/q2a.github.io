@@ -17,6 +17,7 @@ The language files below are marked by the corresponding Question2Answer version
 - [Q2A 1.8.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.8-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
 - [Q2A 1.8.x - Chinese Simplified (简体中文)](https://github.com/yinhongbo/q2a-lang-cn) by Hongbo Yin
 - [Q2A 1.8.x - French (Français)](https://github.com/mrflos/q2a-lang-fr) by Olivier Seree, Pierre-Yves Aillet, Florian Schmitt, Grégoire Barré and Guillaume Turri.
+- [Q2A 1.8.x - German (Deutsch)](https://github.com/fulgor/q2a-lang-de-formal) (formal) by Peter Chiochetti, Moritz Bunkus, Philip Schilling, Corinna Baldauf, [Fulgor](https://github.com/fulgor).
 - [Q2A 1.8.x - Hungarian (Magyar)](https://github.com/vdavid/question2answer-hu-hu) by Dávid Veszelovszki @ [CodeBerry](https://codeberryschool.com/).
 - [Q2A 1.8.x - Italian (Italiano)](https://github.com/forexUp/Question2Answer) by carlo10 @ [Opzioni Binarie](http://opzionibinarie1.altervista.org/).
 - [Q2A 1.8.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
