@@ -130,7 +130,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ### Major features
 
-- [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides user badges which recognize users' activities and achievements.
+- [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY), [updated](https://github.com/heliochun/q2a-badges/) by [Chun](https://github.com/heliochun). Provides user badges which recognize users' activities and achievements.
 - [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http://gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins.
 - [Comment Voting Plugin](https://github.com/NoahY/q2a-comment-voting) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows comments to be voted on, similarly to questions and answers.
 - [Network Sites Plugin](https://github.com/NoahY/q2a-network) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows the creation of a network of interlinked Q2A sites.
