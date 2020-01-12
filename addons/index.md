@@ -21,6 +21,7 @@ The language files below are marked by the corresponding Question2Answer version
 - [Q2A 1.8.x - Hungarian (Magyar)](https://github.com/vdavid/question2answer-hu-hu) by Dávid Veszelovszki @ [CodeBerry](https://codeberryschool.com/).
 - [Q2A 1.8.x - Italian (Italiano)](https://github.com/forexUp/Question2Answer) by carlo10 @ [Opzioni Binarie](http://opzionibinarie1.altervista.org/).
 - [Q2A 1.8.x - Korean (한국어)](https://github.com/minwook-shin/q2a-korean-translation) by Minwook Shin.
+- [Q2A 1.8.x - Polish (Polski)](https://github.com/PELock/Question2Answer) by Bartosz Wojcik @ [PELock](https://www.pelock.com).
 - [Q2A 1.8.x - Russian (Русский)](https://github.com/Dennwer/Q2A-russian-translation) by Dennwer @ [Вопрос – Ответ](https://abees.ru/). Also: [Russian](https://github.com/ferasinka/q2a-lang-ru) by Andrey K. @ [Роборобо Android Q&A](http://roborobo.ru/).
 - [Q2A 1.8.x - Serbian (srpski)](https://github.com/stefanmm/Q2A-serbian-translation) by Stefan Marjanov @ [Saznaj Novo](http://saznajnovo.com/).
 - [Q2A 1.8.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
@@ -50,7 +51,7 @@ The language files below are marked by the corresponding Question2Answer version
 - [Q2A 1.7.x - Lithuanian (lietuvių)](http://www.question2answer.org/third-party/question2answer-1.7-language-lt.zip) by Kestas.
 - [Q2A 1.7.x - Norwegian (Norsk)](http://nettport.com/zipped/index.php?download=17295e0ce6c4ac7302f411f4b3d49b7b) by Sigma @ [Nettport](http://nettport.com/).
 - [Q2A 1.7.x - Persian (فارسی)](http://question2answer-farsi.com/files/language/Fa-1.7.zip) by Ali Bakhshi ilani @ [Question2Answer Farsi](http://question2answer-farsi.com/). Also: Jalali Dates, Magic Words plugins.
-- [Q2A 1.7.x - Polish (Polski)](https://github.com/PELock/Question2Answer) by Bartosz Wojcik @ [PELock](http://www.pelock.com).
+- [Q2A 1.7.x - Polish (Polski)](https://github.com/PELock/Question2Answer) by Bartosz Wojcik @ [PELock](https://www.pelock.com).
 - [Q2A 1.7.x - Portuguese (Português)](http://english-ingles.com/q2a-portuguese-pt_PT-translation.zip) by Tiago Marcelo @ [English Ingles](http://english-ingles.com/).
 - [Q2A 1.7.x - Russian (Русский)](https://github.com/ferasinka/q2a-lang-ru) by Andrey K. @ [Роборобо Android Q&A](http://roborobo.ru/).
 - [Q2A 1.7.x - Slovak (Slovenčina)](http://www.question2answer.org/third-party/question2answer-1.7-language-sk.zip) by Boris Sipos.
