@@ -121,7 +121,7 @@ You can also [create your own themes](/themes/) using CSS only, or (optionally) 
 
 ## Clients
 
-[Q2Andy](https://appsmata.github.io/Q2Andy/) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke) is a new Android client for Question2Answer sites which uses qa-api, a simple custom API which you can fork to the rootdir of your Q2A site. To use Q2Andy, build [qa-android](https://github.com/Appsmata/qa-android) android app for your site using Android Studio as per your needs and clone [qa-api](https://github.com/Appsmata/qa-api) to the root directory of your Q2A site you are set.
+[Q2Andy](https://appsmata.github.io/Q2Andy/) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke) is a new Android client for Question2Answer sites which uses qa-api, a simple custom API. To use Q2Andy, build [qa-android](https://github.com/Appsmata/qa-android) android app for your site using Android Studio as per your needs and clone [qa-api](https://github.com/Appsmata/qa-api) to the root directory of your Q2A site you are set.
 
 Older Android clients include: [Q2A client for Android](https://github.com/NoahY/q2android) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and [Q2A Android client](https://github.com/arjunsuresh/qaoverflow) by [Arjun](http://gateoverflow.in/user/Arjun/). Both require the [XML-RPC](https://github.com/arjunsuresh/q2a-xml-rpc) plugin to be installed on the Q2A site you're using with permission given to users in Admin page.
 
@@ -134,6 +134,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY), [updated](https://github.com/heliochun/q2a-badges/) by [Chun](https://github.com/heliochun). Provides user badges which recognize users' activities and achievements.
 - [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http://gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins.
 - [Comment Voting Plugin](https://github.com/NoahY/q2a-comment-voting) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows comments to be voted on, similarly to questions and answers.
+- [Extra Question Field](https://github.com/jacksiroke/q2a-extra-question-field) by [Jacksiroke](http://www.question2answer.org/qa/user/jacksiroke). Enhance your Extra Question fields with file management among other extra fields.
 - [Network Sites Plugin](https://github.com/NoahY/q2a-network) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows the creation of a network of interlinked Q2A sites.
 
 ### Editors and viewers
@@ -189,7 +190,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ### Additional page types
 
 - [Best Users per Month](https://github.com/q2apro/q2apro-best-users-per-month-free) by [q2apro.com](https://github.com/q2apro). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup) which supports Jalali calendar.
-- [Blog Post](https://github.com/JacksiroKe/Q2A-Blog-Post) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke). Allows registered users to maintain a blog on their Q2A site.
+- [Blog Post](https://github.com/jacksiroke/q2a-blog-post) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke). Allows registered users to maintain a blog on their Q2A site.
 - [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers. Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http://gateoverflow.in/user/Arjun) which adds more question filtering options and better styling options.
 - [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 - [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
@@ -215,7 +216,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Recent Events Widget](https://github.com/q2apro/q2apro-recent-events-widget) by [q2apro.com](https://github.com/q2apro/). Displays all recent events in the sidebar or main area.
 - [Recent Questions Widget](http://www.q2amarket.com/market/q2am-recent-questions/) by [Q2A Market](http://www.q2amarket.com/). Shows a list of recent questions in the sidebar or other locations.
 - [RSS Feed Widget](https://github.com/mbentley3123/q2a-rss-feed) by [Mark Bentley](http://BentleyDesigns.thebentleys.ca/). Displays posts from an RSS feed in the sidebar.
-- [Simple Slider](https://github.com/JacksiroKe/Q2A-Simple-Slider) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke). A simple image slider for the tops of pages, showing titles, descriptions and links.
+- [Simple Slider](https://github.com/jacksiroke/q2a-simple-slider) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke). A simple image slider for the tops of pages, showing titles, descriptions and links.
 - [Social Share](https://github.com/amiyasahu/q2a-social-share) by [Amiya Sahu](http://amiyasahu.com/). Adds clickable social sharing buttons below questions.
 - [Tab Widget](https://github.com/Towhidn/Q2A-Tab-Widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows popular and recent questions in two tabs, responsive design.
 - [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
@@ -238,7 +239,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http://gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
 - [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 - [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
-- [Private Message Adapter](https://github.com/JacksiroKe/Q2A-PM-Adapter) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
+- [Private Message Adapter](https://github.com/jacksiroke/q2a-pm-adapter) by [Jacksiroke](https://question2answer.org/qa/user/jacksiroke). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
 - [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
 - [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 - [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges. Also [forked](https://github.com/zakkak/q2a-role-markers) by [Zakkak](https://github.com/zakkak).
