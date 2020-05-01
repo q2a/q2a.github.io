@@ -111,6 +111,7 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 - [Sharp](http://qa-themes.com/shop/sharp-theme) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
 - [Snow Extended](http://store.q2amarket.com/blog/store/products/category/free-theme/) (Light and Dark) by [Q2A Market](http://www.q2amarket.com).
 - [Studio](http://qa-themes.com/shop/studio-theme) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
+- [Sturtz Mobile](https://github.com/Sturtz-Network/Sturtz-Mobile-QnA/) by Nate Sturtz @ [Sturtz Network](https://sturtz.ml/). Mobile, responsive, designed for SEO.
 - [Stylish](http://qa-themes.com/shop/stylish-theme) (responsive) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
 - [Support Theme](http://qa-themes.com/shop/support-theme) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/).
 - [Twenty Eleven](http://devmx.de/en/themes/twentyeleven-fur-q2a) by [Maximilian Narr](http://devmx.de/). For use with the WordPress theme of the same name.
