@@ -71,4 +71,14 @@ nav:
     - name: Unit tests
       path: /contribute/unit-tests/
 
-
+  addons:
+    - name: Overview
+      path: /addons/
+    - name: Languages
+      path: /addons/languages/
+    - name: Themes
+      path: /addons/themes/
+    - name: Plugins
+      path: /addons/plugins/
+    - name: Clients
+      path: /addons/clients/
