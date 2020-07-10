@@ -77,4 +77,13 @@ nav:
     - name: Documentation
       path: /contribute/docs/
 
+  addons:
+    - name: Translations
+      path: /addons/translations/
+    - name: Themes
+      path: /addons/themes/
+    - name: Plugins
+      path: /addons/plugins/
+    - name: Clients
+      path: /addons/clients/
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Question2Answer - Old language packs"
+menu: addons
+title: "Question2Answer - old language packs"
 ---
 
 # Question2Answer old language files
