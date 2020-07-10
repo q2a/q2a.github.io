@@ -188,6 +188,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Socialcast Notifications](https://github.com/luxbet/qa-socialcast-notifications) by [Wei Feng](https://github.com/windix). Posts on the [Socialcast](http://www.socialcast.com) community platform when a new question is asked.
 - [uLogin Login Plugin](https://github.com/saxap/ulogin-for-q2a) by [Sergey Astafev](http://dontforget.pro/). Allows logging in via [uLogin](http://ulogin.ru), which supports many identity providers popular in Russia.
 - [XML-RPC Server](https://github.com/arjunsuresh/q2a-xml-rpc) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://gateoverflow.in/user/Arjun). Allows access to Q2A sites via the XML-RPC protocol, also used by the Android client.
+- [Use JQuery CDN](https://github.com/PELock/q2a-use-cdn/) by Bartosz Wojcik @ [PELock](https://www.pelock.com). Enable the CDN (Content Delivery Network) usage for JQuery library.
+
 
 ### Additional page types
 
