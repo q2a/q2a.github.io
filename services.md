@@ -23,7 +23,6 @@ We also have a [Discord channel](https://discord.gg/QSAubQr) if you'd like to ch
 
 - [Q2A Market](http://www.q2amarket.com/) --- premium themes and custom theme development.
 - [pupi1985](http://www.question2answer.org/qa/user/pupi1985) --- custom plugin development and customizations. [Get a quote!](http://form.jotformz.com/63018196663662)
-- [JacksiroKe](https://appsmata.github.io/q2a/) --- affordable custom and premium plugin development and support.
 
 
 ## Easy hosting for Q2A
