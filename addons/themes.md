@@ -8,6 +8,7 @@ title: "Question2Answer Add-ons - Themes"
 
 To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](/services/)**. Below is a list of other recently updated themes:
 
+- [Mayro](https://github.com/MominRaza/Mayro) (A Google Material Design Theme) by [Momin Raza](https://github.com/MominRaza).
 - [Brown-Clean](http://www.question2answer.org/qa/24972/new-free-theme-launched-brown-clean) by [Abhinav](http://www.question2answer.org/qa/user/abhik21).
 - [Default Right-To-Left](http://www.question2answer.org/third-party/question2answer-theme-Default-R2L.zip) (based on Q2A Default theme) by [Towhid Nategheian](http://TowhidN.com/) @ [AskWeb](http://askweb.ir/).
 - [Donut](https://github.com/amiyasahu/Donut) (responsive) by [Amiya Sahu](http://amiyasahu.com/).
