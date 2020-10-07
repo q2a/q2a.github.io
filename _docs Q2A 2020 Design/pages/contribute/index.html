@@ -1,0 +1,191 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Contribute - Question2Answer</title>
+	<meta name="description" content=="Accessing Question2Answer from external PHP code"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/code/external/"/>
+	
+	<!-- Favicons -->
+	<link href="../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../css/styles.css"/>
+	<link rel="stylesheet" href="../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item selected-nav">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/services" class="nav-item">Services</a></li>
+					<li><a href="https://www.question2answer.org/sites.php" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/contribute">Contribute</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+				
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/contribute/">Issues</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/contribute/coding-style">Coding Style</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/contribute/unit-tests">Unit Tests</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/contribute/docs">Docs</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="contributing-to-question2answer">Contributing to Question2Answer</h1>
+
+						<p>Development of Question2Answer takes place through <a href="https://github.com/q2a/question2answer">GitHub</a>. Bug reports and pull requests are encouraged, provided they follow these guidelines.</p>
+
+						<h2 id="bug-reports-issues">Bug reports (issues)</h2>
+
+						<p>If you find a bug (error) with Question2Answer, please <a href="https://github.com/q2a/question2answer/issues">submit an issue here</a>. Be as descriptive as possible: include exactly what you did to make the bug appear, what you expect to happen, and what happened instead. Also include your PHP version and MySQL version. Remember to check for similar issues already reported.</p>
+
+						<p>If you think you’ve found a security issue, you can responsibly disclose it to us using the <a href="https://www.question2answer.org/feedback.php">contact form here</a>.</p>
+
+						<p>Note that general troubleshooting issues such as installation or how to use a feature should continue to be asked on the <a href="http://www.question2answer.org/qa/">Question2Answer Q&amp;A</a>.</p>
+
+						<h2 id="pull-requests">Pull requests</h2>
+
+						<p>If you have found the cause of the bug in the Q2A code, you can submit the patch back to the Q2A repository. Create a fork of the repo, make the changes in your fork, then submit a pull request. Bug fix pull requests must be targeted to the <code class="language-plaintext highlighter-rouge">bugfix</code> branch. PRs for new features or large code changes must be made to the <code class="language-plaintext highlighter-rouge">dev</code> branch.</p>
+
+						<p>If you wish to implement a feature, you should start a discussion on the <a href="http://www.question2answer.org/qa/">Question2Answer Q&amp;A</a> first. We welcome all ideas but they may not be appropriate for the Q2A core. Consider whether your idea could be developed as a plugin.</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../js/sticky_bar.js"></script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

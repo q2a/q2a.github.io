@@ -1,0 +1,381 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>App Structure - Question2Answer</title>
+	<meta name="description" content=="Question2Answer application structure"/>
+	<link rel="canonical" href="https://docs.question2answer.org/pages/documentation/code/app-structure/"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://docs.question2answer.org" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item selected-nav">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/code">Code</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/code/app-structure/">App Structure</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/code">External</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/code/functions">Functions</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/code/app-structure">App Structure</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="question2answer-application-structure">Question2Answer application structure</h1>
+
+						<p>Below is an overview of the structure of the Q2A application and how requests are handled.</p>
+
+						<h2 id="request-structure">Request structure</h2>
+
+						<p>All HTTP requests for Q2A are routed through the root <code class="language-plaintext highlighter-rouge">index.php</code> file. This file sets the core <code class="language-plaintext highlighter-rouge">QA_BASE_DIR</code> constant, then includes <code class="language-plaintext highlighter-rouge">qa-include/qa-index.php</code> which handles the request at a high level. There we branch off for certain types of requests:</p>
+
+						<ul>
+							<li><strong>AJAX</strong> — aynschronous requests from a page, such as voting or adding answers/comments.</li>
+							<li><strong>Images</strong> — requests for image files uploaded (e.g. avatars). Handles resizing and caching.</li>
+							<li><strong>Blobs</strong> — downloadable files such as PDFs.</li>
+							<li><strong>Installation</strong> — handles set-up the first time Q2A is run, and any upgrade queries in a new version.</li>
+							<li><strong>URL test</strong> — a special route, used in the Admin area. It displays “OK” if the URL structure used works fine with your server setup.</li>
+							<li><strong>RSS feed</strong> — generates an XML document in RSS format, listing recent questions etc.</li>
+							<li><strong>Page</strong> — all other page requests, including page plugins.</li>
+						</ul>
+
+						<p>For the latter four types above, we include <code class="language-plaintext highlighter-rouge">qa-include/qa-base.php</code> which initializes the PHP environment, various constants and settings, and then connects to the database. It also defines an autoloader (from v1.7+) which automatically loads core classes of a specific format:</p>
+
+						<ol>
+							<li>From Q2A 1.9 namespaces are used. The main core namespace is <code class="language-plaintext highlighter-rouge">Q2A</code> which maps to the <code class="language-plaintext highlighter-rouge">qa-src/</code> directory. So a class of the form <code class="language-plaintext highlighter-rouge">\Q2A\Storage\FileCacheDriver</code> will automatically load the file <code class="language-plaintext highlighter-rouge">qa-src/Storage/FileCacheDriver.php</code>. See the <a href="https://docs.question2answer.org/pages/contribute/coding-style/#new-autoloaded-classes">coding style</a> page for full details.</li>
+							<li>In Q2A 1.7-1.8, classes of the form <code class="language-plaintext highlighter-rouge">Q2A_Util_Usage</code> map to files in the <code class="language-plaintext highlighter-rouge">qa-include/Q2A/</code> directory, e.g. <code class="language-plaintext highlighter-rouge">qa-include/Q2A/Util/Usage.php</code>. These are being phased out in favor of namespaces.</li>
+						</ol>
+
+						<p>Here we “normalize” the request, which converts the URL from one of multiple formats (parameters or SEO-friendly) into a standard format such as <code class="language-plaintext highlighter-rouge">/activity</code> or <code class="language-plaintext highlighter-rouge">/question/1234/title</code>.</p>
+
+						<h2 id="page-requests">Page requests</h2>
+
+						<p>Pages make up the bulk of Q2A. The file <code class="language-plaintext highlighter-rouge">qa-include/qa-page.php</code> handles these. The main function of concern is <code class="language-plaintext highlighter-rouge">qa_get_request_content</code> which matches the URL to a page script in <code class="language-plaintext highlighter-rouge">qa-include/pages/</code>. Those page scripts are where the action happens. Data is fetched and then a special <code class="language-plaintext highlighter-rouge">$qa_content</code> array is returned, containing all the information needed to display a page.</p>
+
+						<p>That’s returned back to <code class="language-plaintext highlighter-rouge">qa-page.php</code> which then calls <code class="language-plaintext highlighter-rouge">qa_output_content</code> with the data to do some final processing and load the theme for final output of the HTML.</p>
+
+						<p>From Q2A 1.9 instead of raw page scripts, a <strong>controller</strong> system is used. Controllers are classes with functions that handle each type of page. For example <code class="language-plaintext highlighter-rouge">Q2A\Controllers\User\UsersList</code> handles the pages showing lists of users by points, blocked users, etc.</p>
+
+						<h2 id="theme-output">Theme output</h2>
+
+						<p>As described above, the <code class="language-plaintext highlighter-rouge">$qa_content</code> variable is sent to the theme class (accessible via <code class="language-plaintext highlighter-rouge">$this-&gt;content</code>), and the theme outputs HTML based on that. The base class is in <code class="language-plaintext highlighter-rouge">qa-include/qa-theme-base.php</code> - custom themes may override this to modify HTML output, but most themes do not need to. Each element in the content array corresponds to a different type of HTML - metadata, scripts, styles, forms, navigation, questions and more.</p>
+
+						<p>Below are the various elements that can be in the content array. A nested list element corresponds to a sub-array in <code class="language-plaintext highlighter-rouge">$qa_content</code>. Where we refer to a “split array”, this means an array with three sub-elements, <code class="language-plaintext highlighter-rouge">prefix</code>, <code class="language-plaintext highlighter-rouge">data</code> and <code class="language-plaintext highlighter-rouge">suffix</code>, which are output in that order.</p>
+
+						<ul>
+							<li><code class="language-plaintext highlighter-rouge">content_type</code> — The Content-type as used in the HTTP response headerl typically <code class="language-plaintext highlighter-rouge">text/html; charset=utf-8</code>.</li>
+							<li><code class="language-plaintext highlighter-rouge">charset</code> — The page encoding, usually <code class="language-plaintext highlighter-rouge">utf-8</code>.</li>
+							<li><code class="language-plaintext highlighter-rouge">language</code> — The site lgnaueg code, e.g. <code class="language-plaintext highlighter-rouge">en</code> for English or <code class="language-plaintext highlighter-rouge">zh</code> for Chinese.</li>
+							<li><code class="language-plaintext highlighter-rouge">direction</code> — The text direction, <code class="language-plaintext highlighter-rouge">ltr</code> for left-to-right (default), <code class="language-plaintext highlighter-rouge">rtl</code> for right-to-left.</li>
+							<li><code class="language-plaintext highlighter-rouge">options</code> — An array of options that are useful for theme developers. Currently this includes <code class="language-plaintext highlighter-rouge">minify_html</code>.</li>
+							<li><code class="language-plaintext highlighter-rouge">site_title</code> — The website title.</li>
+							<li><code class="language-plaintext highlighter-rouge">title</code> — The page title.</li>
+							<li><code class="language-plaintext highlighter-rouge">description</code> — Page meta description.</li>
+							<li><code class="language-plaintext highlighter-rouge">keywords</code> — Page meta keywords.</li>
+							<li><code class="language-plaintext highlighter-rouge">html_tags</code> — Attributes to be added to the <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> tag.</li>
+							<li><code class="language-plaintext highlighter-rouge">head_lines</code> — Array of HTML to be added to the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> tag.</li>
+							<li><code class="language-plaintext highlighter-rouge">canonical</code> — The canonical URL for the page, for the relevant meta tag.</li>
+							<li><code class="language-plaintext highlighter-rouge">feed</code> — Data for the RSS feed of the current page.
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">url</code></li>
+									<li><code class="language-plaintext highlighter-rouge">label</code></li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">script</code> — Array of HTML tags for JavaScript. This is combined from several <code class="language-plaintext highlighter-rouge">script_*</code> elements (below) prior to theme instantiation. So the below keys cannot be used in themes directly, but can be set from plugins of varying types.</li>
+							<li><code class="language-plaintext highlighter-rouge">script_var</code> — Associative array of JavaScript variables to be set.</li>
+							<li><code class="language-plaintext highlighter-rouge">script_lines</code> — Array of JavaScript lines of code.</li>
+							<li><code class="language-plaintext highlighter-rouge">script_rel</code> — Array of relative links to JavaScript files.</li>
+							<li><code class="language-plaintext highlighter-rouge">script_src</code> — Array of absolute links to external JavaScript files.</li>
+							<li><code class="language-plaintext highlighter-rouge">script_onloads</code> — Array of JavaScript lines of code that should be executed on <code class="language-plaintext highlighter-rouge">window.load</code>. Uses jQuery’s <code class="language-plaintext highlighter-rouge">.on('load', ...)</code> method.</li>
+							<li><code class="language-plaintext highlighter-rouge">wrapper_tags</code> — Attributes to be added to the <code class="language-plaintext highlighter-rouge">.qa-body-wrapper</code> element.</li>
+							<li><code class="language-plaintext highlighter-rouge">logo</code> — HTML for the site logo.</li>
+							<li><code class="language-plaintext highlighter-rouge">error</code> — Page-level error message, for example when a page is not found or a user cannot view a page.</li>
+							<li><code class="language-plaintext highlighter-rouge">navigation</code> — Array of different navigation elements:
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">main</code> (top level menu)</li>
+									<li><code class="language-plaintext highlighter-rouge">sub</code> (second level menu)</li>
+									<li><code class="language-plaintext highlighter-rouge">user</code> (user links e.g. updates/logout)</li>
+									<li><code class="language-plaintext highlighter-rouge">cat</code> (category links)</li>
+									<li><code class="language-plaintext highlighter-rouge">footer</code> (footer links)</li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">sidebar</code> — HTML to show in the sidebar.</li>
+							<li><code class="language-plaintext highlighter-rouge">sidepanel</code></li>
+							<li><code class="language-plaintext highlighter-rouge">widgets</code> — Array of widget objects:
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">full</code>
+										<ul>
+											<li><code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">high</code>, <code class="language-plaintext highlighter-rouge">low</code>, <code class="language-plaintext highlighter-rouge">bottom</code></li>
+										</ul>
+									</li>
+									<li><code class="language-plaintext highlighter-rouge">side</code>
+										<ul>
+											<li><code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">high</code>, <code class="language-plaintext highlighter-rouge">low</code>, <code class="language-plaintext highlighter-rouge">bottom</code></li>
+										</ul>
+									</li>
+									<li><code class="language-plaintext highlighter-rouge">main</code>
+										<ul>
+											<li><code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">high</code>, <code class="language-plaintext highlighter-rouge">low</code>, <code class="language-plaintext highlighter-rouge">bottom</code></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">categoryids</code> — Question categories.</li>
+							<li><code class="language-plaintext highlighter-rouge">search</code> — Tags for the search field:
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">form_tags</code></li>
+									<li><code class="language-plaintext highlighter-rouge">form_extra</code></li>
+									<li><code class="language-plaintext highlighter-rouge">title</code></li>
+									<li><code class="language-plaintext highlighter-rouge">field_tags</code></li>
+									<li><code class="language-plaintext highlighter-rouge">button_label</code></li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">favorite</code> — Form tags for the favorite button.</li>
+							<li><code class="language-plaintext highlighter-rouge">loggedin</code> — Split array for logged in message/user link.</li>
+							<li><code class="language-plaintext highlighter-rouge">page_links</code> — Pagination data.
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">label</code></li>
+									<li><code class="language-plaintext highlighter-rouge">items</code> - array of arrays, each containing <code class="language-plaintext highlighter-rouge">type</code> (one of: prev/jump/this/next), <code class="language-plaintext highlighter-rouge">label</code>, <code class="language-plaintext highlighter-rouge">page</code>, <code class="language-plaintext highlighter-rouge">ellipsis</code>, <code class="language-plaintext highlighter-rouge">url</code></li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">ranking</code> — Used for users and tags pages.
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">type</code> (one of: users/tags)</li>
+									<li><code class="language-plaintext highlighter-rouge">items</code> (array of users/tags)</li>
+									<li><code class="language-plaintext highlighter-rouge">rows</code> (deprecated: number of table rows when using old layout format)</li>
+									<li><code class="language-plaintext highlighter-rouge">sort</code> (one of: points/date/level/count)</li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">nav_list</code> — List of categories for category page.</li>
+							<li><code class="language-plaintext highlighter-rouge">form</code> — The main form for the page (see below).</li>
+							<li><code class="language-plaintext highlighter-rouge">q_list</code> — A list of questions.
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">form</code></li>
+									<li><code class="language-plaintext highlighter-rouge">qs</code> (array of questions)</li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">q_view</code> — The main array of data for a question, including its answers and comments (see below).</li>
+							<li><code class="language-plaintext highlighter-rouge">a_list</code> — List of answers on a question.
+								<ul>
+									<li><code class="language-plaintext highlighter-rouge">as</code> (array of answers)</li>
+									<li><code class="language-plaintext highlighter-rouge">tags</code></li>
+									<li><code class="language-plaintext highlighter-rouge">title_tags</code></li>
+									<li><code class="language-plaintext highlighter-rouge">title</code></li>
+								</ul>
+							</li>
+							<li><code class="language-plaintext highlighter-rouge">a_form</code> — Form tags for adding an answer (see below).</li>
+						</ul>
+
+						<h3 id="form-array-format">Form array format</h3>
+
+						<p>A form can be added to a page using the ‘form’ key. Additional forms can use incrementing keys like <code class="language-plaintext highlighter-rouge">form_2</code>, <code class="language-plaintext highlighter-rouge">form_3</code> and so on. Forms should contain these elements:</p>
+
+						<ul>
+							<li><code class="language-plaintext highlighter-rouge">style</code> — ‘tall’ or ‘wide’</li>
+							<li><code class="language-plaintext highlighter-rouge">tags</code> — attributes such as method/action</li>
+							<li><code class="language-plaintext highlighter-rouge">title</code></li>
+							<li><code class="language-plaintext highlighter-rouge">fields</code> — array of fields</li>
+							<li><code class="language-plaintext highlighter-rouge">buttons</code> — array of buttons</li>
+							<li><code class="language-plaintext highlighter-rouge">hidden</code> — associative array of hidden elements</li>
+							<li><code class="language-plaintext highlighter-rouge">id</code></li>
+							<li><code class="language-plaintext highlighter-rouge">collapse</code></li>
+						</ul>
+
+						<h3 id="question-array-format">Question array format</h3>
+
+						<p>Details for a question are stored in the <code class="language-plaintext highlighter-rouge">q_view</code> key. The sub-elements are:</p>
+
+						<ul>
+							<li><code class="language-plaintext highlighter-rouge">raw</code> — The plain data from the database without any formatting or modification. For example the post ID can be found in <code class="language-plaintext highlighter-rouge">$qa_content['q_view']['raw']['postid']</code></li>
+							<li><code class="language-plaintext highlighter-rouge">hidden</code></li>
+							<li><code class="language-plaintext highlighter-rouge">queued</code></li>
+							<li><code class="language-plaintext highlighter-rouge">tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">classes</code></li>
+							<li><code class="language-plaintext highlighter-rouge">url</code></li>
+							<li><code class="language-plaintext highlighter-rouge">title</code></li>
+							<li><code class="language-plaintext highlighter-rouge">q_tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">views_raw</code></li>
+							<li><code class="language-plaintext highlighter-rouge">views</code></li>
+							<li><code class="language-plaintext highlighter-rouge">where</code></li>
+							<li><code class="language-plaintext highlighter-rouge">content</code></li>
+							<li><code class="language-plaintext highlighter-rouge">upvotes_raw</code></li>
+							<li><code class="language-plaintext highlighter-rouge">downvotes_raw</code></li>
+							<li><code class="language-plaintext highlighter-rouge">netvotes_raw</code></li>
+							<li><code class="language-plaintext highlighter-rouge">vote_view</code></li>
+							<li><code class="language-plaintext highlighter-rouge">vote_on_page</code></li>
+							<li><code class="language-plaintext highlighter-rouge">upvotes_view</code></li>
+							<li><code class="language-plaintext highlighter-rouge">downvotes_view</code></li>
+							<li><code class="language-plaintext highlighter-rouge">netvotes_view</code></li>
+							<li><code class="language-plaintext highlighter-rouge">vote_tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">vote_state</code></li>
+							<li><code class="language-plaintext highlighter-rouge">vote_up_tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">vote_down_tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">meta_order</code></li>
+							<li><code class="language-plaintext highlighter-rouge">what</code></li>
+							<li><code class="language-plaintext highlighter-rouge">what_url</code></li>
+							<li><code class="language-plaintext highlighter-rouge">what_url_tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">when</code></li>
+							<li><code class="language-plaintext highlighter-rouge">who</code></li>
+							<li><code class="language-plaintext highlighter-rouge">avatar</code></li>
+							<li><code class="language-plaintext highlighter-rouge">what_2</code></li>
+							<li><code class="language-plaintext highlighter-rouge">when_2</code></li>
+							<li><code class="language-plaintext highlighter-rouge">who_2</code></li>
+							<li><code class="language-plaintext highlighter-rouge">main_form_tags</code></li>
+							<li><code class="language-plaintext highlighter-rouge">voting_form_hidden</code></li>
+							<li><code class="language-plaintext highlighter-rouge">buttons_form_hidden</code></li>
+							<li><code class="language-plaintext highlighter-rouge">form</code></li>
+							<li><code class="language-plaintext highlighter-rouge">c_form</code></li>
+							<li><code class="language-plaintext highlighter-rouge">c_list</code></li>
+						</ul>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="https://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

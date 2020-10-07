@@ -1,0 +1,245 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>WordPress Integration (Documentation) - Question2Answer</title>
+	<meta name="description" content=="Integrate WordPress with Question2Answer"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/install/wordpress/"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item selected-nav">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/install">Install</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/install/wordpress">WordPress</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install">Install</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://heliochun.github.io/q2adocs/pages/documentation/install/wordpress">WordPress</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/single-sign-on">Single Sign-On</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/upgrading">Upgrading</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/optimization">Optimization</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/security">Security</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/htaccess">.htaccess</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="installing-question2answer-with-wordpress-integration">Installing Question2Answer with WordPress integration</h1>
+
+						<p>From version 1.4, Question2Answer offers out-of-the-box integration with your <a href="http://wordpress.org/">WordPress</a> 3+ site and user database. To install Question2Answer as part of your WordPress site, please follow the instructions below:</p>
+
+						<ol>
+							<li>
+								<p>Download the <a href="https://github.com/q2a/question2answer/releases">latest version of Question2Answer</a> to your computer or web server (also available <a href="https://github.com/q2a/question2answer">on GitHub</a>).</p>
+							</li>
+							<li>
+								<p>Unzip the download using a tool such as <a href="http://www.winzip.com/">WinZip</a> (or <code class="language-plaintext highlighter-rouge">unzip</code> in the Unix shell).</p>
+							</li>
+							<li>
+								<p>Find <code class="language-plaintext highlighter-rouge">qa-config-example.php</code> and <code class="language-plaintext highlighter-rouge">.htaccess-example</code> in the unzipped <code class="language-plaintext highlighter-rouge">question2answer</code> folder, and rename them to <code class="language-plaintext highlighter-rouge">qa-config.php</code> and <code class="language-plaintext highlighter-rouge">.htaccess</code>, respectively.</p>
+							</li>
+							<li>
+								<p>Open <code class="language-plaintext highlighter-rouge">qa-config.php</code> in a text editor and insert the following line next to another <code class="language-plaintext highlighter-rouge">define(...)</code> in the file:</p>
+
+								<p><code class="language-plaintext highlighter-rouge">define('QA_WORDPRESS_INTEGRATE_PATH', '**/PATH/TO/WORDPRESS**');</code></p>
+
+								<p>Replace <code class="language-plaintext highlighter-rouge">**/PATH/TO/WORDPRESS**</code> in the example with the full path to the WordPress directory on your server, i.e. the directory which contains <code class="language-plaintext highlighter-rouge">wp-load.php</code>. You do not need to set your MySQL database details in <code class="language-plaintext highlighter-rouge">qa-config.php</code> since these are imported from WordPress automatically. Q2A and WordPress will use separate tables within the same MySQL database.</p>
+							</li>
+							<li>Place all the Question2Answer files in the appropriate location on your web server:
+								<ul>
+									<li>To serve Question2Answer in a subdirectory of a site (e.g. <code class="language-plaintext highlighter-rouge">http://www.mysite.com/qa/</code>), create the subdirectory inside the root directory for the site, then move or upload all the contents of the unzipped <code class="language-plaintext highlighter-rouge">question2answer</code> folder into this subdirectory.</li>
+									<li>To serve Question2Answer at the root of a domain (e.g. <code class="language-plaintext highlighter-rouge">http://qa.mysite.com/</code>), move or upload all the contents of the unzipped <code class="language-plaintext highlighter-rouge">question2answer</code> folder into the root directory for that domain on your web server.</li>
+								</ul>
+							</li>
+							<li>Ensure that WordPress authentication cookies and redirections are compatible with Question2Answer, as follows:
+								<ul>
+									<li>If Question2Answer is in a subdirectory of your WordPress site (e.g. <code class="language-plaintext highlighter-rouge">http://www.mysite.com/qa/</code> under <code class="language-plaintext highlighter-rouge">http://www.mysite.com/</code>) then nothing needs to be done.</li>
+									<li>If Question2Answer is on the same domain but not in a subdirectory (e.g. <code class="language-plaintext highlighter-rouge">http://www.mysite.com/qa/</code> and <code class="language-plaintext highlighter-rouge">http://www.mysite.com/blog/</code>), then add the following line at the <strong>start</strong> of the WordPress <code class="language-plaintext highlighter-rouge">wp-config.php</code> file:
+										<code class="language-plaintext highlighter-rouge">define('COOKIEPATH', '/');</code></li>
+									<li>If Question2Answer is on a different subdomain from your WordPress site (e.g. <code class="language-plaintext highlighter-rouge">http://qa.mysite.com/</code> and <code class="language-plaintext highlighter-rouge">http://blog.mysite.com/</code>) then it’s a little more complicated:
+										<ul>
+											<li>
+												<p>Add the following lines at the <strong>start</strong> of the WordPress <code class="language-plaintext highlighter-rouge">wp-config.php</code> file, replacing <code class="language-plaintext highlighter-rouge">**.mysite.com**</code> with a period (.) followed by the partial domain name which is shared by both sites:</p>
+
+<pre><code>define('COOKIEPATH', '/');
+define('COOKIE_DOMAIN', **'.mysite.com'**);
+</code></pre>
+											</li>
+											<li>
+												<p>Add the following lines at the <strong>end</strong> of the WordPress <code class="language-plaintext highlighter-rouge">wp-config.php</code> file, replacing <code class="language-plaintext highlighter-rouge">**qa.mysite.com**</code> with the full domain name for your Q2A site:</p>
+
+<pre><code>/* To allow redirection from WordPress login to Question2Answer */
+add_filter('allowed_redirect_hosts', 'qa_wordpress_redirect_hosts');
+function qa_wordpress_redirect_hosts($content) {
+	$content[] = **'qa.mysite.com'**;
+	return $content;
+}
+</code></pre>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Open the appropriate web page for Question2Answer in your web browser, for example:
+								<ul>
+									<li>If you installed Question2Answer in a subdirectory, <code class="language-plaintext highlighter-rouge">http://www.mysite.com/qa/</code></li>
+									<li>If you installed Question2Answer at the root of a domain, <code class="language-plaintext highlighter-rouge">http://qa.mysite.com/</code></li>
+								</ul>
+							</li>
+							<li>
+								<p>Follow the on-screen instructions to set up your database and Question2Answer functionality.</p>
+							</li>
+							<li>You can now integrate the styling of Question2Answer with your WordPress site by <a href="https://docs.question2answer.org/pages/addons/themes/">creating a Question2Answer theme</a>.</li>
+						</ol>
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

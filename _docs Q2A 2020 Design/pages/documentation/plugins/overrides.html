@@ -1,0 +1,209 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Plugin overrides (Documentation) - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin overrides"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/overrides"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="implementing-plugin-overrides">Implementing plugin overrides</h1>
+
+						<p>Plugin overrides (requires Q2A 1.5+) can replace or wrap over 150 functions defined within the Q2A core. Overrides can be very powerful, but they run a risk of incompatibility with future versions of Q2A. If possible, it is recommended to use <a href="https://docs.question2answer.org/pages/documentation/plugins/modules">modules</a> or <a href="https://docs.question2answer.org/pages/documentation/plugins/layers">layers</a> instead. Nonetheless, some things can only be done via overrides, and future versions of Q2A will try not to break them.</p>
+
+						<p>Not all functions in Q2A can be overridden. To check a particular function, see whether its definition begins with:</p>
+
+						<p><code class="language-plaintext highlighter-rouge">if (qa_to_override(__FUNCTION__))</code> …</p>
+
+						<p>Functions are overridden by redefining them in a PHP file in your plugin directory, then calling <code class="language-plaintext highlighter-rouge">qa_register_plugin_overrides()</code> with the name of that file in <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>. Here is a simple example of a PHP file which overrides <code class="language-plaintext highlighter-rouge">qa_retrieve_url()</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">qa_retrieve_url</span><span class="p">(</span><span class="nv">$url</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="c1">// implement some specialized code for retrieving a URL's contents</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+						<p>In Q2A, overrides go beyond simple function replacement by allowing you to call through to the original Q2A function from within your own function. To call the original function, simple add <code class="language-plaintext highlighter-rouge">_base</code> to its name. For example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">qa_retrieve_url</span><span class="p">(</span><span class="nv">$url</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">substr</span><span class="p">(</span><span class="nv">$url</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">==</span><span class="s1">'https://'</span><span class="p">)</span>
+		<span class="c1">// specialized code for retrieving secure pages</span>
+	<span class="k">else</span>
+		<span class="k">return</span> <span class="nx">qa_retrieve_url_base</span><span class="p">(</span><span class="nv">$url</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+						<p>When overriding functions, you should call through to the <code class="language-plaintext highlighter-rouge">_base</code> function as much as possible. This allows you to deal with special cases and modify inputs and outputs without replacing a function in its entirety. If multiple plugins override the same function and call through to <code class="language-plaintext highlighter-rouge">_base</code>, Q2A will automatically build a calling chain of appropriately renamed functions, each of which calls the next. This process takes place in <code class="language-plaintext highlighter-rouge">qa_load_override_files()</code> in <code class="language-plaintext highlighter-rouge">qa-base.php</code> and is transparent to you as a plugin developer. Overall, using the <code class="language-plaintext highlighter-rouge">_base</code> function will maximize the chance of your plugin working well with other plugins, as well as future versions of Q2A.</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

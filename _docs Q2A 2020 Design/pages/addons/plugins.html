@@ -1,0 +1,404 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Plugins (Addons) - Question2Answer</title>
+	<meta name="description" content=="Accessing Question2Answer from external PHP code"/>
+	<link rel="canonical" href="https://docs.question2answer.org/pages/addons/plugins/"/>
+	
+	<!-- Favicons -->
+	<link href="../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../css/styles.css"/>
+	<link rel="stylesheet" href="../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item selected-nav">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/addons/">Addons</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/addons/plugins">Plugins</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="article-content-container">
+						<h1 id="question2answer-plugins">Question2Answer Plugins</h1>
+
+						<p>To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A’s <code class="language-plaintext highlighter-rouge">qa-plugin</code> directory, then open the Plugins section of the Admin panel and check it is listed. The plugin may also offer some options on this page.</p>
+
+						<h2 id="major-features">Major features</h2>
+
+						<ul>
+						  <li><a href="https://github.com/NoahY/q2a-badges">Badges Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a> - <a href="https://github.com/heliochun/q2a-badges/">Updated</a> by <a href="https://github.com/heliochun">Chun</a>. Provides user badges which recognize users’ activities and achievements.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-betterpoints">Better Points</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-categoryexperts">Category Experts</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Adds a widget on Category pages showing the best performing users in that category. A good way to identify Category Experts.</li>
+						  <li><a href="https://github.com/JacksiroKe/q2a-extra-question-field">Extra Question Field</a> by <a href="http://www.question2answer.org/qa/user/jacksiroke">JacksiroKe</a>. Enhance your Extra Question fields with file management among other extra fields.</li>
+						  <li><a href="https://github.com/NoahY/q2a-network">Network Sites Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows the creation of a network of interlinked Q2A sites.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-quizx/tree/master">Quizx</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Transforms your question2answer forum into a community quiz.</li>
+						</ul>
+
+						<h2 id="editors-and-viewers">Editors and viewers</h2>
+
+						<ul>
+						  <li><a href="https://github.com/amiyasahu/q2a-code-prettify">Code Prettifier</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Code syntax highlighting with themes, based on <a href="https://code.google.com/p/google-code-prettify/">Google Code Prettify</a>.</li>
+						  <li><a href="https://github.com/NoahY/q2a-embed">Embed Youtube Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Converts links to YouTube videos into embedded videos when displaying questions, answers or comments.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-express-editor">Express Editor</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Recent version of <a href="http://ckeditor.com/">CKEditor</a> bundled with <a href="http://ace.c9.io/">Ace Editor</a> for smooth code editing.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-lightbox-images/tree/master">Lightbox-images</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Provides a Lightbox Effect for all images in posts.</li>
+						  <li><a href="http://codelair.co.uk/2011/markdown-editor-plugin-q2a/">Markdown Editor Plugin</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a> is a simple markup format that is readable as plain text.</li>
+						  <li><a href="https://github.com/thibaultduponchelle/q2a-memes">Memes for Text</a> by <a href="https://github.com/thibaultduponchelle">Thibault Duponchelle</a>. Post <em>lolfaces</em> in your answers or comments.</li>
+						  <li><a href="http://www.question2answer.org/qa/51849/tinymcewrapper-miranda-updated-most-powerful-editor-joins">Miranda</a> <a href="https://www.tinymce.com/">Tinymcse Wrapper</a> by Don Shakespeare. Adds Tinymcse to be used across posts as well as other text areas like messages, wall posts and is higly customizable.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-prevent-simultaneous-edits">Prevent Simultaneous Edits</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Prevent two users editing the same post simultaneously. Also <a href="https://github.com/ElephantsGroup/q2a-prevent-simultaneous-edits">forked</a> by <a href="https://github.com/ElephantsGroup">Jalal Jaberi</a>.</li>
+						  <li><a href="https://github.com/q2apro/SCEditor">SCEditor Plugin</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Provides <a href="http://www.sceditor.com">SCEditor</a> as a WYSIWYG rich text editor. Some functionality requires the Premium version.</li>
+						  <li><a href="https://github.com/NoahY/q2a-shortcode">Shortcode Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows posts to be displayed with text substitutions, including support for regular expressions.</li>
+						  <li><a href="https://github.com/NoahY/q2a-smilies">Smilies for Text</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows smilies to be embedded in plain text or Markdown content. Also <a href="https://github.com/thibaultduponchelle/q2a-smilies">forked</a> by <a href="https://github.com/thibaultduponchelle">Thibault Duponchelle</a> to support multiboxes, add a lot of smilies and slightly improve the style.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-syntax-highlighter">Syntax Highlighter</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Code syntax highlighting based on <a href="https://highlightjs.org/">highlight.js</a> with over 40 built-in themes.</li>
+						  <li><a href="https://github.com/thibaultduponchelle/q2a-wysiwyg-matheditor">WYSIWYG Math Editor</a> by <a href="https://github.com/thibaultduponchelle">Thibault Duponchelle</a>. A CKEditor 4 editor plugin <em>with math capabilities</em>. Allow users to add math formulas (MathJax) in questions, answers and comments. Other math editors based on <em>preview zone</em> like <a href="https://github.com/q2apro/q2apro-sceditor">SCEditor</a> were already mentioned above. Also: <a href="https://github.com/tangruize/q2a-formatter">q2a-formatter</a> (or <a href="https://github.com/arjunsuresh/mathjax">Google Code Prettify and MathJax</a> from <a href="https://github.com/arjunsuresh">Arjun Suresh</a> from which <a href="https://github.com/tangruize/q2a-formatter">q2a-formatter</a> was forked).</li>
+						</ul>
+						<hr></hr><!-- Paid Editors and viewers -->
+						<ul>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-dm-dynamic-mentions">DM - Dynamic Mentions</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows users to be mentioned using the @user syntax.</li>
+						</ul>
+
+						<h2 id="integration-with-other-products">Integration with other products</h2>
+
+						<ul>
+						  <li><a href="https://github.com/PublicityPort/q2a-social-share-plugin">AddThis Social Sharing</a> by <a href="https://publicityport.com/">Publicity Port</a>. Shows a pop-up message to encourage users to share their questions using the <a href="http://www.addthis.com">AddThis</a> sharing widget.</li>
+						  <li><a href="https://github.com/arjunsuresh/chat">Ajax Chat</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Adds a sidebar widget and a page showing AJAX chat which is responsive and also has a log page for searching across old chats. There is a separate chat room for each category of Q2A.</li>
+						  <li><a href="https://github.com/fauguste/qa-mail-ses">Amazon SES Email</a> by Frédéric AUGUSTE. Sends outgoing emails through <a href="http://aws.amazon.com/ses/">Amazon SES</a> (Simple Email Service) rather than SMTP.</li>
+						  <li><a href="https://github.com/NoahY/q2a-buddypress">BuddyPress Integration</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Basic integration with the <a href="http://buddypress.org/">BuddyPress</a> social networking plugin for <a href="http://wordpress.org/">WordPress</a>.</li>
+						  <li><a href="https://github.com/InfinityLF/q2a-cloudflare">CloudFlare User IP</a> by <a href="https://github.com/InfinityLF">InfinityLF</a>. Get visitors’ real IP address instead of the IP address of the <a href="http://www.cloudflare.com">CloudFlare</a> proxy.</li>
+						  <li><a href="https://github.com/alain75007/q2a-disqus-widget">Disqus Widget</a> by <a href="http://fr.linkedin.com/in/alainbeauvois">Alain Beauvois</a> of <a href="http://questioncode.fr">QuestionCode.fr</a>. Allows <a href="https://disqus.com">Disqus</a> comment threads to be embedded in any page.</li>
+						  <li><a href="https://github.com/vijsha79/q2a-elasticsearch">Elasticsearch Search</a> by Vijay Sharma. Replaces Q2A’s default search functionality with the <a href="http://www.elasticsearch.org/">Elasticsearch</a> search engine.</li>
+						  <li><a href="https://github.com/alysisLeonis/qa-external-cas">External CAS</a> by <a href="http://www.leonis.at/">Leonis Holding</a>. Provides single-sign functionality for Q2A via the <a href="http://en.wikipedia.org/wiki/Central_Authentication_Service">CAS</a> protocol.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-external-cats-tags.zip">External Categories and Tags</a> by Mélanie Gauthier of <a href="http://www.trisotech.com/">Trisotech</a>. Some modifications to enable integration with your existing database of categories and tags (in the same style as single sign-on).</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-facebook-like-box">Facebook Like Box</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Basic widget for displaying a <a href="http://www.facebook.com/">Facebook</a> like box.</li>
+						  <li><a href="https://github.com/ganbox/ganbox-async-adsense">Google Adsense Async</a> by Georgi Stefanov @ <a href="https://ganbox.com/">Ganbox</a>. Widget for displaying Google AdSense ads with asynchronous JavaScript code.</li>
+						  <li><a href="https://github.com/PublicityPort/Q2A-Google-Cloud-Storage-plugin">Google Cloud Storage</a> by <a href="https://publicityport.com/">Publicity Port</a>. Stores and serves uploaded files in <a href="https://cloud.google.com/storage/">Google Cloud Storage</a> instead of the local database.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-google-search">Google Custom Search</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Replaces Q2A’s default search functionality with <a href="https://cse.google.com/cse/all">Google Custom Search</a>. Useful for searching across a network of Q2A sites and also if you are using blogs in Q2A.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-google-plus-badge">Google Plus Badge</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Basic widget for displaying a <a href="https://plus.google.com/">Google Plus</a> badge.</li>
+						  <li><a href="https://github.com/jhubert/qa-hipchat-notifications">HipChat Notifications</a> by <a href="https://github.com/jhubert">Jeremy Baker</a>. Sends notifications to a <a href="https://www.hipchat.com/">HipChat</a> room about new questions or answers.</li>
+						  <li><a href="https://github.com/josebmera/q2a-imap-login">IMAP Login</a> by Jose Mª Bermudo Mera. Replaces the Q2A login form with authentication against an email server via IMAP.</li>
+						  <li><a href="http://community.invisionpower.com/files/file/5713-jlogica-q2a-sso/">IP.Board User Integration</a> by <a href="http://thecess.com/">Larry Lewis</a>. A <code class="language-plaintext highlighter-rouge">qa-external-users.php</code> file to integrate with <a href="http://www.invisionpower.com/products/board/">IP.Board</a> forum software.</li>
+						  <li><a href="https://github.com/zakkak/qa-ldap-login">LDAP Login</a> by <a href="http://www.karlbitz.com/">Karl Bitz</a> and <a href="http://foivos.zakkak.net/">Foivos Zakkak</a>. Automatically logs users in to Q2A using LDAP credentials.</li>
+						  <li><a href="https://github.com/SLonoed/Q2A_loginza_plugin">Loginza Login Plugin</a> by Dmitry Manannikov aka <a href="http://slonoed.net/">SLonoed</a>. Allows logging in via <a href="http://loginza.ru">Loginza</a>, an OpenID provider which supports many social services popular in Russia and the CIS.</li>
+						  <li><a href="https://github.com/PublicityPort/q2a-mailgun-integration">Mailgun Integration</a> by <a href="https://publicityport.com/">Publicity Port</a>. Sends outgoing emails via the <a href="https://www.mailgun.com/">Mailgun</a> API.</li>
+						  <li><a href="https://github.com/MichaelApproved/Question2Answer-Mailing-List-Manager">Mailing List Manager</a> by <a href="http://www.michaelapproved.com/">Michael Khalili</a>. Adds your Q2A member email addresses to your <a href="http://mailchimp.com/">MailChimp.com</a> list.</li>
+						  <li><a href="https://github.com/Schoaf/qa-mattermost-notifications">Mattermost Notifications</a> by <a href="https://github.com/Schoaf">Andreas Scharf</a>. Sends notifications of new questions to a <a href="http://mattermost.org/">Mattermost</a> feed.</li>
+						  <li><a href="https://github.com/arjunsuresh/mathjax">Google Code Prettify and MathJax</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Handles the trouble of adding MathJax or CodePretiffy to Q2A.</li>
+						  <li><a href="https://github.com/mobbr/mobbr-q2a-plugin">Mobbr Plugin</a> by <a href="https://mobbr.com">Mobbr</a>. Integrates the <a href="https://mobbr.com">Mobbr</a> payment button to enable payments and donations to Q2A sites and their participants.</li>
+						  <li><a href="http://community.mybb.com/thread-121885-post-879492.html#pid879492">MyBB single sign-on</a> by Dahevos. Allows Q2A to be integrated into a MyBB forum, sharing the same user database.</li>
+						  <li><a href="https://github.com/alixandru/q2a-open-login">Open Login</a> by <a href="https://github.com/alixandru/">Alex Lixandru</a>. Log in via <a href="http://www.facebook.com/">Facebook</a>, <a href="http://www.google.com/">Google</a>, <a href="http://www.yahoo.com/">Yahoo</a>, <a href="http://www.github.com/">Github</a> and many more, plus multiple logins for a single Q2A account.</li>
+						  <li><a href="http://question2answer-farsi.com/707/q2a-magicword-plugin.html">Persian Magic Words</a> by AmirHossein Tavousi @ <a href="http://question2answer-farsi.com/">Question2Answer Farsi</a>. Shows word meanings from <a href="http://vajehyab.com/">Vajehyab.com</a> for highlighted words.</li>
+						  <li><a href="https://github.com/larrykluger/Question-2-Answer-Proxy-SSO-Plugin">Proxy SSO</a> by Larry Kluger of <a href="http://www.masteragenda.com/">Master Agenda</a>. Lets your main website serve as a single sign-on authentication system for Q2A.</li>
+						  <li><a href="https://github.com/luxbet/qa-socialcast-notifications">Socialcast Notifications</a> by <a href="https://github.com/windix">Wei Feng</a>. Posts on the <a href="http://www.socialcast.com">Socialcast</a> community platform when a new question is asked.</li>
+						  <li><a href="https://github.com/saxap/ulogin-for-q2a">uLogin Login Plugin</a> by <a href="http://dontforget.pro/">Sergey Astafev</a>. Allows logging in via <a href="http://ulogin.ru">uLogin</a>, which supports many identity providers popular in Russia.</li>
+						  <li><a href="https://github.com/PELock/q2a-use-cdn/">Use JQuery CDN</a> by Bartosz Wojcik @ <a href="https://www.pelock.com">PELock</a>. Enable the CDN (Content Delivery Network) usage for JQuery library.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-xml-rpc">XML-RPC Server</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a> and updated by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Allows access to Q2A sites via the XML-RPC protocol, also used by the Android client.</li>
+						</ul>
+
+						<h2 id="additional-page-types">Additional page types</h2>
+
+						<ul>
+						  <li><a href="https://github.com/q2apro/q2apro-best-users-per-month-free">Best Users per Month</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also <a href="https://github.com/ElephantsGroup/q2a-best-users-per-month">forked</a> by <a href="https://github.com/ElephantsGroup">Jalal Jaberi</a> which supports Jalali calendar.</li>
+						  <li><a href="https://github.com/JacksiroKe/q2a-blog-post">Blog Post</a> by <a href="https://question2answer.org/qa/user/jacksiroke">JacksiroKe</a>. Allows registered users to maintain a blog on their Q2A site.</li>
+						  <li><a href="https://github.com/NoahY/q2a-book">Book Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Creates an HTML (or PDF) book of a site’s top questions and answers. Also <a href="https://github.com/arjunsuresh/q2a-book">forked</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a> which adds more question filtering options and better styling options.</li>
+						  <li><a href="https://github.com/svivian/q2a-chat-room">Chat Room</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Adds a simple chat room to a Q2A site.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-custom-404-page">Custom 404 Page</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Allows the content of the 404 (page not found) page to be customized.</li>
+						  <li><a href="https://github.com/svivian/q2a-edit-history">Edit History</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Stores all edits to posts and allows users to see what changed. Also <a href="https://github.com/ElephantsGroup/q2a-edit-history">forked</a> by <a href="https://github.com/ElephantsGroup">Jalal Jaberi</a>.</li>
+						  <li><a href="https://github.com/gturri/q2a-faq/">FAQ Page</a> forked from <a href="https://github.com/NoahY/q2a-faq">older version</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Provides a customizable FAQs page which can include an explanation of the points system on your Q2A site.</li>
+						  <li><a href="https://github.com/nakov/q2a-plugin-open-questions">Open Questions Plugin</a> by <a href="http://www.nakov.com/">Svetlin Nakov</a>. Provides a page displaying all questions with no answers and which have not been closed.</li>
+						  <li><a href="https://github.com/NoahY/q2a-poll">Polls Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows some questions to be created as polls.</li>
+						  <li><a href="https://github.com/NoahY/q2a-print">Print View Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Adds a simplified print view for questions.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-statistics-page/tree/master">Statistics-page</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Displays forum post statistics in a diagram.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-topusers-per-month">Top Users per Month/Week</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Functionality wise similar to Best Users per Month plugin but has better performance and also has a widget which displays best users per week. Does not require cronjob but works via MySQL scheduler which needs to be enabled on the server.</li>
+						  <li><a href="https://github.com/svivian/q2a-user-activity-plus">User Activity Plus</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Provides links on user pages to view all of the user’s questions and answers.</li>
+						  <li><a href="https://github.com/NoahY/q2a-history">User History Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Adds an activity/points history to the user profile.</li>
+						  <li><a href="https://github.com/NoahY/q2a-wiki">Wiki Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Adds a wiki to a Q2A site.</li>
+						</ul>
+
+						<h2 id="widgets">Widgets</h2>
+						<ul>
+						  <li><a href="https://github.com/amiyasahu/q2a-breadcrumbs">Breadcrumbs Widget</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Displays navigational breadcrumbs showing the path to the currently viewed page.</li>
+						  <li><a href="https://github.com/arjunsuresh/categorydescription">Category Description</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Allows HTML description to be added for Categories which gets displayed on top of Category Pages.</li>
+						  <li><a href="https://github.com/Towhidn/Q2A-feed-widget">Feed Widget</a> by <a href="http://TowhidN.com/">Towhid</a> @ <a href="http://QA-Themes.com/">QA-Themes</a>. Lists recent items from an external RSS feed. Useful for blog posts, articles, etc…</li>
+						  <li><a href="https://github.com/NoahY/q2a-log-tags">Logarithmic Tag Cloud</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Provides a list of tags with logarithmic size indicating popularity.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-most-active-users">Most Active Users</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Shows a list of users who were most active in the past week or month.</li>
+						  <li><a href="http://question2answer-farsi.com/files/plugins/en/show-online-user-count.zip">Online User Count</a> by Ali Sayahiyan @ <a href="http://question2answer-farsi.com/">Question2Answer Farsi</a>. Shows a list of users who are currently online as well as total visitors.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-popular-questions-widget">Popular Questions</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Shows a list of the most viewed questions.</li>
+						  <li><a href="https://github.com/NoahY/qa-random-question">Random Question Widget</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Displays a random question in the sidebar.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-recent-events-widget">Recent Events Widget</a> by <a href="https://github.com/q2apro/">q2apro.com</a>. Displays all recent events in the sidebar or main area.</li>
+						  <li><a href="http://www.q2amarket.com/market/q2am-recent-questions/">Recent Questions Widget</a> by <a href="http://www.q2amarket.com/">Q2A Market</a>. Shows a list of recent questions in the sidebar or other locations.</li>
+						  <li><a href="https://github.com/mbentley3123/q2a-rss-feed">RSS Feed Widget</a> by <a href="http://BentleyDesigns.thebentleys.ca/">Mark Bentley</a>. Displays posts from an RSS feed in the sidebar.</li>
+						  <li><a href="https://github.com/JacksiroKe/q2a-simple-slider">Simple Slider</a> by <a href="https://question2answer.org/qa/user/jacksiroke">JacksiroKe</a>. A simple image slider for the tops of pages, showing titles, descriptions and links.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-social-share">Social Share</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Adds clickable social sharing buttons below questions.</li>
+						  <li><a href="https://github.com/Towhidn/Q2A-Tab-Widget">Tab Widget</a> by <a href="http://TowhidN.com/">Towhid</a> @ <a href="http://QA-Themes.com/">QA-Themes</a>. Shows popular and recent questions in two tabs, responsive design.</li>
+						  <li><a href="https://github.com/svivian/q2a-tag-list-widget">Tag List Widget</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Displays the most popular tags in a simple list.</li>
+						  <li><a href="https://github.com/Towhidn/q2a-twitter">Twitter Widget</a> by <a href="http://TowhidN.com/">Towhid</a> @ <a href="http://QA-Themes.com/">QA-Themes</a>. Shows recent tweets from your twitter account.</li>
+						  <li><a href="https://github.com/svivian/q2a-widget-anywhere">Widget Anywhere Plugin</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Allows custom content to be added on any page, in a variety of locations.</li>
+						  <li><a href="https://github.com/ProThoughts/q2a-simple-ads-manager">Simple Ads Manager</a> by <a href="http://ProThoughts.com">ProThoughts</a>. Allow you to add advertisements in <a href="https://github.com/ProThoughts/q2a-simple-ads-manager">listed spots</a>. You can use Google adsense or any HTML ad code. Also <a href="https://github.com/arjunsuresh/q2a-simple-ads-manager">forked</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a> to add more options like Ads after first question hiding ads for certain user level and above etc.</li>
+						</ul>
+						<hr></hr><!-- Paid Widgets -->
+						<ul>
+							 <li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-as-advanced-search">AS - Advanced Search</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Extends the way in which Q2A searches for posts and allows the user to get better results when searching.</li>
+						</ul>
+
+						<h2 id="user-interface">User interface</h2>
+
+						<ul>
+						  <li><a href="https://github.com/Towhidn/q2a-tag-descriptions">Advanced Tag Descriptions</a> by <a href="http://TowhidN.com/">Towhid</a> @ <a href="http://QA-Themes.com/">QA-Themes</a>. Add titles, icons and HTML descriptions to your tags.</li>
+						  <li><a href="https://github.com/NoahY/q2a-accept-rate">Accept Rate Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Shows the percentage of questions asked by a user which had an answer selected as the best.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-ajax-usersearch">Ajax User Search</a> by <a href="https://github.com/q2apro">q2apro</a>. Adds a live search box at the top of the users page to search users by username.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-answerhide">Answer Hide</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Adds an option in user profile to disable answer list by default and allows viewing on button click. Useful for educational sites.</li>
+						  <li><a href="https://github.com/svivian/q2a-ask-notices">Ask Notices Plugin</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Displays warnings/hints for users asking questions with specific keywords.</li>
+						  <li><a href="https://github.com/PublicityPort/q2a-ask-with-tags-list">Ask with Tags List</a> by <a href="https://publicityport.com/">Publicity Port</a>. Allows tags for a new question to be pre-filled using a URL parameter for the ‘Ask a Question’ page.</li>
+						  <li><a href="https://github.com/NoahY/q2a-bookmarks">Bookmarking Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows questions to be bookmarked by users.</li>
+						  <li><a href="https://github.com/JacksiroKe/Q2A-Closed-Site">Closed Site</a> by <a href="https://question2answer.org/qa/user/jacksiroke">JacksiroKe</a>. Allows a Q2A site to be locked to allow in registered users only.</li>
+						  <li><a href="https://github.com/NoahY/q2a-confirm">Confirm Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Provides a browser warning when leaving a page in which text has been entered.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-cool-tooltips/tree/master">Cool Tooltips</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Transforms all your tooltips into nice black semi-transparent rounded boxes</li>
+						  <li><a href="https://github.com/NoahY/q2a-featured">Featured Questions</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows featured questions to be kept at the top of question lists.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-feature">Feature Question</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.</li>
+						  <li><a href="http://question2answer-farsi.com/109/shamsi-date-plugin.html">Gregorian 2 Jalali</a> by Ali Sayahiyan @ <a href="http://question2answer-farsi.com/">Question2Answer Farsi</a>. Displays dates in Jalali (Iranian) format.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-guest-id/tree/master">Guest-id</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Gives all anonymous users that are posting in your forum a unique ID.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-pretty-tags/tree/master">Pretty-tags</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Provides a pretty autocomplete for tags on the ask page.</li>
+						  <li><a href="https://github.com/NoahY/q2a-privileges">Privilege Management</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Adds a tab to user profile pages showing progress towards additional privileges.</li>
+						  <li><a href="https://github.com/JacksiroKe/q2a-pm-adapter">Private Message Adapter</a> by <a href="https://question2answer.org/qa/user/jacksiroke">JacksiroKe</a>. Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.</li>
+						  <li><a href="https://github.com/ganbox/qa-filter">Question Filter</a> by Georgi Stefanov @ <a href="http://ganbox.com/">Ganbox</a>. Adds filtering of user input when asking questions, to check duplication, capitalization, etc…</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-qnumbering">Question Numbering</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Adds numbering to questions in question listing pages.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-quick-login/tree/master">Quick-login</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Provides a quick login field for all your users.</li>
+						  <li><a href="https://github.com/NoahY/q2a-role-markers">Role Markers</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Adds markers to the avatars displayed for users with special privileges. Also <a href="https://github.com/zakkak/q2a-role-markers">forked</a> by <a href="https://github.com/zakkak">Zakkak</a>.</li>
+						  <li><a href="https://github.com/NoahY/q2a-share">Social Sharing Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Adds social sharing buttons to question pages.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-sort-answers">Sort Answers</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Allows answers on a question page to be sorted by oldest, newest and highest voted.</li>
+						  <li><a href="https://github.com/arjunsuresh/tag-search">Tag Search</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Allows tags to be searched via AJAX and with auto complete.</li>
+						  <li><a href="http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip">Tag Descriptions Plugin</a> from the <a href="/plugins/tutorial/">plugin tutorial</a>. Allows tag descriptions to be shown on tag pages and in tooltips.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-theme-switch">Theme Switcher Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a> and updated by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Allows users to choose their own theme on their profile page for normal as well as mobile view.</li>
+						  <li><a href="https://github.com/arjunsuresh/q2a-top-search">Top Searches</a> by <a href="http://gateoverflow.in/user/Arjun">Arjun</a>. Adds a widget to display the top searched words. Also have an option to display top seacrhed tags if using <a href="https://github.com/arjunsuresh/tag-search">Tag Search</a> plugin.</li>
+						  <li><a href="https://github.com/NoahY/q2a-signatures">User Signatures Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows users to define a signature for all of their posts.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-userinfo/tree/master">Userinfo</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Mouse over a username to display user profile information: Avatar image, account age, total points, monthly points, answers, best answers, ratio, questions posted, badges.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-userslist-locations/tree/master">Userslist-locations</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Add Location to users list</li>
+						  <li><a href="https://github.com/q2apro/q2apro-warn-on-leave">Warn on Leave</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Warns users before leaving a page with text they have entered (also support WYSIWYG editor).</li>
+						</ul>
+						
+						<hr></hr><!-- Paid User interface -->
+						<ul>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-mtl-maximum-tag-length">MTL - Maximum Tag Length</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Limits the amount of characters allowed per each question tag.</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-premium-plugin-pc-profile-customizer">PC - Profile Customizer</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows the customization of the profile page by adding additional features not present in the core, including tracking of point changes.</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-ra-random-avatar">RA - Random Avatar</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Assigns new users a random avatar from a given set immediately after registering.</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-snp-social-network-profiles">SNP - Social Network Profiles</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows users to add information about social networks they are part of and share it with the community.</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-ur-user-reactions">UR - User Reactions</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows users to react to questions, answers and comments.</li>
+						</ul>
+
+						<h2 id="notifications">Notifications</h2>
+
+						<ul>
+						  <li><a href="https://github.com/dunse/qa-category-email-notifications">Category Email Notifications</a> by Pehr Johansson. Emails new questions in a category to all users who favorited that category.</li>
+						  <li><a href="https://github.com/ruuttt/q2a-email-formating">Email Formatting</a> by Ruut Brandsma @ <a href="http://www.ecofys.com/">Ecofys</a>. Allows HTML formatting to be used in notification emails.</li>
+						  <li><a href="https://github.com/sawtoothsoftware/Q2A-Email-Notifications">Email Notifications</a> by Walter Williams @ <a href="http://www.sawtoothsoftware.com/">Sawtooth Software</a>. Allows users to receive notifications about new questions and answers.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-follow-question/tree/master">Follow Question</a> by <a href="https://github.com/q2apro">q2apro.com</a>.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-on-site-notifications">On-Site Notifications</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Pop-up notifications on the page which can replace email notifications.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-remind-users">Remind Users</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Reminds users to complete their profile and upload an avatar within X hours after registration.</li>
+						  <li><a href="https://github.com/zakkak/q2a-email-notifications-revised">Revised Email Notifications</a> by <a href="http://foivos.zakkak.net/">Foivos Zakkak</a>. An enhanced fork of the “Email Notifications” plugin.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-newsletter-favtags/tree/master">Newsletter-favtags</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Users can subscribe to their favorite tags and the plugin emails them daily if there are new questions.</li>
+						  <li><a href="https://github.com/NoahY/q2a-newsletter">Newsletter Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows users to receive an HTML newsletter of the latest top questions, answers and comments.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-email-notification">Tag and Category Notification</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. When a question is asked with a tag/category, emails users who favorited that tag/category.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-votes-manager/tree/master">Votes-manager</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Lists all votes made in your forum.](https://github.com/q2apro).Sends emails to users about activities on questions they have favorited.</li>
+						</ul>
+
+						<h2 id="anti-spam-tools">Anti-spam tools</h2>
+
+						<ul>
+						  <li><a href="http://qcybb.com/question2answer-akismet-plugin/">Akismet Plugin</a> by <a href="http://qcybb.com/">Dave Hannon</a>. Uses the <a href="http://akismet.com/">Akismet</a> spam filtering service to detect spammy posts and queue them for moderation.</li>
+						  <li><a href="https://github.com/KrzysztofKielce/q2a-captcha-antibot">AntiBot Captcha</a> by <a href="http://www.question2answer.org/qa/user/Krzysztof+Kielce">Krzysztof Kielce</a>. Simple and easy captcha for Q2A 1.5+.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-bootstrap-recaptcha">Bootstrap reCAPTCHA</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. A version of the default reCAPTCHA plugin that works well with Bootstrap-based themes.</li>
+						  <li><a href="https://github.com/spd-name/q2a-captcha-keycaptcha">KeyCAPTCHA Captcha</a> by <a href="http://spd.name">Andrey Gvosdev</a>. Provides the <a href="https://www.keycaptcha.com">KeyCAPTCHA</a> captcha for Q2A.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-logical-captcha">Logical Captcha</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Shows simple logical questions from <a href="http://textcaptcha.com">Text CAPTCHA</a> as a captcha challenge.</li>
+						  <li><a href="https://github.com/sawtoothsoftware/Q2A-Spammer-Checker">Spammer Checker</a> by Walter Williams @ <a href="http://www.sawtoothsoftware.com/">Sawtooth Software</a>. On IP address pages, checks <a href="http://www.stopforumspam.com/">stopforumspam.com</a> and <a href="http://botscout.com/">botscout.com</a> to see if the IP belong to a known spammer.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-stop-spam/tree/master">Stop-spam</a> by <a href="https://github.com/q2apro">q2apro.com</a>.An easy to use customizable captcha with a honeypot that keeps 99 % of the daily spam away.</li>
+						</ul>
+
+						<h2 id="administrative-tools">Administrative tools</h2>
+
+						<ul>
+						  <li><a href="https://github.com/NoahY/q2a-admin-plus">Admin Plus Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Extends the admin area by allowing PHP commands to be executed. (Use with caution!)</li>
+						  <li><a href="https://github.com/NoahY/q2a-cat">Categorization Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows individual categorization of uncategorized posts via the categories admin panel.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-change-post-owner/">Change Post Owner</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Allows the author of a post to be changed, or to make it anonymous.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-comment-to-answer">Convert Comment to Answer</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Convert a comment to an answer, optionally move the succeeding comments.</li>
+						  <li><a href="https://github.com/KrzysztofKielce/q2a-backup">Database Backup/Restore</a> by <a href="http://www.question2answer.org/qa/user/Krzysztof+Kielce">Krzysztof Kielce</a>. An admin tool for one-click backup and restore of the Q2A instance or entire database.</li>
+						  <li><a href="https://github.com/amiyasahu/q2a-delete-hidden-posts">Delete Hidden Posts</a> by <a href="http://amiyasahu.com/">Amiya Sahu</a>. Enables all hidden posts (including those with dependencies) to be deleted.</li>
+						  <li><a href="https://github.com/NoahY/q2a-expert-questions">Expert Questions</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows some questions to made viewable by experts only.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-find-text-posts">Find Text in Posts</a> by <a href="https://github.com/q2apro">q2apro</a>. Allows admins to search posts for specific text and display the creator, URL and content.</li>
+						  <li><a href="https://github.com/kufeiko/QA-Google-Analytics-Plugin">Google Analytics Plugin</a> by <a href="http://www.question2answer.org/qa/user/Ivan+Donkov">Ivan</a>. Analyze Q2A traffic with Google Analytics, optionally excluding requests from the super admin.</li>
+						  <li><a href="https://github.com/stefkiourk/Question2Answer-greeklish-URLs">Greeklish URLs</a> by <a href="http://aeternus.gr/">Kiourkoulis Stefanos</a>. Converts Greek characters in question URLs into Latin equivalents.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-list-uploads-page">List Uploads Plugin</a> by <a href="https://github.com/q2apro">q2apro.com</a>. Shows a list of uploaded images and allows unused images to be deleted.</li>
+						  <li><a href="https://github.com/kfuchs/permission2categories">Permission to Categories</a> by <a href="http://codesubstance.com/">Kirill Fuchs</a>. Enables minimum permissions to be defined for viewing questions in each category.</li>
+						  <li><a href="https://github.com/NoahY/q2a-post-merge">Question Merge</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows questions to be merged, with answers and comments moved from one to the other.</li>
+						  <li><a href="https://github.com/heartsmile/search-in-setting-plugin">Search in Setting</a> by Quan A Tran, Nam G Vu @ <a href="https://namgivu.wordpress.com/2015/01/25/nthq-a-new-question2answer-team-to-bring-rich-features-to-vietnamese-community/">NTHQ Group</a>. Searches for settings in Q2A admin pages, like Chrome search settings.</li>
+						  <li><a href="https://github.com/PublicityPort/q2a-schema.org-implementation">Schema.org Implementation</a> by <a href="https://publicityport.com/">Publicity Port</a>. Adds <a href="http://schema.org/">Schema.org</a> structured markup to pages to allow deeper information on questions and answers to be shown on search engine results pages.</li>
+						  <li><a href="https://github.com/Towhidn/Q2A-SEO-Links">SEO Links</a> by <a href="http://TowhidN.com/">Towhid</a> @ <a href="http://QA-Themes.com/">QA-Themes</a>. Make internal links “dofollow” and change “relation” attribute of other sites to pass SEO juice to them.</li>
+						  <li><a href="http://qcybb.com/question2answer-seo-meta-tags/">SEO Meta Tags</a> by <a href="http://qcybb.com/">Dave Hannon</a>. Uses meta robots tags to exclude some pages with duplicate content from search engines.</li>
+						  <li><a href="https://github.com/svivian/q2a-tagging-tools">Tagging Tools Plugin</a> by <a href="http://codelair.co.uk/">Scott Vivian</a> of <a href="http://pokemondb.net/pokebase/">PokéBase</a>. Allows admins to set tag synonyms so that unwanted or duplicate tags are changed or removed. Can also prevent low reputation users from creating new tags.</li>
+						  <li><a href="https://github.com/pedjas/q2a-translator">Translator</a> by <a href="http://pedja.supurovic.net">Pedja Supurovic</a>. Allows translations to be created online through pages in the administration interface.</li>
+						  <li><a href="https://github.com/Towhidn/Q2A-Webmaster">Webmaster Tools</a> by <a href="http://TowhidN.com/">Towhid</a> @ <a href="http://QA-Themes.com/">QA-Themes</a>. Reports include server info and memory usage, SEO analysis, security warnings.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-quick-edit/tree/master">Quick-edit</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Update all question titles and tags quickly on one page and save hours of time.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-uploadmanager/tree/master">Uploadmanager</a> by <a href="https://github.com/q2apro">q2apro.com</a>.A complete upload manager for question2answer with upload details and image rotate features.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-userstatistics/tree/master">Userstatistics</a> by <a href="https://github.com/q2apro">q2apro.com</a>.A complete user statistic with detailed points per post and thumbs and more.</li>
+						  <li><a href="https://github.com/q2apro/q2apro-votes-manager/tree/master">Votes-manager</a> by <a href="https://github.com/q2apro">q2apro.com</a>.Lists all votes made in your forum.</li>
+						</ul>
+						<hr></hr><!-- Paid Administrative tools -->
+						<ul>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-bcg-Bulk Content Generator">BCG - Bulk Content Generator</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows admins to generate large amounts of content on their sites simply by uploading files (.xls, .xlsx, .ods, among other file formats).</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-fc-fake-cron">FC - Fake Cron</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Fires events after a certain amount of requests or in a time-based manner (daily, weekly, monthly).</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-jabp-just-a-bump-plugin">JABP - Just A Bump Plugin</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows users to bump questions sending them to the top of the All activity section.</li>
+							<li>[Paid] <a href="https://www.question2answer.org/qa/36952/new-remium-plugin-tub-temporary-user-block">TUB - Temporary User Block</a> by <a href="https://pupi1985.github.io/">pupil985</a>.Allows users to be blocked for a period of time and then be automatically unblocked.</li>
+						</ul>
+
+						<h2 id="for-older-versions-of-q2a">For older versions of Q2A</h2>
+
+						<ul>
+						  <li><a href="https://github.com/NoahY/q2a-comment-ajax">Ajax Comment Form</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Display and submits dynamically loaded comment forms without refreshing the page, for Q2A versions prior to 1.5.</li>
+						  <li><a href="https://github.com/NoahY/q2a-comment-voting">Comment Voting Plugin</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows comments to be voted on, similarly to questions and answers.</li>
+						  <li><a href="https://github.com/NoahY/q2a-close">Question Closing</a> by <a href="http://www.question2answer.org/qa/user/NoahY">NoahY</a>. Allows questions to be closed in Q2A 1.4.x.</li>
+						  <li><a href="http://www.morphhome.net/sitemap-generator-fur-question2answer">XML Sitemap Generator</a> by Simon Frerichs. Q2A 1.3 now includes a Sitemap generator so this may not be necessary.</li>
+						</ul>
+
+						<p>Click for documentation on <a href="https://docs.question2answer.org/pages/documentation/plugins/">creating Q2A plugins</a> (requires PHP programming).</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../js/sticky_bar.js"></script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

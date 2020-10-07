@@ -1,0 +1,265 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Themes documentation - Question2Answer</title>
+	<meta name="description" content=="Themes documentation - Question2Answer"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/themes"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item selected-nav">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/themes">Themes</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="article-content-container">
+							<h1 id="creating-themes-for-question2answer">Creating themes for Question2Answer</h1>
+
+							<p>Question2Answer supports multiple themes, and makes it easy for you to create your own. The HTML in its pages contains no visual formatting, so you can customize the look and feel using CSS only. To create a new theme, follow the steps below:</p>
+
+							<ol>
+								<li>
+									<p>Choose one of Question2Answer’s standard themes as a starting point. Make a <strong>copy</strong> of its directory in Q2A’s <code class="language-plaintext highlighter-rouge">qa-theme</code> directory, and give the copy your chosen theme name. The copied directory should at least contain the <code class="language-plaintext highlighter-rouge">qa-styles.css</code> file.</p>
+								</li>
+								<li>
+									<p>Log in to your Q2A site as an administrator, open the General section of the Admin panel, choose your new theme and save options.</p>
+								</li>
+								<li>
+									<p>Open the new <code class="language-plaintext highlighter-rouge">qa-styles.css</code> file in your text editor, and modify the formatting as required. Use the View Source feature in your browser to see how CSS classes are used.</p>
+								</li>
+								<li>
+									<p>As you make changes, refresh the browser page to see how they look. Be sure to test in different browsers.</p>
+								</li>
+								<li>
+									<p>Starting in Q2A 1.5, your theme can contain metadata which identifies you as the theme creator and allows Q2A to check for updates. The following metadata can appear in <code class="language-plaintext highlighter-rouge">qa-styles.css</code> file - all fields are optional:</p>
+
+<pre><code>/*
+	Theme URI: _Web address for your theme_
+	Theme Version: _Your theme version number_
+	Theme Date: _Build date of your theme in YYYY-MM-DD_
+	Theme Author: _Human-readable name of theme author_
+	Theme Author URI: _Web address for plugin author_
+	Theme License: _Short name of plugin license, e.g. GPLv2/3_
+	Theme Update Check URI: _Web address for Q2A to check for updates_
+*/
+</code></pre>
+
+									<p>Some of this metadata will be displayed next to the theme setting in the Q2A admin interface. In addition, <code class="language-plaintext highlighter-rouge">Theme Update Check URI</code> allows you to inform users about new versions of the theme. Q2A will retrieve the content from <code class="language-plaintext highlighter-rouge">Theme Update Check URI</code>, and look for metadata in the same format as above. If the <code class="language-plaintext highlighter-rouge">Theme Version</code> values don’t match, a message will show up, along with a link to the <code class="language-plaintext highlighter-rouge">Theme URI</code> from the online metadata. The simplest way to use this mechanism is to keep the latest version of <code class="language-plaintext highlighter-rouge">qa-styles.css</code> at a particular location online, and set that location as the <code class="language-plaintext highlighter-rouge">Theme Update Check URI</code>.</p>
+								</li>
+								<li>
+									<p>Please consider offering your theme online as a .zip file for others to download, then <a href="http://www.question2answer.org/feedback.php">telling us</a> so we can <a href="https://docs.question2answer.org/pages/documentation/addons/">link to it here</a>.</p>
+								</li>
+							</ol>
+
+							<h2 id="-creating-an-advanced-theme-for-question2answer"><a id="advanced"></a> Creating an advanced theme for Question2Answer</h2>
+
+							<p>To go beyond CSS-only themes, it is possible to make changes to the HTML that Question2Answer generates for particular elements of content. This requires some PHP programming, and is explained in detail below:</p>
+
+							<ol>
+								<li>
+									<p>Create a new theme directory using the same steps as for CSS-only themes.</p>
+								</li>
+								<li>
+									<p>Create a file named <code class="language-plaintext highlighter-rouge">qa-theme.php</code> in your new theme directory and insert the PHP code below. If you wish to use non English characters in your theme file, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).</p>
+
+<pre><code>&lt;?php
+
+<span class="kd">class</span> <span class="nc">qa_html_theme</span> <span class="k">extends</span> <span class="nx">qa_html_theme_base</span>
+<span class="p">{</span>
+<span class="p">}</span>
+</code></pre>
+								</li>
+								<li>
+									<p>Use the View Source feature in your browser to find out which parts of the HTML you would like to change.</p>
+								</li>
+								<li>
+									<p>Look in the <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code> file in Question2Answer’s <code class="language-plaintext highlighter-rouge">qa-include</code> directory for the function which is responsible for generating that HTML. Most functions in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code> are named to match the CSS class of the HTML element that they generate. For example the function <code class="language-plaintext highlighter-rouge">page_links()</code> outputs <code class="language-plaintext highlighter-rouge">&lt;div class="qa-page-links"&gt;</code>…<code class="language-plaintext highlighter-rouge">&lt;/div&gt;</code>.</p>
+								</li>
+								<li>
+									<p>For each function in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code> that you wish to override, create a function inside your <code class="language-plaintext highlighter-rouge">qa_html_theme</code> class with the same name and parameters. You can use <code class="language-plaintext highlighter-rouge">echo</code> or <code class="language-plaintext highlighter-rouge">print</code> to output HTML, but it is recommended to use <code class="language-plaintext highlighter-rouge">$this-&gt;output()</code>. This will automatically keep track of indentation - see examples of its use in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code>.</p>
+								</li>
+								<li>
+									<p>Use of DOM element IDs (e.g. <code class="language-plaintext highlighter-rouge">&lt;DIV ID="..."&gt;</code>) is reserved for the Question2Answer control layer, so IDs should not be used by your theme to target CSS styling. Instead, use classes (e.g. <code class="language-plaintext highlighter-rouge">&lt;div class="..."&gt;</code>), which are just as easy to work with.</p>
+								</li>
+								<li>
+									<p>Within your custom function, you can call the default function in the <code class="language-plaintext highlighter-rouge">qa_html_theme_base</code> class using PHP’s double colon (<code class="language-plaintext highlighter-rouge">::</code>) notation, e.g. <code class="language-plaintext highlighter-rouge">qa_html_theme_base::page_links();</code> This approach is better than copying and pasting code from <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code>, since it will maximize the chance of your theme being compatible with future versions of Question2Answer.</p>
+								</li>
+								<li>
+									<p>To change behavior based on the type of page being shown, check <code class="language-plaintext highlighter-rouge">$this-&gt;template</code>. You can also check <code class="language-plaintext highlighter-rouge">$this-&gt;request</code> to see which page the user requested and <code class="language-plaintext highlighter-rouge">$this-&gt;context</code> to find out more about which part of the page you are currently in. The <code class="language-plaintext highlighter-rouge">print_r()</code> PHP function will make it easy for you to check these values in different situations.</p>
+								</li>
+								<li>
+									<p>In response to an Ajax request, some functions in your theme class may be called outside of the context of a full HTML page. Any modifications to these functions, or functions they call, should be tested accordingly. As of Q2A 1.5, this applies to: <code class="language-plaintext highlighter-rouge">a_list_item()</code>, <code class="language-plaintext highlighter-rouge">c_list_item()</code>, <code class="language-plaintext highlighter-rouge">favorite_inner_html()</code> and <code class="language-plaintext highlighter-rouge">voting_inner_html()</code>.</p>
+								</li>
+							</ol>
+
+							<p>Below is an example which makes two changes to the standard theme. First, it reverses the order of the search and user navigation elements. Second, it changes the ellipsis (…) in the page links into an elongated hyphen (—) on the tags page.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="kd">class</span> <span class="nc">qa_html_theme</span> <span class="k">extends</span> <span class="nx">qa_html_theme_base</span>
+<span class="p">{</span>
+<span class="k">function</span> <span class="nf">nav_user_search</span><span class="p">()</span> <span class="c1">// reverse order from qa_html_theme_base</span>
+<span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">search</span><span class="p">();</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">nav</span><span class="p">(</span><span class="s1">'user'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">page_link_content</span><span class="p">(</span><span class="nv">$page_link</span><span class="p">)</span> <span class="c1">// override ellipsis behavior on tags page only</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="nv">$page_link</span><span class="p">[</span><span class="s1">'type'</span><span class="p">]</span><span class="o">==</span><span class="s1">'ellipsis'</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">template</span><span class="o">==</span><span class="s1">'tags'</span><span class="p">)</span> <span class="p">)</span>
+		<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="p">(</span><span class="s1">'&lt;SPAN class="qa-page-ellipsis"&gt;&amp;mdash;&lt;/SPAN&gt;'</span><span class="p">);</span>
+	<span class="k">else</span>
+		<span class="nx">qa_html_theme_base</span><span class="o">::</span><span class="na">page_link_content</span><span class="p">(</span><span class="nv">$page_link</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

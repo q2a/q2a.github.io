@@ -1,0 +1,257 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Translations Old (Addons) - Question2Answer</title>
+	<meta name="description" content=="Accessing Question2Answer from external PHP code"/>
+	<link rel="canonical" href="https://docs.question2answer.org/pages/addons/translations/"/>
+	
+	<!-- Favicons -->
+	<link href="../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../css/styles.css"/>
+	<link rel="stylesheet" href="../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item selected-nav">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item selected-nav">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/addons/">Addons</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/addons/translations">Translations</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="article-content-container">
+						<h1 id="question2answer-language-files">Question2Answer Language Files</h1>
+
+						<p>The language files below are marked by the corresponding Question2Answer version. You can safely install a language file from a different version, and <a href="https://docs.question2answer.org/pages/translate/">update it with the missing phrases</a>. To install a language, place its directory (such as <code class="language-plaintext highlighter-rouge">fr</code> or <code class="language-plaintext highlighter-rouge">ru</code>) in Q2A’s <code class="language-plaintext highlighter-rouge">qa-lang</code> directory, then open the General section of the Admin panel and choose the language from the menu provided.</p>
+
+						<h2 id="q2a-18">Q2A 1.8</h2>
+
+						<ul>
+						  <li><a href="http://www.mediafire.com/file/j33or1rf9z6owjn/ar.zip">Q2A 1.8.x - Arabic (العربية)</a> by Musab Alqaiduh @ <a href="https://soalwjwab.com/">Soalwjwab</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.8-language-pt-BR.zip">Q2A 1.8.x - Brazilian Portuguese (Português)</a> by <a href="http://www.perguntedireito.com.br/">Pergunte Direito</a>.</li>
+						  <li><a href="https://github.com/yinhongbo/q2a-lang-cn">Q2A 1.8.x - Chinese Simplified (简体中文)</a> by Hongbo Yin.</li>
+						  <li><a href="https://github.com/ejvindh/q2a-da">Q2A 1.8.x - Danish (Dansk)</a> by <a href="http://ejvindh.net/en">Ejvind Hansen</a>.</li>
+						  <li><a href="https://github.com/mrflos/q2a-lang-fr">Q2A 1.8.x - French (Français)</a> by Olivier Seree, Pierre-Yves Aillet, Florian Schmitt, Grégoire Barré and Guillaume Turri.</li>
+						  <li><a href="https://github.com/fulgor/q2a-lang-de-formal">Q2A 1.8.x - German (Deutsch)</a> (formal) by Peter Chiochetti, Moritz Bunkus, Philip Schilling, Corinna Baldauf, <a href="https://github.com/fulgor">Fulgor</a>.</li>
+						  <li><a href="https://github.com/vdavid/question2answer-hu-hu">Q2A 1.8.x - Hungarian (Magyar)</a> by Dávid Veszelovszki @ <a href="https://codeberryschool.com/">CodeBerry</a>.</li>
+						  <li><a href="https://github.com/forexUp/Question2Answer">Q2A 1.8.x - Italian (Italiano)</a> by carlo10 @ <a href="http://opzionibinarie1.altervista.org/">Opzioni Binarie</a>.</li>
+						  <li><a href="https://github.com/minwook-shin/q2a-korean-translation">Q2A 1.8.x - Korean (한국어)</a> by Minwook Shin.</li>
+						  <li><a href="https://github.com/PELock/Question2Answer">Q2A 1.8.x - Polish (Polski)</a> by Bartosz Wojcik @ <a href="https://www.pelock.com">PELock</a>.</li>
+						  <li><a href="https://github.com/Dennwer/Q2A-russian-translation">Q2A 1.8.x - Russian (Русский)</a> by Dennwer @ <a href="https://abees.ru/">Вопрос – Ответ</a>. Also: <a href="https://github.com/ferasinka/q2a-lang-ru">Russian</a> by Andrey K. @ <a href="http://roborobo.ru/">Роборобо Android Q&amp;A</a>.</li>
+						  <li><a href="https://github.com/stefanmm/Q2A-serbian-translation">Q2A 1.8.x - Serbian (srpski)</a> by Stefan Marjanov @ <a href="http://saznajnovo.com/">Saznaj Novo</a>.</li>
+						  <li><a href="https://github.com/pupi1985/q2a-spanish-translation">Q2A 1.8.x - Spanish - Argentina (Español)</a> by Gabriel Zanetti.</li>
+						  <li><a href="https://gitlab.com/midget/q2a-translation-es-ES/tags/1.8.0-0">Q2A 1.8.x - Spanish - Spain (Español)</a> by Dario Minnucci.</li>
+						  <li><a href="https://github.com/JackSiro/Q2A-Swahili">Q2A 1.8.x - Swahili (Kiswahili)</a> by <a href="https://jacksiro.github.io/q2a/">Jackson Siro</a>.</li>
+						  <li><a href="http://turkdesk.org/downloads/Turkish-Q2A-1.8.x.zip">Q2A 1.8.x - Turkish (Türkçe)</a> by Erkan @ <a href="http://turkdesk.org/">TurkDesk</a>.</li>
+						</ul>
+
+						<h2 id="q2a-17">Q2A 1.7</h2>
+
+						<ul>
+						  <li><a href="https://github.com/pupi1985/q2a-arabic-translation">Q2A 1.7.x - Arabic (العربية)</a> by Tariq Ahmed @ <a href="http://www.ejabah.info/q2a/">Ejabah</a>, updated by <a href="http://stifhamat.com/">Ismail</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.7-language-pt-BR.zip">Q2A 1.7.x - Brazilian Portuguese (Português)</a> by <a href="http://www.perguntedireito.com.br/">Pergunte Direito</a>.</li>
+						  <li><a href="https://github.com/pazoff/q2a-lang-bg">Q2A 1.7.x - Bulgarian (Български)</a> by Plamen Vatev(Pazoff) @ <a href="http://popitai.me">Popitai.me</a>.</li>
+						  <li><a href="https://github.com/pau-minoves/q2a-catalan-translation">Q2A 1.7.x - Catalan (Català)</a> by Lluís Minoves @ <a href="http://com.seria.cat/">Com Seria</a>.</li>
+						  <li><a href="http://androidren.com/download/qa_lang/zh1_7_x.zip">Q2A 1.7.x - Chinese Simplified (简体中文)</a> by <a href="http://wx.fanfau.com">Fish</a>, updated by forlong401 @ <a href="http://androidren.com/">Androidren</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.7-language-cs.zip">Q2A 1.7.x - Czech (Čeština)</a> by Ellcupakabra @ <a href="http://czporadna.cz/">Poradna online</a>.</li>
+						  <li><a href="https://github.com/Wanabo/q2a-lang-nl/tree/1.7.x">Q2A 1.7.x - Dutch (Nederlands)</a> by Wim @ <a href="http://www.klokkenluider.org/">Klokkenluider</a>.</li>
+						  <li><a href="https://github.com/q2a-suomi/q2a-suomikaannos">Q2A 1.7.x - Finnish (Suomi)</a> by <a href="https://github.com/q2a-suomi">q2a-suomi</a>.</li>
+						  <li>Q2A 1.7.x - French (Français) <a href="http://www.question2answer.org/third-party/question2answer-1.7-language-fr.zip">older</a> or <a href="https://github.com/mrflos/q2a-lang-fr">newer</a> by Olivier Seree @ <a href="http://2cv.solu.fr">2cv Q&amp;A</a>, updated by Pierre-Yves Aillet and Florian Schmitt.</li>
+						  <li><a href="http://ftp.cixug.es/pub/q2a/gl.tar.gz">Q2A 1.7.x - Galician (Galego)</a> by <a href="http://www.cixug.es/">Oficina de Software Libre</a>.</li>
+						  <li><a href="https://github.com/comcoma/question2answerGE">Q2A 1.7.x - Georgian (ქართული)</a> by Giorgi Tsomaia @ <a href="http://suphra.ge/">Suphra</a>.</li>
+						  <li><a href="https://github.com/ReichardtIT/q2a-lang-de">Q2A 1.7.x - German (Deutsch)</a> by Dominik @ <a href="http://www.reichardt-informationstechnik.de/">Reichardt Informationstechnik</a>. Also: <a href="http://www.trvb128.at/qa-lang/qa-lang-de-formal-174.zip">Formal German</a> by Peter Chiochetti.</li>
+						  <li><a href="https://github.com/zakkak/qa-lang-el">Q2A 1.7.x - Greek (Ελληνικά)</a> by <a href="http://foivos.zakkak.net/">Foivos Zakkak</a>. Also see the Greeklish URLs plugin.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.7-language-it.zip">Q2A 1.7.x - Italian (Italiano)</a> by Danilo Petrozzi @ <a href="http://innovartisti.it/">InnovArtisti</a>.</li>
+						  <li><a href="https://github.com/naga0ka/Q2A-Japanese">Q2A 1.7.x - Japanese (日本語)</a> by <a href="https://github.com/naga0ka">naga0ka</a>.</li>
+						  <li><a href="https://github.com/minwook-shin/q2a-korean-translation/tree/1.7-backup">Q2A 1.7.x - Korean (한국어)</a> by Minwook Shin.</li>
+						  <li><a href="https://github.com/sardaren/Kurdish-Translation-for-Question2Answer">Q2A 1.7.x - Kurdish (کوردی)</a> by Sardar Hussein @ <a href="http://kitn.net/">kitn.net</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.7-language-lt.zip">Q2A 1.7.x - Lithuanian (lietuvių)</a> by Kestas.</li>
+						  <li><a href="http://nettport.com/zipped/index.php?download=17295e0ce6c4ac7302f411f4b3d49b7b">Q2A 1.7.x - Norwegian (Norsk)</a> by Sigma @ <a href="http://nettport.com/">Nettport</a>.</li>
+						  <li><a href="http://question2answer-farsi.com/files/language/Fa-1.7.zip">Q2A 1.7.x - Persian (فارسی)</a> by Ali Bakhshi ilani @ <a href="http://question2answer-farsi.com/">Question2Answer Farsi</a>. Also: Jalali Dates, Magic Words plugins.</li>
+						  <li><a href="https://github.com/PELock/Question2Answer">Q2A 1.7.x - Polish (Polski)</a> by Bartosz Wojcik @ <a href="https://www.pelock.com">PELock</a>.</li>
+						  <li><a href="http://english-ingles.com/q2a-portuguese-pt_PT-translation.zip">Q2A 1.7.x - Portuguese (Português)</a> by Tiago Marcelo @ <a href="http://english-ingles.com/">English Ingles</a>.</li>
+						  <li><a href="https://github.com/ferasinka/q2a-lang-ru">Q2A 1.7.x - Russian (Русский)</a> by Andrey K. @ <a href="http://roborobo.ru/">Роборобо Android Q&amp;A</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.7-language-sk.zip">Q2A 1.7.x - Slovak (Slovenčina)</a> by Boris Sipos.</li>
+						  <li><a href="https://github.com/pupi1985/q2a-spanish-translation">Q2A 1.7.x - Spanish - Argentina (Español)</a> by Gabriel Zanetti.</li>
+						  <li><a href="https://gitlab.com/midget/q2a-translation-es-ES">Q2A 1.7.x - Spanish - Spain (Español)</a> by Dario Minnucci.</li>
+						  <li><a href="https://github.com/masterjimmy83/swahiliq2a">Q2A 1.7.x - Swahili (Kiswahili)</a> by James Mmari.</li>
+						  <li><a href="http://dts.msxlabs.org/NeutralizeR/tr.zip">Q2A 1.7.x - Turkish (Türkçe)</a> by NeutralizeR @ <a href="https://www.msxlabs.org/">MsXLabs</a>. Also: <a href="http://turkdesk.org/downloads/Turkish-Q2A-1.7.x.zip">Turkish</a> by Erkan @ <a href="http://turkdesk.org/">TurkDesk</a>.</li>
+						  <li><a href="https://github.com/vanduc1102/viet-hoa-q2a">Q2A 1.7.x - Vietnamese (Tiếng Việt)</a> by <a href="https://github.com/vanduc1102">Duc Nguyen</a>.</li>
+						</ul>
+
+						<h2 id="q2a-16">Q2A 1.6</h2>
+
+						<ul>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-ar.zip">Q2A 1.6.x - Arabic (العربية)</a> by Tariq Ahmed @ <a href="http://www.ejabah.info/q2a/">Ejabah</a>.</li>
+						  <li><a href="https://github.com/alex18kr/Q2A-Euskara-Basque">Q2A 1.6.x - Basque (Euskara)</a> by Alexander Gonzalo de Sá @ <a href="http://zalantzak.eus/">Zalantzak.eus</a>. Place in a directory named <code class="language-plaintext highlighter-rouge">eu</code> inside <code class="language-plaintext highlighter-rouge">qa-lang</code> and add the line <code class="language-plaintext highlighter-rouge">'eu' =&gt; 'Basque - Euskara',</code> to <code class="language-plaintext highlighter-rouge">qa_admin_language_options()</code></li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-bn.zip">Q2A 1.6.x - Bengali (বাংলা)</a> by <a href="http://shuvro.wordpress.com/">Shubhra Prakash Paul</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-pt-BR.zip">Q2A 1.6.x - Brazilian Portuguese (Português)</a> by <a href="http://www.perguntedireito.com.br/">Pergunte Direito</a>.</li>
+						  <li><a href="http://0xffffffff.com/?attachment_id=76">Q2A 1.6.x - Bulgarian (Български)</a> by Nikolay Hamov @ <a href="http://tonove.info">Тонове Инфо</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-zh.zip">Q2A 1.6.x - Chinese Simplified (简体中文)</a> by <a href="http://wx.fanfau.com">Fish</a>, updated by dothinker @ <a href="http://v5coder.com/">V5 Coder</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-zh-TW.zip">Q2A 1.6.x - Chinese Traditional (繁體中文)</a> by Joe Liu.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-cs.zip">Q2A 1.6.x - Czech (Čeština)</a> by David Bucek and Ellcupakabra @ <a href="http://czporadna.cz/">Poradna online</a>.</li>
+						  <li><a href="https://github.com/Repox/question2answer-lang-da">Q2A 1.6.x - Danish (Dansk)</a> by Dan Storm @ <a href="http://catalystcode.net/">Catalyst Code</a>.</li>
+						  <li><a href="https://github.com/InfinityLF/q2a-lang-nl">Q2A 1.6.x - Dutch (Nederlands)</a> by <a href="http://www.question2answer.org/qa/user/Onno">Onno</a>.</li>
+						  <li><a href="https://github.com/sander85/Q2A-et">Q2A 1.6.x - Estonian (Eesti)</a> by <a href="http://sander85.eu/">Sander Lepik</a>.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-fr.zip">Q2A 1.6.x - French (Français)</a> by Olivier Seree @ <a href="http://2cv.solu.fr">2cv Q&amp;A</a>.</li>
+						  <li><a href="http://www.fairtraffic.de/web/de.zip">Q2A 1.6.x - German (Deutsch)</a> (informal) by Christoph Sanojka @ <a href="http://www.finanzenfragen.de/">Finanzenfragen.de</a>. Also: <a href="http://www.trvb128.at/qa-lang/qa-lang-de-formal-163.zip">German (Deutsch) formal</a> by Peter Chiochetti.</li>
+						  <li><a href="https://github.com/zakkak/qa-lang-el">Q2A 1.6.x - Greek (Ελληνικά)</a> by <a href="http://foivos.zakkak.net/">Foivos Zakkak</a>. Also see the Greeklish URLs plugin.</li>
+						  <li><a href="http://www.question2answer.org/third-party/question2answer-1.6-language-he.zip">Q2A 1.6.x - Hebrew (עברית)</a> by Yoram Ben Abu @ <a href="http://www.fitlife.co.il/">Fitlife</a>.</li>
+						  <li><a href="http://kttrack.com/q2a/question2answer-1.6-language-id.zip">Q2A 1.6.x - Indonesian (Bahasa Indonesia)</a> by Rio Turnadi @ <a href="http://www.kttrack.com/">KTTRACK</a>.</li>
+						  <li><a href="http://opzionibinarie1.altervista.org/qa-lang/it_1_6_2.rar">Q2A 1.6.x - Italian (Italiano)</a> by Carlo @ <a href="http://oraclefaq.altervista.org/">Oracle FAQ</a>.</li>
+						  <li><a href="http://question2answer-farsi.com/files/language/fa.zip">Q2A 1.6.x - Persian (فارسی)</a> by Ali Bakhshi ilani @ <a href="http://question2answer-farsi.com/">Question2Answer Farsi</a>. Also: Jalali Dates, Magic Words plugins.</li>
+						  <li><a href="http://hoek.pl/pliki/q2a-pl.zip">Q2A 1.6.x - Polish (Polski)</a> by <a href="http://hoek.pl/">Hoek</a>.</li>
+						  <li><a href="https://github.com/ferasinka/q2a-lang-ru">Q2A 1.6.x - Russian (Русский)</a> by Andrey K. @ <a href="http://roborobo.ru/">Роборобо Android Q&amp;A</a>.</li>
+						  <li><a href="https://github.com/pupi1985/q2a-spanish-translation">Q2A 1.6.x - Spanish (Español)</a> by Ronald @ <a href="http://www.ppyrr.com/">Preguntas y Respuestas</a>, updated by Sergio Navarrete Suárez @ <a href="http://www.udistrital.edu.co/">Universidad Distrital FJC</a> and Gabriel Zanetti.</li>
+						  <li><a href="http://www.vilkenapp.se/q2a-files/q2a_1.6_swedish_sv_latest.zip">Q2A 1.6.x - Swedish (Svenska)</a> by Anders Hellman @ <a href="http://www.vilkenapp.se/">VilkenApp.se</a>.</li>
+						  <li><a href="http://turkdesk.org/downloads/Turkish-Q2A-1.6.x.zip">Q2A 1.6.x - Turkish (Türkçe)</a> by Erkan @ <a href="http://turkdesk.org/">TurkDesk</a>.</li>
+						  <li><a href="http://sourceforge.net/projects/q2a-lang-uk/">Q2A 1.6.x - Ukrainian (Українська)</a> by Andriy Bokiy.</li>
+						  <li><a href="http://annguyenco.com/hoidap/vi-qa-lang.zip">Q2A 1.6.x - Vietnamese (Tiếng Việt)</a> by <a href="http://www.annguyenco.com">AnNguyenCo</a>. Also: <a href="https://www.dropbox.com/s/z1gzuow0rz4rkyu/vi.zip?dl=0">Updated version</a> by <a href="https://namgivu.wordpress.com/2015/01/09/vietnamese-translation-for-question2answer-website/">NTHQ Team</a>.</li>
+						</ul>
+
+						<p><em>View <a href="https://docs.question2answer.org/pages/addons/translations-old/">older language files</a>.</em></p>
+
+						<p>If your language is not listed, or is out-of-date, you can <a href="https://docs.question2answer.org/pages/translate/">create or update language files</a> using a text editor.</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../js/sticky_bar.js"></script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Translate - Question2Answer</title>
+	<meta name="description" content=="Accessing Question2Answer from external PHP code"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/translate/"/>
+	
+	<!-- Favicons -->
+	<link href="../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../css/styles.css"/>
+	<link rel="stylesheet" href="../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item selected-nav">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/translate/">Translate</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="article-content-container">
+						<h1 id="translating-question2answer-into-another-language">Translating Question2Answer into another language</h1>
+
+						<p>Question2Answer fully supports non-English languages and is easy to translate. Before proceeding, it’s worth <a href="https://docs.question2answer.org/pages/addons/">checking here</a> to see if a translation is already available. You may be able to use this immediately, or only have to add some missing phrases.</p>
+
+						<h2 id="creating-a-new-translation">Creating a new translation</h2>
+
+						<p>To create a new Question2Answer translation from scratch, follow the steps below:</p>
+
+						<ol>
+						  <li>
+							<p>Open the file <code class="language-plaintext highlighter-rouge">admin.php</code> inside Question2Answer’s <code class="language-plaintext highlighter-rouge">qa-include/app</code> directory and look at the function <code class="language-plaintext highlighter-rouge">qa_admin_language_options()</code>. This contains an array which maps abbreviated language codes to their corresponding languages. For example, the abbreviation for Russian is <code class="language-plaintext highlighter-rouge">ru</code>. Note down the abbreviation for your language. If your language is not in the array, you may add it, but please also <a href="http://www.question2answer.org/feedback.php">tell us</a> so we can include it in future versions.</p>
+						  </li>
+						  <li>
+							<p>Create a subdirectory inside Question2Answer’s <code class="language-plaintext highlighter-rouge">qa-lang</code> directory, and name the subdirectory with the abbreviation for your language, keeping the original capitalization.</p>
+						  </li>
+						  <li>
+							<p><strong>Copy</strong> (don’t move!) all of the <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> files in Question2Answer’s <code class="language-plaintext highlighter-rouge">qa-include</code> directory to the new language directory you created. This is currently a total of 8 files.</p>
+						  </li>
+						  <li>
+							<p>Log in to your Question2Answer site as an administrator, open the Admin panel, select your language, and click to save.</p>
+						  </li>
+						  <li>Now you can translate each of the copied <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> files that you created. To translate each file:
+							<ul>
+							  <li>Open the file in a text editor using <strong>UTF-8 encoding</strong> and ensure you do not add a BOM (byte order mark).</li>
+							  <li>In each line of the file, translate the phrase <strong>after</strong> the <code class="language-plaintext highlighter-rouge">=&gt;</code> symbol to your language.</li>
+							  <li>Pay attention to substitution points, which use the hat symbol (<code class="language-plaintext highlighter-rouge">^</code>). These can be moved but not removed. In some cases, the <code class="language-plaintext highlighter-rouge">^</code> symbol is followed by a number or word, such as <code class="language-plaintext highlighter-rouge">^1</code> or <code class="language-plaintext highlighter-rouge">^site_title</code>, and this should also be preserved.</li>
+							  <li>If you are not sure how a phrase is used, you may search for its key in the Question2Answer source code. The key is the string in quotes before <code class="language-plaintext highlighter-rouge">=&gt;</code> on each line.</li>
+							  <li>To leave a particular phrase in US English, you may remove its line from the file. You may also choose to remove the files <code class="language-plaintext highlighter-rouge">qa-lang-admin.php</code> and <code class="language-plaintext highlighter-rouge">qa-lang-options.php</code> - these are only used for the admin interface and do not contain any phrases which are visible to normal users of Q2A.</li>
+							</ul>
+						  </li>
+						  <li>
+							<p>As you proceed with the translation, you can check your work by saving the <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> file you are working on, then viewing or refreshing the appropriate pages in your browser.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">qa-check-lang.php</code> is your friend!</strong> As you work, use your web browser to view the <code class="language-plaintext highlighter-rouge">qa-include/qa-check-lang.php</code> page within your Question2Answer site. This will check your language files for any omitted phrases or substitutions.</p>
+						  </li>
+						  <li>Please consider sending us your translation or making it available online, so that we can <a href="https://docs.question2answer.org/pages/addons/">link to it here</a>.</li>
+						</ol>
+
+						<h2 id="updating-an-existing-translation">Updating an existing translation</h2>
+
+						<p>An incomplete Question2Answer translation may be available for your language, for example because it has not been updated for the latest version of Q2A. To update a translation for the version you are running, follow the steps below:</p>
+
+						<ol>
+						  <li>
+							<p>Download and install the language by placing its directory (such as <code class="language-plaintext highlighter-rouge">fr</code> or <code class="language-plaintext highlighter-rouge">ru</code>) in Q2A’s <code class="language-plaintext highlighter-rouge">qa-lang</code> directory.</p>
+						  </li>
+						  <li>
+							<p>Log in to your Question2Answer site as an administrator, open the Admin panel, select your language, and click to save.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">qa-check-lang.php</code> is your best friend!</strong> Use your web browser to view the <code class="language-plaintext highlighter-rouge">qa-include/qa-check-lang.php</code> page within your Question2Answer site. This will check your language files for errors and auto-generate the PHP code for missing phrases.</p>
+						  </li>
+						  <li>For each <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> file that needs attention:
+							<ul>
+							  <li>Open the file in a text editor using <strong>UTF-8 encoding</strong> and ensure you do not add a BOM (byte order mark).</li>
+							  <li>Copy and paste the appropriate PHP code from <code class="language-plaintext highlighter-rouge">qa-include/qa-check-lang.php</code> into the middle of this file.</li>
+							  <li>For each line that you pasted, translate the phrase <strong>after</strong> the <code class="language-plaintext highlighter-rouge">=&gt;</code> symbol to your language.</li>
+							  <li>Pay attention to substitution points, which use the hat symbol (<code class="language-plaintext highlighter-rouge">^</code>). These can be moved but not removed.</li>
+							</ul>
+						  </li>
+						  <li>
+							<p>As you work, refresh <code class="language-plaintext highlighter-rouge">qa-include/qa-check-lang.php</code> in your web browser and ensure that you resolve all issues shown. You can also browse around your Q2A site to see how the translated phrases are used in context.</p>
+						  </li>
+						  <li>Please consider sending us your translation or making it available online, so that we can <a href="https://docs.question2answer.org/pages/addons/">link to it here</a>.</li>
+						</ol>
+
+						<h2 id="customizing-selected-urls-or-phrases">Customizing selected URLs or phrases</h2>
+
+						<p>From version 1.4, it is possible to modify some of the URLs used within a Q2A site. For example, <code class="language-plaintext highlighter-rouge">http://mysite.com/questions</code> could be replaced with <code class="language-plaintext highlighter-rouge">http://mysite.com/proposals</code>. To do this, look for the commented <code class="language-plaintext highlighter-rouge">$QA_CONST_PATH_MAP</code> definition in <code class="language-plaintext highlighter-rouge">qa-config.php</code>. This shows an example of how to define a PHP array which modifies the standard URLs used.</p>
+
+						<p>Starting in version 1.5, it is also possible to customize specific language phrases for your Q2A site without installing a full translation. To customize a particular phrase, follow the steps below:</p>
+
+						<ol>
+						  <li>
+							<p>Search the <code class="language-plaintext highlighter-rouge">qa-include/qa-lang-*.php</code> files to find the file and line containing the phrase.</p>
+						  </li>
+						  <li>
+							<p>Create a <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> file in Q2A’s <code class="language-plaintext highlighter-rouge">qa-lang/custom</code> directory, with the same name as the file that you found in the previous step, and paste in the following code:</p>
+
+	<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;?php</span>
+
+ <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+	 <span class="c1">// custom phrases go here...</span>
+ <span class="p">);</span>
+</code></pre></div>    </div>
+						  </li>
+						  <li>
+							<p>Copy the line containing your phrase from Q2A’s <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> file into the middle of the <code class="language-plaintext highlighter-rouge">array( )</code> in your new file.</p>
+						  </li>
+						  <li>
+							<p>Change the text that comes after the <code class="language-plaintext highlighter-rouge">=&gt;</code> symbol to suit your requirements. Pay attention to substitution points, which use the hat symbol (<code class="language-plaintext highlighter-rouge">^</code>). For non-English languages, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).</p>
+						  </li>
+						</ol>
+
+						<p>Below is an example <code class="language-plaintext highlighter-rouge">qa-lang/custom/qa-lang-main.php</code> file which modifies the ‘Hello [username]’ and ‘My Account’ phrases:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+	<span class="s1">'logged_in_x'</span> <span class="o">=&gt;</span> <span class="s1">'Welcome, ^!'</span><span class="p">,</span>
+	<span class="s1">'nav_account'</span> <span class="o">=&gt;</span> <span class="s1">'My Settings'</span><span class="p">,</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../js/sticky_bar.js"></script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

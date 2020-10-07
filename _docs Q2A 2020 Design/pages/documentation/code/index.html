@@ -1,0 +1,214 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>External PHP (Documentation) - Question2Answer</title>
+	<meta name="description" content=="Accessing Question2Answer from external PHP code"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/code/external/"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item selected-nav">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/code">Code</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/code/optimization">External</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+				
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/code">External</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/code/functions">Functions</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/code/app-structure">App Structure</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="accessing-question2answer-from-external-php-code">Accessing Question2Answer from external PHP code</h1>
+
+						<p>Question2Answer provides a self-contained environment for your Q&amp;A site. However you may wish to access parts of Q2A from other PHP code running on your server, e.g. to access the Q2A database, check if a Q2A user is logged in, or call <a href="https://docs.question2answer.org/pages/documentation/code/functions/">other functions</a>.</p>
+
+						<p>To access Q2A 1.3.2 or later from an external script, simply <code class="language-plaintext highlighter-rouge">require_once</code> the file <code class="language-plaintext highlighter-rouge">qa-include/qa-base.php</code> from Q2A’s directory, along with any other Q2A files containing functions you need. You can then freely call any of the functions defined within these files. Each function is documented at the top of the function definition. (Note: Versions of Q2A prior to 1.3.2 also required you to define <code class="language-plaintext highlighter-rouge">QA_BASE_DIR</code> and call <code class="language-plaintext highlighter-rouge">qa_base_db_connect()</code> with a failure handler - see <a href="http://www.question2answer.org/qa/4583/login-system-outside-q%26a-directory#a4608">here</a>.)</p>
+
+						<p>Below is an example external script which outputs the username and email of the currently logged in Q2A user, if any:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">require_once</span> <span class="s1">'/PATH/TO/qa-include/qa-base.php'</span><span class="p">;</span>
+
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-app-users.php'</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">qa_get_logged_in_userid</span><span class="p">()</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span>
+	<span class="k">echo</span> <span class="s1">'not logged in'</span><span class="p">;</span>
+<span class="k">else</span>
+	<span class="k">echo</span> <span class="nx">qa_get_logged_in_handle</span><span class="p">()</span> <span class="o">.</span> <span class="s1">'&lt;br&gt;'</span> <span class="o">.</span> <span class="nx">qa_get_logged_in_email</span><span class="p">();</span>
+</code></pre></div></div>
+
+						<p>Below is an another example external script which creates a question by the currently logged in Q2A user:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require_once</span> <span class="s1">'/PATH/TO/qa-include/qa-base.php'</span><span class="p">;</span>
+
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-app-users.php'</span><span class="p">;</span>
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-app-posts.php'</span><span class="p">;</span>
+
+<span class="nv">$type</span> <span class="o">=</span> <span class="s1">'Q'</span><span class="p">;</span> <span class="c1">// question</span>
+<span class="nv">$parentid</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">// does not follow another answer</span>
+<span class="nv">$title</span> <span class="o">=</span> <span class="s1">'Why do birds sing?'</span><span class="p">;</span>
+<span class="nv">$content</span> <span class="o">=</span> <span class="s1">'And why do they fall in love?'</span><span class="p">;</span>
+<span class="nv">$format</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span> <span class="c1">// plain text</span>
+<span class="nv">$categoryid</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">// assume no category</span>
+<span class="nv">$tags</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'birds'</span><span class="p">,</span> <span class="s1">'sing'</span><span class="p">,</span> <span class="s1">'love'</span><span class="p">);</span>
+<span class="nv">$userid</span> <span class="o">=</span> <span class="nx">qa_get_logged_in_userid</span><span class="p">();</span>
+
+<span class="nx">qa_post_create</span><span class="p">(</span><span class="nv">$type</span><span class="p">,</span> <span class="nv">$parentid</span><span class="p">,</span> <span class="nv">$title</span><span class="p">,</span> <span class="nv">$content</span><span class="p">,</span> <span class="nv">$format</span><span class="p">,</span> <span class="nv">$categoryid</span><span class="p">,</span> <span class="nv">$tags</span><span class="p">,</span> <span class="nv">$userid</span><span class="p">);</span>
+</code></pre></div></div>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

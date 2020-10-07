@@ -1,0 +1,318 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Filter - Plugin modules documentation - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules/filter"/>
+	
+	<!-- Favicons -->
+	<link href="../../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/page">Filter</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="filter-modules">Filter Modules</h1>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+						<p>A filter module (requires Q2A 1.5+) enables plugins to validate and/or modify many different types of user input. This includes the content of posts as well as user information such as usernames and email addresses. Filter modules can also control whether or not the post is queued for moderation. Possible applications of filter modules include cleaning up user input, restricting users of a site, creating specialized Q&amp;A applications, and advanced spam checking.</p>
+
+						<p>The PHP class for a filter module may contain the following functions (all are optional):</p>
+
+						<ul>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">filter_question(&amp;$question, &amp;$errors, $oldquestion)</code></strong>. The <code class="language-plaintext highlighter-rouge">$question</code> parameter contains an editable array of information about a question being asked or edited. If the question is being edited, <code class="language-plaintext highlighter-rouge">$oldquestion</code> will contain an array of the previous values, otherwise it will be <code class="language-plaintext highlighter-rouge">null</code>. The elements in these arrays are described in the table below - any element may be absent, so your function should check with <code class="language-plaintext highlighter-rouge">isset()</code> as appropriate.</p>
+
+							<p>In the table, if an element is <strong>Editable</strong>, its value may be modified within the <code class="language-plaintext highlighter-rouge">$question</code> array. This will affect the information that is passed to other filter modules, displayed to the user, and stored in the database. If an element can have <strong>Errors</strong>, your function can declare its value invalid by adding a textual error report with the same key to the <code class="language-plaintext highlighter-rouge">$errors</code> array. This textual error will be displayed to the user, and the question will not yet be added or saved.</p>
+
+							<table class="parameters">
+						  <tbody>
+							  <tr class="titles">
+								  <td>Element key</td>
+								  <td>Description</td>
+								  <td>Editable</td>
+								  <td>Errors</td>
+								  <td>Questions</td>
+								  <td>As and Cs</td>
+							  </tr>
+							  <tr>
+								  <td>`'title'`</td>
+								  <td>Title of the question</td>
+								  <td>Yes</td>
+								  <td>Yes</td>
+								  <td>Maybe</td>
+								  <td>No</td>
+							  </tr>
+							  <tr>
+								  <td>`'editor'`</td>
+								  <td>The name of the [editor module](/plugins/modules-editor/) used</td>
+								  <td>No</td>
+								  <td>No</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+							  <tr>
+								  <td>`'content'`</td>
+								  <td>Main content of the post</td>
+								  <td>Yes</td>
+								  <td>Yes</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+							  <tr>
+								  <td>`'format'`</td>
+								  <td>Format of the content, e.g. `'html'` or `''` for text</td>
+								  <td>Yes</td>
+								  <td>No</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+							  <tr>
+								  <td>`'text'`</td>
+								  <td>Plain text rendering of content</td>
+								  <td>No</td>
+								  <td>No</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+							  <tr>
+								  <td>`'tags'`</td>
+								  <td>Array of question tags</td>
+								  <td>Yes</td>
+								  <td>Yes</td>
+								  <td>Maybe</td>
+								  <td>No</td>
+							  </tr>
+							  <tr>
+								  <td>`'categoryid'`</td>
+								  <td>Category ID for question</td>
+								  <td>Yes</td>
+								  <td>Yes</td>
+								  <td>Maybe</td>
+								  <td>No</td>
+							  </tr>
+							  <tr>
+								  <td>`'extra'`</td>
+								  <td>Custom extra information field</td>
+								  <td>Yes</td>
+								  <td>Yes</td>
+								  <td>Maybe</td>
+								  <td>No</td>
+							  </tr>
+							  <tr>
+								  <td>`'notify'`</td>
+								  <td>Notify author of responses (boolean)</td>
+								  <td>Yes</td>
+								  <td>No</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+							  <tr>
+								  <td>`'email'`</td>
+								  <td>Email address of author</td>
+								  <td>Yes</td>
+								  <td>Yes</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+							  <tr>
+								  <td>`'queued'`</td>
+								  <td>Queue for moderation (boolean)</td>
+								  <td>Yes</td>
+								  <td>No</td>
+								  <td>Maybe</td>
+								  <td>Maybe</td>
+							  </tr>
+						  </tbody>
+						  </table>
+
+							<p>In Q2A 1.5.x, the <code class="language-plaintext highlighter-rouge">'queued'</code> element was only present if a new post was being created, rather than an existing one being edited. As of Q2A 1.6, the element is present in either case, so a filter module can requeue a post for moderation after it is edited.</p>
+
+							<p>As of Q2A 1.6, <code class="language-plaintext highlighter-rouge">filter_question()</code> will also be called when a hidden post is being reshown by its author. In this case, Q2A will ignore any changes made by filter modules to elements in the <code class="language-plaintext highlighter-rouge">$question</code> array except from <code class="language-plaintext highlighter-rouge">'queued'</code>. The value of <code class="language-plaintext highlighter-rouge">$question['queued']</code> will determine whether the post is reshown immediately, or else requeued for moderation.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">filter_answer(&amp;$answer, &amp;$errors, $question, $oldanswer)</code></strong>. This works very similarly to <code class="language-plaintext highlighter-rouge">filter_question()</code> described above. The <code class="language-plaintext highlighter-rouge">$answer</code> parameter contains an editable array of information about an answer being added, edited or (from Q2A 1.6) reshown. If the answer is being edited or reshown, <code class="language-plaintext highlighter-rouge">$oldanswer</code> will contain an array of the previous values, otherwise it will be <code class="language-plaintext highlighter-rouge">null</code>. The elements in these arrays work the same way as for <code class="language-plaintext highlighter-rouge">filter_question()</code> - see the <strong>As and Cs</strong> columns above to see which might be present. As with <code class="language-plaintext highlighter-rouge">filter_question()</code>, elements can be added to the <code class="language-plaintext highlighter-rouge">$errors</code> array to declare a value invalid. For your reference, the <code class="language-plaintext highlighter-rouge">$question</code> parameter contains an array of information about the question to which this answer belongs.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">filter_comment(&amp;$comment, &amp;$errors, $question, $parent, $oldcomment)</code></strong>. This works very similarly to <code class="language-plaintext highlighter-rouge">filter_question()</code> and <code class="language-plaintext highlighter-rouge">filter_answer()</code>. The <code class="language-plaintext highlighter-rouge">$comment</code> parameter contains an editable array of information about a comment being added, edited or (from Q2A 1.6) reshown. If the comment is being edited or reshown, <code class="language-plaintext highlighter-rouge">$oldcomment</code> will contain an array of the previous values, otherwise it will be <code class="language-plaintext highlighter-rouge">null</code>. The elements in these arrays work the same way as for <code class="language-plaintext highlighter-rouge">filter_question()</code> - see the <strong>As and Cs</strong> columns above to see which might be present. As with <code class="language-plaintext highlighter-rouge">filter_question()</code>, elements can be added to the <code class="language-plaintext highlighter-rouge">$errors</code> array to declare a value invalid. For your reference, the <code class="language-plaintext highlighter-rouge">$question</code> parameter contains an array of information about the question to which this comment belongs, and <code class="language-plaintext highlighter-rouge">$parent</code> contains an array about the comment’s immediate parent (answer or question).</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">filter_email(&amp;$email, $olduser)</code></strong>. This allows a filter module to validate and/or modify email addresses for new or existing Q2A user accounts. The <code class="language-plaintext highlighter-rouge">$email</code> parameter contains the email address entered, and may be modified in place to change the email. The function can also declare the email invalid by returning a textual error, otherwise it should return <code class="language-plaintext highlighter-rouge">null</code>. For your reference, if the email is for an existing user, <code class="language-plaintext highlighter-rouge">$olduser</code> will contain an array of information about the user, including their previous email in <code class="language-plaintext highlighter-rouge">$olduser['email']</code>. If the email is for a new user, <code class="language-plaintext highlighter-rouge">$olduser</code> will be <code class="language-plaintext highlighter-rouge">null</code>.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">filter_handle(&amp;$handle, $olduser)</code></strong>. This works very similarly to <code class="language-plaintext highlighter-rouge">filter_email()</code>, but for handles/usernames instead of email addresses. The <code class="language-plaintext highlighter-rouge">$handle</code> parameter contains the handle entered, and may be modified in place to change the handle. The function can also declare the handle invalid by returning a textual error, otherwise it should return <code class="language-plaintext highlighter-rouge">null</code>. For your reference, if the handle is for an existing user, <code class="language-plaintext highlighter-rouge">$olduser</code> will contain an array of information about the user, including their previous handle in <code class="language-plaintext highlighter-rouge">$olduser['handle']</code>. If the handle is for a new user, <code class="language-plaintext highlighter-rouge">$olduser</code> will be <code class="language-plaintext highlighter-rouge">null</code>.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">filter_profile(&amp;$profile, &amp;$errors, $user, $oldprofile)</code></strong>. This allows a filter module to validate and/or modify information entered into the user profile fields for display on a user’s page. The <code class="language-plaintext highlighter-rouge">$profile</code> parameter contains an array of entered profile information, with keys corresponding to the <code class="language-plaintext highlighter-rouge">fieldid</code> column in the <code class="language-plaintext highlighter-rouge">qa_userfields</code> table in the database. Elements of <code class="language-plaintext highlighter-rouge">$profile</code> can be modified in place to change their values. The function can also declare a field value invalid by adding a textual error report with the same key as the field to the <code class="language-plaintext highlighter-rouge">$errors</code> array. This textual error will be displayed to the user, and the corresponding part of the profile will not yet be saved. If the profile of an existing user is being edited, <code class="language-plaintext highlighter-rouge">$user</code> contains an array of information about the user, and <code class="language-plaintext highlighter-rouge">$oldprofile</code> contains the previous profile of the user, with the same keys as <code class="language-plaintext highlighter-rouge">$profile</code>. If the profile is for a new user who is currently registering, both <code class="language-plaintext highlighter-rouge">$user</code> and <code class="language-plaintext highlighter-rouge">$oldprofile</code> will be <code class="language-plaintext highlighter-rouge">null</code>.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">validate_password($password, $olduser)</code></strong>. This allows a filter module to validate an entered password for new or existing Q2A user accounts. The <code class="language-plaintext highlighter-rouge">$password</code> parameter contains the password entered. Note than unlike other filter module functions, <code class="language-plaintext highlighter-rouge">validate_password()</code> cannot modify a password, but rather only validate it. The function can declare the pssword invalid by returning a textual error, otherwise it should return <code class="language-plaintext highlighter-rouge">null</code>. For your reference, if the password is for an existing user, <code class="language-plaintext highlighter-rouge">$olduser</code> contains an array of information about the user, but this will not contain the user’s previous password, since Q2A doesn’t store passwords in their original form. If the password is for a new user, <code class="language-plaintext highlighter-rouge">$olduser</code> will be <code class="language-plaintext highlighter-rouge">null</code>.</p>
+						  </li>
+						</ul>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+					</div>
+					
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../../js/sticky_bar.js"></script>
+	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

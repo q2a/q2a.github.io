@@ -1,0 +1,239 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Widget - Plugin modules documentation - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules/widget"/>
+	
+	<!-- Favicons -->
+	<link href="../../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/page">Widget</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="widget-modules">Widget Modules</h1>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+						<p>A widget module (requires Q2A 1.4+) displays some extra HTML content on one or more of Q2A’s pages. The widget specifies which types of pages (“templates”) it can be displayed on, and where it can be displayed on the page. The Q2A site admin then chooses exactly where and when the widget is shown, out of those options that the widget makes available.</p>
+
+						<p>The PHP class for a widget module must contain the following functions (all are <strong>required</strong>):</p>
+
+						<ul>
+						  <li><strong><code class="language-plaintext highlighter-rouge">allow_template($template)</code></strong> should return <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code> to indicate whether the widget can be displayed on pages of type <code class="language-plaintext highlighter-rouge">$template</code>. The parameter <code class="language-plaintext highlighter-rouge">$template</code> can take one of the following values:
+							<ul>
+							  <li><code class="language-plaintext highlighter-rouge">'account'</code> - user’s ‘My Account’ page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'activity'</code> - recent activity</li>
+							  <li><code class="language-plaintext highlighter-rouge">'admin'</code> - admin pages</li>
+							  <li><code class="language-plaintext highlighter-rouge">'ask'</code> - ask a question page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'categories'</code> - list of categories</li>
+							  <li><code class="language-plaintext highlighter-rouge">'custom'</code> - custom or plugin pages</li>
+							  <li><code class="language-plaintext highlighter-rouge">'favorites'</code> - user’s ‘My Favorites’ page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'feedback'</code> - feedback form</li>
+							  <li><code class="language-plaintext highlighter-rouge">'hot'</code> - hot questions page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'ip'</code> - page showing activity for an IP address</li>
+							  <li><code class="language-plaintext highlighter-rouge">'login'</code> - login page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'message'</code> - private message page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'qa'</code> - recent questions and answers (also home page if a custom home page is not being used)</li>
+							  <li><code class="language-plaintext highlighter-rouge">'question'</code> - individual question pages</li>
+							  <li><code class="language-plaintext highlighter-rouge">'questions'</code> - questions list</li>
+							  <li><code class="language-plaintext highlighter-rouge">'register'</code> - register page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'search'</code> - search results page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'tag'</code> - recent questions for a tag</li>
+							  <li><code class="language-plaintext highlighter-rouge">'tags'</code> - most popular tags</li>
+							  <li><code class="language-plaintext highlighter-rouge">'unanswered'</code> - recent questions without answers</li>
+							  <li><code class="language-plaintext highlighter-rouge">'updates'</code> - user’s ‘My Updates’ page</li>
+							  <li><code class="language-plaintext highlighter-rouge">'user'</code> - individual user pages</li>
+							  <li><code class="language-plaintext highlighter-rouge">'users'</code> - top scoring usersNew values for <code class="language-plaintext highlighter-rouge">$template</code> may be added in future, so you should return <code class="language-plaintext highlighter-rouge">false</code> for unrecognized values unless your widget will not have a problem being displayed on any possible type of page.</li>
+							</ul>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">allow_region($region)</code></strong> should return whether the widget can be displayed in the (horizontal) part of the page indicated by <code class="language-plaintext highlighter-rouge">$region</code>, which can take one of the following values:</p>
+
+							<ul>
+							  <li><code class="language-plaintext highlighter-rouge">'main'</code> - the area showing the page’s main content, excluding the side panel. In the themes that come with Q2A, widgets in this region will have at least 728 pixels of width available, and no limit on height.</li>
+							  <li><code class="language-plaintext highlighter-rouge">'side'</code> - the side panel, at least 160 pixels wide in Q2A’s built-in themes, with no height limit.</li>
+							  <li><code class="language-plaintext highlighter-rouge">'full'</code> - the full width of the main area and side panel, at least 900 pixels wide in Q2A’s themes, with no height limit.New values for <code class="language-plaintext highlighter-rouge">$region</code> may be added in future, so you should return <code class="language-plaintext highlighter-rouge">false</code> for unrecognized values unless your widget is happy to be displayed in any area, no matter how narrow or wide.</li>
+							</ul>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">output_widget($region, $place, $themeobject, $template, $request, $qa_content)</code></strong> instructs your widget to output its HTML to the page. Your widget’s HTML will be wrapped within a <code class="language-plaintext highlighter-rouge">&lt;DIV&gt;</code> which has a fixed pixel width (and unspecified height) in Q2A’s built-in themes, so you can use CSS to position content within. The parameters passed are as follows:</p>
+
+							<ul>
+							  <li><code class="language-plaintext highlighter-rouge">$region</code> - where your widget is being displayed (horizontally) on the page. It takes the values <code class="language-plaintext highlighter-rouge">'main'</code>, <code class="language-plaintext highlighter-rouge">'side'</code> or <code class="language-plaintext highlighter-rouge">'full'</code>, with meanings as for <code class="language-plaintext highlighter-rouge">allow_region()</code>.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$place</code> - where your widget is being displayed (vertically) within <code class="language-plaintext highlighter-rouge">$region</code>. It takes the values <code class="language-plaintext highlighter-rouge">'top'</code>, <code class="language-plaintext highlighter-rouge">'high'</code>, <code class="language-plaintext highlighter-rouge">'low'</code> or <code class="language-plaintext highlighter-rouge">'bottom'</code>. Try adding a widget in the admin interface to see what these mean for each <code class="language-plaintext highlighter-rouge">$region</code>.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$themeobject</code> - the instantiated theme class. This allows you to call any of the functions implemented in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code>. For example, <code class="language-plaintext highlighter-rouge">$themeobject-&gt;output('&lt;DIV&gt;', 'test', '&lt;/div&gt;')</code> will output 3 lines of HTML.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$template</code> - the type of page your widget is being displayed on, with meanings as for <code class="language-plaintext highlighter-rouge">allow_template()</code>.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$request</code> - the Q2A request that generated the page, e.g. <code class="language-plaintext highlighter-rouge">'user/John Doe'</code>. The <code class="language-plaintext highlighter-rouge">$request</code> uses slash as a separator, independent of the type of URLs a particular Q2A site is using.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$qa_content</code> - the nested Q2A array containing the full content for the page being displayed, as it was passed to the theme object. Use PHP’s <code class="language-plaintext highlighter-rouge">print_r()</code> function to see what’s inside and find any bits you need.</li>
+							</ul>
+						  </li>
+						</ul>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+					</div>
+					
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../../js/sticky_bar.js"></script>
+	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1018 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Plugin tutorial (Documentation) - Question2Answer</title>
+	<meta name="description" content=="Tutorial: Writing a Question2Answer plugin"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="tutorial-writing-a-question2answer-plugin">Tutorial: Writing a Question2Answer plugin</h1>
+
+						<p>In this tutorial, we will create a Question2Answer (1.5+) <a href="https://docs.question2answer.org/pages/documentation/plugins">plugin</a> from scratch. Our plugin will allow descriptions to be added to tags on a Q2A site. These descriptions will be displayed and edited on the page listing recent questions for each tag. They will also be shown in a tooltip when users mouse over a tag. The Q2A administrator will be able to decide who can edit tag descriptions.</p>
+
+						<p>The tutorial will touch on each of the main areas of Q2A plugin <code class="language-plaintext highlighter-rouge">function</code>ality. Tag descriptions will be stored in the Q2A database, using Q2A’s tag metadata table. The descriptions will be displayed on a tag’s page using a <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-widget/">widget module</a>. Tags will be edited on pages provided by a <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-page/">page module</a>. An <a href="https://docs.question2answer.org/pages/documentation/plugins/overrides/">override</a> will be used to show the tooltips, and then a <a href="https://docs.question2answer.org/pages/documentation/plugins/layers/">layer</a> will allow us to do this with fewer database queries. An admin form for the plugin will be displayed in the ‘Plugins’ section of the admin panel, with the corresponding settings stored by Q2A’s options mechanism. At the end of this process, we will see how to make the plugin localizable.</p>
+
+						<p>This tutorial assumes you are familiar with the <a href="http://www.php.net/">PHP</a> programming language as well as some basic <a href="http://en.wikipedia.org/wiki/HTML">HTML</a> and <a href="http://www.mysql.com/">MySQL</a>.</p>
+
+						<h2 id="1-creating-the-plugin-directory-and-qa-pluginphp">1. Creating the plugin directory and <code class="language-plaintext highlighter-rouge">qa-plugin.php</code></h2>
+
+						<p>In this first step we will set up the directory for the plugin and create the crucial <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file within.</p>
+
+						<ul>
+							<li>
+								<p>Create a new empty directory <code class="language-plaintext highlighter-rouge">tag-descriptions</code> in Q2A’s <code class="language-plaintext highlighter-rouge">qa-plugin</code> directory - see <a href="https://docs.question2answer.org/pages/documentation/plugins">here</a> for naming conventions.</p>
+							</li>
+							<li>
+								<p>Create an empty <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file inside this directory. This file is the core of the plugin. It registers each of the plugin’s elements with Q2A and contains meta information for display in Q2A’s admin interface.</p>
+							</li>
+							<li>
+								<p>Open the ‘Plugins’ page of your Q2A site admin panel. You should see the plugin listed as ‘Unnamed Plugin’. If it is not there, please check you named <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> correctly and have uploaded it to the right place on your server.</p>
+							</li>
+							<li>
+								<p>Now let’s add some basic meta information about the plugin, so it can be listed more informatively in the admin section. Open <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> in your favorite text editor, paste in the following code, then save/upload the file:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+<span class="cm">/*
+Plugin Name: Tag Descriptions Tutorial
+Plugin URI:
+Plugin Description: Allows tag descriptions to be displayed as tooltips
+Plugin Version: 1.0
+Plugin Date: 2016-01-02
+Plugin Author:
+Plugin Author URI:
+Plugin License: GPLv2
+Plugin Minimum Question2Answer Version: 1.5
+Plugin Update Check URI:
+*/</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">defined</span><span class="p">(</span><span class="s1">'QA_VERSION'</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// don't allow this page to be requested directly from browser</span>
+<span class="nb">header</span><span class="p">(</span><span class="s1">'Location: ../../'</span><span class="p">);</span>
+<span class="k">exit</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>See <a href="https://docs.question2answer.org/pages/documentation/plugins">here</a> for a detailed description of the metadata fields. The code below the metadata ensures that visitors to your Q2A site cannot request the <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> page directly (even though doing so would cause no actual harm).</p>
+							</li>
+							<li>
+								<p>Reopen the ‘Plugins’ page of your Q2A site admin panel and check that the listing has been updated. We’re on our way!</p>
+							</li>
+						</ul>
+
+						<h2 id="2-creating-a-widget-module">2. Creating a widget module</h2>
+
+						<p>In this step we will create the initial version of the widget module which displays descriptions on tag pages.</p>
+
+						<ul>
+							<li>
+								<p>Create a new file named <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> in your plugin’s <code class="language-plaintext highlighter-rouge">tag-descriptions</code> directory, and paste this in:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+
+<span class="kd">class</span> <span class="nc">qa_tag_descriptions_widget</span> <span class="p">{</span>
+
+<span class="k">function</span> <span class="nf">allow_template</span><span class="p">(</span><span class="nv">$template</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">return</span> <span class="p">(</span><span class="nv">$template</span><span class="o">==</span><span class="s1">'tag'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>This is the beginning of the PHP class that will define the widget’s functionality. The <code class="language-plaintext highlighter-rouge">allow_template()</code> function is one of three class functions required in a widget module (<a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-widget/">more here</a>). It is called by Q2A to determine which types of pages the widget can be displayed on. In this case, the widget can only be displayed on pages listing recent questions for a tag, so the function only returns <code class="language-plaintext highlighter-rouge">true</code> if the <code class="language-plaintext highlighter-rouge">$template</code> parameter is <code class="language-plaintext highlighter-rouge">'tag'</code>.</p>
+							</li>
+							<li>
+								<p>Add the following two additional functions <strong>inside</strong> the <code class="language-plaintext highlighter-rouge">class</code> definition in <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">allow_region</span><span class="p">(</span><span class="nv">$region</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">output_widget</span><span class="p">(</span><span class="nv">$region</span><span class="p">,</span> <span class="nv">$place</span><span class="p">,</span> <span class="nv">$themeobject</span><span class="p">,</span> <span class="nv">$template</span><span class="p">,</span> <span class="nv">$request</span><span class="p">,</span> <span class="nv">$qa_content</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">echo</span> <span class="s1">'just a test'</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>The <code class="language-plaintext highlighter-rouge">allow_region()</code> function allows the widget to restrict its display to specific areas of the page. In our case, we’re not fussy, so we return <code class="language-plaintext highlighter-rouge">true</code> for any <code class="language-plaintext highlighter-rouge">$region</code> parameter. The <code class="language-plaintext highlighter-rouge">output_widget()</code> function tells our widget to actually display its content. For now, it will simply output a fixed test string.</p>
+							</li>
+							<li>
+								<p>The skeleton of our widget module is now complete, and we need to activate it. Paste this at the end of <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">qa_register_plugin_module</span><span class="p">(</span>
+<span class="s1">'widget'</span><span class="p">,</span> <span class="c1">// type of module</span>
+<span class="s1">'qa-tag-desc-widget.php'</span><span class="p">,</span> <span class="c1">// PHP file containing module class</span>
+<span class="s1">'qa_tag_descriptions_widget'</span><span class="p">,</span> <span class="c1">// module class name in that PHP file</span>
+<span class="s1">'Tag Descriptions'</span> <span class="c1">// human-readable name of module</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+
+								<p>Each parameter to <code class="language-plaintext highlighter-rouge">qa_register_plugin_module()</code> is explained by a comment in the code above - <a href="https://docs.question2answer.org/pages/documentation/plugins">more here</a>.</p>
+							</li>
+							<li>
+								<p>Now it’s time to test out the widget. Ensure you have saved/uploaded the <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> and <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> files. Then open the ‘Layout’ section of your Q2A site admin panel. The list of available widgets should include the name ‘Tag Descriptions’. Click ‘add widget’ next to it, and choose to display the widget somewhere on tag pages. Note how the options shown in the admin panel reflect the widget module’s responses from <code class="language-plaintext highlighter-rouge">allow_template()</code> and <code class="language-plaintext highlighter-rouge">allow_region()</code>.</p>
+							</li>
+							<li>
+								<p>Check the widget is outputting its test string by visiting a tag page on your Q2A site. If it’s there, well done!</p>
+							</li>
+						</ul>
+
+						<h2 id="3-creating-the-tag-description-editing-page">3. Creating the tag description editing page</h2>
+
+						<p>In this step we will create the page module that allows tag descriptions to be edited.</p>
+
+						<ul>
+							<li>
+								<p>Create a new file named <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> in your <code class="language-plaintext highlighter-rouge">tag-descriptions</code> directory and paste this in:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+
+<span class="kd">class</span> <span class="nc">qa_tag_descriptions_edit_page</span> <span class="p">{</span>
+
+<span class="k">function</span> <span class="nf">match_request</span><span class="p">(</span><span class="nv">$request</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="nv">$parts</span><span class="o">=</span><span class="nb">explode</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="nv">$request</span><span class="p">);</span>
+
+<span class="k">return</span> <span class="nv">$parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="s1">'tag-edit'</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">process_request</span><span class="p">(</span><span class="nv">$request</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>The <code class="language-plaintext highlighter-rouge">match_request()</code> function let a page module decide if it will process a particular web page request. The <code class="language-plaintext highlighter-rouge">$request</code> parameter is always slash-separated, independent of the URL structure used by a particular Q2A site - <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-page/">more here</a>. We have decided that the URLs for our tag description editor will take the form <code class="language-plaintext highlighter-rouge">tag-edit/*</code> where <code class="language-plaintext highlighter-rouge">*</code> is the tag to be edited. For now, the <code class="language-plaintext highlighter-rouge">process_request()</code> function in the page module generates an empty page for these requests.</p>
+							</li>
+							<li>
+								<p>Activate the page model within the plugin by pasting the following code at the end of your <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">qa_register_plugin_module</span><span class="p">(</span>
+<span class="s1">'page'</span><span class="p">,</span> <span class="c1">// type of module</span>
+<span class="s1">'qa-tag-desc-edit.php'</span><span class="p">,</span> <span class="c1">// PHP file containing module class</span>
+<span class="s1">'qa_tag_descriptions_edit_page'</span><span class="p">,</span> <span class="c1">// name of module class</span>
+<span class="s1">'Tag Description Edit Page'</span> <span class="c1">// human-readable name of module</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+							</li>
+							<li>
+								<p>Now save/upload all files and test the page module is working by clicking on a tag in your Q2A site, then replacing <code class="language-plaintext highlighter-rouge">tag</code> in the URL with <code class="language-plaintext highlighter-rouge">tag-edit</code>. An empty page should be generated, rather than a ‘page not found’ error.</p>
+							</li>
+							<li>
+								<p>Now we will put something on the page. Replace the previous <code class="language-plaintext highlighter-rouge">process_request()</code> function with:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">process_request</span><span class="p">(</span><span class="nv">$request</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="nv">$parts</span><span class="o">=</span><span class="nb">explode</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="nv">$request</span><span class="p">);</span>
+<span class="nv">$tag</span><span class="o">=</span><span class="nv">$parts</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+
+<span class="nv">$qa_content</span><span class="o">=</span><span class="nx">qa_content_prepare</span><span class="p">();</span>
+<span class="nv">$qa_content</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="o">=</span><span class="s1">'Edit the description for '</span><span class="o">.</span><span class="nx">qa_html</span><span class="p">(</span><span class="nv">$tag</span><span class="p">);</span>
+
+<span class="k">return</span> <span class="nv">$qa_content</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>As in <code class="language-plaintext highlighter-rouge">match_request()</code> above, the new <code class="language-plaintext highlighter-rouge">process_request()</code> function begins by examining the <code class="language-plaintext highlighter-rouge">$request</code> parameter to determine which tag is being edited. It then calls Q2A’s <code class="language-plaintext highlighter-rouge">qa_content_prepare()</code> function to create the initial page description in <code class="language-plaintext highlighter-rouge">$qa_content</code>, including navigation and widgets. After assigning a title to the page it returns <code class="language-plaintext highlighter-rouge">$qa_content</code> as a result. Note that the <code class="language-plaintext highlighter-rouge">$tag</code> is HTML-escaped by <code class="language-plaintext highlighter-rouge">qa_html()</code> for use in <code class="language-plaintext highlighter-rouge">$qa_content</code>, since it could contain characters like &lt; or &gt;.</p>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> then refresh the tag editing page. It should show a title and Q2A’s navigation.</p>
+							</li>
+						</ul>
+
+						<h2 id="4-creating-a-working-tag-description-editor">4. Creating a working tag description editor</h2>
+
+						<p>In this step we will get the tag description editing page up and working.</p>
+
+						<ul>
+							<li>
+								<p>Go back to <code class="language-plaintext highlighter-rouge">process_request($request)</code> in <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> and paste this code <strong>before</strong> the final <code class="language-plaintext highlighter-rouge">return...</code> line:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-db-metas.php'</span><span class="p">;</span>
+
+<span class="nv">$qa_content</span><span class="p">[</span><span class="s1">'form'</span><span class="p">]</span><span class="o">=</span><span class="k">array</span><span class="p">(</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'METHOD="POST" ACTION="'</span><span class="o">.</span><span class="nx">qa_self_html</span><span class="p">()</span><span class="o">.</span><span class="s1">'"'</span><span class="p">,</span>
+
+<span class="s1">'style'</span> <span class="o">=&gt;</span> <span class="s1">'tall'</span><span class="p">,</span> <span class="c1">// could be 'wide'</span>
+
+<span class="s1">'fields'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+<span class="k">array</span><span class="p">(</span>
+<span class="s1">'type'</span> <span class="o">=&gt;</span> <span class="s1">'text'</span><span class="p">,</span>
+<span class="s1">'rows'</span> <span class="o">=&gt;</span> <span class="mi">4</span><span class="p">,</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'NAME="tagdesc" ID="tagdesc"'</span><span class="p">,</span>
+<span class="s1">'value'</span> <span class="o">=&gt;</span> <span class="nx">qa_html</span><span class="p">(</span><span class="nx">qa_db_tagmeta_get</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">)),</span>
+<span class="p">),</span>
+<span class="p">),</span>
+
+<span class="s1">'buttons'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+<span class="k">array</span><span class="p">(</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'NAME="dosave"'</span><span class="p">,</span>
+<span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="s1">'Save Description'</span><span class="p">,</span>
+<span class="p">),</span>
+<span class="p">),</span>
+<span class="p">);</span>
+
+<span class="nv">$qa_content</span><span class="p">[</span><span class="s1">'focusid'</span><span class="p">]</span><span class="o">=</span><span class="s1">'tagdesc'</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+								<p>There is a lot happening here, so let’s go through it step by step:</p>
+
+								<ul>
+									<li>
+										<p>First, we include the Q2A core file <code class="language-plaintext highlighter-rouge">qa-db-metas.php</code>, since we will need use some of its functions to access the Q2A database table for tag meta information. (If necessary, modules can also create their own database tables by implementing the <code class="language-plaintext highlighter-rouge">init_queries()</code> function - <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">more here</a>).</p>
+									</li>
+									<li>
+										<p>The main work consists of adding an element with key <code class="language-plaintext highlighter-rouge">'form'</code> to the <code class="language-plaintext highlighter-rouge">$qa_content</code> array. This element describes a form on the page, which is converted by the Q2A theme class into appropriate HTML code. (To add more forms to the page, more elements could be added with keys <code class="language-plaintext highlighter-rouge">'form2'</code>, <code class="language-plaintext highlighter-rouge">'form_extra'</code>, or anything else beginning with <code class="language-plaintext highlighter-rouge">'form'</code>.)</p>
+									</li>
+									<li>
+										<p>At the top level of the form array, the <code class="language-plaintext highlighter-rouge">'tags'</code> element contains HTML code to be inserted into the HTML <code class="language-plaintext highlighter-rouge">&lt;FORM&gt;</code> tag. As is usual, we ensure here that the form submits back as an HTTP POST request to the same page.</p>
+									</li>
+									<li>
+										<p>The <code class="language-plaintext highlighter-rouge">'style'</code> element set the form layout and which CSS classes it uses. The <code class="language-plaintext highlighter-rouge">'tall'</code> style uses one column, placing labels above their fields and errors/notes below. The <code class="language-plaintext highlighter-rouge">'wide'</code> style uses a table with three columns, placing labels to the left of fields and errors/notes to the right. See also the <code class="language-plaintext highlighter-rouge">qa-form-tall-*</code> and <code class="language-plaintext highlighter-rouge">qa-form-wide-*</code> classes in your theme’s <code class="language-plaintext highlighter-rouge">qa-styles.css</code>.</p>
+									</li>
+									<li>
+										<p>The <code class="language-plaintext highlighter-rouge">'fields'</code> element is an array of arrays, each of which describes one field in the form to be displayed.</p>
+									</li>
+									<li>
+										<p>Our form has a single field of type <code class="language-plaintext highlighter-rouge">'text'</code>, four rows in height. Other possible values for <code class="language-plaintext highlighter-rouge">'type'</code> include <code class="language-plaintext highlighter-rouge">'static'</code>, <code class="language-plaintext highlighter-rouge">'number'</code>, <code class="language-plaintext highlighter-rouge">'checkbox'</code> and <code class="language-plaintext highlighter-rouge">'select'</code> - see the <code class="language-plaintext highlighter-rouge">form_field()</code> function in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code> for the full list. The <code class="language-plaintext highlighter-rouge">'tags'</code> element is included within the HTML element describing the field, e.g. <code class="language-plaintext highlighter-rouge">&lt;INPUT&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;TEXTAREA&gt;</code>.</p>
+									</li>
+									<li>
+										<p>The <code class="language-plaintext highlighter-rouge">'value'</code> element sets the field’s current value to be displayed on the page. In our case, we retrieve the current description of the tag from Q2A’s tag metadata table. We have chosen to store tag descriptions using the metadata label <code class="language-plaintext highlighter-rouge">'description'</code>. Note that we HTML-escape the current description using <code class="language-plaintext highlighter-rouge">qa_html()</code> before placing it in the form array since Q2A assumes that all elements and subelements within a <code class="language-plaintext highlighter-rouge">$qa_content</code> array are already HTML escaped.</p>
+									</li>
+									<li>
+										<p>The <code class="language-plaintext highlighter-rouge">'buttons'</code> element in the form definition is another array of arrays, each of which describes one button at the bottom of the form. Our form has a single button which allows the tag description to be saved.</p>
+									</li>
+									<li>
+										<p>As with fields, the <code class="language-plaintext highlighter-rouge">'tags'</code> element for a button contains HTML code to be inserted into the <code class="language-plaintext highlighter-rouge">&lt;INPUT TYPE="submit"&gt;</code> tag. The <code class="language-plaintext highlighter-rouge">'label'</code> element sets the button text.</p>
+									</li>
+									<li>
+										<p>Finally, we ensure that the tag description field receives the focus when the page is loaded by setting <code class="language-plaintext highlighter-rouge">$qa_content['focusid']</code> to match the CSS ID of the field, as set in its <code class="language-plaintext highlighter-rouge">'tags'</code> string.</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> and refresh the <code class="language-plaintext highlighter-rouge">tag-edit</code> page in your browser. The form should now be displayed, but it does not yet save information. This is because we have not yet written the code for processing input on this page.</p>
+							</li>
+							<li>
+								<p>Go back again to the <code class="language-plaintext highlighter-rouge">process_request($request)</code> function in <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> and paste the following code immediately before the <code class="language-plaintext highlighter-rouge">$qa_content['form']</code> assignment:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">if</span> <span class="p">(</span><span class="nx">qa_clicked</span><span class="p">(</span><span class="s1">'dosave'</span><span class="p">))</span> <span class="p">{</span>
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-util-string.php'</span><span class="p">;</span>
+
+<span class="nv">$taglc</span><span class="o">=</span><span class="nx">qa_strtolower</span><span class="p">(</span><span class="nv">$tag</span><span class="p">);</span>
+<span class="nx">qa_db_tagmeta_set</span><span class="p">(</span><span class="nv">$taglc</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="nx">qa_post_text</span><span class="p">(</span><span class="s1">'tagdesc'</span><span class="p">));</span>
+<span class="nx">qa_redirect</span><span class="p">(</span><span class="s1">'tag/'</span><span class="o">.</span><span class="nv">$tag</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>Let’s go through this code step by step:</p>
+
+								<ul>
+									<li>
+										<p>First, we check if the user clicked the <code class="language-plaintext highlighter-rouge">'dosave'</code> button on the form - recall that <code class="language-plaintext highlighter-rouge">'NAME="dosave"'</code> was used earlier as the <code class="language-plaintext highlighter-rouge">'tags'</code> string for the button.</p>
+									</li>
+									<li>
+										<p>If the button was clicked, we first convert the tag to lowercase for storing metadata in the database using the <code class="language-plaintext highlighter-rouge">qa_strtolower()</code> function from Q2A’s <code class="language-plaintext highlighter-rouge">qa-util-string.php</code> file. By using the lowercase version of the tag, we will make life easier later on when retrieving the descriptions for many tags from the database in a single query.</p>
+									</li>
+									<li>
+										<p>We then retrieve the text entered in the <code class="language-plaintext highlighter-rouge">'tagdesc'</code> field on the form, and call <code class="language-plaintext highlighter-rouge">qa_db_tagmeta_set()</code> to store it in the database using the metadata label <code class="language-plaintext highlighter-rouge">'description'</code>.</p>
+									</li>
+									<li>
+										<p>Once the description is saved, the user is redirected back to the corresponding tag page, which will (once we’re finished this step) display the updated tag description.</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Now open <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and replace the previous <code class="language-plaintext highlighter-rouge">output_widget()</code> function with the following:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">output_widget</span><span class="p">(</span><span class="nv">$region</span><span class="p">,</span> <span class="nv">$place</span><span class="p">,</span> <span class="nv">$themeobject</span><span class="p">,</span> <span class="nv">$template</span><span class="p">,</span> <span class="nv">$request</span><span class="p">,</span> <span class="nv">$qa_content</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-db-metas.php'</span><span class="p">;</span>
+
+<span class="nv">$parts</span><span class="o">=</span><span class="nb">explode</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="nv">$request</span><span class="p">);</span>
+<span class="nv">$tag</span><span class="o">=</span><span class="nv">$parts</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+
+<span class="nv">$description</span><span class="o">=</span><span class="nx">qa_db_tagmeta_get</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">);</span>
+<span class="nv">$editurlhtml</span><span class="o">=</span><span class="nx">qa_path_html</span><span class="p">(</span><span class="s1">'tag-edit/'</span><span class="o">.</span><span class="nv">$tag</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$description</span><span class="p">))</span> <span class="p">{</span>
+<span class="k">echo</span> <span class="nx">qa_html</span><span class="p">(</span><span class="nv">$description</span><span class="p">);</span>
+<span class="k">echo</span> <span class="s1">' - &lt;a href="'</span><span class="o">.</span><span class="nv">$editurlhtml</span><span class="o">.</span><span class="s1">'"&gt;edit&lt;/a&gt;'</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span>
+<span class="k">echo</span> <span class="s1">'&lt;a href="'</span><span class="o">.</span><span class="nv">$editurlhtml</span><span class="o">.</span><span class="s1">'"&gt;Create tag description&lt;/a&gt;'</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>The <code class="language-plaintext highlighter-rouge">output_widget()</code> function now identifies which tag page is being requested, retrieves the appropriate tag description from the database, and displays it if it exists, after HTML escaping. An appropriate link to edit the description is also shown, using Q2A’s <code class="language-plaintext highlighter-rouge">qa_path_html(...)</code> function to create an HTML-escaped relative URL to the tag editor page - <a href="https://docs.question2answer.org/pages/documentation/code/functions">more here</a>.</p>
+							</li>
+							<li>
+								<p>Save/upload as usual. If everything is in place, you should be able to view your descriptions on the tag page, click to edit them on a different page, and then click to save and view them back again on the tag page. Congratulations!</p>
+							</li>
+						</ul>
+
+						<h2 id="5-displaying-tag-descriptions-in-tooltips">5. Displaying tag descriptions in tooltips</h2>
+
+						<p>In this step we will implement the tooltips which display tag descriptions when mousing over tags.</p>
+
+						<ul>
+							<li>
+								<p>Open the <code class="language-plaintext highlighter-rouge">qa-app-format.php</code> file in Q2A’s <code class="language-plaintext highlighter-rouge">qa-include</code> directory and search for <code class="language-plaintext highlighter-rouge">function qa_tag_html</code>. This function generates the HTML to represent a tag on the page. The first line of the function contains <code class="language-plaintext highlighter-rouge">if (qa_to_override(...))</code>, which means the function can be overridden by a plugin. That is very helpful for us here.</p>
+							</li>
+							<li>
+								<p>Create a new file <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code> in your plugin’s <code class="language-plaintext highlighter-rouge">tag-descriptions</code> directory and paste the following:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">qa_tag_html</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="nv">$microdata</span><span class="o">=</span><span class="kc">false</span><span class="p">,</span> <span class="nv">$favorited</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">return</span> <span class="nx">qa_tag_html_base</span><span class="p">(</span><span class="s1">'_'</span><span class="o">.</span><span class="nv">$tag</span><span class="o">.</span><span class="s1">'_'</span><span class="p">,</span> <span class="nv">$microdata</span><span class="p">,</span> <span class="nv">$favorited</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>This <code class="language-plaintext highlighter-rouge">qa_tag_html()</code> function will override the standard version of that function, which we saw just before. However our version makes uses of the standard function by calling it using the name <code class="language-plaintext highlighter-rouge">qa_tag_html_base()</code> - <a href="https://docs.question2answer.org/pages/documentation/plugins/overrides/">more here</a>. Instead of passing through the <code class="language-plaintext highlighter-rouge">$tag</code> as is, we add underscores before and after it, so that we can test that the override is working. Note that the optional <code class="language-plaintext highlighter-rouge">$favorited</code> parameter was added in Q2A 1.6, but this code will still work fine in Q2A 1.5.x, with PHP ignoring the extra unexpected parameter.</p>
+							</li>
+							<li>
+								<p>Activate the function override by pasting the following line at the end of your plugin’s <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">qa_register_plugin_overrides</span><span class="p">(</span><span class="s1">'qa-tag-desc-overrides.php'</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+								<p>This simply tells Q2A to apply function overrides in the file <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code> in your plugin directory.</p>
+							</li>
+							<li>
+								<p>Save/upload your files and view a question list or individual question with tags. You should see the underscores on either side of each tag name, and this means that the override is working.</p>
+							</li>
+							<li>
+								<p>Go back to <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code> and replace the function with the following:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">qa_tag_html</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="nv">$microdata</span><span class="o">=</span><span class="kc">false</span><span class="p">,</span> <span class="nv">$favorited</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="nv">$taghtml</span><span class="o">=</span><span class="nx">qa_tag_html_base</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="nv">$microdata</span><span class="p">,</span> <span class="nv">$favorited</span><span class="p">);</span>
+
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-db-metas.php'</span><span class="p">;</span>
+
+<span class="nv">$description</span><span class="o">=</span><span class="nx">qa_db_tagmeta_get</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$description</span><span class="p">))</span> <span class="p">{</span>
+<span class="nv">$anglepos</span><span class="o">=</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$anglepos</span><span class="o">!==</span><span class="kc">false</span><span class="p">)</span>
+<span class="nv">$taghtml</span><span class="o">=</span><span class="nb">substr_replace</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="s1">' TITLE="'</span><span class="o">.</span><span class="nx">qa_html</span><span class="p">(</span><span class="nv">$description</span><span class="p">)</span><span class="o">.</span><span class="s1">'"'</span><span class="p">,</span>
+<span class="nv">$anglepos</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">return</span> <span class="nv">$taghtml</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>Let’s explain this function step by step:</p>
+
+								<ul>
+									<li>
+										<p>First, we call the standard version of the function using <code class="language-plaintext highlighter-rouge">qa_tag_html_base()</code> and store the standard HTML to represent a tag in the variable <code class="language-plaintext highlighter-rouge">$taghtml</code>. By calling through to the base function rather than copying its code here, we protect ourselves better against changes in future versions of Q2A. We also enable multiple plugins to override the same function for different purposes, with Q2A building an appropriate chain of renamed functions that call each other in turn. If possible, it is always a good idea to do this when overriding a function - <a href="https://docs.question2answer.org/pages/documentation/plugins/overrides/">more here</a>.</p>
+									</li>
+									<li>
+										<p>We retrieve the description for <code class="language-plaintext highlighter-rouge">$tag</code> from the database, using <code class="language-plaintext highlighter-rouge">qa_db_tagmeta_get()</code> in the same way as before.</p>
+									</li>
+									<li>
+										<p>If a description was found, we need to insert it into <code class="language-plaintext highlighter-rouge">$taghtml</code>, while assuming as little as possible about the contents of <code class="language-plaintext highlighter-rouge">$taghtml</code>. So we insert our description in a <code class="language-plaintext highlighter-rouge">TITLE="..."</code> attribute before the first <code class="language-plaintext highlighter-rouge">&gt;</code> symbol in <code class="language-plaintext highlighter-rouge">$taghtml</code>, i.e. within the first HTML element that <code class="language-plaintext highlighter-rouge">$taghtml</code> contains. Note the inclusion of a space before <code class="language-plaintext highlighter-rouge">TITLE</code>, to ensure we don’t interfere with other attributes of the element, and the use of <code class="language-plaintext highlighter-rouge">qa_html(...)</code> to ensure the tag description is HTML escaped.</p>
+									</li>
+									<li>
+										<p>Finally, we return the (possibly modified) HTML code as the result of our <code class="language-plaintext highlighter-rouge">qa_tag_html()</code> function.</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code>. Assuming you have added some tag descriptions previously, you should now be able to view these tag descriptions when mousing over a tag in a question list or question page.</p>
+							</li>
+						</ul>
+
+						<h2 id="6-reducing-the-number-of-database-queries">6. Reducing the number of database queries</h2>
+
+						<p><em>This step is advanced and can be skipped if you prefer.</em></p>
+
+						<p>While our override of <code class="language-plaintext highlighter-rouge">qa_tag_html()</code> works, it has a problem. Q2A has to make a separate database query for every tag on a page. This could drastically slow down page loading if the database and web servers are not running on the same physical computer. (You can see all the database queries used for a page by setting <code class="language-plaintext highlighter-rouge">QA_DEBUG_PERFORMANCE</code> to <code class="language-plaintext highlighter-rouge">true</code> in your <code class="language-plaintext highlighter-rouge">qa-config.php</code> file.)</p>
+
+						<p>We will solve this problem by inserting tag descriptions in two stages. For the first stage, our overriding <code class="language-plaintext highlighter-rouge">qa_tag_html()</code> function will not perform database queries. Instead, it will keep track of which tags are being used and insert a placeholder into <code class="language-plaintext highlighter-rouge">$taghtml</code>.</p>
+
+						<p>In the second stage, a layer will replace the <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function in Q2A’s base theme class. The first time our function is called, it will perform a single database query to retrieve all the necessary tag descriptions. In addition, every call to our <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function will modify the HTML for the tag before calling through to the base theme class.</p>
+
+						<ul>
+							<li>
+								<p>Go back to <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code> and modify the function as follows:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">qa_tag_html</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="nv">$microdata</span><span class="o">=</span><span class="kc">false</span><span class="p">,</span> <span class="nv">$favorited</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">global</span> <span class="nv">$plugin_tag_desc_list</span><span class="p">;</span>
+
+<span class="nv">$taghtml</span><span class="o">=</span><span class="nx">qa_tag_html_base</span><span class="p">(</span><span class="nv">$tag</span><span class="p">,</span> <span class="nv">$microdata</span><span class="p">,</span> <span class="nv">$favorited</span><span class="p">);</span>
+
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-util-string.php'</span><span class="p">;</span>
+
+<span class="nv">$taglc</span><span class="o">=</span><span class="nx">qa_strtolower</span><span class="p">(</span><span class="nv">$tag</span><span class="p">);</span>
+<span class="nv">$plugin_tag_desc_list</span><span class="p">[</span><span class="nv">$taglc</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
+
+<span class="nv">$anglepos</span><span class="o">=</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$anglepos</span><span class="o">!==</span><span class="kc">false</span><span class="p">)</span>
+  <span class="nv">$taghtml</span><span class="o">=</span><span class="nb">substr_replace</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="s1">' TITLE=",TAG_DESC,'</span><span class="o">.</span><span class="nv">$taglc</span><span class="o">.</span><span class="s1">',"'</span><span class="p">,</span> <span class="nv">$anglepos</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="k">return</span> <span class="nv">$taghtml</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>Here’s an explanation of what we’re doing now:</p>
+
+								<ul>
+									<li>
+										<p>We use Q2A’s <code class="language-plaintext highlighter-rouge">qa_strtolower()</code> function to put a lower case version of the tag in <code class="language-plaintext highlighter-rouge">$taglc</code>. Normalizing all tags to lower case will help us later when mapping from tags to descriptions using data retrieved from the database.</p>
+									</li>
+									<li>
+										<p>We add <code class="language-plaintext highlighter-rouge">$taglc</code> to global <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> array variable. Note how we name this global variable with a <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_</code> prefix to avoid namespace clashes. We store tags in the keys of <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> since this will automatically perform de-duplication if the same tag appears more than once on the page.</p>
+									</li>
+									<li>
+										<p>We insert a <code class="language-plaintext highlighter-rouge">TITLE</code> attribute into <code class="language-plaintext highlighter-rouge">$taghtml</code> containing the special string <code class="language-plaintext highlighter-rouge">,TAG_DESC,_taglc_,</code> where <code class="language-plaintext highlighter-rouge">_taglc_</code> denotes the lower case tag. This will later be replaced by the tag description retrieved from the database. Note that our special string uses commas as a delimiter because commas never appear within a tag.</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Now save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code>. Refresh a Q2A page showing some tags, and mouse over one of the tags. A tooltip should now appear with the special <code class="language-plaintext highlighter-rouge">,TAG_DESC,_taglc_,</code> string in it.</p>
+							</li>
+							<li>
+								<p>Now it’s time to create a layer which replaces the <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function in Q2A’s base theme class. Create a new file <code class="language-plaintext highlighter-rouge">qa-tag-desc-layer.php</code> in your plugin directory and paste in the following code:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+
+<span class="kd">class</span> <span class="nc">qa_html_theme_layer</span> <span class="k">extends</span> <span class="nx">qa_html_theme_base</span>
+<span class="p">{</span>
+
+<span class="k">function</span> <span class="nf">post_tag_item</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="nv">$class</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">global</span> <span class="nv">$plugin_tag_desc_list</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="o">@</span><span class="nv">$plugin_tag_desc_list</span><span class="p">))</span> <span class="p">{</span>
+<span class="nv">$tags</span><span class="o">=</span><span class="nb">array_keys</span><span class="p">(</span><span class="nv">$plugin_tag_desc_list</span><span class="p">);</span>
+<span class="k">echo</span> <span class="s1">'&lt;H1&gt;'</span><span class="o">.</span><span class="nx">qa_html</span><span class="p">(</span><span class="nb">implode</span><span class="p">(</span><span class="s1">','</span><span class="p">,</span> <span class="nv">$tags</span><span class="p">))</span><span class="o">.</span><span class="s1">'&lt;/H1&gt;'</span><span class="p">;</span>
+<span class="nv">$plugin_tag_desc_list</span><span class="o">=</span><span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">qa_html_theme_base</span><span class="o">::</span><span class="na">post_tag_item</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="nv">$class</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>Let’s see what we’re doing in this <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function:</p>
+
+								<ul>
+									<li>
+										<p>We check if the global <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> array variable contains any items. Note our use of the <code class="language-plaintext highlighter-rouge">@</code> sign to prevent PHP reporting an error if <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> was never defined or does not contain an array.</p>
+									</li>
+									<li>
+										<p>We retrieve the list of tags from the <strong>keys</strong> of the <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> array.</p>
+									</li>
+									<li>
+										<p>A list of these tags is output to the page within an HTML <code class="language-plaintext highlighter-rouge">&lt;H1&gt;</code> element, for debugging purposes.</p>
+									</li>
+									<li>
+										<p>Then <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> is set to <code class="language-plaintext highlighter-rouge">null</code> so that this branch is skipped next time <code class="language-plaintext highlighter-rouge">post_tag_item(...)</code> is called.</p>
+									</li>
+									<li>
+										<p>Finally, we call through to the <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function in Q2A’s base theme class using PHP’s double colon notation - <a href="https://docs.question2answer.org/pages/documentation/plugins/layers/">more here</a>. Note how base functions are called differently for overrides and for layers.</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>As with modules and overrides, we need to activate the layer by adding this in our plugin’s <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">qa_register_plugin_layer</span><span class="p">(</span>
+<span class="s1">'qa-tag-desc-layer.php'</span><span class="p">,</span> <span class="c1">// PHP file containing layer</span>
+<span class="s1">'Tag Description Layer'</span> <span class="c1">// human-readable name of layer</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+							</li>
+							<li>
+								<p>Save/upload all files and refresh the page showing some tags. You should now see a comma-separated list of tags to be retrieved from the database, immediately before the first tag on the page.</p>
+							</li>
+							<li>
+								<p>Go back to <code class="language-plaintext highlighter-rouge">qa-tag-desc-layer.php</code> and replace <code class="language-plaintext highlighter-rouge">post_tag_item()</code> with the real version of the function:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">post_tag_item</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="nv">$class</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">global</span> <span class="nv">$plugin_tag_desc_list</span><span class="p">,</span> <span class="nv">$plugin_tag_desc_map</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="o">@</span><span class="nv">$plugin_tag_desc_list</span><span class="p">))</span> <span class="p">{</span>
+<span class="nv">$result</span><span class="o">=</span><span class="nx">qa_db_query_sub</span><span class="p">(</span>
+<span class="s1">'SELECT tag, content FROM ^tagmetas WHERE tag IN ($) AND title="description"'</span><span class="p">,</span>
+<span class="nb">array_keys</span><span class="p">(</span><span class="nv">$plugin_tag_desc_list</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="nv">$plugin_tag_desc_map</span><span class="o">=</span><span class="nx">qa_db_read_all_assoc</span><span class="p">(</span><span class="nv">$result</span><span class="p">,</span> <span class="s1">'tag'</span><span class="p">,</span> <span class="s1">'content'</span><span class="p">);</span>
+<span class="nv">$plugin_tag_desc_list</span><span class="o">=</span><span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">'/,TAG_DESC,([^,]*),/'</span><span class="p">,</span> <span class="nv">$taghtml</span><span class="p">,</span> <span class="nv">$matches</span><span class="p">))</span> <span class="p">{</span>
+<span class="nv">$taglc</span><span class="o">=</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="nv">$description</span><span class="o">=@</span><span class="nv">$plugin_tag_desc_map</span><span class="p">[</span><span class="nv">$taglc</span><span class="p">];</span>
+<span class="nv">$taghtml</span><span class="o">=</span><span class="nb">str_replace</span><span class="p">(</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nx">qa_html</span><span class="p">(</span><span class="nv">$description</span><span class="p">),</span> <span class="nv">$taghtml</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">qa_html_theme_base</span><span class="o">::</span><span class="na">post_tag_item</span><span class="p">(</span><span class="nv">$taghtml</span><span class="p">,</span> <span class="nv">$class</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>Let’s go through this one step at a time:</p>
+
+								<ul>
+									<li>
+										<p>As before, we check if the global <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> array variable contains any items, If so, we need to retrieve some tag descriptions from the database.</p>
+									</li>
+									<li>
+										<p>We retrieve all the tag descriptions in one database query. There is no function to retrieve metadata for multiple tags in <code class="language-plaintext highlighter-rouge">qa-db-metas.php</code>, so we write and run the query ourselves using Q2A’s <code class="language-plaintext highlighter-rouge">qa_db_query_sub()</code> function. This substitutes <code class="language-plaintext highlighter-rouge">^</code> in the query string for the Q2A table prefix set in <code class="language-plaintext highlighter-rouge">qa-config.php</code>. It also substitutes <code class="language-plaintext highlighter-rouge">$</code> and <code class="language-plaintext highlighter-rouge">#</code> for any additional parameters passed, escaping them to ensure the SQL is secure - <a href="https://docs.question2answer.org/pages/documentation/code/functions/#database-access-in-qa-dbphp">more here</a>. In this case, the <code class="language-plaintext highlighter-rouge">$</code> symbol will be turning into a comma-separated list of tags in <code class="language-plaintext highlighter-rouge">array_keys($plugin_tag_desc_list)</code>.</p>
+									</li>
+									<li>
+										<p>The <code class="language-plaintext highlighter-rouge">$result</code> obtained from the database query is turned into a map from tags to descriptions using Q2A’s <code class="language-plaintext highlighter-rouge">qa_db_read_all_assoc()</code> function - see the function’s definition in <code class="language-plaintext highlighter-rouge">qa-db.php</code>. The map is stored in the global <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_map</code> variable so that it is available every time our <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function is called.</p>
+									</li>
+									<li>
+										<p>As before, <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_list</code> is set to <code class="language-plaintext highlighter-rouge">null</code> so that the database will not be queried again. This marks the end of the part of our <code class="language-plaintext highlighter-rouge">post_tag_item()</code> function that only executes the first time it is called.</p>
+									</li>
+									<li>
+										<p>Now <code class="language-plaintext highlighter-rouge">preg_match()</code> is used to search for our special <code class="language-plaintext highlighter-rouge">,TAG_DESC,_taglc_,</code> string within <code class="language-plaintext highlighter-rouge">$taghtml</code>. The pattern fragment <code class="language-plaintext highlighter-rouge">[^,]*</code> to match <code class="language-plaintext highlighter-rouge">_taglc_</code> is in <code class="language-plaintext highlighter-rouge">()</code> brackets so that we can retrieve the lower case tag from <code class="language-plaintext highlighter-rouge">$matches[1]</code>.</p>
+									</li>
+									<li>
+										<p>If our special string is found, we use <code class="language-plaintext highlighter-rouge">str_replace()</code> to substitute it for the tag description retrieved from <code class="language-plaintext highlighter-rouge">$plugin_tag_desc_map[$taglc]</code>. Note again the use of <code class="language-plaintext highlighter-rouge">@</code> to ensure that PHP does not emit an error if there was no description for this tag - in those cases, an empty <code class="language-plaintext highlighter-rouge">TITLE=""</code> attribute will remain, and no tooltip will show.</p>
+									</li>
+									<li>
+										<p>Finally, as before, we call through to <code class="language-plaintext highlighter-rouge">post_tag_item()</code> in Q2A’s base theme class to output the HTML for the tag.</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-layer.php</code> and refresh a Q2A page showing some tags. As before, you should see tag descriptions when mousing over. But this time, all of the descriptions were retrieved in a single database query. Much better!</p>
+							</li>
+						</ul>
+
+						<h2 id="7-adding-options-to-control-tag-description-display">7. Adding options to control tag description display</h2>
+
+						<p>In this step, we will add an options form to the plugin which controls how the tag descriptions are displayed.</p>
+
+						<ul>
+							<li>
+								<p>Open <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and paste the following function <strong>inside</strong> the class declaration:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">option_default</span><span class="p">(</span><span class="nv">$option</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$option</span><span class="o">==</span><span class="s1">'plugin_tag_desc_max_len'</span><span class="p">)</span>
+<span class="k">return</span> <span class="mi">250</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$option</span><span class="o">==</span><span class="s1">'plugin_tag_desc_font_size'</span><span class="p">)</span>
+<span class="k">return</span> <span class="mi">18</span><span class="p">;</span>
+
+<span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>Our plugin will use Q2A’s options mechanism to store its settings. Each option has a name and value, which are stored in the <code class="language-plaintext highlighter-rouge">qa_options</code> table in the database. The <code class="language-plaintext highlighter-rouge">option_default()</code> function, which can be added to any module, allows defaults to be define for some Q2A options. In this case, we will use an option named <code class="language-plaintext highlighter-rouge">'plugin_tag_desc_max_len'</code> to set the maximum number of characters shown in a tag description tooltip, with a default of <code class="language-plaintext highlighter-rouge">250</code>. A second option named <code class="language-plaintext highlighter-rouge">'plugin_tag_desc_font_size'</code> sets the font size for the descriptions on tag pages, with a default of <code class="language-plaintext highlighter-rouge">18</code>.</p>
+							</li>
+							<li>
+								<p>Paste this second function inside the widget module’s class declaration:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">admin_form</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$qa_content</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="nv">$saved</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">qa_clicked</span><span class="p">(</span><span class="s1">'plugin_tag_desc_save_button'</span><span class="p">))</span> <span class="p">{</span>
+<span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_max_len'</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_post_text</span><span class="p">(</span><span class="s1">'plugin_tag_desc_ml_field'</span><span class="p">));</span>
+<span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_font_size'</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_post_text</span><span class="p">(</span><span class="s1">'plugin_tag_desc_fs_field'</span><span class="p">));</span>
+<span class="nv">$saved</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+<span class="s1">'ok'</span> <span class="o">=&gt;</span> <span class="nv">$saved</span> <span class="o">?</span> <span class="s1">'Tag descriptions settings saved'</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+
+<span class="s1">'fields'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+<span class="k">array</span><span class="p">(</span>
+<span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="s1">'Maximum length of tooltips:'</span><span class="p">,</span>
+<span class="s1">'type'</span> <span class="o">=&gt;</span> <span class="s1">'number'</span><span class="p">,</span>
+<span class="s1">'value'</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_max_len'</span><span class="p">),</span>
+<span class="s1">'suffix'</span> <span class="o">=&gt;</span> <span class="s1">'characters'</span><span class="p">,</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'NAME="plugin_tag_desc_ml_field"'</span><span class="p">,</span>
+<span class="p">),</span>
+
+<span class="k">array</span><span class="p">(</span>
+<span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="s1">'Starting font size:'</span><span class="p">,</span>
+<span class="s1">'type'</span> <span class="o">=&gt;</span> <span class="s1">'number'</span><span class="p">,</span>
+<span class="s1">'value'</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_font_size'</span><span class="p">),</span>
+<span class="s1">'suffix'</span> <span class="o">=&gt;</span> <span class="s1">'pixels'</span><span class="p">,</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'NAME="plugin_tag_desc_fs_field"'</span><span class="p">,</span>
+<span class="p">),</span>
+<span class="p">),</span>
+
+<span class="s1">'buttons'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+<span class="k">array</span><span class="p">(</span>
+<span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="s1">'Save Changes'</span><span class="p">,</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'NAME="plugin_tag_desc_save_button"'</span><span class="p">,</span>
+<span class="p">),</span>
+<span class="p">),</span>
+<span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>The <code class="language-plaintext highlighter-rouge">admin_form()</code> function can also be added to any module, and enables that module to display a form on the ‘Plugins’ page of the Q2A admin panel. The function returns a Q2A form definition array for display on the page, after processing any appropriate user input. Most of this should be familiar from our earlier encounter with a Q2A form, but a few things are new:</p>
+
+								<ul>
+									<li>We’re using Q2A’s <code class="language-plaintext highlighter-rouge">qa_opt()</code> function to both set and retrieve option values - <a href="https://docs.question2answer.org/pages/documentation/code/functions/">more here</a>.</li>
+									<li>An element <code class="language-plaintext highlighter-rouge">'ok'</code> is used to add a confirmation message at the top of the form.</li>
+									<li>An element <code class="language-plaintext highlighter-rouge">'suffix'</code> is used within field definitions to show some text after the field.</li>
+								</ul>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and open the ‘Plugins’ section of your Q2A site’s admin panel. There should be an ‘options’ link in the listing for ‘Tag Descriptions’ which take you to the form. The form should contain the correct default values, and you should be able to modify and save the settings naturally.</p>
+							</li>
+							<li>
+								<p>Now it’s time to apply these options in the rest of the plugin. If you skipped the previous step in this tutorial, open <code class="language-plaintext highlighter-rouge">qa-tag-desc-overrides.php</code> and focus on the function <code class="language-plaintext highlighter-rouge">qa_tag_html()</code>. Otherwise, open <code class="language-plaintext highlighter-rouge">qa-tag-desc-layer.php</code> and focus on the function <code class="language-plaintext highlighter-rouge">post_tag_item()</code>. In either case, paste the following at the start of the function:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-util-string.php'</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+								<p>We do this because we will be using a function defined in Q2A’s <code class="language-plaintext highlighter-rouge">qa-util-string.php</code> file.</p>
+							</li>
+							<li>
+								<p>Find the line in the same function which begins <code class="language-plaintext highlighter-rouge">$description=...</code> and paste the following line <strong>immediately after</strong>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$description</span><span class="o">=</span><span class="nx">qa_shorten_string_line</span><span class="p">(</span><span class="nv">$description</span><span class="p">,</span> <span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_max_len'</span><span class="p">));</span>
+</code></pre></div>    </div>
+
+								<p>This line of code shortens <code class="language-plaintext highlighter-rouge">$description</code> to the number of characters in our option named <code class="language-plaintext highlighter-rouge">'plugin_tag_desc_max_len'</code>. (It is perfectly OK to call <code class="language-plaintext highlighter-rouge">qa_opt()</code> each time this function is called because option values are cached by Q2A.)</p>
+							</li>
+							<li>
+								<p>Save/upload the file, then set the maximum length of tooltips to a small number. Refresh a page containing tags with descriptions and check that the tooltips are being shortened as expected.</p>
+							</li>
+							<li>
+								<p>Now open <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and <strong>replace</strong> the line containing <code class="language-plaintext highlighter-rouge">echo qa_html($description);</code> with:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">echo</span> <span class="s1">'&lt;SPAN style="font-size:'</span><span class="o">.</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_font_size'</span><span class="p">)</span><span class="o">.</span><span class="s1">'px;"&gt;'</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">qa_html</span><span class="p">(</span><span class="nv">$description</span><span class="p">);</span>
+<span class="k">echo</span> <span class="s1">'&lt;/SPAN&gt;'</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+								<p>This wraps the tag description in an HTML <code class="language-plaintext highlighter-rouge">&lt;SPAN&gt;</code> which sets the font size as appropriate.</p>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and confirm that tag descriptions now appear on tag pages in your chosen size.</p>
+							</li>
+						</ul>
+
+						<h2 id="8-controlling-access-to-the-tag-description-editor">8. Controlling access to the tag description editor</h2>
+
+						<p>In this step we will add an option allowing the Q2A admin to control who can edit tag descriptions.</p>
+
+						<ul>
+							<li>
+								<p>Open your <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> file, find the <code class="language-plaintext highlighter-rouge">admin_form()</code> function and paste this at the beginning:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-app-admin.php'</span><span class="p">;</span>
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-app-options.php'</span><span class="p">;</span>
+
+<span class="nv">$permitoptions</span><span class="o">=</span><span class="nx">qa_admin_permit_options</span><span class="p">(</span><span class="nx">QA_PERMIT_USERS</span><span class="p">,</span> <span class="nx">QA_PERMIT_SUPERS</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+								<p>This uses the <code class="language-plaintext highlighter-rouge">qa_admin_permit_options()</code> function from Q2A’s <code class="language-plaintext highlighter-rouge">qa-app-admin.php</code> file to create an array of permission options in the variable <code class="language-plaintext highlighter-rouge">$permitoptions</code>. The parameters passed define the widest and narrowest permissions to include, based on constants defined in Q2A’s <code class="language-plaintext highlighter-rouge">qa-app-options.php</code> file.</p>
+							</li>
+							<li>
+								<p>Then, paste this inside the <code class="language-plaintext highlighter-rouge">'fields'</code> subarray in the same <code class="language-plaintext highlighter-rouge">admin_form()</code> function:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">array</span><span class="p">(</span>
+<span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="s1">'Allow editing:'</span><span class="p">,</span>
+<span class="s1">'type'</span> <span class="o">=&gt;</span> <span class="s1">'select'</span><span class="p">,</span>
+<span class="s1">'value'</span> <span class="o">=&gt;</span> <span class="o">@</span><span class="nv">$permitoptions</span><span class="p">[</span><span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_permit_edit'</span><span class="p">)],</span>
+<span class="s1">'options'</span> <span class="o">=&gt;</span> <span class="nv">$permitoptions</span><span class="p">,</span>
+<span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'NAME="plugin_tag_desc_pe_field"'</span><span class="p">,</span>
+<span class="p">),</span>
+</code></pre></div>    </div>
+
+								<p>This new field will control the permissions for editing tag descriptions. A Q2A form field of type <code class="language-plaintext highlighter-rouge">'select'</code> corresponds to an HTML <code class="language-plaintext highlighter-rouge">&lt;SELECT&gt;</code> menu, whose options are passed in the <code class="language-plaintext highlighter-rouge">'options'</code> subelement. Each <code class="language-plaintext highlighter-rouge">_code_ =&gt; _label_</code> in the <code class="language-plaintext highlighter-rouge">'options'</code> array is output as the HTML <code class="language-plaintext highlighter-rouge">&lt;OPTION VALUE="_code_"&gt;_label_&lt;/OPTION&gt;</code>. To specify the initial selection for the menu, set <code class="language-plaintext highlighter-rouge">'value'</code> to the corresponding <code class="language-plaintext highlighter-rouge">_label_</code> (rather than the <code class="language-plaintext highlighter-rouge">_code_</code>, as you might have expected).</p>
+							</li>
+							<li>
+								<p>Add a line to store the setting in the same <code class="language-plaintext highlighter-rouge">admin_form()</code> function, within the <code class="language-plaintext highlighter-rouge">if (qa_clicked(...))</code> block:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_permit_edit'</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_post_text</span><span class="p">(</span><span class="s1">'plugin_tag_desc_pe_field'</span><span class="p">));</span>
+</code></pre></div>    </div>
+							</li>
+							<li>
+								<p>Finally, set a default value for this new option by pasting the following inside <code class="language-plaintext highlighter-rouge">option_default()</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">if</span> <span class="p">(</span><span class="nv">$option</span><span class="o">==</span><span class="s1">'plugin_tag_desc_permit_edit'</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-app-options.php'</span><span class="p">;</span>
+<span class="k">return</span> <span class="nx">QA_PERMIT_EXPERTS</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>This means that only experts or higher are permitted to edit tag descriptions by default.</p>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and check the new option is working in the ‘Plugins’ section of the admin panel.</p>
+							</li>
+							<li>
+								<p>Now we need to enforce this setting on the tag description editing page. Open your <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> file and paste the following in the <code class="language-plaintext highlighter-rouge">process_request()</code> function after the <code class="language-plaintext highlighter-rouge">$qa_content['title']=...</code> line:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">if</span> <span class="p">(</span><span class="nx">qa_user_permit_error</span><span class="p">(</span><span class="s1">'plugin_tag_desc_permit_edit'</span><span class="p">))</span> <span class="p">{</span>
+<span class="nv">$qa_content</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span><span class="o">=</span><span class="nx">qa_lang_html</span><span class="p">(</span><span class="s1">'users/no_permission'</span><span class="p">);</span>
+<span class="k">return</span> <span class="nv">$qa_content</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+								<p>This calls Q2A’s function <code class="language-plaintext highlighter-rouge">qa_user_permit_error()</code> to check if the current user has permission, relative to the <code class="language-plaintext highlighter-rouge">'plugin_tag_desc_permit_edit'</code> option. The <code class="language-plaintext highlighter-rouge">qa_user_permit_error()</code> function also tests if the user or IP address has been blocked - see the function’s documentation in Q2A’s <code class="language-plaintext highlighter-rouge">qa-app-users.php</code> file. If the user does not have permission, an error will be displayed on the page using a pre-existing Q2A string, and the function returns so that no form is displayed.</p>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> and try editing tag descriptions as an admin, then log out and try again.</p>
+							</li>
+							<li>
+								<p>Finally, we don’t want to display the link to create/edit tag descriptions on the tag page if the user does not have permission to do so. Open <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> and replace the last 7 lines of <code class="language-plaintext highlighter-rouge">output_widget()</code> with:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$allowediting</span><span class="o">=!</span><span class="nx">qa_user_permit_error</span><span class="p">(</span><span class="s1">'plugin_tag_desc_permit_edit'</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$description</span><span class="p">))</span> <span class="p">{</span>
+<span class="k">echo</span> <span class="s1">'&lt;SPAN style="font-size:'</span><span class="o">.</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nx">qa_opt</span><span class="p">(</span><span class="s1">'plugin_tag_desc_font_size'</span><span class="p">)</span><span class="o">.</span><span class="s1">'px;"&gt;'</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">qa_html</span><span class="p">(</span><span class="nv">$description</span><span class="p">);</span>
+<span class="k">echo</span> <span class="s1">'&lt;/SPAN&gt;'</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$allowediting</span><span class="p">)</span>
+<span class="k">echo</span> <span class="s1">' - &lt;a href="'</span><span class="o">.</span><span class="nv">$editurlhtml</span><span class="o">.</span><span class="s1">'"&gt;edit&lt;/a&gt;'</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$allowediting</span><span class="p">)</span>
+<span class="k">echo</span> <span class="s1">'&lt;a href="'</span><span class="o">.</span><span class="nv">$editurlhtml</span><span class="o">.</span><span class="s1">'"&gt;Create tag description&lt;/a&gt;'</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+								<p>Now we only show the link for creating or editing tag descriptions if the user has sufficient permission.</p>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code>. Check that the create/edit link on tag pages is displayed when you’re logged in as the admin, and not when you are logged out. If so, congratulations - your plugin’s functionality is now complete!</p>
+							</li>
+						</ul>
+
+						<h2 id="9-making-your-plugin-localization-friendly">9. Making your plugin localization-friendly</h2>
+
+						<p>In this final step we will make your plugin ready for localization into different languages.</p>
+
+						<ul>
+							<li>
+								<p>Create a new file <code class="language-plaintext highlighter-rouge">qa-tag-desc-lang-default.php</code> in your plugin’s <code class="language-plaintext highlighter-rouge">tag-descriptions</code> directory and paste the following:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+
+<span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+<span class="s1">'edit_desc_for_x'</span> <span class="o">=&gt;</span> <span class="s1">'Edit the description for ^'</span><span class="p">,</span>
+<span class="s1">'save_desc_button'</span> <span class="o">=&gt;</span> <span class="s1">'Save Description'</span><span class="p">,</span>
+<span class="s1">'create_desc_link'</span> <span class="o">=&gt;</span> <span class="s1">'Create tag description'</span><span class="p">,</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+
+								<p>This file contains US English versions of your plugin’s language strings, which will serve as the default.</p>
+							</li>
+							<li>
+								<p>Paste the following in your plugin’s <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">qa_register_plugin_phrases</span><span class="p">(</span>
+<span class="s1">'qa-tag-desc-lang-*.php'</span><span class="p">,</span> <span class="c1">// pattern for language files</span>
+<span class="s1">'plugin_tag_desc'</span> <span class="c1">// prefix to retrieve phrases</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+
+								<p>This sets up localization for your plugin. The <code class="language-plaintext highlighter-rouge">*</code> in the file name passed to <code class="language-plaintext highlighter-rouge">qa_register_plugin_phrases()</code> will be substituted for language codes such as <code class="language-plaintext highlighter-rouge">fr</code> or <code class="language-plaintext highlighter-rouge">ru</code>, or <code class="language-plaintext highlighter-rouge">default</code> to load the default phrases. The second parameter <code class="language-plaintext highlighter-rouge">'plugin_tag_desc'</code> sets the prefix for retrieving your language strings using Q2A’s <code class="language-plaintext highlighter-rouge">qa_lang()</code> or <code class="language-plaintext highlighter-rouge">qa_lang_html()</code> functions - <a href="https://docs.question2answer.org/pages/documentation/plugins">more here</a>.</p>
+							</li>
+							<li>
+								<p>Find the line in <code class="language-plaintext highlighter-rouge">qa-tag-desc-widget.php</code> containing the phrase <code class="language-plaintext highlighter-rouge">Create tag description</code> and replace it with:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">echo</span> <span class="s1">'&lt;a href="'</span><span class="o">.</span><span class="nv">$editurlhtml</span><span class="o">.</span><span class="s1">'"&gt;'</span><span class="o">.</span><span class="nx">qa_lang_html</span><span class="p">(</span><span class="s1">'plugin_tag_desc/create_desc_link'</span><span class="p">)</span><span class="o">.</span><span class="s1">'&lt;/a&gt;'</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+								<p>We have now substituted the previous hard-coded phrase for an HTML escaped version of the localized phrase. The function <code class="language-plaintext highlighter-rouge">qa_lang_html()</code> takes a single parameter with two parts, separated by a <code class="language-plaintext highlighter-rouge">/</code> slash. The first part is the language prefix, which matches that passed to <code class="language-plaintext highlighter-rouge">qa_register_plugin_phrases()</code> above. The second part is the keyin the corresponding language file (in our case, the last phrasse in <code class="language-plaintext highlighter-rouge">qa-tag-desc-lang-default.php</code>).</p>
+							</li>
+							<li>
+								<p>Save/upload all files and go to a tag page with no description. Check that the ‘Create tag description’ link appears correctly. As an exercise, see what happens if you add a typo in the parameter passed to <code class="language-plaintext highlighter-rouge">qa_lang_html()</code>.</p>
+							</li>
+							<li>
+								<p>Now let’s use the other phrases. In <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code>, replace the line <code class="language-plaintext highlighter-rouge">$qa_content['title']=...</code> with:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$qa_content</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="o">=</span><span class="nx">qa_lang_html_sub</span><span class="p">(</span><span class="s1">'plugin_tag_desc/edit_desc_for_x'</span><span class="p">,</span> <span class="nx">qa_html</span><span class="p">(</span><span class="nv">$tag</span><span class="p">));</span>
+</code></pre></div>    </div>
+
+								<p>This uses Q2A’s <code class="language-plaintext highlighter-rouge">qa_lang_html_sub()</code> function which substitutes any <code class="language-plaintext highlighter-rouge">^</code> symbols in the localized phrase with the function’s second parameter. The second parameter is treated as HTML and must already be escaped by the caller.</p>
+							</li>
+							<li>
+								<p>Finally, replace the line in <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> containing <code class="language-plaintext highlighter-rouge">'Save Description'</code> with:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="nx">qa_lang_html</span><span class="p">(</span><span class="s1">'plugin_tag_desc/save_desc_button'</span><span class="p">),</span>
+</code></pre></div>    </div>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-edit.php</code> and check that the tag description editing page is still labelled properly.</p>
+							</li>
+							<li>
+								<p>Now let’s add a localization for UK English. Create a file <code class="language-plaintext highlighter-rouge">qa-tag-desc-lang-en-GB.php</code> in your plugin directory and paste:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;?php</span>
+
+<span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+<span class="s1">'edit_desc_for_x'</span> <span class="o">=&gt;</span> <span class="s1">'What ho, a jolly good description for the ^ tag'</span><span class="p">,</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+							</li>
+							<li>
+								<p>Save/upload <code class="language-plaintext highlighter-rouge">qa-tag-desc-lang-en-GB.php</code>. Then switch the language of your Q2A site to ‘English (UK)’ in the ‘General’ panel of the admin section, and refresh the page for editing a tag description. You should see this UK English page title. Note that we only included one phrase in the UK English localization, so the defaults will be used for the other two.</p>
+							</li>
+							<li>
+								<p>You or others can add any localizations to your plugin by creating an appropriate <code class="language-plaintext highlighter-rouge">qa-tag-desc-lang-*.php</code> file, where <code class="language-plaintext highlighter-rouge">*</code> is substituted for the language code. For non-English characters, ensure your text editor is set to UTF-8 without byte-order marks. A list of supported languages is in the <code class="language-plaintext highlighter-rouge">qa_admin_language_options()</code> function in Q2A’s <code class="language-plaintext highlighter-rouge">qa-app-admin.php</code> file.</p>
+							</li>
+						</ul>
+
+						<h2 id="10-where-to-go-from-here">10. Where to go from here</h2>
+
+						<p>If you made it this far, congratulations! This completes the tutorial. To recap, here is what we’ve covered:</p>
+
+						<ul>
+							<li>Setting up the plugin’s directory and <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file.</li>
+							<li>Creating widget and page modules in the plugin.</li>
+							<li>Some examples of Q2A form definition arrays.</li>
+							<li>Using some of Q2A’s string utility functions.</li>
+							<li>Overriding functions in the Q2A core (but always calling through to <code class="language-plaintext highlighter-rouge">_base</code>!)</li>
+							<li>Thinking about the database queries performed by your plugin.</li>
+							<li>Creating a layer to modify the Q2A base theme class.</li>
+							<li>Executing a query directly on the Q2A database.</li>
+							<li>Creating an options form for your plugin.</li>
+							<li>Using Q2A’s options mechanism and setting defaults.</li>
+							<li>Managing and verifying permissions.</li>
+							<li>Localizing plugins into multiple languages.</li>
+						</ul>
+
+						<p>To check you followed the instructions correctly, you can <a href="http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip">download the completed plugin</a>.</p>
+
+						<p>Now you can think about the plugin that <strong>you</strong> want to build and how to go about it. To get started, take a look at the different <a href="/plugins/modules/">types of module</a> that Q2A supports - as of Q2A 1.5, there are ten available, and we only covered two in this tutorial. You should also take a look at this list of useful <a href="/code/functions/">Q2A functions</a> and have a browse around the Q2A source code to learn about many more. Finally, take a look at the code of the <a href="/addons/">many plugins</a> already developed for Q2A. Thank you and good luck!</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

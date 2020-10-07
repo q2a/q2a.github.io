@@ -1,0 +1,316 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Plugins documentation - Question2Answer</title>
+	<meta name="description" content=="Creating plugins for Question2Answer"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="creating-plugins-for-question2answer">Creating plugins for Question2Answer</h1>
+
+						<p>Question2Answer plugins (introduced in Q2A 1.3) allow the platform to be modified or extended without changing the Q2A core. Plugins can integrate with Q2A in one of three ways:</p>
+
+						<ul>
+							<li><strong><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">Modules</a> extend Q2A in a defined and specific way.</strong> The following types of module are supported:
+								<ul>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-page/"><em>page</em></a> modules add a new type of page to a Question2Answer site.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-login/"><em>login</em></a> modules allow users to log in to Q2A via an external identity provider such as Facebook.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-editor/"><em>editor</em></a> modules provide a web interface for writing and editing posts.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-viewer/"><em>viewer</em></a> modules render content as HTML or text, and often work together with an editor module.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-event/"><em>event</em></a> modules are notified when something important happens, such as content being posted or voted on.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-widget/"><em>widget</em></a> modules allow extra content to be shown on Q2A pages, as chosen by the site administrator.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-filter/"><em>filter</em></a> modules can validate and/or modify many types of user input, including the content of posts.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-search/"><em>search</em></a> modules can implement a custom indexer and/or search engine for a Q2A site.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-captcha/"><em>captcha</em></a> modules provide a web interface for human verification, such as reCAPTCHA.</li>
+									<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-process/"><em>process</em></a> modules have the opportunity to run at specific stages of Q2A’s response processing.</li>
+								</ul>
+
+								<p>Modules are the preferred method for extending Q2A - <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">more about modules</a>.</p>
+							</li>
+							<li><strong><a href="/plugins/layers/">Layers</a> modify the HTML output for some elements of a Q2A page</strong>. Layers work similarly to <a href="/themes/">advanced themes</a>, by overriding some functions in the base theme class in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code>. Unlike advanced themes, multiple layers can be installed simultaneously via their respective plugins. Layers require Q2A 1.4+.</li>
+							<li><strong><a href="/plugins/overrides/">Overrides</a> allow over 150 core Q2A functions to be modified</strong>. Core functions can be replaced by the plugin’s code, or they can be wrapped, with the plugin modifying the function’s inputs and/or outputs. With wrapping, multiple overrides for the same function in different plugins can be active simultaneously. Overrides require Q2A 1.5+.</li>
+						</ul>
+
+						<p>The sections below explain the general principles behind plugins. You will also need to read about implementing <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">modules</a>, <a href="https://docs.question2answer.org/pages/documentation/plugins/layers/">layers</a> and/or <a href="https://docs.question2answer.org/pages/documentation/plugins/overrides/">overrides</a>, as well as some <a href="https://docs.question2answer.org/pages/documentation/code/functions">functions</a> in Q2A that may be useful in developing your plugin.</p>
+
+						<p>An alternative is to work through the <a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">plugin tutorial</a>, which introduces all of this material in a more gentle and gradual way.</p>
+
+						<p>To see some examples of plugins, modules and layers, take a look at the <code class="language-plaintext highlighter-rouge">qa-plugin</code> directory in your Q2A installation as well as the modules registered in the function <code class="language-plaintext highlighter-rouge">qa_register_core_modules()</code> in <code class="language-plaintext highlighter-rouge">qa-base.php</code> of Q2A 1.5+.</p>
+
+						<h2 id="directory-structure">Directory structure</h2>
+
+						<p>Plugins for Question2Answer have the following directory structure:</p>
+
+						<ul>
+							<li>A plugin is contained inside a directory whose name should use only numbers, lowercase letters and hyphens.</li>
+							<li>The directory name should be descriptive and similar to the plugin’s name, such as <code class="language-plaintext highlighter-rouge">facebook-login</code> or <code class="language-plaintext highlighter-rouge">wysiwyg-editor</code>.</li>
+							<li>The plugin directory must contain a PHP file named <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> whose purpose is described below.</li>
+							<li>The plugin directory may also contain any other files and subdirectories, including PHP, HTML, Javascript, CSS, etc…</li>
+							<li>A plugin is activated by installing its directory inside Q2A’s <code class="language-plaintext highlighter-rouge">qa-plugin</code> directory.</li>
+						</ul>
+
+						<p>The <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file has two main purposes. First, it registers any modules, layers or overrides provided by the plugin. Second, it contains optional metadata about the plugin and its author. As of Q2A 1.5, it is not recommended for <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> to perform any other actions - if this seems necessary, please consider using a <a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial/modules/modules-process/">process module</a> instead. If you wish to use non English characters in <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).</p>
+
+						<h2 id="registering-modules">Registering modules</h2>
+
+						<p>Each module is implemented as a PHP <code class="language-plaintext highlighter-rouge">class</code> with specific member functions, as <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">detailed here</a>. For the sake of speed, the class definition for each module should be in a separate PHP file, since Q2A will only <code class="language-plaintext highlighter-rouge">include</code> this file when necessary.</p>
+
+						<p>To register a module, call <code class="language-plaintext highlighter-rouge">qa_register_plugin_module()</code> in <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>, with the following parameters in order:</p>
+
+						<ol>
+							<li>The type of module, e.g. <code class="language-plaintext highlighter-rouge">'page'</code> or <code class="language-plaintext highlighter-rouge">'login'</code>. You can also use <code class="language-plaintext highlighter-rouge">'module'</code> to register a generic module which can display a form in the admin interface, but is not otherwise used.</li>
+							<li>The name of the PHP file in the plugin directory containing the module’s class declaration, e.g. <code class="language-plaintext highlighter-rouge">qa-xml-sitemap.php</code>. Use <code class="language-plaintext highlighter-rouge">null</code> if the module’s class is defined within <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> itself (not recommended for non-trivial modules).</li>
+							<li>The name of the PHP <code class="language-plaintext highlighter-rouge">class</code> in this file that implements the module, e.g. <code class="language-plaintext highlighter-rouge">qa_xml_sitemap</code>.</li>
+							<li>A human-readable module name, which should be descriptive and unique, e.g. <code class="language-plaintext highlighter-rouge">'XML Sitemap'</code>. This may be displayed in the Admin panel and/or used to refer to the module within Q2A’s internals.</li>
+						</ol>
+
+						<h2 id="registering-layers">Registering layers</h2>
+
+						<p>Each layer is implemented as a PHP file containing a fixed <code class="language-plaintext highlighter-rouge">class</code> declaration, as <a href="https://docs.question2answer.org/pages/documentation/plugins/layers/">described here</a>. To register a layer, call <code class="language-plaintext highlighter-rouge">qa_register_plugin_layer()</code> in <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>, with the following parameters in order:</p>
+
+						<ol>
+							<li>The name of the PHP file in the plugin directory containing the layer’s class declaration, e.g. <code class="language-plaintext highlighter-rouge">qa-mouseover-layer.php</code>.</li>
+							<li>A human-readable layer name, which should be descriptive and unique, e.g. <code class="language-plaintext highlighter-rouge">'Mouseover Layer'</code>. This may also be used to refer to the layer within Q2A’s internals.</li>
+						</ol>
+
+						<h2 id="registering-overrides">Registering overrides</h2>
+
+						<p>Overrides are implemented as PHP files which contain the replacement function definitions, as <a href="https://docs.question2answer.org/pages/documentation/plugins/overrides/">described here</a>. Your functions can call the original Q2A functions using the <code class="language-plaintext highlighter-rouge">_base</code> suffix, e.g. <code class="language-plaintext highlighter-rouge">qa_lang_base()</code>. To register a file containing overrides, call <code class="language-plaintext highlighter-rouge">qa_register_plugin_overrides()</code> in <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> with the name of the overrides PHP file in the plugin directory.</p>
+
+						<h2 id="plugin-localization">Plugin localization</h2>
+
+						<p>Throughout Q2A, the <a href="https://docs.question2answer.org/pages/documentation/code/functions/">functions</a> <code class="language-plaintext highlighter-rouge">qa_lang()</code> and <code class="language-plaintext highlighter-rouge">qa_lang_html()</code> are used to obtain localized language phrases. An identifier string is passed to these functions, which consists of a file prefix, a slash (<code class="language-plaintext highlighter-rouge">/</code>) and a phrase key. For example, the identifier <code class="language-plaintext highlighter-rouge">'main/cancel_button'</code> obtains the element with key <code class="language-plaintext highlighter-rouge">'cancel_button'</code> from the appropriate <code class="language-plaintext highlighter-rouge">qa-lang-main.php</code> language file. Each language file is a PHP script which returns an array mapping keys to phrases, e.g. see <code class="language-plaintext highlighter-rouge">qa-lang-main.php</code>. If you wish to use non English characters in your language files, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).</p>
+
+						<p>From Q2A 1.5+, plugins can add their own language prefixes and phrases by calling <code class="language-plaintext highlighter-rouge">qa_register_plugin_phrases()</code> from within <code class="language-plaintext highlighter-rouge">qa-plugin.php</code>, with the following parameters in order:</p>
+
+						<ol>
+							<li>A pattern for the language files within the plugin’s directory. The pattern must contain an asterisk (<code class="language-plaintext highlighter-rouge">*</code>), which is substituted for the appropriate language code or <code class="language-plaintext highlighter-rouge">'default'</code>, which is used if the desired language cannot be found. For example, the pattern <code class="language-plaintext highlighter-rouge">'qa-phrases-*.php'</code> maps to <code class="language-plaintext highlighter-rouge">qa-phrases-fr.php</code> for French, <code class="language-plaintext highlighter-rouge">qa-phrases-de.php</code> for German and <code class="language-plaintext highlighter-rouge">qa-phrases-default.php</code> for defaults. The asterisk can also be in a directory name, e.g. the pattern <code class="language-plaintext highlighter-rouge">'lang-*/phrases.php'</code> would map to <code class="language-plaintext highlighter-rouge">lang-fr/phrases.php</code>, <code class="language-plaintext highlighter-rouge">lang-de/phrases.php</code> and <code class="language-plaintext highlighter-rouge">lang-default/phrases.php</code> respectively.</li>
+							<li>A prefix used to access the phrases, which must be unique to your plugin. For example, the prefix <code class="language-plaintext highlighter-rouge">'whizbang'</code> means that your phrase with key <code class="language-plaintext highlighter-rouge">'whizzy_title'</code> would be obtained by calling <code class="language-plaintext highlighter-rouge">qa_lang('whizbang/whizzy_title')</code>.</li>
+						</ol>
+
+						<h2 id="plugin-metadata">Plugin metadata</h2>
+
+						<p>Plugins can list “metadata” - information about the plugin itself - in a JSON file. Currently the metadata is used in two particular places:</p>
+
+						<ol>
+							<li>On the Plugins page in the Admin area, to show the plugin details.</li>
+							<li>When loading each plugin, to check if it can run in the current version of Q2A and PHP. (Any plugins not meeting the minimum requirements will be disabled.)</li>
+						</ol>
+
+						<p>The data is stored in a file <code class="language-plaintext highlighter-rouge">metadata.json</code> in each plugin’s directory. The JSON format consists of key-value pairs of the form <code class="language-plaintext highlighter-rouge">"key": "value"</code>, separated by commas and wrapped in curly braces <code class="language-plaintext highlighter-rouge">{ ... }</code>. Note: JSON requires that both keys and values must be in double quotes, and there be no trailing comma after the last item (before <code class="language-plaintext highlighter-rouge">}</code>).</p>
+
+						<p>All fields are optional (you can omit any whole line). Here’s an example with all the possible keys and their descriptions:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Human-readable name of your plugin"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Web address for your plugin"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Human-readable description of your plugin"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Your plugin version number"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Build date of your plugin in YYYY-MM-DD"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Human-readable name of plugin author"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"author_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Web address for plugin author"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"license"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Short name of plugin license, e.g. GPLv2"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"update_uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Web address for Q2A to check for updates"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"min_q2a"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Numerical part only, e.g. 1.3"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"min_php"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Numerical part only, e.g. 5.1"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"load_order"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bootstrap moment in which the plugin will be loaded"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+						<p>The <code class="language-plaintext highlighter-rouge">update_uri</code> key allows you to inform users about new versions of the plugin. Q2A will retrieve the content from the provided URL, and look for metadata in the same format as above. In other words, it should contain a URL to a JSON file. If you are using a public repository such as Github, you can link to the “raw” version of <code class="language-plaintext highlighter-rouge">metadata.json</code> in your own repo - this way, as soon as you push an updated <code class="language-plaintext highlighter-rouge">metadata.json</code> to your repo, the admin/plugins page will notify users of the new version.</p>
+
+						<p>The <code class="language-plaintext highlighter-rouge">load_order</code> key was introduced in Q2A 1.8. It can have two possible values that define in which step of the Q2A bootstrap process the plugin is loaded. A plugin is considered “loaded” when its <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file is included and executed. It can have the following possible values:</p>
+						<ul>
+							<li><code class="language-plaintext highlighter-rouge">before_db_init</code>: the plugin is loaded before any database access is performed. This setting does not allow plugins to be disabled from the <code class="language-plaintext highlighter-rouge">admin/plugins</code> page and forces them to always be executed. The only real need to use this setting is, most likely, to override how the database should be accessed (e.g., to override the <code class="language-plaintext highlighter-rouge">qa_db_allow_connect()</code> function that is called early in the bootstrap process).</li>
+							<li><code class="language-plaintext highlighter-rouge">after_db_init</code>: the plugin is loaded after the initial database connection succeeds. This setting allows plugins to be disabled from the <code class="language-plaintext highlighter-rouge">admin/plugins</code> page. Disabled plugins won’t have a single line of code executed (their <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file will not be included during the bootstrap process). Enabled plugins will be executed normally.</li>
+						</ul>
+
+						<h3 id="plugin-metadata-prior-to-q2a-17">Plugin metadata prior to Q2A 1.7</h3>
+
+						<p>In earlier Q2A versions, plugin metadata was registered using metadata in a PHP comment inside the <code class="language-plaintext highlighter-rouge">qa-plugin.php</code> file. Here is an equivalent example to the above:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cm">/*
+Plugin Name: Human-readable name of your plugin
+Plugin URI: Web address for your plugin
+Plugin Description: Human-readable description of your plugin
+Plugin Version: Your plugin version number
+Plugin Date: Build date of your plugin in YYYY-MM-DD
+Plugin Author: Human-readable name of plugin author
+Plugin Author URI: Web address for plugin author
+Plugin License: Short name of plugin license, e.g. GPLv2
+Plugin Update Check URI: Web address for Q2A to check for updates
+Plugin Minimum Question2Answer Version: Numerical part only, e.g. 1.3
+Plugin Minimum PHP Version: Numerical part only, e.g. 5
+*/</span>
+</code></pre></div></div>
+
+						<p>For backwards compatibility, Q2A 1.7 will still read this old style of metadata, if no <code class="language-plaintext highlighter-rouge">metadata.json</code> file is present.</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

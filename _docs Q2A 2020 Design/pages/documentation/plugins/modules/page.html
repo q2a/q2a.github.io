@@ -1,0 +1,215 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Page - Plugin modules documentation - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules/page"/>
+	
+	<!-- Favicons -->
+	<link href="../../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/page">Page</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						 <h1 id="page-modules">Page Modules</h1>
+
+							<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+							<p>A page module adds one or more new pages to a Q2A installation. In Q2A, every page displayed has a corresponding <code class="language-plaintext highlighter-rouge">$request</code> string. For example, the <code class="language-plaintext highlighter-rouge">$request</code> for Q2A’s page for user John Doe is <code class="language-plaintext highlighter-rouge">'user/John Doe'</code>. Page modules are able to control the output for particular <code class="language-plaintext highlighter-rouge">$request</code> strings in the same way. (Depending on the chosen URL structure for a Q2A installation, <code class="language-plaintext highlighter-rouge">$request</code> can be represented in different ways on the actual URL - you need not worry about this, nor should you make any assumptions.)</p>
+
+							<p>The PHP <code class="language-plaintext highlighter-rouge">class</code> for a page module can contain the following functions (all are optional):</p>
+
+							<ul>
+							  <li>
+								<p><strong><code class="language-plaintext highlighter-rouge">match_request($request)</code></strong> should return <code class="language-plaintext highlighter-rouge">true</code> if your page module will respond to Q2A page <code class="language-plaintext highlighter-rouge">$request</code>.</p>
+							  </li>
+							  <li>
+								<p><strong><code class="language-plaintext highlighter-rouge">suggest_requests()</code></strong> should return an array of suggested pages for your module. These suggestions will be displayed within the Q2A admin interface. Each element for a page in the array is itself an array, containing the following elements:</p>
+
+								<ul>
+								  <li><code class="language-plaintext highlighter-rouge">title</code> contains a human-readable title used to describe the page, e.g. <code class="language-plaintext highlighter-rouge">'More Stats'</code>.</li>
+								  <li><code class="language-plaintext highlighter-rouge">request</code> contains the Q2A <code class="language-plaintext highlighter-rouge">$request</code> string for the page, e.g. <code class="language-plaintext highlighter-rouge">'stats/more'</code>. Your <code class="language-plaintext highlighter-rouge">match_request()</code> function should of course return <code class="language-plaintext highlighter-rouge">true</code> for this string.</li>
+								  <li><code class="language-plaintext highlighter-rouge">nav</code> contains a suggestion about where this page should be linked in the navigation menus. This is only a hint and can easily be changed by the site’s administrator. Use <code class="language-plaintext highlighter-rouge">'M'</code> for after the main menu, <code class="language-plaintext highlighter-rouge">'B'</code> for before the main menu, <code class="language-plaintext highlighter-rouge">'O'</code> for opposite the main menu, <code class="language-plaintext highlighter-rouge">'F'</code> for the footer, or <code class="language-plaintext highlighter-rouge">null</code> for no navigation element.</li>
+								</ul>
+							  </li>
+							  <li>
+								<p><strong><code class="language-plaintext highlighter-rouge">process_request($request)</code></strong> allows your page module to respond for a particular <code class="language-plaintext highlighter-rouge">$request</code>. This function should perform any necessary processing based on user inputs, and return information about the page to be displayed in a nested Q2A content array, named <code class="language-plaintext highlighter-rouge">$qa_content</code> by convention. (If your function outputs some special content such as XML, return <code class="language-plaintext highlighter-rouge">null</code> to prevent Q2A displaying anything further.) It is beyond the scope of this documentation to describe <code class="language-plaintext highlighter-rouge">$qa_content</code> in detail - there are many examples in the <code class="language-plaintext highlighter-rouge">qa-page-*.php</code> files and the page plugins that come with Q2A. You can also see how <code class="language-plaintext highlighter-rouge">$qa_content</code> is picked apart at the end of <code class="language-plaintext highlighter-rouge">qa-page.php</code> and in <code class="language-plaintext highlighter-rouge">main()</code> in <code class="language-plaintext highlighter-rouge">qa-theme-base.php</code>. Some particular points to note:</p>
+
+								<ul>
+								  <li>Always start by assigning <code class="language-plaintext highlighter-rouge">$qa_content=qa_content_prepare();</code> to include navigation menus and the like.</li>
+								  <li>All elements within the nested <code class="language-plaintext highlighter-rouge">$qa_content</code> array should be made HTML safe - use <code class="language-plaintext highlighter-rouge">qa_html()</code> as appropriate.</li>
+								  <li>Use <code class="language-plaintext highlighter-rouge">$qa_content['title']</code> and <code class="language-plaintext highlighter-rouge">$qa_content['error']</code> to display a page title or error message respectively.</li>
+								  <li>To add some custom HTML to the page, add an element to <code class="language-plaintext highlighter-rouge">$qa_content</code> whose key begins with <code class="language-plaintext highlighter-rouge">custom</code>, e.g. <code class="language-plaintext highlighter-rouge">$qa_content['custom']</code> or <code class="language-plaintext highlighter-rouge">$qa_content['custom_2']</code>. The value of the element should contain the actual HTML.</li>
+								  <li>To add a Q2A-style form to the page, add an element to <code class="language-plaintext highlighter-rouge">$qa_content</code> whose key begins with <code class="language-plaintext highlighter-rouge">form</code>, e.g. <code class="language-plaintext highlighter-rouge">$qa_content['form']</code> or <code class="language-plaintext highlighter-rouge">$qa_content['form_2']</code>. The value of the element should contain a Q2A form array, whose definition is also beyond the scope of this documentation, although see the <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">comments here</a>.</li>
+								  <li>Other possible types of structured content in <code class="language-plaintext highlighter-rouge">$qa_content</code> are question lists (keys starting <code class="language-plaintext highlighter-rouge">q_list</code>), question views (<code class="language-plaintext highlighter-rouge">q_view</code>), answer lists (<code class="language-plaintext highlighter-rouge">a_list</code>) and rankings (<code class="language-plaintext highlighter-rouge">ranking</code>). Look through the <code class="language-plaintext highlighter-rouge">qa-page-*.php</code> files for examples.</li>
+								  <li>The elements in <code class="language-plaintext highlighter-rouge">$qa_content</code> are displayed in array order, with a few exceptions such as page titles and errors.</li>
+								</ul>
+							  </li>
+							</ul>
+
+							<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+					</div>
+					
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../../js/sticky_bar.js"></script>
+	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

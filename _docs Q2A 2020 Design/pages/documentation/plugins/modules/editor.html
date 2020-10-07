@@ -1,0 +1,216 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Editor - Plugin modules documentation - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules/editor"/>
+	
+	<!-- Favicons -->
+	<link href="../../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/page">Editor</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="editor-modules">Editor Modules</h1>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+						<p>An editor module implements a web interface for editing the content of questions, answers and comments. The module controls the HTML field which is displayed for editing, and converts the input from that field into data for storage in Q2A’s database.</p>
+
+						<p>For example, the default editor module in <code class="language-plaintext highlighter-rouge">qa-editor-basic.php</code> displays a simple text field and generates text content for storage. The WYSIWYG Editor plugin included with Q2A wraps <a href="http://ckeditor.com/">CKEditor</a> and generates text or HTML content for storage. Your editor can also store content in a format other than text or HTML, but a <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/viewer/">viewer module</a> will be required to render that content for Q2A.</p>
+
+						<p>The PHP <code class="language-plaintext highlighter-rouge">class</code> for an editor module must contain the following functions (all are <strong>required</strong>):</p>
+
+						<ul>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">calc_quality($content, $format)</code></strong> should return a numerical value indicating your editor’s compatibility with the supplied content, as retrieved from Q2A’s database. If <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">''</code>, then <code class="language-plaintext highlighter-rouge">$content</code> contains plain text in UTF-8 encoding. If <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">'html'</code>, then <code class="language-plaintext highlighter-rouge">$content</code> contains HTML with UTF-8 encoding. Other values of <code class="language-plaintext highlighter-rouge">$format</code> are also possible, depending on the editor modules installed. You should return <code class="language-plaintext highlighter-rouge">1.0</code> to indicate perfect compatibility, and <code class="language-plaintext highlighter-rouge">0.0</code> for complete incompatibility. If an editor has been selected as the default in Q2A’s admin panel, it will be used if its <code class="language-plaintext highlighter-rouge">calc_quality()</code> function returns <code class="language-plaintext highlighter-rouge">0.5</code> or more for the given content. Otherwise, the editor returning the highest value will be used. For your reference, Q2A’s basic text editor returns <code class="language-plaintext highlighter-rouge">1.0</code> for plain text and <code class="language-plaintext highlighter-rouge">0.2</code> for HTML, and the WYSIWYG Editor plugin returns <code class="language-plaintext highlighter-rouge">1.0</code> for HTML and <code class="language-plaintext highlighter-rouge">0.8</code> for plain text.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">get_field(&amp;$qa_content, $content, $format, $fieldname, $rows)</code></strong> should return an HTML-based field for your editor. The <code class="language-plaintext highlighter-rouge">$content</code> and <code class="language-plaintext highlighter-rouge">$format</code> parameters specify the content that needs editing or <code class="language-plaintext highlighter-rouge">null</code> if new content is being created. The <code class="language-plaintext highlighter-rouge">$fieldname</code> parameter contains the HTML element name that you should use - if your editor outputs multiple HTML elements, use <code class="language-plaintext highlighter-rouge">$fieldname</code> as a prefix. The <code class="language-plaintext highlighter-rouge">$rows</code> parameter indicates a suggested height for your editor, in lines of text. To output custom HTML for your editor, return <code class="language-plaintext highlighter-rouge">array('type' =&gt; 'custom', 'html' =&gt; '[the html]')</code> from this function. You can also return an array representing any standard Q2A form field and inject elements (such as Javascript) into the <code class="language-plaintext highlighter-rouge">$qa_content</code> array - see <code class="language-plaintext highlighter-rouge">qa-editor-basic.php</code> and <code class="language-plaintext highlighter-rouge">qa-wysiwyg-editor.php</code> for some examples, or <a href="http://www.question2answer.org/qa/">ask here</a>.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">read_post($fieldname)</code></strong> should retrieve the content from your editor, as POSTed from the user’s web browser, and convert it for storage in Q2A’s database. The <code class="language-plaintext highlighter-rouge">$fieldname</code> parameter matches the value that was previously passed to <code class="language-plaintext highlighter-rouge">get_field()</code>. To store plain text, return <code class="language-plaintext highlighter-rouge">array('format' =&gt; '', 'content' =&gt; '[text in UTF-8]')</code> from this function. To store HTML, return <code class="language-plaintext highlighter-rouge">array('format' =&gt; 'html', 'content' =&gt; '[html in UTF-8]')</code>. <strong>If you are storing HTML as submitted by the user’s browser, you must sanitize it using <code class="language-plaintext highlighter-rouge">qa_sanitize_html()</code> to prevent Javascript injection and other security issues.</strong> Aside from plain text and HTML, your <code class="language-plaintext highlighter-rouge">read_post()</code> function can store any other type of content in Q2A’s database, by supplying an appropriate <code class="language-plaintext highlighter-rouge">'format'</code> (up to 20 ASCII characters in length) and corresponding <code class="language-plaintext highlighter-rouge">'content'</code>. In this case, a <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/viewer/">viewer module</a> will be required to render the stored content as plain text or HTML.</p>
+						  </li>
+						</ul>
+
+						<p>In addition, the following <strong>optional</strong> functions may also be defined (all require Q2A 1.5+):</p>
+
+						<ul>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">focus_script($fieldname)</code></strong> can return a Javascript that brings the editor field into focus (requires Q2A 1.5+). In simple cases this might return <code class="language-plaintext highlighter-rouge">"document.getElementById('".$fieldname."').focus();"</code>. Note that this function replaces the deprecated <code class="language-plaintext highlighter-rouge">$autofocus</code> parameter passed to <code class="language-plaintext highlighter-rouge">get_field()</code> in earlier versions of Q2A.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">load_script($fieldname)</code></strong> can return a Javascript that finishes loading the editor (requires Q2A 1.5+). This can be used to save page complexity and loading time by only loading the editor once it is displayed to the user.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">update_script($fieldname)</code></strong> can return a Javascript that prepares the editor content for submission via the enclosing form (requires Q2A 1.5+). If your editor manipulates content outside the form’s field, e.g. in an iframe, this allows it to update the field content immediately before the form is submitted.</p>
+						  </li>
+						</ul>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+					</div>
+					
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../../js/sticky_bar.js"></script>
+	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Functions (documentation) - Question2Answer</title>
+	<meta name="description" content=="Selected functions in Question2Answer"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/code/functions/"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item selected-nav">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/code">Code</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/code/functions">Functions</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/code">External</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/code/functions">Functions</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/code/app-structure">App Structure</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="selected-functions-in-question2answer">Selected functions in Question2Answer</h1>
+
+<p>Your external code and plugins are free to use any of the 700+ functions defined within Q2A. When developing new versions of Q2A, the utmost effort is made to keep its functions backwards compatible, so that code using these functions continues to work. For example, new parameters added to existing functions are always optional. Any breaks in backwards compatibility are documented in the <a href="https://github.com/q2a/question2answer/releases">version history</a>.</p>
+
+<p>A selected of the most useful functions are described below, grouped by the PHP file in the <code class="language-plaintext highlighter-rouge">qa-include</code> directory in which they appear. With the exception of <code class="language-plaintext highlighter-rouge">qa-base.php</code>, which is loaded first, you must include a file as follows before using its functions:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">require_once</span> <span class="nx">QA_INCLUDE_DIR</span><span class="o">.</span><span class="s1">'qa-XYZ.php'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Many of these functions take optional additional parameters which are not shown here - please consult the source code for details. Functions which are not marked with a version number are available from Q2A 1.3 or later.</p>
+
+<h2 id="general-functions-in-qa-basephp">General functions in <code class="language-plaintext highlighter-rouge">qa-base.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_exit($reason)</code></strong> calls the <code class="language-plaintext highlighter-rouge">shutdown()</code> method of any installed <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-process/">process modules</a>, passing the supplied <code class="language-plaintext highlighter-rouge">$reason</code>. Then it terminates execution of the PHP script with PHP’s <code class="language-plaintext highlighter-rouge">exit;</code> command. Requires Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_fatal_error($message)</code></strong> outputs and logs <code class="language-plaintext highlighter-rouge">$message</code>, then calls <code class="language-plaintext highlighter-rouge">qa_exit('error');</code> to terminate execution.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_list_modules($type)</code></strong> returns an array containing the names of all installed modules of type <code class="language-plaintext highlighter-rouge">$type</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_load_module($type, $name)</code></strong> returns an object belonging to the class defined in module <code class="language-plaintext highlighter-rouge">$name</code> of type <code class="language-plaintext highlighter-rouge">$type</code>, or <code class="language-plaintext highlighter-rouge">null</code> if it cannot be loaded. You can use this to communicate between multiple modules within a plugin, or between different plugins. Note that multiple calls to <code class="language-plaintext highlighter-rouge">qa_load_module()</code> with the same <code class="language-plaintext highlighter-rouge">$type</code> and <code class="language-plaintext highlighter-rouge">$name</code> will return the same object.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_load_modules_with($type, $method)</code></strong> returns an array of objects for the installed modules of type <code class="language-plaintext highlighter-rouge">$type</code> which have <code class="language-plaintext highlighter-rouge">$method</code> defined. Requires Q2A 1.5+. For example, <code class="language-plaintext highlighter-rouge">$modules=qa_load_modules_with('page', 'match_request');</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_html($string)</code></strong> returns <code class="language-plaintext highlighter-rouge">$string</code> escaped for output in HTML, e.g. mapping <code class="language-plaintext highlighter-rouge">"</code> to the <code class="language-plaintext highlighter-rouge">&amp;quot;</code> entity. If the optional second parameter <code class="language-plaintext highlighter-rouge">$multiline</code> is set to <code class="language-plaintext highlighter-rouge">true</code>, newlines and tabs in <code class="language-plaintext highlighter-rouge">$string</code> are also converted to the appropriate HTML representation.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_sanitize_html($html, $linksnewwindow)</code></strong> returns <code class="language-plaintext highlighter-rouge">$html</code> after ensuring it is clear of Javascript and other possible security issues. It should be used to make the HTML provided by one user (e.g. in an editor module) safe for display to other users. If <code class="language-plaintext highlighter-rouge">$linksnewwindow</code> is <code class="language-plaintext highlighter-rouge">true</code>, then any links in the HTML will be modified to open in a new window.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_xml($string)</code></strong> returns <code class="language-plaintext highlighter-rouge">$string</code> escaped for output in XML. Requires Q2A 1.6+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_js($value)</code></strong> returns <code class="language-plaintext highlighter-rouge">$value</code> escaped for output in Javascript, including putting strings in quotes.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_request()</code></strong> returns the Q2A page being requested, e.g. <code class="language-plaintext highlighter-rouge">'tag/urgent'</code>. It uses slash separators, independent of the URL scheme chosen. <strong><code class="language-plaintext highlighter-rouge">qa_request_part($part)</code></strong> divides the request using slashes, and returns the part indexed by <code class="language-plaintext highlighter-rouge">$part&gt;=0</code>, or <code class="language-plaintext highlighter-rouge">null</code> if that part does not exist. <strong><code class="language-plaintext highlighter-rouge">qa_request_parts()</code></strong> returns an array of request parts. All require Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get($field)</code></strong> returns the value of URL parameter <code class="language-plaintext highlighter-rouge">$field</code> (from <code class="language-plaintext highlighter-rouge">$_GET</code> in PHP) or <code class="language-plaintext highlighter-rouge">null</code> if it was not present.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_text($field)</code></strong> returns the value of the POSTed <code class="language-plaintext highlighter-rouge">$field</code>, trimmed with <code class="language-plaintext highlighter-rouge">\n</code> line endings, or <code class="language-plaintext highlighter-rouge">null</code> if not present.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_clicked($name)</code></strong> returns <code class="language-plaintext highlighter-rouge">true</code> if the form button named <code class="language-plaintext highlighter-rouge">$name</code> was clicked to POST a form.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_remote_ip_address()</code></strong> returns the IP address making the current request, or <code class="language-plaintext highlighter-rouge">null</code> if unavailable. Requires Q2A 1.4.1+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_is_http_post()</code></strong> returns whether Q2A is currently responding to an HTTP POST request, e.g. a form submission.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_is_https_probably()</code></strong> returns whether the current request is using the HTTPS protocol. It is hard to determine this absolutely.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_is_human_probably()</code></strong> returns <code class="language-plaintext highlighter-rouge">true</code> if the current request appears to be from a person using a web browser, rather than a search engine bot or automated script. This assessment is based on the HTTP user agent containing a known string such as <code class="language-plaintext highlighter-rouge">MSIE</code> or <code class="language-plaintext highlighter-rouge">Firefox</code>. Note that it is perfectly possible for a malicious bot or script to masquerade as a web browser.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_is_mobile_probably()</code></strong> returns <code class="language-plaintext highlighter-rouge">true</code> if the current request appears to be from a mobile phone. This assessment is based on the presence of mobile HTTP headers or the HTTP user agent containing a mobile identifying string. Requires Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_lang($identifier)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_lang_html($identifier)</code></strong> return a localized language phrase from the appropriate <code class="language-plaintext highlighter-rouge">qa-lang-*.php</code> file. For example, <code class="language-plaintext highlighter-rouge">qa_lang('main/cancel_button')</code> would return the phrase with key <code class="language-plaintext highlighter-rouge">'cancel_button'</code> from the file <code class="language-plaintext highlighter-rouge">qa-lang-main.php</code>. The phrase returned by <code class="language-plaintext highlighter-rouge">qa_lang_html()</code> is escaped for output in HTML. From Q2A 1.5+, language files can also be <a href="https://docs.question2answer.org/pages/documentation/plugins/">registered by plugins</a> and then accessed via these functions.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_path_to_root()</code></strong> returns the URL to the root of the Q2A site, relative to the currently requested page. Requires Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_path($request)</code></strong> returns the URL for Q2A page <code class="language-plaintext highlighter-rouge">$request</code>, relative to the currently requested page. You can also call <strong><code class="language-plaintext highlighter-rouge">qa_path($request, $params)</code></strong> to add GET-style parameters to the URL, where <code class="language-plaintext highlighter-rouge">$params</code> is an array of parameter name <code class="language-plaintext highlighter-rouge">=&gt;</code> parameter value, not yet urlencoded. <strong>To ensure compatibility with different Q2A URL structures, please use this (or a related <code class="language-plaintext highlighter-rouge">qa_path_*()</code> function to build URLs instead of hard-coding their structure.</strong></li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">qa_path_html($request)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_path_html($request, $params)</code></strong> return the URL for Q2A page <code class="language-plaintext highlighter-rouge">$request</code> (with optional <code class="language-plaintext highlighter-rouge">$params</code>), relative to the currently requested page, escaped for output in HTML. Usage example:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">echo '&lt;a href="'.qa_path_html('search', array('q' =&gt; 'reset password')).'"&gt;Resetting Password&lt;A&gt;';</code></p>
+  </li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_path_absolute($request)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_path_absolute($request, $params)</code></strong> return the absolute URL for Q2A page <code class="language-plaintext highlighter-rouge">$request</code> (with optional <code class="language-plaintext highlighter-rouge">$params</code>). Requires Q2A 1.6+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_q_path($questionid, $title, $absolute, $showtype, $showid)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_q_path_html(...)</code></strong> return the URL for question <code class="language-plaintext highlighter-rouge">$questionid</code> which has <code class="language-plaintext highlighter-rouge">$title</code> as its title. If <code class="language-plaintext highlighter-rouge">$absolute</code> is <code class="language-plaintext highlighter-rouge">true</code>, this will be an absolute URL, otherwise it will be relative to the currently requested page. To link to a particular answer or comment within that question page, pass <code class="language-plaintext highlighter-rouge">'A'</code> or <code class="language-plaintext highlighter-rouge">'C'</code> as the <code class="language-plaintext highlighter-rouge">$showtype</code> and the <code class="language-plaintext highlighter-rouge">postid</code> of the answer or comment in <code class="language-plaintext highlighter-rouge">$showid</code>. Otherwise, pass <code class="language-plaintext highlighter-rouge">null</code> or omit these last two parameters. The URL returned by <code class="language-plaintext highlighter-rouge">qa_q_path_html()</code> is escaped for output in HTML. Requires Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_self_html()</code></strong> returns the relative URL for the current Q2A page, preserving URL parameters, escaped for output in HTML. It is particularly useful for creating form tags, e.g. <code class="language-plaintext highlighter-rouge">echo '&lt;FORM METHOD="POST" ACTION="'.qa_self_html().'"&gt;';</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_redirect($request)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_redirect($request, $params)</code></strong> perform an HTTP redirect to a Q2A page, specified in the same way as the parameters to <code class="language-plaintext highlighter-rouge">qa_path()</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_redirect_raw($url)</code></strong> performs an HTTP redirect to <code class="language-plaintext highlighter-rouge">$url</code>, without processing the URL in any way. Generally you should use <code class="language-plaintext highlighter-rouge">qa_redirect()</code> however this function can be useful for <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-login/">login modules</a>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_retrieve_url($url)</code></strong> returns the content of remote <code class="language-plaintext highlighter-rouge">$url</code>, using PHP’s <code class="language-plaintext highlighter-rouge">file_get_contents()</code> or curl functions.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_opt($name)</code></strong> gets the value of the option labelled <code class="language-plaintext highlighter-rouge">$name</code> from Q2A’s internal options storage.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_opt($name, $value)</code></strong> sets the option labelled <code class="language-plaintext highlighter-rouge">$name</code> to <code class="language-plaintext highlighter-rouge">$value</code> in Q2A’s internal options storage. To prevent interference with Q2A or other plugins, your options should be named using a prefix which is unique to your plugin. Do not use this to store large pieces of content, since all options are retrieved for every Q2A page request - instead, look at <code class="language-plaintext highlighter-rouge">app/blobs.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_suspend_event_reports($suspend)</code></strong> suspends the reporting of events to event modules if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">true</code>, and reinstates it if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">false</code>. This might be useful if you are programmatically creating or modifying a lot of content or other database information, and want to prevent logging and other inappropriate responses to these events.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_report_event($event, $userid, $handle, $cookieid, $params)</code></strong> reports an event to all event modules registered by plugins. The five parameters are passed straight through to the <code class="language-plaintext highlighter-rouge">process_event()</code> function in each event module.</li>
+</ul>
+
+<h2 id="database-access-in-qa-dbphp">Database access in <code class="language-plaintext highlighter-rouge">qa-db.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_connection()</code></strong> returns the connection to the Q2A database, for use with PHP’s <code class="language-plaintext highlighter-rouge">mysql_query()</code> function and the like.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_query_raw($query)</code></strong> runs the raw SQL in <code class="language-plaintext highlighter-rouge">$query</code> on the Q2A database and returns a PHP result resource. Note that if the query fails due to a MySQL error, Q2A will stop normal execution and start checking the database for problems.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_escape_string($string)</code></strong> returns <code class="language-plaintext highlighter-rouge">$string</code> escaped for safe inclusion in raw SQL.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_query_sub($query, ...)</code></strong> runs the SQL in <code class="language-plaintext highlighter-rouge">$query</code> on the Q2A database after substituting the symbols <code class="language-plaintext highlighter-rouge">^</code>, <code class="language-plaintext highlighter-rouge">#</code> and <code class="language-plaintext highlighter-rouge">$</code>, returning a PHP result resource. This function is the <strong>recommended way to run queries on the Q2A database</strong>, and automatically escapes all substituted parameters for safe SQL. The <code class="language-plaintext highlighter-rouge">^</code> symbol is substituted for the appropriate Q2A table prefix set in <code class="language-plaintext highlighter-rouge">qa-config.php</code>, which is <code class="language-plaintext highlighter-rouge">qa_</code> by default. The <code class="language-plaintext highlighter-rouge">#</code> and <code class="language-plaintext highlighter-rouge">$</code> symbols are substituted for numerical and UTF-8 string values respectively, where these values are taken in order from the additional parameters to the function. If you want to retrieve the text from UTF-8 encoded columns from the database, you should use the <code class="language-plaintext highlighter-rouge">BINARY</code> modifier in front of the column name in your SQL, since Q2A does not explicitly set the character set of the database connection. Note that if the query fails due to a MySQL error, Q2A will stop normal execution and start checking the database for problems.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_single_select($selectspec)</code></strong> reads and returns data from the database based on the <code class="language-plaintext highlighter-rouge">$selectspec</code> parameter. The <code class="language-plaintext highlighter-rouge">$selectspec</code> parameter defines the columns to be retrieved, the source tables and constraints, arguments for substitution, and the ordering and formatting of the results. It is documented in full in <code class="language-plaintext highlighter-rouge">qa-db.php</code> and you can see many examples in <code class="language-plaintext highlighter-rouge">db/selects.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_multi_select($selectspecs)</code></strong> reads and returns data from the database for multiple <code class="language-plaintext highlighter-rouge">$selectspecs</code> simultaneously. Depending on the <code class="language-plaintext highlighter-rouge">QA_OPTIMIZE_*_DB</code> settings in <code class="language-plaintext highlighter-rouge">qa-config.php</code>, these may be executed as multiple SQL queries, or as a single query whose output is pulled apart within PHP. The keys of the data in the returned array match those of the <code class="language-plaintext highlighter-rouge">$selectspecs</code> parameter.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_read_all_assoc($result)</code></strong> takes the PHP result resource <code class="language-plaintext highlighter-rouge">$result</code> returned from a database query, and returns all the resulting data in a nested array. The outer array contains one array element per data row, with keys numbered from zero. Each inner array contains one element per data column, with column names in the keys.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_read_one_assoc($result, $allowempty)</code></strong> returns an array containing the first row in the PHP <code class="language-plaintext highlighter-rouge">$result</code> resource, with named columns. Set <code class="language-plaintext highlighter-rouge">$allowempty</code> to <code class="language-plaintext highlighter-rouge">true</code> if an empty result should not cause a fatal Q2A error.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_read_all_values($result)</code></strong> returns an array containing the first column from each row in the PHP <code class="language-plaintext highlighter-rouge">$result</code> resource.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_read_one_value($result, $allowempty)</code></strong> returns the first column of the first row in the PHP <code class="language-plaintext highlighter-rouge">$result</code> resource. Set <code class="language-plaintext highlighter-rouge">$allowempty</code> to <code class="language-plaintext highlighter-rouge">true</code> if an empty result should not cause a fatal Q2A error.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_suspend_update_counts($suspend)</code></strong> suspends the updating of various cached counts in the database if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">true</code>, and reinstates it if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">false</code>. This might be useful if you are programmatically creating or modifying a lot of content or other database information, and want to speed up the process. Once you have finished with the database modifications, you should use the buttons at the bottom of the ‘Stats’ page of the ‘Admin’ panel to recalculate all counts.</li>
+</ul>
+
+<h2 id="cookie-management-in-appcookiesphp">Cookie management in <code class="language-plaintext highlighter-rouge">app/cookies.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_cookie_get()</code></strong> returns a string which identifies the user (not necessarily logged in) making the current Q2A request, if one is available from a browser cookie. Otherwise, it returns <code class="language-plaintext highlighter-rouge">null</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_cookie_get_create()</code></strong> works like <code class="language-plaintext highlighter-rouge">qa_cookie_get()</code>, but if a cookie is not available, a new one is created, set in the user’s browser, and returned from the function.</li>
+</ul>
+
+<h2 id="sending-notifications-in-appemailsphp">Sending notifications in <code class="language-plaintext highlighter-rouge">app/emails.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_send_notification($userid, $email, $handle, $subject, $body, $subs)</code></strong> sends an email to user <code class="language-plaintext highlighter-rouge">$userid</code>. You can provide the user’s <code class="language-plaintext highlighter-rouge">$email</code> and/or <code class="language-plaintext highlighter-rouge">$handle</code>, or pass <code class="language-plaintext highlighter-rouge">null</code> for Q2A to retrieve these from the database. Several substitutions are performed on the <code class="language-plaintext highlighter-rouge">$subject</code> and <code class="language-plaintext highlighter-rouge">$body</code>. For example <code class="language-plaintext highlighter-rouge">^site_title</code> will be replaced by the name of the Q2A site set in the admin interface, and <code class="language-plaintext highlighter-rouge">^handle</code> and <code class="language-plaintext highlighter-rouge">^email</code> will be replaced by the recipient’s handle or email. You can also pass additional substitutions in the array parameter <code class="language-plaintext highlighter-rouge">$subs</code> - each key in <code class="language-plaintext highlighter-rouge">$subs</code> will be substituted for its corresponding value.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_suspend_notifications($suspend)</code></strong> suspends the sending of notifications to users if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">true</code>, or reinstates it if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">false</code>. This might be useful if you are programmatically creating or modifying content or other database information and want to avoid sending inappropriate emails.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_send_email($params)</code></strong> sends an email as specified by the array <code class="language-plaintext highlighter-rouge">$params</code> and returns whether the operation was successful from the server’s perspective (this does not guarantee delivery). The <code class="language-plaintext highlighter-rouge">$params</code> array should contain the elements <code class="language-plaintext highlighter-rouge">'fromemail'</code> (sender email), <code class="language-plaintext highlighter-rouge">'fromname'</code> (sender name), <code class="language-plaintext highlighter-rouge">'toemail'</code> (recipient email), <code class="language-plaintext highlighter-rouge">'toname'</code> (recipient name), <code class="language-plaintext highlighter-rouge">'subject'</code> (subject line), <code class="language-plaintext highlighter-rouge">'body'</code> (UTF-8 encoded email body) and <code class="language-plaintext highlighter-rouge">'html'</code> (<code class="language-plaintext highlighter-rouge">true</code> if <code class="language-plaintext highlighter-rouge">$params['body']</code> is HTML-formatted, <code class="language-plaintext highlighter-rouge">false</code> otherwise).</li>
+</ul>
+
+<h2 id="option-management-in-appoptionsphp">Option management in <code class="language-plaintext highlighter-rouge">app/options.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_options($names)</code></strong> returns an array mapping all the options in the <code class="language-plaintext highlighter-rouge">$names</code> array to their values. This may be easier than calling <code class="language-plaintext highlighter-rouge">qa_opt()</code> from <code class="language-plaintext highlighter-rouge">qa-base.php</code> many times.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_using_tags()</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_using_categories()</code></strong> respectively return whether Q2A is using tags or categories to classify questions. Note that it is possible to use both tags and categories simultaneously, or to use neither.</li>
+</ul>
+
+<h2 id="post-management-in-apppostsphp-and-apppost-createphp">Post management in <code class="language-plaintext highlighter-rouge">app/posts.php</code> and <code class="language-plaintext highlighter-rouge">app/post-create.php</code></h2>
+
+<p>Note that all <code class="language-plaintext highlighter-rouge">qa_post_...()</code> functions will send the appropriate email notifications and event reports, as well as update database indexes and counts. This can be prevented with the <code class="language-plaintext highlighter-rouge">qa_suspend...()</code> functions, described elsewhere on this page.</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_create($type, $parentpostid, $title, $content, $format, $categoryid, $tags, $userid)</code></strong> creates a new post in the database, and returns its <code class="language-plaintext highlighter-rouge">postid</code>. Set <code class="language-plaintext highlighter-rouge">$type</code> to <code class="language-plaintext highlighter-rouge">'Q'</code> for a new question, <code class="language-plaintext highlighter-rouge">'A'</code> for an answer, or <code class="language-plaintext highlighter-rouge">'C'</code> for a comment. To queue the post for moderation (requires Q2A 1.5+), set <code class="language-plaintext highlighter-rouge">$type</code> to <code class="language-plaintext highlighter-rouge">'Q_QUEUED'</code>, <code class="language-plaintext highlighter-rouge">'A_QUEUED'</code>, or <code class="language-plaintext highlighter-rouge">'C_QUEUED'</code>. For questions, set <code class="language-plaintext highlighter-rouge">$parentpostid</code> to the <code class="language-plaintext highlighter-rouge">postid</code> of the answer to which the question is related, or <code class="language-plaintext highlighter-rouge">null</code> if (as in most cases) the question is not related to an answer. For answers, set <code class="language-plaintext highlighter-rouge">$parentpostid</code> to the <code class="language-plaintext highlighter-rouge">postid</code> of the question being answered. For comments, set <code class="language-plaintext highlighter-rouge">$parentpostid</code> to the <code class="language-plaintext highlighter-rouge">postid</code> of the question or answer to which the comment relates. The <code class="language-plaintext highlighter-rouge">$content</code> and <code class="language-plaintext highlighter-rouge">$format</code> parameters go together - if <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">''</code> then <code class="language-plaintext highlighter-rouge">$content</code> should be in plain UTF-8 text, and if <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">'html'</code> then <code class="language-plaintext highlighter-rouge">$content</code> should be in UTF-8 HTML. Other values of <code class="language-plaintext highlighter-rouge">$format</code> may be allowed if an appropriate <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-viewer/">viewer module</a> is installed. The <code class="language-plaintext highlighter-rouge">$title</code>, <code class="language-plaintext highlighter-rouge">$categoryid</code> and <code class="language-plaintext highlighter-rouge">$tags</code> parameters are only relevant when creating a question - <code class="language-plaintext highlighter-rouge">$tags</code> can either be an array of tags, or a string of tags separated by commas. The new post will be assigned to <code class="language-plaintext highlighter-rouge">$userid</code> if it is not <code class="language-plaintext highlighter-rouge">null</code>, otherwise it will be anonymous. Additional optional parameters set notification, extra question fields and names on anonymous posts.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_set_content($postid, $title, $content, $format, $tags)</code></strong> changes the data stored for post <code class="language-plaintext highlighter-rouge">$postid</code> based on any of the <code class="language-plaintext highlighter-rouge">$title</code>, <code class="language-plaintext highlighter-rouge">$content</code>, <code class="language-plaintext highlighter-rouge">$format</code> and <code class="language-plaintext highlighter-rouge">$tags</code> parameters passed which are not <code class="language-plaintext highlighter-rouge">null</code>. The meaning of these parameters is the same as for <code class="language-plaintext highlighter-rouge">qa_post_create()</code> above. Additional optional parameters allow changes to post notification, extra question fields, names on anonymous posts and can identify the user who made the change.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_set_category($postid, $categoryid)</code></strong> changes the category of <code class="language-plaintext highlighter-rouge">$postid</code> to <code class="language-plaintext highlighter-rouge">$categoryid</code>. The category of all related posts (shown together on the same question page) will also be changed.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_set_selchildid($questionid, $answerid)</code></strong> sets the selected best answer of <code class="language-plaintext highlighter-rouge">$questionid</code> to <code class="language-plaintext highlighter-rouge">$answerid</code> (or to none if <code class="language-plaintext highlighter-rouge">$answerid</code> is <code class="language-plaintext highlighter-rouge">null</code>).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_set_closed($questionid, $closed, $originalpostid, $note)</code></strong> closes <code class="language-plaintext highlighter-rouge">$questionid</code> if <code class="language-plaintext highlighter-rouge">$closed</code> is true, otherwises it reopens it (requires Q2A 1.5+). If <code class="language-plaintext highlighter-rouge">$closed</code> is true, pass either the <code class="language-plaintext highlighter-rouge">$originalpostid</code> of the question that it is a duplicate of, or a <code class="language-plaintext highlighter-rouge">$note</code> to explain why it’s closed. The other parameter should be set to <code class="language-plaintext highlighter-rouge">null</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_set_hidden($postid, $hidden)</code></strong> hides <code class="language-plaintext highlighter-rouge">$postid</code> if <code class="language-plaintext highlighter-rouge">$hidden</code> is <code class="language-plaintext highlighter-rouge">true</code>, otherwise it shows the post. If the post is waiting for moderator approval (Q2A 1.5+), <code class="language-plaintext highlighter-rouge">$hidden=true</code> rejects the post, and <code class="language-plaintext highlighter-rouge">$hidden=false</code> approves it.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_set_status($postid, $status)</code></strong> changes the status of <code class="language-plaintext highlighter-rouge">$postid</code>, where <code class="language-plaintext highlighter-rouge">$status</code> is one of <code class="language-plaintext highlighter-rouge">QA_POST_STATUS_NORMAL</code>, <code class="language-plaintext highlighter-rouge">QA_POST_STATUS_HIDDEN</code> or <code class="language-plaintext highlighter-rouge">QA_POST_STATUS_QUEUED</code>. Requires Q2A 1.6+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_delete($postid)</code></strong> deletes <code class="language-plaintext highlighter-rouge">$postid</code> from the database, hiding it first if appropriate.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_post_get_full($postid)</code></strong> retrieves the full information from the database for <code class="language-plaintext highlighter-rouge">$postid</code>, returning it in an array.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_suspend_post_indexing($suspend)</code></strong> suspends the indexing (and unindexing) of posts in the database if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">true</code>, and reinstates it if <code class="language-plaintext highlighter-rouge">$suspend</code> is <code class="language-plaintext highlighter-rouge">false</code>. This might be useful if you are programmatically creating or modifying a lot of content, and want to speed up the process, leaving Q2A’s search results out of date. Once you have finished with the database modifications, you should use the button at the bottom of the ‘Stats’ page of the ‘Admin’ panel to reindex all posts.</li>
+</ul>
+
+<h2 id="user-management-in-appusersphp">User management in <code class="language-plaintext highlighter-rouge">app/users.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_logged_in_userid()</code></strong> returns the userid of the currently logged in Q2A user, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_logged_in_handle()</code></strong> returns the handle/username of the currently logged in user, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_logged_in_email()</code></strong> returns the email address of the currently logged in user, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_logged_in_flags()</code></strong> returns flags for the currently logged in user, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in. The flag bit masks are defined in the <code class="language-plaintext highlighter-rouge">QA_USER_FLAGS_*</code> constants at the top of <code class="language-plaintext highlighter-rouge">app/users.php</code>. If the <code class="language-plaintext highlighter-rouge">QA_USER_FLAGS_USER_BLOCKED</code> or <code class="language-plaintext highlighter-rouge">QA_USER_FLAGS_MUST_CONFIRM</code> (Q2A 1.5+) or <code class="language-plaintext highlighter-rouge">QA_USER_FLAGS_MUST_APPROVE</code> (Q2A 1.6+) bit is set, the user should be prevented from performing any actions that modify information in the database.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_logged_in_level()</code></strong> returns a number representing the privilege level of the currently logged in user, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in. You can compare this against the <code class="language-plaintext highlighter-rouge">QA_USER_LEVEL_*</code> constants defined at the top of <code class="language-plaintext highlighter-rouge">app/users.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_logged_in_points()</code></strong> returns the points of the currently logged in user, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_is_logged_in()</code></strong> returns <code class="language-plaintext highlighter-rouge">true</code> if a user is logged in, <code class="language-plaintext highlighter-rouge">false</code> otherwise. Requires Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_handle_to_userid($handle)</code></strong> returns the userid for the user identified by <code class="language-plaintext highlighter-rouge">$handle</code> or <code class="language-plaintext highlighter-rouge">null</code> if no user matches. This requires Q2A 1.6+, but see also <code class="language-plaintext highlighter-rouge">qa_handles_to_userids(...)</code> and <code class="language-plaintext highlighter-rouge">qa_userids_to_handles(...)</code> which were added in Q2A 1.5.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_user_level_for_post($post)</code></strong> returns the privilege level of the current user for <code class="language-plaintext highlighter-rouge">$post</code>, which contains information about a post retrieved from the database (e.g. via <code class="language-plaintext highlighter-rouge">qa_post_get_full(...)</code> in <code class="language-plaintext highlighter-rouge">app/posts.php</code>). This can be higher than the level returned by <code class="language-plaintext highlighter-rouge">qa_get_logged_in_level(...)</code> if the user has special privileges in the post’s category. Requires Q2A 1.6+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_user_moderation_reason()</code></strong> returns whether the current user should have their new content queued for moderation. If moderation is required, one of the strings <code class="language-plaintext highlighter-rouge">'login'</code>, <code class="language-plaintext highlighter-rouge">'approve'</code> (Q2A 1.6+), <code class="language-plaintext highlighter-rouge">'confirm'</code> or <code class="language-plaintext highlighter-rouge">'points'</code> will be returned, with meanings explained in the function’s documentation. If moderation is not required, the function returns <code class="language-plaintext highlighter-rouge">false</code>. Requires Q2A 1.5+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_form_security_code($action)</code></strong> can be used to prevent cross-site request forgery (CSRF) attacks on your forms. Pass an arbitrary string specific to your form in <code class="language-plaintext highlighter-rouge">$action</code> and this function returns a code which should be placed in a hidden field in your form. Then call <strong><code class="language-plaintext highlighter-rouge">qa_check_form_security_code($action, $value)</code></strong> when your form is submitted, with the same <code class="language-plaintext highlighter-rouge">$action</code> as before, and the <code class="language-plaintext highlighter-rouge">$value</code> obtained from the hidden field. If <code class="language-plaintext highlighter-rouge">$value</code> is valid and the request is safe, the function returns <code class="language-plaintext highlighter-rouge">true</code>. Otherwise, it returns <code class="language-plaintext highlighter-rouge">false</code> and logs the reason for the mismatch in your server’s <code class="language-plaintext highlighter-rouge">error_log</code> file, if the reason is suspicious. Requires Q2A 1.6+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_avatar_blob_url($blobId, $size, $absolute)</code></strong> returns the URL to the given <code class="language-plaintext highlighter-rouge">$blobId</code> constraining it in width and height to the given <code class="language-plaintext highlighter-rouge">$size</code>. Requires Q2A 1.8+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_gravatar_url($email, $size)</code></strong> returns the URL for the Gravatar corresponding to <code class="language-plaintext highlighter-rouge">$email</code>, constrained to the given <code class="language-plaintext highlighter-rouge">$size</code>. Requires Q2A 1.8+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_user_avatar_source($flags, $email, $blobId)</code></strong> returns where the avatar will be fetched from for the given user <code class="language-plaintext highlighter-rouge">$flags</code>. The possible return values are <code class="language-plaintext highlighter-rouge">'gravatar'</code> for an avatar that will be fetched from Gravatar, <code class="language-plaintext highlighter-rouge">'local-user'</code> for an avatar fetched locally from the user’s profile, <code class="language-plaintext highlighter-rouge">'local-default'</code> for an avatar fetched locally from the default avatar blob ID, and <code class="language-plaintext highlighter-rouge">NULL</code> if the avatar could not be fetched from any of these sources. Requires Q2A 1.8+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_user_avatar_url($flags, $email, $blobId, $size, $absolute)</code></strong> returns the avatar URL, either from Gravatar or from the given <code class="language-plaintext highlighter-rouge">$blobId</code>, constrained to <code class="language-plaintext highlighter-rouge">$size</code> pixels. Requires Q2A 1.8+.</li>
+</ul>
+
+<h2 id="large-object-management-in-appblobsphp">Large object management in <code class="language-plaintext highlighter-rouge">app/blobs.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_create_blob($content, $format)</code></strong> creates a new binary large object (BLOB) in the Q2A database or on disk and returns its <code class="language-plaintext highlighter-rouge">$blobid</code>, or <code class="language-plaintext highlighter-rouge">null</code> upon failure. The <code class="language-plaintext highlighter-rouge">$content</code> may contain up to 16 Mb of arbitrary data in any format, and the <code class="language-plaintext highlighter-rouge">$format</code> should contain the appropriate corresponding file extension, e.g. <code class="language-plaintext highlighter-rouge">'jpeg'</code>, <code class="language-plaintext highlighter-rouge">'gif'</code>, <code class="language-plaintext highlighter-rouge">'png'</code>, <code class="language-plaintext highlighter-rouge">'txt'</code>, <code class="language-plaintext highlighter-rouge">'doc'</code>, <code class="language-plaintext highlighter-rouge">'xls'</code>, <code class="language-plaintext highlighter-rouge">'pdf'</code>. This function was added in Q2A 1.6. For earlier versions of Q2A, use <code class="language-plaintext highlighter-rouge">qa_db_blob_create(...)</code> in <code class="language-plaintext highlighter-rouge">db/blobs.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_read_blob($blobid)</code></strong> reads the object identified by <code class="language-plaintext highlighter-rouge">$blobid</code> from the database or disk and returns it in an array with the keys <code class="language-plaintext highlighter-rouge">'content'</code> and <code class="language-plaintext highlighter-rouge">'format'</code>. If the BLOB does not exist, it returns <code class="language-plaintext highlighter-rouge">null</code> instead. This function was added in Q2A 1.6. For earlier versions of Q2A, use <code class="language-plaintext highlighter-rouge">qa_db_blob_read(...)</code> in <code class="language-plaintext highlighter-rouge">db/blobs.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_delete_blob($blobid)</code></strong> deletes the object identified by <code class="language-plaintext highlighter-rouge">$blobid</code> from the database, if it exists. This function was added in Q2A 1.6. For earlier versions of Q2A, use <code class="language-plaintext highlighter-rouge">qa_db_blob_delete(...)</code> in <code class="language-plaintext highlighter-rouge">db/blobs.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_blob_exists($blobid)</code></strong> returns whether there is an object identified by <code class="language-plaintext highlighter-rouge">$blobid</code>. This function was added in Q2A 1.6. For earlier versions of Q2A, use <code class="language-plaintext highlighter-rouge">qa_db_blob_exists(...)</code> in <code class="language-plaintext highlighter-rouge">db/blobs.php</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_blob_url($blobid, $absolute)</code></strong> returns a URL which can be used to view or download <code class="language-plaintext highlighter-rouge">$blobid</code>. If <code class="language-plaintext highlighter-rouge">$absolute</code> is <code class="language-plaintext highlighter-rouge">false</code>, this URL will be relative to the current Q2A page being requested, otherwise the URL will be absolute.</li>
+</ul>
+
+<h2 id="upload-management-in-appuploadphp-q2a-16">Upload management in <code class="language-plaintext highlighter-rouge">app/upload.php</code> (Q2A 1.6+)</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_get_max_upload_size()</code></strong> returns the maximum size in bytes of a BLOB that can be uploaded by a user, taking into account database constraints and PHP’s <code class="language-plaintext highlighter-rouge">upload_max_filesize</code> parameter.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_upload_file($localfilename, $sourcefilename)</code></strong> allows a file to be uploaded into Q2A’s BLOB (large object) storage. Pass the <code class="language-plaintext highlighter-rouge">$localfilename</code> where the file is currently stored on the server (temporarily) and the <code class="language-plaintext highlighter-rouge">$sourcefilename</code> of the original file on the user’s computer. If you are using PHP’s usual file upload mechanism, these are obtained from <code class="language-plaintext highlighter-rouge">$_FILES[..]['tmp_name']</code> and <code class="language-plaintext highlighter-rouge">$_FILES[..]['name']</code> respectively. Additional parameters allow the upload to be restricted by size or to images only, and for images to be scaled. If an error occurred, the function returns an array with key <code class="language-plaintext highlighter-rouge">'error'</code> containing the error string. Otherwise it returns an array with an element <code class="language-plaintext highlighter-rouge">'blobid'</code> containing the id of the BLOB created and <code class="language-plaintext highlighter-rouge">'bloburl'</code> containing the URL that can be used to view or download the blob.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_upload_file_one()</code></strong> uploads a file into Q2A’s BLOB (large object) storage, taking the first element of PHP’s <code class="language-plaintext highlighter-rouge">$_FILES</code> array automatically. It returns the same array of elements as <code class="language-plaintext highlighter-rouge">qa_upload_file()</code>.</li>
+</ul>
+
+<h2 id="metadata-management-in-dbmetasphp-q2a-15">Metadata management in <code class="language-plaintext highlighter-rouge">db/metas.php</code> (Q2A 1.5+)</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_usermeta_set($userid, $key, $value)</code></strong> sets metadata <code class="language-plaintext highlighter-rouge">$key</code> for user <code class="language-plaintext highlighter-rouge">$userid</code> to <code class="language-plaintext highlighter-rouge">$value</code>. Each user can only have a single piece of metadata with a particular key. Keys beginning with <code class="language-plaintext highlighter-rouge">qa_</code> are reserved for the Q2A core.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_usermeta_clear($userid, $key)</code></strong> clears metadata <code class="language-plaintext highlighter-rouge">$key</code> for user <code class="language-plaintext highlighter-rouge">$userid</code>. An array of keys can also be passed in <code class="language-plaintext highlighter-rouge">$key</code>, in which case the metadata for every key is removed.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_usermeta_get($userid, $key)</code></strong> returns the value of metadata <code class="language-plaintext highlighter-rouge">$key</code> for user <code class="language-plaintext highlighter-rouge">$userid</code>, or <code class="language-plaintext highlighter-rouge">null</code> if none exists. An array of keys can also be passed in <code class="language-plaintext highlighter-rouge">$key</code>, in which case an array is returned which maps metadata keys to values.</li>
+  <li>The corresponding functions <strong><code class="language-plaintext highlighter-rouge">qa_db_postmeta_set($postid, $key, $value)</code></strong>, <strong><code class="language-plaintext highlighter-rouge">qa_db_postmeta_clear($postid, $key)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_db_postmeta_get($postid, $key)</code></strong> work the same way for metadata on individual posts.</li>
+  <li>The functions <strong><code class="language-plaintext highlighter-rouge">qa_db_categorymeta_set($categoryid, $key, $value)</code></strong>, <strong><code class="language-plaintext highlighter-rouge">qa_db_categorymeta_clear($categoryid, $key)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_db_categorymeta_get($categoryid, $key)</code></strong> work the same way for metadata on categories.</li>
+  <li>The functions <strong><code class="language-plaintext highlighter-rouge">qa_db_tagmeta_set($tag, $key, $value)</code></strong>, <strong><code class="language-plaintext highlighter-rouge">qa_db_tagmeta_clear($tag, $key)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_db_tagmeta_get($tag, $key)</code></strong> work the same way for metadata on tags, where <code class="language-plaintext highlighter-rouge">$tag</code> is the text of a tag.</li>
+</ul>
+
+<h2 id="user-notice-management-in-dbnoticesphp-q2a-15">User notice management in <code class="language-plaintext highlighter-rouge">db/notices.php</code> (Q2A 1.5+)</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_usernotice_create($userid, $content, $format, $tags)</code></strong> creates a new notice to be displayed to user <code class="language-plaintext highlighter-rouge">$userid</code> and returns its <code class="language-plaintext highlighter-rouge">noticeid</code>. The notice will appear at the top of every page until the user dismisses it - this also deletes it from the database. The <code class="language-plaintext highlighter-rouge">$content</code> and <code class="language-plaintext highlighter-rouge">$format</code> parameters describe the content of the notice together - if <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">''</code> then <code class="language-plaintext highlighter-rouge">$content</code> should be in plain UTF-8 text, and if <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">'html'</code> then <code class="language-plaintext highlighter-rouge">$content</code> should be in UTF-8 HTML. You can use the <code class="language-plaintext highlighter-rouge">$tags</code> parameter to add some additional information to the notice which is stored in the database but not displayed to the user.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_usernotice_delete($userid, $noticeid)</code></strong> deletes notice <code class="language-plaintext highlighter-rouge">$noticeid</code> for user <code class="language-plaintext highlighter-rouge">$userid</code>, if it exists in the database.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_db_usernotices_list($userid)</code></strong> returns a nested array describing the notices which are being stored and displayed for user <code class="language-plaintext highlighter-rouge">$userid</code>. Each element in the returned array contains an array with three labelled values - <code class="language-plaintext highlighter-rouge">'noticeid'</code>, <code class="language-plaintext highlighter-rouge">'tags'</code> (as passed when the notice was created) and <code class="language-plaintext highlighter-rouge">'created'</code> (a Unix timestamp of the notice creation time).</li>
+</ul>
+
+<h2 id="array-manipulation-in-utilsortphp">Array manipulation in <code class="language-plaintext highlighter-rouge">util/sort.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_sort_by(&amp;$array, $by1)</code></strong> sorts the nested array <code class="language-plaintext highlighter-rouge">$array</code> in place, by comparing the sub-element with key <code class="language-plaintext highlighter-rouge">$by1</code> of each inner array within <code class="language-plaintext highlighter-rouge">$array</code>. For example, if <code class="language-plaintext highlighter-rouge">$array=array(array('n'=&gt;1,'w'=&gt;'dog'), array('n'=&gt;2,'w'=&gt;'cat'))</code> then <code class="language-plaintext highlighter-rouge">qa_sort_by(&amp;$array, 'n')</code> would leave <code class="language-plaintext highlighter-rouge">$array</code> unchanged, whereas <code class="language-plaintext highlighter-rouge">qa_sort_by(&amp;$array, 'w')</code> would reverse its order. An additional parameter <code class="language-plaintext highlighter-rouge">$by2</code> can also be passed, to allow an additional comparison in cases where the first key matches.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_array_insert(&amp;$array, $beforekey, $addelements)</code></strong> inserts all the elements from the array <code class="language-plaintext highlighter-rouge">$addelements</code> into <code class="language-plaintext highlighter-rouge">$array</code>, preserving all keys in both arrays. The new elements are positioned together before key <code class="language-plaintext highlighter-rouge">$beforekey</code> in <code class="language-plaintext highlighter-rouge">$array</code> and their order is preserved. If <code class="language-plaintext highlighter-rouge">$beforekey</code> cannot be found in <code class="language-plaintext highlighter-rouge">$array</code>, the elements are appended at the end instead. Requires Q2A 1.4.2+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_array_reorder(...)</code></strong> allows some of the elements within an array to be moved together and/or reordered relative to each other. Please see the source code for documentation. Requires Q2A 1.6+.</li>
+</ul>
+
+<h2 id="string-manipulation-in-utilstringphp">String manipulation in <code class="language-plaintext highlighter-rouge">util/string.php</code></h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_string_to_words($string)</code></strong> breaks <code class="language-plaintext highlighter-rouge">$string</code> up into words, and returns them in lower case in an array. The function contains several additional parameters that provide more control over this process - please see the source code.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_string_remove_accents($string)</code></strong> returns <code class="language-plaintext highlighter-rouge">$string</code> with Roman accents removed, e.g. <code class="language-plaintext highlighter-rouge">mêlée</code> to <code class="language-plaintext highlighter-rouge">melee</code>. Requires Q2A 1.4+.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_tags_to_tagstring($tags)</code></strong> takes an array of tags, and returns the string to be stored for those tags in the database.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_tagstring_to_tags($tags)</code></strong> takes a list of tags from the database, and returns it as an array of tags.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_shorten_string_line($string, $length)</code></strong> converts <code class="language-plaintext highlighter-rouge">$string</code> to a single line then removes words from the middle in order to make the total number of characters no more than <code class="language-plaintext highlighter-rouge">$length</code>. Useful for tooltips, etc…</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_block_words_replace($string, $wordspreg)</code></strong> replaces any words in <code class="language-plaintext highlighter-rouge">$string</code> censored by the site administrator with asterisks. Pass the output of <code class="language-plaintext highlighter-rouge">qa_get_block_words_preg()</code> (from <code class="language-plaintext highlighter-rouge">app/options.php</code>) in the <code class="language-plaintext highlighter-rouge">$wordspreg</code> parameter.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">qa_strlen($string)</code></strong>, <strong><code class="language-plaintext highlighter-rouge">qa_strtolower($string)</code></strong> and <strong><code class="language-plaintext highlighter-rouge">qa_substr($string, $start, $length)</code></strong> are wrappers for the standard and multibyte PHP string functions with similar names. If PHP was compiled with multibyte string support, PHP’s <code class="language-plaintext highlighter-rouge">mb_*(...)</code> functions will be used with UTF-8 as the encoding for the <code class="language-plaintext highlighter-rouge">$string</code> parameter. Otherwise <code class="language-plaintext highlighter-rouge">$string</code> will be treated as ASCII.</li>
+</ul>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

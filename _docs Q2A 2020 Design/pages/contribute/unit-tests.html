@@ -1,0 +1,249 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Unit Tests (Contribute) - Question2Answer</title>
+	<meta name="description" content=="Accessing Question2Answer from external PHP code"/>
+	<link rel="canonical" href="https://docs.question2answer.org/pages/contribute/unit-tests/"/>
+	
+	<!-- Favicons -->
+	<link href="../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../css/styles.css"/>
+	<link rel="stylesheet" href="../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item selected-nav">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/services" class="nav-item">Services</a></li>
+					<li><a href="https://www.question2answer.org/sites.php" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/contribute">Contribute</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/contribute/unit-tests">Unit Tests</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+				
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/contribute/">Issues</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/contribute/coding-style">Coding Style</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/contribute/unit-tests">Unit Tests</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/contribute/docs">Docs</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="writing-unit-tests-for-question2answer">Writing unit tests for Question2Answer</h1>
+
+						<p>Question2Answer has a (currently small) unit test suite. Unit tests check ‘units’ of code (functions) in isolation to ensure they all work as expected. We’d like to expand our test coverage as much as possible; here are a few tips for contributing.</p>
+
+						<h2 id="running-the-unit-tests">Running the unit tests</h2>
+
+						<p>Testing requires <a href="https://phpunit.de/">PHPUnit</a>. The latest version of PHPUnit requires PHP 5.6 so most users will want v4.8 which supports PHP 5.3+. For Mac or Linux you can follow these steps:</p>
+
+						<ol>
+						  <li>Download <a href="https://phar.phpunit.de/phpunit-4.8.35.phar">PHPUnit 4.8</a> (PHP archive file).</li>
+						  <li>Mark it as executable using the command <code class="language-plaintext highlighter-rouge">chmod +x phpunit.phar</code></li>
+						  <li>Move it to your executable directory: <code class="language-plaintext highlighter-rouge">mv phpunit.phar /usr/local/bin/phpunit</code></li>
+						  <li>Navigate to the Question2Answer root directory.</li>
+						  <li>Run <code class="language-plaintext highlighter-rouge">phpunit --bootstrap qa-tests/autoload.php qa-tests</code></li>
+						</ol>
+
+						<p>Windows users can find <a href="https://phpunit.de/manual/current/en/installation.html">detailed instructions here</a>.</p>
+
+						<p>Also check out the <a href="http://phpunit.de/getting-started.html">PHPunit documentation</a> for more information about PHPUnit and unit testing in general.</p>
+
+						<h2 id="writing-tests">Writing tests</h2>
+
+						<p>Unit tests are grouped according to the file in which the original functions reside. For example, tests for function from <code class="language-plaintext highlighter-rouge">qa-include/app/users.php</code> are in <code class="language-plaintext highlighter-rouge">AppUsersTest.php</code>. The file should contain a class of the same name, like this:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">require_once</span> <span class="no">QA_INCLUDE_DIR</span><span class="mf">.</span><span class="s1">'app/users.php'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">AppUsersTest</span> <span class="kd">extends</span> <span class="nc">PHPUnit_Framework_TestCase</span>
+<span class="p">{</span>
+	<span class="c1">// test functions go here</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+						<p>Note that we include the original <code class="language-plaintext highlighter-rouge">app/users.php</code> file so that we can call the functions.</p>
+
+						<p>The tests themselves should be named as <code class="language-plaintext highlighter-rouge">test__</code> followed by the original function name. For example, tests for <code class="language-plaintext highlighter-rouge">qa_permit_value_error</code> should be in a function <code class="language-plaintext highlighter-rouge">test__qa_permit_value_error</code>.</p>
+
+						<p>Optionally, multiple tests for the same function may be split into several test functions; each of these should have a suffix consisting of a double underscore and appropriate identifier. For example the tests for <code class="language-plaintext highlighter-rouge">qa_block_ip_match</code> are split into <code class="language-plaintext highlighter-rouge">test__qa_block_ip_match__ipv4</code> and <code class="language-plaintext highlighter-rouge">test__qa_block_ip_match__ipv6</code> for testing IPv4 and IPv6 values respectively.</p>
+
+						<p>Tests contain <em>assertions</em>, which are functions that compare the result you get from a function with your expected output. The main ones we use are <code class="language-plaintext highlighter-rouge">assertEquals</code> to check if two things are equal, <code class="language-plaintext highlighter-rouge">assertSame</code> to check they are equal and the same type, and <code class="language-plaintext highlighter-rouge">assertTrue</code>/<code class="language-plaintext highlighter-rouge">assertFalse</code> to check if a result is true/false. Here’s an example from <code class="language-plaintext highlighter-rouge">UtilStringTest.php</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">require_once</span> <span class="no">QA_INCLUDE_DIR</span><span class="mf">.</span><span class="s1">'util/string.php'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">UtilStringTest</span> <span class="kd">extends</span> <span class="nc">PHPUnit_Framework_TestCase</span>
+<span class="p">{</span>
+	<span class="k">public</span> <span class="k">function</span> <span class="n">test__qa_tags_to_tagstring</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="nv">$test</span> <span class="o">=</span> <span class="nf">qa_tags_to_tagstring</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">,</span> <span class="s1">'World'</span><span class="p">));</span>
+		<span class="nv">$expected</span> <span class="o">=</span> <span class="s1">'Hello,World'</span><span class="p">;</span>
+
+		<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertEquals</span><span class="p">(</span><span class="nv">$expected</span><span class="p">,</span> <span class="nv">$test</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+						<p>Take a look at the <a href="https://phpunit.de/manual/4.8/en/writing-tests-for-phpunit.html">PHPUnit docs</a> and our existing tests to see more examples.</p>
+
+						<h2 id="handling-options">Handling options</h2>
+
+						<p>Tests must be able to run without the database, since of course everyone running the tests does not have the same database. One roadblock to this is Q2A’s options, which are used by many different functions. However, we can make Q2A skip the database by manually setting up an options cache.</p>
+
+						<p>First we need to check which options the function we’re testing uses. Then we add some test values to the <code class="language-plaintext highlighter-rouge">$qa_options_cache</code> variable. This also means we can test Q2A functions with different configurations of options. Here’s an example from <code class="language-plaintext highlighter-rouge">AppUsersTest.php</code>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">test__qa_permit_value_error</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="c1">// set options cache to bypass database</span>
+	<span class="k">global</span> <span class="nv">$qa_options_cache</span><span class="p">;</span>
+	<span class="nv">$qa_options_cache</span><span class="p">[</span><span class="s1">'confirm_user_emails'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
+	<span class="nv">$qa_options_cache</span><span class="p">[</span><span class="s1">'moderate_users'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'0'</span><span class="p">;</span>
+
+	<span class="c1">// run tests using those options...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../js/sticky_bar.js"></script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Login - Plugin modules documentation - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules/login"/>
+	
+	<!-- Favicons -->
+	<link href="../../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/page">Login</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="login-modules">Login Modules</h1>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+						<p>A login module enables users to log in to Q2A via an external identity provider, such as <a href="http://openid.net/">Open ID</a>. The module can display some HTML alongside Q2A’s login and register links in the navigation menu, and/or on Q2A’s login and register pages. This HTML can use a variety of methods to obtain the user’s credentials, such as linking to a separate form or showing a pop-up via Javascript.</p>
+
+						<p>When your plugin logs in a user for the first time, a normal Q2A account is created for the user, and the user’s profile will be prepopulated using information you supply. This Q2A account is permanently connected to the external identity you supply, so that the user can log in using the same external identity in future. The user will also be able to log into their Q2A account using the standard Q2A login form, but only once they have set a password in their ‘My Account’ page.</p>
+
+						<p>In order to log in a user, your plugin calls function <code class="language-plaintext highlighter-rouge">qa_log_in_external_user()</code> at the appropriate time. The same call is used whether the user is registering for the first time or logging in to an existing account. Q2A takes care of handling each case as appropriate. The function <code class="language-plaintext highlighter-rouge">qa_log_in_external_user()</code> takes the following parameters in order:</p>
+
+						<ol>
+						  <li>
+							<p>A <code class="language-plaintext highlighter-rouge">$source</code> string uniquely identifying your login method, such as <code class="language-plaintext highlighter-rouge">'facebook'</code> or <code class="language-plaintext highlighter-rouge">'openid'</code>, up to 16 ASCII characters in length.</p>
+						  </li>
+						  <li>
+							<p>An <code class="language-plaintext highlighter-rouge">$identifier</code> for the user supplied by the external identity provider, up to 1024 bytes in length, which will always be the same for that user. Generally this will be a numerical user ID, but it can also be a URL or any other unique identifier.</p>
+						  </li>
+						  <li>
+							<p>An array <code class="language-plaintext highlighter-rouge">$fields</code> of optional additional information about the user, which can contain any of the following elements:</p>
+
+							<ul>
+							  <li><code class="language-plaintext highlighter-rouge">$fields['email']</code> for the user’s email address. Beginning in Q2A 1.5.4, this will be ignored if there is already a user in the database with the same email address.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$fields['confirmed']</code> can be <code class="language-plaintext highlighter-rouge">true</code> to indicate that the user has confirmed their email address.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$fields['handle']</code> for a suggested username. Q2A will modify this sensibly if it clashes with another user.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$fields['level']</code> for the user’s privilege level. Use one of the <code class="language-plaintext highlighter-rouge">QA_USER_LEVEL_*</code> constants defined at the top of <code class="language-plaintext highlighter-rouge">qa-app-users.php</code>, e.g. <code class="language-plaintext highlighter-rouge">QA_USER_LEVEL_MODERATOR</code>. If omitted, <code class="language-plaintext highlighter-rouge">QA_USER_LEVEL_BASIC</code> is assumed.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$fields['name']</code>, <code class="language-plaintext highlighter-rouge">$fields['location']</code>, <code class="language-plaintext highlighter-rouge">$fields['website']</code> and <code class="language-plaintext highlighter-rouge">$fields['about']</code> for the user’s profile.</li>
+							  <li><code class="language-plaintext highlighter-rouge">$fields['avatar']</code> for the user’s avatar picture. This should contain the raw JPEG/GIF/PNG image data. If necessary you can obtain this data from a URL using Q2A’s <code class="language-plaintext highlighter-rouge">qa_retrieve_url()</code> function.</li>
+							</ul>
+						  </li>
+						</ol>
+
+						<p>Each time you call <code class="language-plaintext highlighter-rouge">qa_log_in_external_user()</code> for a particular user, you should pass the exact same values for <code class="language-plaintext highlighter-rouge">$source</code> and <code class="language-plaintext highlighter-rouge">$identifier</code>. This enables Q2A to determine whether the user already has an account - if so, <code class="language-plaintext highlighter-rouge">$fields</code> will be ignored.</p>
+
+						<p>The PHP <code class="language-plaintext highlighter-rouge">class</code> for a login module can contain the following functions (all are optional):</p>
+
+						<ul>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">check_login()</code></strong> is called early on during every page request if a user is not currently logged in. This gives your module the opportunity to log in a user based on a browser cookie (like Facebook) or a parameter on the URL.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">match_source($source)</code></strong> should return <code class="language-plaintext highlighter-rouge">true</code> if your module uses <code class="language-plaintext highlighter-rouge">$source</code> in calls to <code class="language-plaintext highlighter-rouge">qa_log_in_external_user()</code>.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">login_html($tourl, $context)</code></strong> allows your module to display some HTML for connecting with your external identity provider. For example, you could show an image which links to a login form. The Facebook Login plugin included with Q2A displays a login button using the Facebook Javascript API. However you choose to implement the login process, you should redirect the user to <code class="language-plaintext highlighter-rouge">$tourl</code> once the login is complete. The $context parameter tells you where the HTML will be displayed - <code class="language-plaintext highlighter-rouge">'menu'</code> for the top right menu, <code class="language-plaintext highlighter-rouge">'login'</code> for Q2A’s login page, and <code class="language-plaintext highlighter-rouge">'register'</code> for Q2A’s register page.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">logout_html($tourl)</code></strong> allows your module to display some HTML for logging out the user, to be displayed in the top right menu. Your <code class="language-plaintext highlighter-rouge">logout_html()</code> function is only called if the current Q2A user was logged in via <code class="language-plaintext highlighter-rouge">qa_log_in_external_user()</code> and your <code class="language-plaintext highlighter-rouge">match_source()</code> function returns <code class="language-plaintext highlighter-rouge">true</code> for the <code class="language-plaintext highlighter-rouge">$source</code> value that was used. The <code class="language-plaintext highlighter-rouge">$tourl</code> parameter contains the URL of the Q2A logout page, to which you <strong>must</strong> redirect the user once your own logout process is complete.</p>
+						  </li>
+						</ul>
+
+						<p>You may choose to request the user’s external login credentials on a page which is served by Q2A. In this case you would include both a login module and a <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-page/">page module</a> in your plugin. The HTML displayed by the login module would link to your custom page, and the page module would display the appropriate form and call <code class="language-plaintext highlighter-rouge">qa_log_in_external_user()</code> when the form was submitted.</p>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+					</div>
+					
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../../js/sticky_bar.js"></script>
+	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

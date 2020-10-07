@@ -1,0 +1,220 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Search - Plugin modules documentation - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules/search"/>
+	
+	<!-- Favicons -->
+	<link href="../../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/page">Search</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="search-modules">Search Modules</h1>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+						<p>A search module (requires Q2A 1.5+) enables plugins to create a custom index of the content in a Q2A site, including questions, answers, comments and custom pages. If a search module is selected by the site administrator, it can replace the default Q2A search results with its own, and optionally include pages from external websites in those results.</p>
+
+						<p>The PHP class for a search module may contain the following functions (all are optional):</p>
+
+						<ul>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">index_post($postid, $type, $questionid, $parentid, $title, $content, $format, $text, $tagstring, $categoryid)</code></strong>. If defined, this function is called when a post should be added to the search index, either because it is new, or because it has just been edited. The parameter <code class="language-plaintext highlighter-rouge">$postid</code> contains the <code class="language-plaintext highlighter-rouge">postid</code> from the database. The <code class="language-plaintext highlighter-rouge">$type</code> will be <code class="language-plaintext highlighter-rouge">'Q'</code> for questions, <code class="language-plaintext highlighter-rouge">'A'</code> for answers, <code class="language-plaintext highlighter-rouge">'C'</code> for comments or <code class="language-plaintext highlighter-rouge">'NOTE'</code> for a note (currently used for question closing explanations). The <code class="language-plaintext highlighter-rouge">$questionid</code> is the <code class="language-plaintext highlighter-rouge">postid</code> of the question to which the post belongs and the <code class="language-plaintext highlighter-rouge">$parentid</code> is the <code class="language-plaintext highlighter-rouge">postid</code> of its immediate parent, or <code class="language-plaintext highlighter-rouge">null</code> if it has none. For questions, <code class="language-plaintext highlighter-rouge">$title</code> contains the title in UTF-8 format, otherwise it is <code class="language-plaintext highlighter-rouge">null</code>. The <code class="language-plaintext highlighter-rouge">$content</code> and <code class="language-plaintext highlighter-rouge">$format</code> parameters describe the post’s content. If <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">''</code>, then <code class="language-plaintext highlighter-rouge">$content</code> contains plain text in UTF-8 encoding. If <code class="language-plaintext highlighter-rouge">$format</code> is <code class="language-plaintext highlighter-rouge">'html'</code>, then <code class="language-plaintext highlighter-rouge">$content</code> contains HTML with UTF-8 encoding. Other values of <code class="language-plaintext highlighter-rouge">$format</code> may be present if a non-standard <a href="https://docs.question2answer.org/pages/documentation/plugins/modules/editor/">editor module</a> is installed. The <code class="language-plaintext highlighter-rouge">$text</code> parameter contains a UTF-8 plain text rendering of the post, which is particularly useful for building a search index. For questions, <code class="language-plaintext highlighter-rouge">$tagstring</code> contains a comma-separated list of tags, otherwise it is <code class="language-plaintext highlighter-rouge">null</code>. Finally, <code class="language-plaintext highlighter-rouge">$categoryid</code> contains the category ID of the post, or <code class="language-plaintext highlighter-rouge">null</code> if there is none. Note that <code class="language-plaintext highlighter-rouge">index_post()</code> is only called when a post has been made visible on the Q2A site - it is not called if a new post was marked for moderation.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">unindex_post($postid)</code></strong>. If defined, this function is called when a post should be removed from the search index, because it has been hidden, deleted, or is about to be edited (in which case <code class="language-plaintext highlighter-rouge">index_post()</code> will be called immediately after). Generally, the parameter <code class="language-plaintext highlighter-rouge">$postid</code> matches a value previously passed to <code class="language-plaintext highlighter-rouge">index_post()</code> when the post was indexed. However in some circumstances the <code class="language-plaintext highlighter-rouge">$postid</code> might never have been indexed, in which case the function should do nothing.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">move_post($postid, $categoryid)</code></strong>. If defined, this function is called when a post’s category is changed. The parameter <code class="language-plaintext highlighter-rouge">$postid</code> is the post’s <code class="language-plaintext highlighter-rouge">postid</code> from the database, and <code class="language-plaintext highlighter-rouge">$categoryid</code> is its new <code class="language-plaintext highlighter-rouge">categoryid</code>. Generally, the parameter <code class="language-plaintext highlighter-rouge">$postid</code> matches a value previously passed to <code class="language-plaintext highlighter-rouge">index_post()</code> when the post was indexed. However in some circumstances the <code class="language-plaintext highlighter-rouge">$postid</code> might never have been indexed, in which case the function should do nothing.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">index_page($pageid, $request, $title, $content, $format, $text)</code></strong>. If defined, this function is called when a custom page should be added to the search index, because it is new or has just been edited. The parameter <code class="language-plaintext highlighter-rouge">$pageid</code> contains the <code class="language-plaintext highlighter-rouge">pageid</code> from the database. The <code class="language-plaintext highlighter-rouge">$request</code> parameter contains the URL fragment used to view the page - this can be passed to <code class="language-plaintext highlighter-rouge">qa_path()</code> to generate a URL. The <code class="language-plaintext highlighter-rouge">$title</code> parameter contains the page’s title in UTF-8 format. The <code class="language-plaintext highlighter-rouge">$content</code>, <code class="language-plaintext highlighter-rouge">$format</code> and <code class="language-plaintext highlighter-rouge">$text</code> parameters work the same as for <code class="language-plaintext highlighter-rouge">index_post()</code> above, but <code class="language-plaintext highlighter-rouge">$format</code> is currently always <code class="language-plaintext highlighter-rouge">'html'</code>.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">unindex_page($pageid)</code></strong>. If defined, this function is called when a custom page should be removed from the search index, because it has been delted or is about to be edited (in which case <code class="language-plaintext highlighter-rouge">index_page()</code> will be called immediately after). Generally, the parameter <code class="language-plaintext highlighter-rouge">$pageid</code> matches a value previously passed to <code class="language-plaintext highlighter-rouge">index_page()</code> when the page was indexed. However in some circumstances the <code class="language-plaintext highlighter-rouge">$pageid</code> might never have been indexed, in which case the function should do nothing.</p>
+						  </li>
+						  <li>
+							<p><strong><code class="language-plaintext highlighter-rouge">process_search($query, $start, $count, $userid, $absoluteurls, $fullcontent)</code></strong>. If defined, this function allows the search module to replace the default Q2A search results with its own, if the module is selected by the site administrator. The <code class="language-plaintext highlighter-rouge">$query</code> parameter contains the entered search query in UTF-8 encoding. The parameter <code class="language-plaintext highlighter-rouge">$userid</code> identifies the user performing the query, or <code class="language-plaintext highlighter-rouge">null</code> if no user is logged in. The <code class="language-plaintext highlighter-rouge">$absoluteurls</code> and <code class="language-plaintext highlighter-rouge">$fullcontent</code> parameters are explained below. The function should return a nested array of up to <code class="language-plaintext highlighter-rouge">$count</code> search results for this query, starting at position <code class="language-plaintext highlighter-rouge">$start&gt;=0</code>. Each element of the outer array is itself an inner array, which can contain one or more elements with the following keys:</p>
+							<ul>
+							  <li><code class="language-plaintext highlighter-rouge">'question_postid' =&gt;</code> the <code class="language-plaintext highlighter-rouge">postid</code> of the matching question. Use this to indicate a question page in general.</li>
+							  <li><code class="language-plaintext highlighter-rouge">'match_postid' =&gt;</code> the <code class="language-plaintext highlighter-rouge">postid</code> of a specific matching question, answer or comment.</li>
+							  <li><code class="language-plaintext highlighter-rouge">'page_pageid' =&gt;</code> the <code class="language-plaintext highlighter-rouge">pageid</code> of a matching custom page.</li>
+							  <li><code class="language-plaintext highlighter-rouge">'title' =&gt;</code> the title to display for the search result.</li>
+							  <li><code class="language-plaintext highlighter-rouge">'url' =&gt;</code> the URL for the search result, which must be absolute if <code class="language-plaintext highlighter-rouge">$absoluteurls</code> is true.</li>
+							</ul>
+
+							<p>A search result can refer to an external website by using only the <code class="language-plaintext highlighter-rouge">'title'</code> and <code class="language-plaintext highlighter-rouge">'url'</code> elements in the result’s array. However, if one or both of these elements are present along with <code class="language-plaintext highlighter-rouge">'question_postid'</code>, <code class="language-plaintext highlighter-rouge">'match_postid'</code> or <code class="language-plaintext highlighter-rouge">'page_pageid'</code>, then they are used to override the title or URL displayed for the question or page as appropriate.</p>
+
+							<p>To save additional database queries, it is also possible to pass through more information about a matching question, post or page in <code class="language-plaintext highlighter-rouge">'question'</code>, <code class="language-plaintext highlighter-rouge">'match_type'</code> or <code class="language-plaintext highlighter-rouge">'page'</code> elements. This requires knowledge of Q2A’s internals - see <code class="language-plaintext highlighter-rouge">qa-app-search.php</code> for more information on how these elements are used with the <code class="language-plaintext highlighter-rouge">$fullcontent</code> parameter.</p>
+						  </li>
+						</ul>
+
+						<p><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/">« Back to modules</a></p>
+
+					</div>
+					
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../../js/sticky_bar.js"></script>
+	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

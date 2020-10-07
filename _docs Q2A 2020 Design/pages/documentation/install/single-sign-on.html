@@ -1,0 +1,218 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Single sign-on (Documentation) -  Question2Answer</title>
+	<meta name="description" content=="Installing Question2Answer with single sign-on"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/install/single-sign-on/"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item selected-nav">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/install">Install</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/install/single-sign-on">single-sign-on</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+				
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install">Install</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/wordpress">WordPress</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/install/single-sign-on">Single Sign-On</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/upgrading">Upgrading</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/optimization">Optimization</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/security">Security</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/install/htaccess">.htaccess</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="installing-question2answer-with-single-sign-on">Installing Question2Answer with single sign-on</h1>
+
+						<p>Question2Answer is designed to integrate with websites which have an existing user database and management system. If your site is running WordPress 3.x, you should follow the instructions for <a href="/install/wordpress/">WordPress integration</a>. To implement single sign-on for other sites, a small amount of PHP programming is required. Please follow the instructions below:</p>
+
+						<ol>
+							<li>
+								<p>Download the <a href="https://github.com/q2a/question2answer/releases">latest version of Question2Answer</a> to your computer or web server (also available <a href="https://github.com/q2a/question2answer">on GitHub</a>).</p>
+							</li>
+							<li>
+								<p>Unzip the download using a tool such as <a href="http://www.winzip.com/">WinZip</a> (or <code class="language-plaintext highlighter-rouge">unzip</code> in the Unix shell).</p>
+							</li>
+							<li>Set up a MySQL database and user for Question2Answer:
+								<ul>
+									<li>If your website already uses a MySQL database, Question2Answer can share it. Simply ensure that the MySQL user you use has at least these <a href="http://dev.mysql.com/doc/mysql/en/privilege-system.html">privileges</a>: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES.</li>
+									<li>Otherwise, create a new MySQL database and a MySQL user with the privileges: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES.</li>
+								</ul>
+							</li>
+							<li>
+								<p>Find <code class="language-plaintext highlighter-rouge">qa-config-example.php</code> and <code class="language-plaintext highlighter-rouge">.htaccess-example</code> in the unzipped <code class="language-plaintext highlighter-rouge">question2answer</code> folder, and rename them to <code class="language-plaintext highlighter-rouge">qa-config.php</code> and <code class="language-plaintext highlighter-rouge">.htaccess</code>, respectively.</p>
+							</li>
+							<li>
+								<p>Open <code class="language-plaintext highlighter-rouge">qa-config.php</code> in the text editor you use for PHP programming. Insert the MySQL details at the top, then scroll down and set <code class="language-plaintext highlighter-rouge">QA_EXTERNAL_USERS</code> to <code class="language-plaintext highlighter-rouge">true</code>, then save the file.</p>
+							</li>
+							<li>
+								<p>Find the <code class="language-plaintext highlighter-rouge">qa-external-example</code> subfolder in the unzipped <code class="language-plaintext highlighter-rouge">question2answer</code> folder, and rename it to <code class="language-plaintext highlighter-rouge">qa-external</code>.</p>
+							</li>
+							<li>
+								<p>In the <code class="language-plaintext highlighter-rouge">qa-external-users.php</code> file in the <code class="language-plaintext highlighter-rouge">qa-external</code> folder, modify the <code class="language-plaintext highlighter-rouge">qa_get_mysql_user_column_type()</code> function to return the appropriate <a href="http://dev.mysql.com/doc/mysql/en/data-types.html">MySQL column type</a> for your user identifiers. For example, if you use textual identifiers, return <code class="language-plaintext highlighter-rouge">[VARCHAR(x)](http://dev.mysql.com/doc/mysql/en/char.html)</code>, where <code class="language-plaintext highlighter-rouge">x</code> is the maximum length. If you use numerical identifiers, return the appropriate <a href="http://dev.mysql.com/doc/mysql/en/numeric-types.html">numeric type</a>, such as <code class="language-plaintext highlighter-rouge">INT UNSIGNED</code> or <code class="language-plaintext highlighter-rouge">BIGINT</code>. Ensure you get this right because it will be used in many of Question2Answer’s MySQL tables.</p>
+							</li>
+							<li>
+								<p>Place all the contents of the <code class="language-plaintext highlighter-rouge">question2answer</code> folder (<strong>including .htaccess and your changes</strong>) in the appropriate location on your web server.</p>
+							</li>
+							<li>
+								<p>Open the web page corresponding to this location in your web browser.</p>
+							</li>
+							<li>
+								<p>Follow the on-screen instructions to set up your database with single sign-on integration.</p>
+							</li>
+							<li>Now go back to <code class="language-plaintext highlighter-rouge">qa-external-users.php</code> and read it through in full. You will need to modify several functions in order to complete the single sign-on integration. Everything is explained in this file, and lots of examples are included.</li>
+						</ol>
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>

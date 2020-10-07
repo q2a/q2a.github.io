@@ -1,0 +1,229 @@
+
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Page Title Here -->
+	<title>Plugin modules (Documentation) - Question2Answer</title>
+	<meta name="description" content=="Implementing plugin modules"/>
+	<link rel="canonical" href="http://docs.question2answer.org/pages/documentation/plugins/modules"/>
+	
+	<!-- Favicons -->
+	<link href="../../../images/branding/q2a_96px.png" rel="apple-touch-icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/q2a_96px.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="../../../images/branding/favicon.ico" rel="icon" sizes="16x16" type="image/ico">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+	<!-- Main CSS files -->
+	<link rel="stylesheet" href="../../../css/styles.css"/>
+	<link rel="stylesheet" href="../../../css/highlight.css">
+
+	<!-- JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" class="page">
+
+	<!-- Top Bar -->
+	<div id="topBar" class="topBar">
+		<div class="topBar-wrapper flex-row">
+			<div class="flex-item not-flex-middle">
+				<div id="navTrigger" class="material-icons mobile-only">menu</div>
+				<a href="https://heliochun.github.io/q2adocs" class="topBarLogo">
+					<img src="../../../images/branding/question2answer-logo-350x40.png" class="logo-img normal-logo" />
+					<img src="../../../images/branding/question2answer-logo-white-350x40.png" class="logo-img white-logo" />
+				</a>
+			</div>
+			<div id="mobileNav" class="flex-item flex-middle">
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<span class="nav-item selected-nav">Documentation <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/documentation/install" class="sub-nav-item">Install</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/plugins" class="sub-nav-item selected-nav">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/documentation/code" class="sub-nav-item">Code</a></li>
+							</ul>
+						</li>
+						<li><a href="https://docs.question2answer.org/pages/contribute" class="nav-item">Contribute</a></li>
+						<li><a href="https://docs.question2answer.org/pages/translate" class="nav-item">Translate</a></li>
+						<li>
+							<span class="nav-item">Addons <span class="material-icons">arrow_drop_down</span> </span>
+							<ul class="sub-nav display-none">
+								<li><a href="https://docs.question2answer.org/pages/addons/themes" class="sub-nav-item">Themes</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/plugins/" class="sub-nav-item">Plugins</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/clients/" class="sub-nav-item">Clients</a></li>
+								<li><a href="https://docs.question2answer.org/pages/addons/translations/" class="sub-nav-item">Translations</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav mobile-only">
+						<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+						<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+						<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="flex-item not-flex-middle not-mobile">
+				<ul class="nav secondary-nav">
+					<li><a href="https://docs.question2answer.org/pages/services" class="nav-item">Services</a></li>
+					<li><a href="https://docs.question2answer.org/pages/sites" class="nav-item">Sites</a></li>
+					<li><a href="https://www.question2answer.org/qa" class="nav-item">Q&amp;A</a></li>
+				</ul>
+			</div>
+			<div id="darkPane"></div>
+		</div>
+	</div>
+	
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-container">
+		<ul class="breadcrumbs">
+			<li class="breadcrumb-item">Documentation</li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+			<li class="breadcrumb-item"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+		</ul>
+	</div>
+
+	<!-- Section -->
+	<section class="article-container">
+		<div class="page-container">
+		
+			<div class="main-content">
+				<article class="page-article" itemscope>
+					
+					<div class="page-directory-navigation">
+						<div id="current-dir-nav"></div>
+						<ul class="page-sub-directories">
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins">Plugins</a></li>
+							<li class="page-sub-directory selected-nav"><a href="https://docs.question2answer.org/pages/documentation/plugins/modules">Modules</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/layers">Layers</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/overrides">Overrides</a></li>
+							<li class="page-sub-directory"><a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">Plugin Tutorial</a></li>
+						</ul>
+					</div>
+					
+					<div class="article-content-container">
+						<h1 id="implementing-plugin-modules">Implementing plugin modules</h1>
+
+						<p>Plugin modules enable Question2Answer to be extended in specific ways. Each module is implemented as a PHP <code class="language-plaintext highlighter-rouge">class</code> with specific member functions. Some functions are relevant for all module types, as described below. Other functions are specific to a certain type of module, e.g. <a href="https://docs.question2answer.org/pages/documentation/plugins/modules-page/">page modules</a> implement the functions <code class="language-plaintext highlighter-rouge">match_request()</code> and <code class="language-plaintext highlighter-rouge">process_request()</code>. If you wish to use non English characters in the PHP code for a module, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).</p>
+
+						<h2 id="types-of-module">Types of Module</h2>
+
+						<p>Below is a list of the module types supported by Q2A - click for more information about each type:</p>
+
+						<ul>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-page/"><strong>page</strong></a> modules add a new type of page to a Q2A installation. The XML Sitemap plugin included with Q2A is an example.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-login/"><strong>login</strong></a> modules allow users to log in to Q2A via an external identity provider, like the Facebook Login plugin included with Q2A.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-editor/"><strong>editor</strong></a> modules provide a web interface for writing and editing posts. The WYSIWYG Editor included with Q2A is implemented via a plugin that registers an editor module.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-viewer/"><strong>viewer</strong></a> modules render content as HTML or text, and often work together with an editor module. Support for <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a> or equations could be added via a plugin with both an editor and viewer module.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-event/"><strong>event</strong></a> modules (from Q2A 1.4+) are notified when something important happens, such as content being posted or voted on. They can be used for analytics, notifications or integrating with external services such as <a href="http://www.twitter.com/">Twitter</a>. The Event Logger plugin included with Q2A logs all events to a database table and/or log files.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-widget/"><strong>widget</strong></a> modules (from Q2A 1.4+) allow extra content to be shown on Q2A pages. The site admin can decide exactly where the widget is displayed. The Tag Cloud widget plugin that comes with Q2A is one example.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-filter/"><strong>filter</strong></a> modules (from Q2A 1.5+) can validate and/or modify many types of user input, including the content of posts. They can also mark whether a particular post should be queued for moderation.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-search/"><strong>search</strong></a> modules (from Q2A 1.5+) can implement a custom indexer and/or search engine for a Q2A site. They are given the opportunity to index posts and/or custom page content, and replace the default search results with their own.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-captcha/"><strong>captcha</strong></a> modules (from Q2A 1.5+) provide a web interface for human verification. The reCAPTCHA plugin that comes with Q2A provides an example, using the popular <a href="http://www.google.com/recaptcha">reCAPTCHA</a> service.</li>
+							<li><a href="https://docs.question2answer.org/pages/documentation/plugins/modules/modules-process/"><strong>process</strong></a> modules (from Q2A 1.5+) have the opportunity to run at specific stages of Q2A’s response processing. They can be used for logging, analytics, additional authentication, caching, etc…</li>
+						</ul>
+
+						<h2 id="common-module-functions">Common module functions</h2>
+
+						<p>Some functions are relevant for all module types, as listed below. You may also create a generic module which implements these functions by passing the type <code class="language-plaintext highlighter-rouge">'module'</code> when registering a module with <code class="language-plaintext highlighter-rouge">qa_register_plugin_module()</code>.</p>
+
+						<ul>
+							<li>
+								<p><strong><code class="language-plaintext highlighter-rouge">load_module($directory, $urltoroot, $type, $name)</code></strong>. If a module defines this function, it is called by Q2A before the module is used. The <code class="language-plaintext highlighter-rouge">$directory</code> parameter contains the full local path of the module’s plugin directory, which can be used as a prefix for <code class="language-plaintext highlighter-rouge">include</code> statements within the module. The <code class="language-plaintext highlighter-rouge">$urltoroot</code> parameter contains the URL of the plugin directory, relative to the current page request. If the module outputs HTML that references other files (such as images) which are part of the plugin, this prefix should be used for the corresponding URLs. The <code class="language-plaintext highlighter-rouge">$type</code> and <code class="language-plaintext highlighter-rouge">$name</code> parameters were added in Q2A 1.6 and contain the module type and name, as originally passed to <code class="language-plaintext highlighter-rouge">qa_register_plugin_module()</code>.</p>
+							</li>
+							<li>
+								<p><strong><code class="language-plaintext highlighter-rouge">option_default($option)</code></strong>. If a module defines this function, it is called by Q2A when an option’s value is requested but the option has not yet been set (requires Q2A 1.4+). The <code class="language-plaintext highlighter-rouge">$option</code> parameter contains the name of the option whose default value is needed. If the module recognizes the option name, it should return the appropriate default value, otherwise it should return <code class="language-plaintext highlighter-rouge">null</code>. If no module returns a default value for an option, it will default to the empty string (<code class="language-plaintext highlighter-rouge">''</code>).</p>
+							</li>
+							<li>
+								<p><strong><code class="language-plaintext highlighter-rouge">admin_form(&amp;$qa_content)</code></strong>. If defined, this function allows a module to include a form within Q2A’s admin panel. This function should return a nested array defining a Q2A form, after processing any input from the form if it was just submitted. It may also modify the passed <code class="language-plaintext highlighter-rouge">$qa_content</code> structure, e.g. to add Javascripts to the page.</p>
+
+								<p>It is beyond the scope of this documentation to describe <code class="language-plaintext highlighter-rouge">$qa_content</code> and Q2A form arrays in detail - you can find many examples by searching the Q2A code base for <code class="language-plaintext highlighter-rouge">$qa_content</code> or <a href="http://www.question2answer.org/qa/">ask here</a>. Some particular points to note:</p>
+
+								<ul>
+									<li>All elements within the nested form array should be made HTML safe - use <code class="language-plaintext highlighter-rouge">qa_html()</code> as appropriate.</li>
+									<li>The <code class="language-plaintext highlighter-rouge">NAME=...</code> of all buttons and fields (within <code class="language-plaintext highlighter-rouge">tags</code> elements) should have a prefix which is unique to your plugin.</li>
+									<li>Use <code class="language-plaintext highlighter-rouge">qa_clicked()</code> and <code class="language-plaintext highlighter-rouge">qa_post_text()</code>, as described <a href="https://docs.question2answer.org/pages/documentation/code/functions">here</a>, to check for button clicks and retrieve submitted fields.</li>
+									<li>Use <code class="language-plaintext highlighter-rouge">qa_opt()</code> to get or set an option that is stored in Q2A’s options table. To prevent interference with Q2A or other plugins, any options should be named using a prefix which is unique to your plugin.</li>
+								</ul>
+							</li>
+							<li>
+								<p><strong><code class="language-plaintext highlighter-rouge">init_queries($tableslc)</code></strong>. If a module requires some database initialization, e.g. to create its own table, it can define this function to integrate into Q2A’s installation and updating process (requires Q2A 1.5+). For your convenience, <code class="language-plaintext highlighter-rouge">$tableslc</code> contains an array of lower case names of tables currently in the Q2A database. Your function should examine the <code class="language-plaintext highlighter-rouge">$tableslc</code> array and perform any other diagnostics in order to determine whether initialization is required. If so, return an array of one or more MySQL queries that should be run, otherwise return <code class="language-plaintext highlighter-rouge">null</code>. If you are creating a table with a <code class="language-plaintext highlighter-rouge">CREATE TABLE</code> query, you should add the appropriate prefix to the table name - see <code class="language-plaintext highlighter-rouge">qa_db_add_table_prefix()</code> in <code class="language-plaintext highlighter-rouge">qa-db.php</code> or use the <code class="language-plaintext highlighter-rouge">^</code> symbol before the table name. This will prevent clashes between separate Q2A installations sharing a database.</p>
+							</li>
+						</ul>
+
+						<h2 id="communication-between-modules">Communication between modules</h2>
+
+						<p>A module can define any additional functions for its own purposes, in the usual way for a PHP class. These functions can also be used for communication between modules, either within a plugin, or between different plugins. To call a function defined in a module, call <a href="https://docs.question2answer.org/pages/documentation/code/functions"><code class="language-plaintext highlighter-rouge">qa_load_module()</code></a> to retrieve an object of the module’s class, then call the object’s function in the usual PHP way. Note that multiple calls to <code class="language-plaintext highlighter-rouge">qa_load_module()</code> will return the same object.</p>
+
+					</div>
+				</article>
+			</div>
+			
+			<div class="sidebar">
+				<ul class="docs-nav">
+					<!-- Will Populate -->
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<div class="jump-top-container">
+		<div id="jump-top" class="jump-top"><span class="material-icons">arrow_upward</span></div>
+	</div>
+	
+	<footer class="footer">
+		<nav class="footer-nav">
+			<ul class="footer-main-nav">
+				<li>
+					<a href="https://www.question2answer.org/" class="footer-site-logo">
+						<img src="../../../images/branding/question2answer-logo-350x40.png">
+					</a>
+				</li>
+				<li><a href="https://www.question2answer.org/feedback.php">Send feedback</a></li>
+				<li><a href="https://www.question2answer.org/versions.php">Version history</a></li>
+				<li><a href="https://www.question2answer.org/license.php">License details</a></li>
+				<li><a href="http://demo.question2answer.org/">Demo sandbox</a></li>
+			</ul>
+			<div class="footer-credits-nav">
+				Created by <a href="http://www.gidgreen.com">Gideon Greenspan</a> and <a href="https://github.com/q2a/question2answer/graphs/contributors">Contributors</a>.
+			</div>
+		</nav>
+	</footer>
+
+	<!-- Javascript main files -->
+	<script src="../../../js/sticky_bar.js"></script>
+	<script src="../../../js/main.js"></script>
+	<script src="../../../js/highlight.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  
+	<!-- Scripts rom Q2A Docs - Classic version -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1165533-8&amp;l=dataLayer&amp;cx=c">
+	</script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js">
+	</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1974891-11"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-1974891-11');
+		gtag('config', 'UA-1165533-8'); // old tracking ID
+	</script>
+
+</body>
+
+</html>
