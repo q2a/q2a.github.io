@@ -28,8 +28,14 @@ nav:
       path: /contribute/
     - name: Add-Ons
       path: /addons/
+
+  second:
     - name: Services
       path: /services/
+    - name: Sites
+      url: https://www.question2answer.org/sites.php
+    - name: Q&A
+      url: https://www.question2answer.org/qa/
 
   install:
     - name: Basic Install
