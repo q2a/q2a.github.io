@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page2020
 menu: install
 title: "Install Question2Answer"
 ---

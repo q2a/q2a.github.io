@@ -1,163 +1,110 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+---
+layout: default2020
+---
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="/css/styles2020.css">
+<p class="home-intro"><strong>Question2Answer</strong> (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on <a href="https://www.question2answer.org/sites.php">24,158 sites in 40 languages</a>.</p>
 
-	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="description" content="{{ site.description }}">
+{{ content }}
 
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-</head>
+<div class="showcase-cols">
+	<div class="showcase-list">
 
-<body class="page">
+		{% capture answerText %}
+			<p>A Q&amp;A site helps your online community to share knowledge.
+				People with questions get the answers they need. The community is enriched by commenting,
+				voting, notifications, points and rankings.</p>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="forum" title="What is a Question &amp; Answer site?" answer=answerText %}
 
-	<div class="wave-container"></div>
+		{% capture answerText %}
+			<p>Your members will enjoy the interaction that Q&amp;A enables,
+				and will visit your site more regularly. In addition, many web searches are questions,
+				so Q&amp;A content will attract search engine traffic.</p>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="people" title="Why offer Q&amp;A on my site?" answer=answerText %}
 
-	<header class="header">
-		<div class="header-logo">
-			<a href="/"><img src="/images/question2answer-logo-white-350x40.png" class="logo-img normal-logo"></a>
-		</div>
-		<nav class="top-nav main-nav">
-			{% for navpage in site.nav.main %}
-				<a class="main-nav-link" href="{{ navpage.path }}">{{ navpage.name }}</a>
-			{% endfor %}
-		</nav>
-		<nav class="top-nav secondary-nav">
-			{% for navpage in site.nav.second %}
-				<a class="main-nav-link" href="{{ navpage.path }}">{{ navpage.name }}</a>
-			{% endfor %}
-		</nav>
-	</header>
+		{% capture answerText %}
+			<p><a href="question2answer-latest.zip"><b>Download Question2Answer</b></a>, latest version
+				then read <a href="https://docs.question2answer.org/pages/documentation/themes">how to install</a>.
+				Version 1.8.4 was <a href="versions.php">released</a> on May 7th, 2020.
+				Also <a href="https://github.com/q2a/question2answer">on GitHub</a>.</p>
+			<p>Question2Answer is open source, <a href="license.php">licensed under GPL v2+</a>.</p>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="get_app" title="How do I get Q2A?" answer=answerText %}
 
-	<main class="page-container">
+		{% capture answerText %}
+			<ul>
+				<li><a href="http://www.php.net/">PHP</a> 5.4 or later, with the <a href="https://en.wikipedia.org/wiki/MySQLi">MySQLi</a> extension.</li>
+				<li><a href="http://www.mysql.com/">MySQL</a> MySQL 5.0 or later.</li>
+			</ul>
+			<p>It's strongly recommended to use the latest version of PHP (7.x) and MySQL
+			if possible as they bring many performance enhancements and each major release of Q2A
+			typically drops support for an older version.</p>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="dns" title="What does Q2A need?" answer=answerText %}
 
-		<p class="home-intro"><strong>Question2Answer</strong> (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on 24,158 sites in 40 languages.</p>
+		{% capture answerText %}
+			<p>Contribute <a href="https://github.com/q2a/question2answer">via Github</a>,
+				create a <a href="https://docs.question2answer.org/pages/documentation/themes/">theme</a>,
+				<a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">plugin</a> or
+				<a href="https://docs.question2answer.org/pages/translate">translation</a>.</p>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="translate" title="How can I help?" answer=answerText %}
 
-		{{ content }}
+	</div>
 
-		<div class="showcase-cols">
-			<div class="showcase-list">
+	<div class="showcase-list">
 
-				{% capture answerText %}
-					<p>A Q&amp;A site helps your online community to share knowledge.
-						People with questions get the answers they need. The community is enriched by commenting,
-						voting, notifications, points and rankings.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="forum" title="What is a Question and Answer site?" answer=answerText %}
+		{% capture answerText %}
+			<ul>
+				<li>Q2A takes 5 minutes (or less!) to <a href="https://docs.question2answer.org/pages/documentation/install/">install</a>.</li>
+				<li>Easy styling with <a href="https://docs.question2answer.org/pages/documentation/themes/">CSS themes</a>.</li>
+				<li>Supports <a href="https://docs.question2answer.org/pages/translate/">translation</a> into any language.</li>
+				<li>Custom sidebar, widgets, pages and links.</li>
+				<li>SEO features such as <a href="http://sitemaps.org/">XML Sitemap</a> and neat URLs.</li>
+			</ul>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="settings_input_component" title="Easy to set up" answer=answerText %}
 
-				{% capture answerText %}
-					<p>Your members will enjoy the interaction that Q&amp;A enables,
-						and will visit your site more regularly. In addition, many web searches are questions,
-						so Q&amp;A content will attract search engine traffic.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="people" title="Why offer Q&amp;A on my site?" answer=answerText %}
+		{% capture answerText %}
+			<ul>
+				<li>PHP/MySQL <a href="https://docs.question2answer.org/documentation/install/optimization/">scalable</a> to millions of users and posts.</li>
+				<li><a href="https://docs.question2answer.org/pages/documentation/install/security/">Safe from</a> XSS, CSRF and SQL injection attacks.</li>
+				<li>Beat spam with captchas, moderation and/or flagging.</li>
+			</ul>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="policy" title="Fast and secure" answer=answerText %}
 
-				{% capture answerText %}
-					<p>Question2Answer (Q2A) is a popular open source Q&amp;A platform for PHP/MySQL,
-						currently running on <a href="sites.php">24,158 sites in 40 languages</a>.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="contact_support" title="What is Question2Answer?" answer=answerText %}
+		{% capture answerText %}
+			<ul>
+				<li>Fast integrated search engine.</li>
+				<li>Categories (up to 4 levels deep) and/or tagging.</li>
+				<li>Voting, comments, follow-on and closed questions.</li>
+				<li>Points-based reputation management.</li>
+				<li>RSS, email notifications and personal news feeds.</li>
+			</ul>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="star" title="Core Q&amp;A features" answer=answerText %}
 
-				{% capture answerText %}
-					<p><a href="question2answer-latest.zip"><b>Download Question2Answer</b></a>, latest version
-						then read <a href="https://docs.question2answer.org/pages/documentation/themes">how to install</a>.
-						Version 1.8.4 was <a href="versions.php">released</a> on May 7th, 2020.
-						Also <a href="https://github.com/q2a/question2answer">on GitHub</a>.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="get_app" title="How do I get Q2A?" answer=answerText %}
+		{% capture answerText %}
+			<ul>
+				<li>Create experts, editors, moderators and admins.</li>
+				<li>User avatars (or <a href="https://en.gravatar.com/">Gravatar</a>) and custom fields.</li>
+				<li>Private messages and public wall posts.</li>
+				<li>Log in via Facebook or others (using <a href="https://docs.question2answer.org/pages/addons/plugins/">plugins</a>).</li>
+			</ul>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="face" title="Built-in user account management ..." answer=answerText %}
 
-				{% capture answerText %}
-					<ul>
-						<li><a href="http://www.php.net/">PHP</a> 5.4 or later, with the <a href="https://en.wikipedia.org/wiki/MySQLi">MySQLi</a> extension.</li>
-						<li><a href="http://www.mysql.com/">MySQL</a> MySQL 5.0 or later.</li>
-					</ul>
-					<p>It's strongly recommended to use the latest version of PHP (7.x) and MySQL
-					if possible as they bring many performance enhancements and each major release of Q2A
-					typically drops support for an older version.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="dns" title="What does Q2A need?" answer=answerText %}
+		{% capture answerText %}
+			<ul>
+				<li>Out-of-the-box <a href="https://docs.question2answer.org/pages/documentation/install/wordpress/">WordPress</a> and Joomla integration.</li>
+				<li>Custom <a href="https://docs.question2answer.org/pages/documentation/install/single-sign-on/">single sign-on</a> support for other sites.</li>
+				<li>Deep integration and customization via <a href="https://docs.question2answer.org/pages/documentation/plugins/">plugins</a>.</li>
+			</ul>
+		{% endcapture %}
+		{% include 2020-card-showcase.html icon="assignment_ind" title="... or integrate with existing sites" answer=answerText %}
 
-				{% capture answerText %}
-					<p><span class="highlight">Question2Answer is open source</span>,
-					<a href="license.php">licensed under GPL v2+</a>.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="assignment_turned_in" title="What's the license?" answer=answerText %}
+	</div>
 
-			</div>
-
-			<div class="showcase-list">
-
-				{% capture answerText %}
-					<ul>
-						<li>Q2A takes 5 minutes (or less!) to <a href="https://docs.question2answer.org/pages/documentation/install/">install</a>.</li>
-						<li>Easy styling with <a href="https://docs.question2answer.org/pages/documentation/themes/">CSS themes</a>.</li>
-						<li>Supports <a href="https://docs.question2answer.org/pages/translate/">translation</a> into any language.</li>
-						<li>Custom sidebar, widgets, pages and links.</li>
-						<li>SEO features such as <a href="http://sitemaps.org/">XML Sitemap</a> and neat URLs.</li>
-					</ul>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="settings_input_component" title="Easy to set up" answer=answerText %}
-
-				{% capture answerText %}
-					<ul>
-						<li>PHP/MySQL <a href="https://docs.question2answer.org/documentation/install/optimization/">scalable</a> to millions of users and posts.</li>
-						<li><a href="https://docs.question2answer.org/pages/documentation/install/security/">Safe from</a> XSS, CSRF and SQL injection attacks.</li>
-						<li>Beat spam with captchas, moderation and/or flagging.</li>
-					</ul>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="policy" title="Fast and secure" answer=answerText %}
-
-				{% capture answerText %}
-					<ul>
-						<li>Fast integrated search engine.</li>
-						<li>Categories (up to 4 levels deep) and/or tagging.</li>
-						<li>Voting, comments, follow-on and closed questions.</li>
-						<li>Points-based reputation management.</li>
-						<li>RSS, email notifications and personal news feeds.</li>
-					</ul>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="star" title="Core Q&amp;A features" answer=answerText %}
-
-				{% capture answerText %}
-					<ul>
-						<li>Create experts, editors, moderators and admins.</li>
-						<li>User avatars (or <a href="https://en.gravatar.com/">Gravatar</a>) and custom fields.</li>
-						<li>Private messages and public wall posts.</li>
-						<li>Log in via Facebook or others (using <a href="https://docs.question2answer.org/pages/addons/plugins/">plugins</a>).</li>
-					</ul>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="face" title="Built-in user account management ..." answer=answerText %}
-
-				{% capture answerText %}
-					<ul>
-						<li>Out-of-the-box <a href="https://docs.question2answer.org/pages/documentation/install/wordpress/">WordPress</a> and Joomla integration.</li>
-						<li>Custom <a href="https://docs.question2answer.org/pages/documentation/install/single-sign-on/">single sign-on</a> support for other sites.</li>
-						<li>Deep integration and customization via <a href="https://docs.question2answer.org/pages/documentation/plugins/">plugins</a>.</li>
-					</ul>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="assignment_ind" title="... or integrate with existing sites" answer=answerText %}
-
-				{% capture answerText %}
-					<p>Contribute <a href="https://github.com/q2a/question2answer">via Github</a>,
-						create a <a href="https://docs.question2answer.org/pages/documentation/themes/">theme</a>,
-						<a href="https://docs.question2answer.org/pages/documentation/plugins/plugin-tutorial">plugin</a> or
-						<a href="https://docs.question2answer.org/pages/translate">translation</a>.</p>
-				{% endcapture %}
-				{% include 2020-card-showcase.html icon="translate" title="How can I help?" answer=answerText %}
-
-			</div>
-
-		</div>
-
-	</main>
-
-</body>
-</html>
+</div>

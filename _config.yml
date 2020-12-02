@@ -16,18 +16,25 @@ nav:
   main:
     - name: Install
       path: /install/
+      sub: install
     - name: Translate
       path: /translate/
+      sub: translate
     - name: Themes
       path: /themes/
+      sub: themes
     - name: Plugins
       path: /plugins/
+      sub: plugins
     - name: Code
       path: /code/external/
+      sub: code
     - name: Contribute
       path: /contribute/
+      sub: contribute
     - name: Add-Ons
       path: /addons/
+      sub: addons
 
   second:
     - name: Services
@@ -52,6 +59,14 @@ nav:
       path: /install/security/
     - name: .htaccess
       path: /install/htaccess/
+
+  translate:
+    - name: Overview
+      path: /translate/
+
+  themes:
+    - name: Overview
+      path: /themes/
 
   plugins:
     - name: Overview

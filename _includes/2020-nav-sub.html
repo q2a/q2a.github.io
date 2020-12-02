@@ -1,0 +1,11 @@
+
+{% for navpage in site.nav.main %}
+	<h4>{{ navpage.name }}</h4>
+	{% if navpage.sub %}
+		<ul>
+			{% for subnavpage in site.nav[navpage.sub] %}
+				<li><a href="{{ subnavpage.path }}">{{ subnavpage.name }}</a></li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+{% endfor %}
