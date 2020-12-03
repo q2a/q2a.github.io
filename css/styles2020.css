@@ -52,10 +52,9 @@ h4 {
 	line-height: 1.5rem;
 }
 
-h5 {
-	margin: 1rem 0 .25rem;
-	font-size: .875rem;
-	line-height: 1.5rem;
+code {
+	word-wrap: break-word; /* old syntax (IE/Edge) */
+	overflow-wrap: anywhere;
 }
 
 
@@ -131,22 +130,92 @@ h5 {
 }
 
 .page-container {
-	/* margin-top: 7rem; */
-	margin: 12rem auto 0;
+	margin: 9rem auto 0;
 	max-width: 1280px;
 }
 .docs-container {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-gap: 1rem;
+	grid-template-columns: 6fr;
 }
+
 .page-content {
-	padding: 1.5rem 2rem;
+	padding: 1.6rem 2rem;
 	border: 1px solid #dadce0;
 	border-radius: 0.5rem;
 }
 .page-sidebar {
 	padding: 1.5rem 1rem;
+}
+
+.page-sidebar-toggle {
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #dadce0;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	color: #ff6b2b;
+}
+.page-sidebar-toggle:before {
+	content: "\e164";
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: initial;
+	color: inherit;
+	margin-right: 6px;
+}
+.page-sidebar-content {
+	display: none;
+}
+.page-sidebar-content.expanded {
+	display: block;
+}
+
+.docs-nav-title {
+	position: relative;
+	margin-top: 0;
+	padding-left: 2rem;
+}
+.docs-nav-title:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "article";
+	height: 1.5rem;
+	width: 1.5rem;
+	font: normal 1.5rem 'Material Icons';
+	color: #ff6b2b;
+}
+
+.docs-nav {
+	list-style: none;
+	margin: 0 0 1rem;
+	padding-left: 2rem;
+}
+
+@media (min-width: 800px) {
+	.page-container {
+		margin-top: 12rem;
+	}
+
+	.page-sidebar-toggle {
+		display: none;
+	}
+	.page-sidebar-content {
+		display: block;
+	}
+
+	.docs-container {
+		grid-template-columns: 1fr 5fr;
+		grid-gap: 1rem;
+	}
+
+	.page-content {
+		padding: 1.6rem 2rem;
+	}
+	.page-sidebar {
+		padding: 1.5rem 1rem;
+	}
+
 }
 
 
@@ -210,7 +279,6 @@ h5 {
 	color: #707070;
 }
 .card-showcase-info ul {
-	/* list-style: none; */
 	margin-left: 1.25rem;
 	padding: 0;
 }

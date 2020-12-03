@@ -17,12 +17,9 @@ nav:
     - name: Install
       path: /install/
       sub: install
-    - name: Translate
-      path: /translate/
-      sub: translate
-    - name: Themes
+    - name: Customize
       path: /themes/
-      sub: themes
+      sub: customize
     - name: Plugins
       path: /plugins/
       sub: plugins
@@ -60,13 +57,11 @@ nav:
     - name: .htaccess
       path: /install/htaccess/
 
-  translate:
-    - name: Overview
-      path: /translate/
-
-  themes:
-    - name: Overview
+  customize:
+    - name: Create a theme
       path: /themes/
+    - name: Translate Q2A
+      path: /translate/
 
   plugins:
     - name: Overview

@@ -11,3 +11,15 @@ layout: default2020
 		{{ content }}
 	</div>
 </div>
+
+<script>
+// toggle sub-menu
+var menuToggle = document.querySelector('.page-sidebar-toggle');
+menuToggle.addEventListener('click', function(ev) {
+	var nav = this.nextElementSibling;
+	if (nav.classList.contains('expanded'))
+		nav.classList.remove('expanded');
+	else
+		nav.classList.add('expanded');
+});
+</script>
