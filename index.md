@@ -1,5 +1,5 @@
 ---
-layout: home2020
+layout: home
 title: "Question2Answer documentation"
 ---
 

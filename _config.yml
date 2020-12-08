@@ -33,6 +33,16 @@ nav:
       path: /addons/
       sub: addons
 
+  footer:
+    - name: Contact devs
+      url: http://www.question2answer.org/feedback.php
+    - name: Version history
+      url: https://github.com/q2a/question2answer/releases
+    - name: License details
+      url: http://www.question2answer.org/license.php
+    - name: Demo sandbox
+      url: http://demo.question2answer.org/
+
   second:
     - name: Services
       path: /services/

@@ -1,27 +1,11 @@
-<div class="qa-footer-bottom-group">
-	<div class="qa-footer">
-		<div class="qa-nav-footer">
-			<ul class="qa-nav-footer-list">
-				<li class="qa-nav-footer-item">
-					<a href="http://www.question2answer.org/feedback.php" class="qa-nav-footer-link">Contact devs</a>
-				</li>
-				<li class="qa-nav-footer-item">
-					<a href="https://github.com/q2a/question2answer/releases" class="qa-nav-footer-link">Version history</a>
-				</li>
-				<li class="qa-nav-footer-item">
-					<a href="http://www.question2answer.org/license.php" class="qa-nav-footer-link">License details</a>
-				</li>
-				<li class="qa-nav-footer-item">
-					<a href="http://demo.question2answer.org/" class="qa-nav-footer-link">Demo sandbox</a>
-				</li>
-			</ul>
-			<div class="qa-nav-footer-clear">
-			</div>
-		</div>
-		<div class="qa-attribution">
-			Created by <a href="http://www.gidgreen.com/">Gideon Greenspan</a>
-			and <a href="https://github.com/q2a/question2answer/graphs/contributors">contributors</a>.
-		</div>
-		<div class="qa-footer-clear"></div>
+<footer class="footer">
+	<nav class="footer-nav">
+		{% for navpage in site.nav.footer %}
+			<a class="footer-nav-link" href="{{ navpage.url }}">{{ navpage.name }}</a>
+		{% endfor %}
+	</nav>
+	<div class="credit">
+		Created by <a href="http://www.gidgreen.com/">Gideon Greenspan</a>
+		and <a href="https://github.com/q2a/question2answer/graphs/contributors">contributors</a>
 	</div>
-</div>
+</footer>
