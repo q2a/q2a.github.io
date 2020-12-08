@@ -270,6 +270,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-commonmark-ghpages
 
 BUNDLED WITH
    2.1.4

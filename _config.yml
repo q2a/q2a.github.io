@@ -6,10 +6,8 @@ permalink: pretty
 exclude: [vendor]
 
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 highlighter: rouge
-kramdown:
-  input: GFM
 
 # Menu layout
 nav:
