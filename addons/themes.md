@@ -28,6 +28,7 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 - [Twenty Eleven](http://devmx.de/en/themes/twentyeleven-fur-q2a) by [Maximilian Narr](http://devmx.de/). For use with the WordPress theme of the same name.
 - [TwentyTwelve](https://github.com/Towhidn/Q2A-TwentyTwelve) by QA-Themes. Based on WordPress default theme, TwentyTwelve.
 - [Twitter Bootstrap](https://github.com/harshjv/q2a-bootstrap) by [Harsh J. Vakharia](http://twitter.com/harshjv). For Q2A 1.5.3 only, since it heavily modifies the core to work with [Bootstrap](https://github.com/twitter/bootstrap).
+- [Paid][Mayro Pro](https://github.com/MominRaza/assets/blob/main/MayroPro.md) (A Google Material Design Theme with Dark Mode, RTL, PWA Support) by [Momin Raza](https://github.com/MominRaza).
 - [Paid][AVEN Theme](https://heliochun.github.io/shop/aven/) by [Shop](https://heliochun.github.io/shop/). AVEN is a carefully thought Material Design theme for the open source Question2Answer platform.
 - [Paid][Muffin Theme](https://heliochun.github.io/shop/muffin/) by [Shop](https://heliochun.github.io/shop/). Muffin is a carefully thought Material Design theme for the open source Question2Answer platform.
 - [Paid][Frapuchino Theme](https://heliochun.github.io/shop/frapuchino/) by [Shop](https://heliochun.github.io/shop/). Frapuchino is a carefully thought Material Design theme for the open source Question2Answer platform.
