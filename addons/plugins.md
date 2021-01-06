@@ -112,6 +112,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ## User interface
 
+- [Title Length Counter](https://github.com/MominRaza/title-length-counter) by [Momin Raza](https://github.com/MominRaza). It shows the length of title below title text field.
 - [Advanced Tag Descriptions](https://github.com/Towhidn/q2a-tag-descriptions) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Add titles, icons and HTML descriptions to your tags.
 - [Accept Rate Plugin](https://github.com/NoahY/q2a-accept-rate) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Shows the percentage of questions asked by a user which had an answer selected as the best.
 - [Ajax User Search](https://github.com/q2apro/q2apro-ajax-usersearch) by [q2apro](https://github.com/q2apro). Adds a live search box at the top of the users page to search users by username.
