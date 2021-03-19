@@ -2,6 +2,11 @@
 	Base styles
 ================== */
 
+/* Colors palette:
+	Orange = #ff8a59
+	Dark orange = #ff6b2b
+*/
+
 * {
 	box-sizing: border-box;
 }
@@ -16,7 +21,7 @@ body {
 	text-align: left;
 }
 
-a, a:link, a:visited, a:active {
+a, a:visited {
 	text-decoration: none;
 	color: #039BE5;
 	color: #ff6b2b;
@@ -52,23 +57,31 @@ h4 {
 	line-height: 1.5rem;
 }
 
-code {
-	word-wrap: break-word; /* old syntax (IE/Edge) */
-	overflow-wrap: anywhere;
-}
-pre {
-	/* margin-left: 1rem; */
-	padding: 1rem;
+code, pre {
 	background-color: #f8f8f4;
 	font-family: "Menlo", "Consolas", "Monaco", "Ubuntu Mono", "Andale Mono", "Bitstream Vera Sans Mono", monospace;
 	font-size: 13px;
+}
+
+/* inline code */
+code {
+	word-wrap: break-word; /* old syntax (IE/Edge) */
+	overflow-wrap: anywhere;
+	padding: 1px 3px;
+}
+
+/* block code */
+pre {
+	padding: 1rem;
 	line-height: 1.3;
 	white-space: pre-wrap;
 }
 pre code {
+	padding: 0;
 	color: inherit;
 	font-family: inherit;
 	tab-size: 4;
+	font-size: 13px;
 }
 
 
@@ -159,7 +172,7 @@ a.main-nav-link:hover {
 	border: 1px solid #dadce0;
 	padding: 0.5rem;
 	border-radius: 0.25rem;
-	color: #ff6b2b;
+	color: #ff8a59;
 }
 .page-sidebar-toggle:before {
 	content: "\e164";
@@ -189,7 +202,7 @@ a.main-nav-link:hover {
 	height: 1.5rem;
 	width: 1.5rem;
 	font: normal 1.5rem 'Material Icons';
-	color: #ff6b2b;
+	color: #ff8a59;
 }
 
 .docs-nav {
@@ -325,7 +338,27 @@ a.main-nav-link:hover {
 	Docs pages
 ================== */
 
-/* Syntax highlighting */
+a[href*="/releases/"][href$=".zip"] {
+	margin-left: 1rem;
+	padding: 0.5rem;
+	vertical-align: bottom;
+	border-radius: 8px;
+	background: #ff8a59;
+	color: #fff;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+}
+a[href*="/releases/"][href$=".zip"]:active,
+a[href*="/releases/"][href$=".zip"]:hover {
+	background: #ff6b2b;
+	text-decoration: none;
+}
+
+
+/* ==================
+	Syntax highlighting
+================== */
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #808080 } /* Comment */
 .highlight .err { color: #f00000; background-color: #f0a0a0 } /* Error */
@@ -342,7 +375,7 @@ a.main-nav-link:hover {
 .highlight .gi { color: #00a000 } /* Generic.Inserted */
 .highlight .go { color: #808080 } /* Generic.Output */
 .highlight .gp { color: #c65d09 } /* Generic.Prompt */
-.highlight .gs { } /* Generic.Strong */
+/* .highlight .gs { } */ /* Generic.Strong */
 .highlight .gu { color: #800080 } /* Generic.Subheading */
 .highlight .gt { color: #0040d0 } /* Generic.Traceback */
 .highlight .kc { color: #008000 } /* Keyword.Constant */
