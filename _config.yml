@@ -43,7 +43,7 @@ nav:
 
   second:
     - name: Services
-      path: /services/
+      url: /services/
     - name: Sites
       url: https://www.question2answer.org/sites.php
     - name: Q&A

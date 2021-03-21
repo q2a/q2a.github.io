@@ -2,7 +2,7 @@
 
 <header class="header">
 	<div class="header-logo">
-		<a href="/"><img src="/images/question2answer-logo-white-350x40.png" class="logo-img normal-logo"></a>
+		<a href="/"><img class="logo-img normal-logo" src="/images/question2answer-logo-white-350x40.png" alt="Question2Answer logo"></a>
 	</div>
 	<nav class="top-nav main-nav">
 		{% for navpage in site.nav.main %}
@@ -11,7 +11,7 @@
 	</nav>
 	<nav class="top-nav secondary-nav">
 		{% for navpage in site.nav.second %}
-			<a class="main-nav-link" href="{{ navpage.path }}">{{ navpage.name }}</a>
+			<a class="main-nav-link" href="{{ navpage.url }}">{{ navpage.name }}</a>
 		{% endfor %}
 	</nav>
 </header>
