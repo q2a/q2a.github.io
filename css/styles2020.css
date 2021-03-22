@@ -10,10 +10,11 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-	font: 16px/1.5 "Roboto", sans-serif;
+	font: 16px/1.5 "Roboto", "Helvetica", "Arial", sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	color: #424242;
