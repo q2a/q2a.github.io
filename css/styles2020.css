@@ -2,8 +2,8 @@
 	Base styles
 ================== */
 
-/* Colors palette:
-	Orange = #ff8a59
+/* Colors:
+	Orange = #ff773d
 	Dark orange = #ff6b2b
 */
 
@@ -103,7 +103,7 @@ pre code {
 }
 
 .wave-container {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 20;
@@ -127,7 +127,13 @@ pre code {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	padding: 1rem;
+}
+.header.sticky {
+	background-color: #ff773d;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-logo {
+	margin: 1rem;
 }
 
 .logo-img {
@@ -185,7 +191,7 @@ a.main-nav-link-separate {
 	padding: 0.5rem;
 	border-radius: 0.25rem;
 	background-color: #fff;
-	color: #ff8a59;
+	color: #ff773d;
 }
 .page-sidebar-toggle:before {
 	content: "\e164";
@@ -216,7 +222,7 @@ a.main-nav-link-separate {
 	height: 1.5rem;
 	width: 1.5rem;
 	font: normal 1.5rem 'Material Icons';
-	color: #ff8a59;
+	color: #ff773d;
 }
 
 .docs-nav {
@@ -314,6 +320,7 @@ a.main-nav-link-separate {
 	margin: 0 auto 2rem;
 	text-align: center;
 	font-size: 1.4rem;
+	font-weight: normal;
 }
 
 .showcase-cols {
@@ -348,7 +355,7 @@ a.main-nav-link-separate {
 	border-radius: 52px;
 	width: 50px;
 	height: 50px;
-	background-color: #ff8a59;
+	background-color: #ff773d;
 	color: #ffffff;
 	font-size: 2rem;
 	margin-right: 2rem;
@@ -403,7 +410,7 @@ a[href*="/releases/"][href$=".zip"] {
 	padding: 0.5rem;
 	vertical-align: bottom;
 	border-radius: 8px;
-	background: #ff8a59;
+	background: #ff773d;
 	color: #fff;
 	font-size: 0.75rem;
 	text-transform: uppercase;
