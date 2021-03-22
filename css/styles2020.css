@@ -136,11 +136,12 @@ pre code {
 
 .top-nav {
 	display: flex;
+	flex-grow: 1;
 	align-items: center;
 	overflow: auto;
 }
 a.main-nav-link {
-	padding: 0.2rem 0.6rem 0;
+	padding: 0.5rem 0.8rem;
 	border-radius: 0.25rem;
 	color: #fff;
 	font-weight: bold;
@@ -150,6 +151,9 @@ a.main-nav-link {
 a.main-nav-link:hover {
 	background-color: rgb(0, 0, 0, 0.05);
 	text-decoration: none;
+}
+a.main-nav-link-separate {
+	margin-left: auto;
 }
 
 .page-container {
@@ -265,9 +269,6 @@ a.main-nav-link:hover {
 		margin-right: 2rem;
 	}
 
-	a.main-nav-link {
-		padding: 0.5rem 0.8rem;
-	}
 	.secondary-nav {
 		margin-left: auto;
 	}
@@ -297,7 +298,7 @@ a.main-nav-link:hover {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
 	a.main-nav-link {
 		font-size: 1.125rem;
 	}

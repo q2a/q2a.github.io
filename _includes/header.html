@@ -8,10 +8,8 @@
 		{% for navpage in site.nav.main %}
 			<a class="main-nav-link" href="{{ navpage.path }}">{{ navpage.name }}</a>
 		{% endfor %}
-	</nav>
-	<nav class="top-nav secondary-nav">
 		{% for navpage in site.nav.second %}
-			<a class="main-nav-link" href="{{ navpage.url }}">{{ navpage.name }}</a>
+			<a class="main-nav-link {{ navpage.class | default: '' }}" href="{{ navpage.url }}">{{ navpage.name }}</a>
 		{% endfor %}
 	</nav>
 </header>

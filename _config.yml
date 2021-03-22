@@ -31,6 +31,15 @@ nav:
       path: /addons/
       sub: addons
 
+  second:
+    - name: Services
+      url: /services/
+      class: main-nav-link-separate
+    - name: Sites
+      url: https://www.question2answer.org/sites.php
+    - name: Q&A
+      url: https://www.question2answer.org/qa/
+
   footer:
     - name: Contact devs
       url: https://www.question2answer.org/feedback.php
@@ -40,14 +49,6 @@ nav:
       url: https://www.question2answer.org/license.php
     - name: Demo sandbox
       url: http://demo.question2answer.org/
-
-  second:
-    - name: Services
-      url: /services/
-    - name: Sites
-      url: https://www.question2answer.org/sites.php
-    - name: Q&A
-      url: https://www.question2answer.org/qa/
 
   install:
     - name: Basic Install
