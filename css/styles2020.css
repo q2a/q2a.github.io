@@ -76,6 +76,7 @@ code, pre {
 code {
 	word-wrap: break-word; /* old syntax (IE/Edge) */
 	overflow-wrap: anywhere;
+	word-break: break-word;
 	padding: 1px 3px;
 }
 
@@ -165,7 +166,7 @@ a.main-nav-link-separate {
 
 .page-container {
 	margin: 9rem auto 0;
-	padding: 0 1rem;
+	padding: 0 0.25rem;
 	max-width: 1280px;
 }
 .docs-container {
@@ -175,7 +176,7 @@ a.main-nav-link-separate {
 }
 
 .page-content {
-	padding: 1.6rem 2rem;
+	padding: 0.8rem 1rem;
 	border: 1px solid #dadce0;
 	border-radius: 0.5rem;
 	background-color: #fff;
@@ -244,7 +245,13 @@ a.main-nav-link-separate {
 .footer-nav {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2rem;
+	margin-right: 1rem;
+}
+.footer-nav-link {
+	margin: 0 1rem;
+}
+.credit {
+	margin-left: 1rem;
 }
 
 @media (min-width: 540px) {
@@ -263,6 +270,14 @@ a.main-nav-link-separate {
 	ul, ol {
 		padding-left: 2.2rem;
 	}
+
+	.page-container {
+		padding: 0 1rem;
+	}
+	.page-content {
+		padding: 1.6rem 2rem;
+	}
+
 	.page-sidebar-content {
 		column-count: 3;
 	}
@@ -328,7 +343,6 @@ a.main-nav-link-separate {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 1rem;
-	gap: 1rem;
 	margin: 2rem auto;
 	max-width: 1080px;
 }
