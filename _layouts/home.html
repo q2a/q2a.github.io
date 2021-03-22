@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<p class="home-intro"><strong>Question2Answer</strong> (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on <a href="https://www.question2answer.org/sites.php">24,500+ sites in 40 languages</a>.</p>
+<h1 class="home-intro"><strong>Question2Answer</strong> (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on <a href="https://www.question2answer.org/sites.php">24,500+ sites in 40 languages</a>.</h1>
 
 {{ content }}
 
@@ -35,9 +35,9 @@ layout: default
 				<li><a href="http://www.php.net/">PHP</a> 5.4 or later, with the <a href="https://en.wikipedia.org/wiki/MySQLi">MySQLi</a> extension.</li>
 				<li><a href="http://www.mysql.com/">MySQL</a> MySQL 5.0 or later.</li>
 			</ul>
-			<p>It's strongly recommended to use the latest version of PHP (7.x) and MySQL
-			if possible as they bring many performance enhancements and each major release of Q2A
-			typically drops support for an older version.</p>
+			<p class="text-small">It's strongly recommended to use the latest version of PHP (7.x) and MySQL
+				if possible as they bring many performance enhancements, and Q2A regularly drops support for
+				older, unsupported versions.</p>
 		{% endcapture %}
 		{% include card-showcase.html icon="dns" title="What does Q2A need?" answer=answerText %}
 
