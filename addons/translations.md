@@ -26,6 +26,7 @@ The language files below are marked by the corresponding Question2Answer version
 - [Q2A 1.8.x - Spanish - Argentina (Español)](https://github.com/pupi1985/q2a-spanish-translation) by Gabriel Zanetti.
 - [Q2A 1.8.x - Spanish - Spain (Español)](https://gitlab.com/midget/q2a-translation-es-ES/tags/1.8.0-0) by Dario Minnucci.
 - [Q2A 1.8.x - Swahili (Kiswahili)](https://github.com/JackSiro/Q2A-Swahili) by [Jackson Siro](https://jacksiro.github.io/q2a/).
+- [Q2A 1.8.x - Thai (ภาษาไทย)](https://github.com/rachnithit/th) by [Answer.in.th](https://answer.in.th/).
 - [Q2A 1.8.x - Turkish (Türkçe)](http://turkdesk.org/downloads/Turkish-Q2A-1.8.x.zip) by Erkan @ [TurkDesk](http://turkdesk.org/).
 
 ## Q2A 1.7
