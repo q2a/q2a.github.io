@@ -35,7 +35,7 @@ From version 1.4, Question2Answer offers out-of-the-box integration with your [W
         define('COOKIE_DOMAIN', '.mysite.com');
         ```
 
-        The add the following lines at the **end** of the WordPress `wp-config.php` file, replacing `qa.mysite.com` with the full domain name for your Q2A site:
+        Then add the following lines at the **end** of the WordPress `wp-config.php` file, replacing `qa.mysite.com` with the full domain name for your Q2A site:
 
         ```php?start_inline=1
         /* To allow redirection from WordPress login to Question2Answer */
