@@ -6,9 +6,18 @@ title: "Question2Answer - Version History"
 
 # Version History
 
+## Version 1.8.6 [Download](https://www.question2answer.org/releases/question2answer-1.8.6.zip)
+
+Minor bug fixes, 20th April 2021.
+
+- Prevent input fields being used in HTML posts.
+- Fix various PHP notices/errors on PHP 7.4 and 8.0.
+- Fix missing avatar with Wordpress integration.
+- Use 404 instead of fatal error/stack trace for features unavailable with external user integration.
+
 ## Version 1.8.5 [Download](https://www.question2answer.org/releases/question2answer-1.8.5.zip)
 
-Minor bug fixes, 15th July 2020
+Minor bug fixes, 15th July 2020.
 
 - Prevent parsing links in code blocks.
 - Fix SnowFlat comment vote buttons.
