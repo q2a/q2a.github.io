@@ -122,7 +122,7 @@ pre code {
 }
 
 .header {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 25;
 	display: flex;
@@ -131,6 +131,7 @@ pre code {
 	width: 100%;
 }
 .header.sticky {
+	position: fixed;
 	background-color: #ff773d;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
