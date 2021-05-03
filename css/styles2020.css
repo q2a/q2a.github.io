@@ -420,7 +420,7 @@ a.main-nav-link-separate {
 	Docs pages
 ================== */
 
-a[href*="/releases/"][href$=".zip"] {
+a[href*="/releases/question2answer"][href$=".zip"] {
 	margin-left: 1rem;
 	padding: 0.5rem;
 	vertical-align: bottom;
@@ -430,8 +430,8 @@ a[href*="/releases/"][href$=".zip"] {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 }
-a[href*="/releases/"][href$=".zip"]:active,
-a[href*="/releases/"][href$=".zip"]:hover {
+a[href*="/releases/question2answer"][href$=".zip"]:active,
+a[href*="/releases/question2answer"][href$=".zip"]:hover {
 	background: #ff6b2b;
 	text-decoration: none;
 }
