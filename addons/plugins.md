@@ -32,7 +32,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Smilies for Text](https://github.com/NoahY/q2a-smilies) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows smilies to be embedded in plain text or Markdown content. Also [forked](https://github.com/thibaultduponchelle/q2a-smilies) by [Thibault Duponchelle](https://github.com/thibaultduponchelle) to support multiboxes, add a lot of smilies and slightly improve the style.
 - [Syntax Highlighter](https://github.com/amiyasahu/q2a-syntax-highlighter) by [Amiya Sahu](http://amiyasahu.com/). Code syntax highlighting based on [highlight.js](https://highlightjs.org/) with over 40 built-in themes.
 - [WYSIWYG Math Editor](https://github.com/thibaultduponchelle/q2a-wysiwyg-matheditor) by [Thibault Duponchelle](https://github.com/thibaultduponchelle). A CKEditor 4 editor plugin *with math capabilities*. Allow users to add math formulas (MathJax) in questions, answers and comments. Other math editors based on *preview zone* like [SCEditor](https://github.com/q2apro/q2apro-sceditor) were already mentioned above. Also: [q2a-formatter](https://github.com/tangruize/q2a-formatter) (or [Google Code Prettify and MathJax](https://github.com/arjunsuresh/mathjax) from [Arjun Suresh](https://github.com/arjunsuresh) from which [q2a-formatter](https://github.com/tangruize/q2a-formatter) was forked).
-- [Paid] [DM - Dynamic Mentions](https://www.question2answer.org/qa/36952/new-remium-plugin-dm-dynamic-mentions) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).Allows users to be mentioned using the @user syntax.
+- [Paid] [DM - Dynamic Mentions](https://www.question2answer.org/qa/66929) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to be mentioned using the @user syntax.
 
 
 ## Integration with other products
@@ -108,7 +108,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Twitter Widget](https://github.com/Towhidn/q2a-twitter) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Shows recent tweets from your twitter account.
 - [Widget Anywhere Plugin](https://github.com/svivian/q2a-widget-anywhere) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Allows custom content to be added on any page, in a variety of locations.
 - [Simple Ads Manager](https://github.com/ProThoughts/q2a-simple-ads-manager) by [ProThoughts](http://ProThoughts.com). Allow you to add advertisements in [listed spots](https://github.com/ProThoughts/q2a-simple-ads-manager). You can use Google adsense or any HTML ad code. Also [forked](https://github.com/arjunsuresh/q2a-simple-ads-manager) by [Arjun](http://gateoverflow.in/user/Arjun) to add more options like Ads after first question hiding ads for certain user level and above etc.
-- [Paid][AS - Advanced Search](https://www.question2answer.org/qa/36952/new-remium-plugin-as-advanced-search) by [pupil985](https://pupi1985.github.io/).Extends the way in which Q2A searches for posts and allows the user to get better results when searching.
+- [Paid] [AS - Advanced Search](https://www.question2answer.org/qa/54072) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Extends the way in which Q2A searches for posts and allows the user to get better results when searching.
 
 ## User interface
 
@@ -144,11 +144,11 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Userinfo](https://github.com/q2apro/q2apro-userinfo/tree/master) by [q2apro.com](https://github.com/q2apro).Mouse over a username to display user profile information: Avatar image, account age, total points, monthly points, answers, best answers, ratio, questions posted, badges.
 - [Userslist-locations](https://github.com/q2apro/q2apro-userslist-locations/tree/master) by [q2apro.com](https://github.com/q2apro).Add Location to users list
 - [Warn on Leave](https://github.com/q2apro/q2apro-warn-on-leave) by [q2apro.com](https://github.com/q2apro). Warns users before leaving a page with text they have entered (also support WYSIWYG editor).
-- [MTL - Maximum Tag Length](https://www.question2answer.org/qa/36952/new-remium-plugin-mtl-maximum-tag-length) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).Limits the amount of characters allowed per each question tag.
-- [RA - Random Avatar](https://www.question2answer.org/qa/36952/new-remium-plugin-ra-random-avatar) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).Assigns new users a random avatar from a given set immediately after registering.
-- [Paid] [PC - Profile Customizer](https://www.question2answer.org/qa/36952/new-premium-plugin-pc-profile-customizer) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).Allows the customization of the profile page by adding additional features not present in the core, including tracking of point changes.
-- [Paid] [SNP - Social Network Profiles](https://www.question2answer.org/qa/36952/new-remium-plugin-snp-social-network-profiles) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).Allows users to add information about social networks they are part of and share it with the community.
-- [Paid] [UR - User Reactions](https://www.question2answer.org/qa/36952/new-remium-plugin-ur-user-reactions) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).Allows users to react to questions, answers and comments.
+- [MTL - Maximum Tag Length](https://www.question2answer.org/qa/41822) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Limits the amount of characters allowed per each question tag.
+- [RA - Random Avatar](https://www.question2answer.org/qa/39812) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Assigns new users a random avatar from a given set immediately after registering.
+- [Paid] [PC - Profile Customizer](https://www.question2answer.org/qa/36952) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows the customization of the profile page by adding additional features not present in the core, including tracking of point changes.
+- [Paid] [SNP - Social Network Profiles](https://www.question2answer.org/qa/46857) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to add information about social networks they are part of and share it with the community.
+- [Paid] [UR - User Reactions](https://www.question2answer.org/qa/62711) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to react to questions, answers and comments.
 
 ## Notifications
 
@@ -200,10 +200,10 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Uploadmanager](https://github.com/q2apro/q2apro-uploadmanager/tree/master) by [q2apro.com](https://github.com/q2apro).A complete upload manager for question2answer with upload details and image rotate features.
 - [Userstatistics](https://github.com/q2apro/q2apro-userstatistics/tree/master) by [q2apro.com](https://github.com/q2apro).A complete user statistic with detailed points per post and thumbs and more.
 - [Votes-manager](https://github.com/q2apro/q2apro-votes-manager/tree/master) by [q2apro.com](https://github.com/q2apro).Lists all votes made in your forum.
-- [Paid] [BCG - Bulk Content Generator](https://www.question2answer.org/qa/54488/new-premium-plugin-bcg-bulk-content-generator) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows admins to generate large amounts of content on their sites simply by uploading files (.xls, .xlsx, .ods, among other file formats).
-- [Paid] [FC - Fake Cron](https://www.question2answer.org/qa/36952/new-remium-plugin-fc-fake-cron) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Fires events after a certain amount of requests or in a time-based manner (daily, weekly, monthly).
-- [Paid] [JABP - Just A Bump Plugin](https://www.question2answer.org/qa/36952/new-remium-plugin-jabp-just-a-bump-plugin) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to bump questions sending them to the top of the All activity section.
-- [Paid] [TUB - Temporary User Block](https://www.question2answer.org/qa/36952/new-remium-plugin-tub-temporary-user-block) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to be blocked for a period of time and then be automatically unblocked.
+- [FC - Fake Cron](https://www.question2answer.org/qa/42051) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Fires events after a certain amount of requests or in a time-based manner (daily, weekly, monthly).
+- [Paid] [BCG - Bulk Content Generator](https://www.question2answer.org/qa/54488) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows admins to generate large amounts of content on their sites simply by uploading files (.xls, .xlsx, .ods, among other file formats).
+- [Paid] [JABP - Just A Bump Plugin](https://www.question2answer.org/qa/31264) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to bump questions sending them to the top of the All activity section.
+- [Paid] [TUB - Temporary User Block](https://www.question2answer.org/qa/73008) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to be blocked for a period of time and then be automatically unblocked.
 
 ## For older versions of Q2A
 
