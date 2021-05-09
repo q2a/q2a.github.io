@@ -90,6 +90,10 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Wiki Plugin](https://github.com/NoahY/q2a-wiki) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a wiki to a Q2A site.
 
 ## Widgets
+
+- [Category anywhere](https://github.com/ostack/qa-categories-anywhere-widget) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Displays Category anywhere not only sidebar but also top panel,bottom panel and so on .
+- [Hide answer for unlongin user](https://github.com/ostack/q2a-hide-answers-for-unlogin-user) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Only show question answers for login user or user point over a threshold. This may make your site more register and more answers and comment. 
+- [Random question in side bar](https://github.com/ostack/qa-random-question-widget) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Display random questions in side bar,which can increse catch probability for search engine.  
 - [Breadcrumbs Widget](https://github.com/amiyasahu/q2a-breadcrumbs) by [Amiya Sahu](http://amiyasahu.com/). Displays navigational breadcrumbs showing the path to the currently viewed page.
 - [Category Description](https://github.com/arjunsuresh/categorydescription) by [Arjun](http://gateoverflow.in/user/Arjun). Allows HTML description to be added for Categories which gets displayed on top of Category Pages.
 - [Feed Widget](https://github.com/Towhidn/Q2A-feed-widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Lists recent items from an external RSS feed. Useful for blog posts, articles, etc...
@@ -112,6 +116,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ## User interface
 
+- [Batch import users](https://github.com/ostack/q2a-user-import) upate and fixed by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Based on](https://github.com/thisliquidspace/q2a-user-import). Batch import users by csv,this may help you create users quickly.  
 - [Title Length Counter](https://github.com/MominRaza/title-length-counter) by [Momin Raza](https://github.com/MominRaza). It shows the length of title below title text field.
 - [Advanced Tag Descriptions](https://github.com/Towhidn/q2a-tag-descriptions) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Add titles, icons and HTML descriptions to your tags.
 - [Accept Rate Plugin](https://github.com/NoahY/q2a-accept-rate) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Shows the percentage of questions asked by a user which had an answer selected as the best.

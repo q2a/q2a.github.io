@@ -38,7 +38,5 @@ Also check out [Cloudlook](http://www.cloudlook.com/) which can help you evaluat
 
 ## International sites
 
-- [Question2Answer Farsi](http://question2answer-farsi.com/) --- Persian information for Q2A users in Iran and beyond.
-
-
+- [Question2Answer Chinese](http://q2adoc.ostack.cn/) --- Q2A Intrudction in Chiness(Q2A简体中文介绍).
 [QA]: https://www.question2answer.org/qa/
