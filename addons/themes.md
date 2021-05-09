@@ -8,8 +8,8 @@ title: "Question2Answer Add-ons - Themes"
 
 To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](/services/)**. Below is a list of other recently updated themes:
 
-- [Blog Theme](https://github.com/ostack/qa-ostack-blog-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat.  [Demo](https://www.ostack.cn). This theme can show picture and content in question list.It make your QA site look like a blog, and this theme do not need any db change, all module options inherit the orignal.
-- [FatSnowFlat](https://github.com/ostack/qa-FatSnowFlat-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat.  [Demo](https://www.ostack.cn). This theme can show picture and content in question list.
+- [Blog Theme](https://github.com/ostack/qa-ostack-blog-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat. [Demo](https://www.ostack.cn). This theme can show pictures and content in question lists, to make the Q2A site look like a blog.
+- [FatSnowFlat](https://github.com/ostack/qa-FatSnowFlat-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat. [Demo](https://www.ostack.cn). This theme can show pictures and content in question lists.
 - [Mayro](https://github.com/MominRaza/Mayro) (A Google Material Design Theme) by [Momin Raza](https://github.com/MominRaza).
 - [Brown-Clean](http://www.question2answer.org/qa/24972/new-free-theme-launched-brown-clean) by [Abhinav](http://www.question2answer.org/qa/user/abhik21).
 - [Default Right-To-Left](http://www.question2answer.org/third-party/question2answer-theme-Default-R2L.zip) (based on Q2A Default theme) by [Towhid Nategheian](http://TowhidN.com/) @ [AskWeb](http://askweb.ir/).
