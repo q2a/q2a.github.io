@@ -91,9 +91,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ## Widgets
 
-- [Category anywhere](https://github.com/ostack/qa-categories-anywhere-widget) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Displays Category anywhere not only sidebar but also top panel,bottom panel and so on .
-- [Hide answer for unlongin user](https://github.com/ostack/q2a-hide-answers-for-unlogin-user) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Only show question answers for login user or user point over a threshold. This may make your site more register and more answers and comment. 
-- [Random question in side bar](https://github.com/ostack/qa-random-question-widget) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Display random questions in side bar,which can increse catch probability for search engine.  
+- [Category Anywhere](https://github.com/ostack/qa-categories-anywhere-widget) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146). [Demo](https://www.ostack.cn). Displays category not only sidebar but also top panel, bottom panel and so on.
+- [Random Question](https://github.com/ostack/qa-random-question-widget) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Demo](https://www.ostack.cn). Displays random questions, to improve search engine coverage.  
 - [Breadcrumbs Widget](https://github.com/amiyasahu/q2a-breadcrumbs) by [Amiya Sahu](http://amiyasahu.com/). Displays navigational breadcrumbs showing the path to the currently viewed page.
 - [Category Description](https://github.com/arjunsuresh/categorydescription) by [Arjun](http://gateoverflow.in/user/Arjun). Allows HTML description to be added for Categories which gets displayed on top of Category Pages.
 - [Feed Widget](https://github.com/Towhidn/Q2A-feed-widget) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Lists recent items from an external RSS feed. Useful for blog posts, articles, etc...
@@ -116,7 +115,6 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ## User interface
 
-- [Batch import users](https://github.com/ostack/q2a-user-import) upate and fixed by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).  [Based on](https://github.com/thisliquidspace/q2a-user-import). Batch import users by csv,this may help you create users quickly.  
 - [Title Length Counter](https://github.com/MominRaza/title-length-counter) by [Momin Raza](https://github.com/MominRaza). It shows the length of title below title text field.
 - [Advanced Tag Descriptions](https://github.com/Towhidn/q2a-tag-descriptions) by [Towhid](http://TowhidN.com/) @ [QA-Themes](http://QA-Themes.com/). Add titles, icons and HTML descriptions to your tags.
 - [Accept Rate Plugin](https://github.com/NoahY/q2a-accept-rate) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Shows the percentage of questions asked by a user which had an answer selected as the best.
@@ -132,6 +130,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Feature Question](https://github.com/arjunsuresh/q2a-feature) by [Arjun](http://gateoverflow.in/user/Arjun). Allows any question to be clicked and gets added to the featured questions list which can be seen as a tab in the question lists.
 - [Gregorian 2 Jalali](http://question2answer-farsi.com/109/shamsi-date-plugin.html) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Displays dates in Jalali (Iranian) format.
 - [Guest-id](https://github.com/q2apro/q2apro-guest-id/tree/master) by [q2apro.com](https://github.com/q2apro).Gives all anonymous users that are posting in your forum a unique ID.
+- [Hide answer for unlogin user](https://github.com/ostack/q2a-hide-answers-for-unlogin-user) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146). [Demo](https://www.ostack.cn). Only show answers for logged in users or users with enough points, to encourage registrations.
 - [Pretty-tags](https://github.com/q2apro/q2apro-pretty-tags/tree/master) by [q2apro.com](https://github.com/q2apro).Provides a pretty autocomplete for tags on the ask page.
 - [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
 - [Private Message Adapter](https://github.com/jacksiro254/q2a-pm-adapter) by [jacksiro254](https://question2answer.org/qa/user/jacksiro254). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
@@ -182,6 +181,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ## Administrative tools
 
 - [Admin Plus Plugin](https://github.com/NoahY/q2a-admin-plus) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Extends the admin area by allowing PHP commands to be executed. (Use with caution!)
+- [Batch Import Users](https://github.com/ostack/q2a-user-import) updated and fixed by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146). [Original](https://github.com/thisliquidspace/q2a-user-import). Batch import users from CSV files.  
 - [Categorization Plugin](https://github.com/NoahY/q2a-cat) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows individual categorization of uncategorized posts via the categories admin panel.
 - [Change Post Owner](https://github.com/q2apro/q2apro-change-post-owner/) by [q2apro.com](https://github.com/q2apro). Allows the author of a post to be changed, or to make it anonymous.
 - [Convert Comment to Answer](https://github.com/q2apro/q2apro-comment-to-answer) by [q2apro.com](https://github.com/q2apro). Convert a comment to an answer, optionally move the succeeding comments.
