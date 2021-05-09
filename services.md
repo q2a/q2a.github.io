@@ -10,7 +10,7 @@ The following websites and providers specialize in Question2Answer services and 
 
 ## Community support
 
-The [Question2Answer Q&A site][QA] provides free support from the community. Check out these help posts to ensure you have the best chances of getting your questions answered:
+The [Question2Answer Q&A site](https://www.question2answer.org/qa/) provides free support from the community. Check out these help posts to ensure you have the best chances of getting your questions answered:
 
 - [How to ask a good question?](https://www.question2answer.org/qa/82349/how-to-ask-a-good-question)
 - [What does it mean if my question is closed?](https://www.question2answer.org/qa/82357/what-does-it-mean-if-my-question-is-closed)
