@@ -16,6 +16,7 @@ Jekyll requires Ruby - the [official Ruby site](https://www.ruby-lang.org/en/dow
 	gem install jekyll bundler
 
 Next you'll need to clone the [Github repository](https://github.com/q2a/q2a.github.io) to your machine. 
+
 ```git clone https://github.com/q2a/q2a.github.io.git```
 
 From the root directory install all the dependencies with:
