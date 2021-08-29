@@ -28,7 +28,7 @@ The language files below are marked by the corresponding Question2Answer version
 - [Q2A 1.8.x - Swahili (Kiswahili)](https://github.com/JackSiro254/Q2A-Swahili) by [Jacksiro254](https://appsmata.github.io/q2a/).
 - [Q2A 1.8.x - Thai (ภาษาไทย)](https://github.com/rachnithit/th) by [Answer.in.th](https://answer.in.th/).
 - [Q2A 1.8.x - Turkish (Türkçe)](http://turkdesk.org/downloads/Turkish-Q2A-1.8.x.zip) by Erkan @ [TurkDesk](http://turkdesk.org/).
-
+- [Q2A 1.8.x - Ukrainian (Українська)](https://github.com/racer2021/uk) by Vitaliy Babichev @ [QAV Питання-Відповіді](https://qav.pp.ua/).
 ## Q2A 1.7
 
 - [Q2A 1.7.x - Arabic (العربية)](https://github.com/pupi1985/q2a-arabic-translation) by Tariq Ahmed @ [Ejabah](http://www.ejabah.info/q2a/), updated by [Ismail](http://stifhamat.com/).
