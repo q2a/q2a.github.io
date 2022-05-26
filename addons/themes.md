@@ -35,4 +35,4 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 - [Paid][Legacy Theme](https://heliochun.github.io/shop/legacy/) by [Shop](https://heliochun.github.io/shop/). Legacy is a carefully thought Material Design theme for the open source Question2Answer platform with inbuilt support for Q2A Blog Tool and many other plugins.
 - [Paid][Muffin Theme](https://heliochun.github.io/shop/muffin/) by [Shop](https://heliochun.github.io/shop/). Muffin is a carefully thought Material Design theme for the open source Question2Answer platform.
 
-You can also [create your own themes](/themes/) using CSS only, or (optionally) [modify the HTML code](/themes/#advanced).
+You can also [create your own themes](/themes/) using CSS only, or (optionally) [modify the HTML code](/themes/#creating-an-advanced-theme-for-question2answer).

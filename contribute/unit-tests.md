@@ -21,7 +21,7 @@ Testing requires [PHPUnit](https://phpunit.de/). The latest version of PHPUnit r
 
 Windows users can find [detailed instructions here](https://phpunit.de/manual/current/en/installation.html).
 
-Also check out the [PHPunit documentation](http://phpunit.de/getting-started.html) for more information about PHPUnit and unit testing in general.
+Also check out the [PHPunit documentation](https://phpunit.de/getting-started-with-phpunit.html) for more information about PHPUnit and unit testing in general.
 
 
 ## Writing tests
