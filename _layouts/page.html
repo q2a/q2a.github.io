@@ -2,10 +2,24 @@
 layout: default
 ---
 
-{% include nav-main.html %}
-{% include nav-sub.html %}
-<div class="qa-main">
-  <div class="onecolumn">
-    {{ content }}
-  </div>
+<div class="docs-container">
+	<div class="page-sidebar">
+		{% include nav-sub.html %}
+	</div>
+
+	<div class="page-content">
+		{{ content }}
+	</div>
 </div>
+
+<script>
+// toggle sub-menu
+var menuToggle = document.querySelector('.page-sidebar-toggle');
+menuToggle.addEventListener('click', function(ev) {
+	var nav = this.nextElementSibling;
+	if (nav.classList.contains('expanded'))
+		nav.classList.remove('expanded');
+	else
+		nav.classList.add('expanded');
+});
+</script>

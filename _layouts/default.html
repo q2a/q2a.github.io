@@ -1,14 +1,49 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    <div class="qa-body-wrapper">
-      {% include header.html %}
-      <div class="qa-main-wrapper">
-        {{ content }}
-      </div>
-      {% include footer.html %}
-    </div>
-    {% include tracking.html %}
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="/css/styles2020.css">
+
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{{ site.description }}">
+
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	{% include analytics.html %}
+</head>
+
+<body class="page">
+
+	{% include header.html %}
+
+	<main class="page-container">
+		{{ content }}
+	</main>
+
+	{% include footer.html %}
+
+	<script>
+	window.addEventListener('load', stickyHeader);
+	window.addEventListener('scroll', stickyHeader, {passive: true});
+
+	// Get the offset position of the navbar
+	var header = document.querySelector('header.header');
+	var stickyPos = header ? header.offsetTop : 0;
+
+	function stickyHeader() {
+		if (window.scrollY > stickyPos) {
+			header.classList.add('sticky');
+		} else {
+			header.classList.remove('sticky');
+		}
+	}
+	</script>
+</body>
 </html>

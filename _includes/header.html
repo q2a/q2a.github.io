@@ -1,6 +1,15 @@
-<div class="qa-header">
-	<div class="qa-logo">
-		<a href="http://www.question2answer.org" class="qa-logo-link"><img src="/images/question2answer-logo-350x40.png" style="padding-top:8px;" width="350" height="40" border="0" alt="Question2Answer"></a>
+<div class="wave-container"></div>
+
+<header class="header">
+	<div class="header-logo">
+		<a href="/"><img class="logo-img normal-logo" src="/images/question2answer-logo-white-350x40.png" alt="Question2Answer logo"></a>
 	</div>
-	<div class="qa-header-clear"></div>
-</div>
+	<nav class="top-nav main-nav">
+		{% for navpage in site.nav.main %}
+			<a class="main-nav-link" href="{{ navpage.path }}">{{ navpage.name }}</a>
+		{% endfor %}
+		{% for navpage in site.nav.second %}
+			<a class="main-nav-link {{ navpage.class | default: '' }}" href="{{ navpage.url }}">{{ navpage.name }}</a>
+		{% endfor %}
+	</nav>
+</header>

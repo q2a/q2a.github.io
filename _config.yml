@@ -6,30 +6,49 @@ permalink: pretty
 exclude: [vendor]
 
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 highlighter: rouge
-kramdown:
-  input: GFM
 
 # Menu layout
 nav:
   main:
     - name: Install
       path: /install/
-    - name: Translate
-      path: /translate/
-    - name: Themes
+      sub: install
+    - name: Customize
       path: /themes/
+      sub: customize
     - name: Plugins
       path: /plugins/
+      sub: plugins
     - name: Code
       path: /code/external/
+      sub: code
     - name: Contribute
       path: /contribute/
+      sub: contribute
     - name: Add-Ons
       path: /addons/
+      sub: addons
+
+  second:
     - name: Services
-      path: /services/
+      url: /services/
+      class: main-nav-link-separate
+    - name: Sites
+      url: https://www.question2answer.org/sites.php
+    - name: Q&A
+      url: https://www.question2answer.org/qa/
+
+  footer:
+    - name: Contact devs
+      url: https://www.question2answer.org/feedback.php
+    - name: Version history
+      url: /install/versions/
+    - name: License details
+      url: https://www.question2answer.org/license.php
+    - name: Demo sandbox
+      url: http://demo.question2answer.org/
 
   install:
     - name: Basic Install
@@ -46,6 +65,12 @@ nav:
       path: /install/security/
     - name: .htaccess
       path: /install/htaccess/
+
+  customize:
+    - name: Create a theme
+      path: /themes/
+    - name: Translate Q2A
+      path: /translate/
 
   plugins:
     - name: Overview

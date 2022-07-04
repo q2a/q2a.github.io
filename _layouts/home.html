@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<h1 class="home-intro"><strong>Question2Answer</strong> (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on <a href="https://www.question2answer.org/sites.php">24,500+ sites in 40 languages</a>.</h1>
+
+{{ content }}
+
+<div class="showcase-cols">
+
+		{% capture answerText %}
+			<p>A Q&amp;A site helps your online community to share knowledge.
+				People with questions get the answers they need. The community is enriched by commenting,
+				voting, notifications, points and rankings.</p>
+		{% endcapture %}
+		{% include card-showcase.html icon="forum" title="What is a Question &amp; Answer site?" answer=answerText %}
+
+		{% capture answerText %}
+			<p>Your members will enjoy the interaction that Q&amp;A enables,
+				and will visit your site more regularly. In addition, many web searches are questions,
+				so Q&amp;A content will attract search engine traffic.</p>
+		{% endcapture %}
+		{% include card-showcase.html icon="people" title="Why offer Q&amp;A on my site?" answer=answerText %}
+
+		{% capture answerText %}
+			<p><a href="https://www.question2answer.org/question2answer-latest.zip"><b>Download Question2Answer</b></a>, then read <a href="/install/">how to install</a>.
+				Version 1.8.5 was <a href="/install/versions/">released</a> on July 15th, 2020.
+				Also <a href="https://github.com/q2a/question2answer">on GitHub</a>.</p>
+			<p>Question2Answer is open source, <a href="https://www.question2answer.org/license.php">licensed under GPL v2+</a>.</p>
+		{% endcapture %}
+		{% include card-showcase.html icon="get_app" title="How do I get Q2A?" answer=answerText %}
+
+		{% capture answerText %}
+			<ul>
+				<li><a href="http://www.php.net/">PHP</a> 5.4 or later, with the <a href="https://en.wikipedia.org/wiki/MySQLi">MySQLi</a> extension.</li>
+				<li><a href="http://www.mysql.com/">MySQL</a> MySQL 5.0 or later.</li>
+			</ul>
+			<p class="text-small">It's strongly recommended to use the latest version of PHP (7.x) and MySQL
+				if possible as they bring many performance enhancements, and Q2A regularly drops support for
+				older, unsupported versions.</p>
+		{% endcapture %}
+		{% include card-showcase.html icon="dns" title="What does Q2A need?" answer=answerText %}
+
+		{% capture answerText %}
+			<ul>
+				<li>Q2A takes 5 minutes (or less!) to <a href="/install/">install</a>.</li>
+				<li>Easy styling with <a href="/themes/">CSS themes</a>.</li>
+				<li>Supports <a href="/translate/">translation</a> into any language.</li>
+				<li>Custom sidebar, widgets, pages and links.</li>
+				<li>SEO features such as <a href="https://www.sitemaps.org/">XML Sitemap</a> and neat URLs.</li>
+			</ul>
+		{% endcapture %}
+		{% include card-showcase.html icon="settings_input_component" title="Easy to set up" answer=answerText %}
+
+		{% capture answerText %}
+			<ul>
+				<li>Fast integrated search engine.</li>
+				<li>Categories (up to 4 levels deep) and/or tagging.</li>
+				<li>Voting, comments, follow-on and closed questions.</li>
+				<li>Points-based reputation management.</li>
+				<li>RSS, email notifications and personal news feeds.</li>
+			</ul>
+		{% endcapture %}
+		{% include card-showcase.html icon="star" title="Core Q&amp;A features" answer=answerText %}
+
+		{% capture answerText %}
+			<ul>
+				<li>Create experts, editors, moderators and admins.</li>
+				<li>User avatars (or <a href="https://en.gravatar.com/">Gravatar</a>) and custom fields.</li>
+				<li>Private messages and public wall posts.</li>
+				<li>Log in via Facebook or others (using <a href="/addons/plugins/">plugins</a>).</li>
+			</ul>
+		{% endcapture %}
+		{% include card-showcase.html icon="face" title="Built-in user account management ..." answer=answerText %}
+
+		{% capture answerText %}
+			<ul>
+				<li>Out-of-the-box <a href="/install/wordpress/">WordPress</a> and Joomla integration.</li>
+				<li>Custom <a href="/install/single-sign-on/">single sign-on</a> support for other sites.</li>
+				<li>Deep integration and customization via <a href="/plugins/">plugins</a>.</li>
+			</ul>
+		{% endcapture %}
+		{% include card-showcase.html icon="assignment_ind" title="... or integrate with existing sites" answer=answerText %}
+
+		{% capture answerText %}
+			<ul>
+				<li>PHP/MySQL <a href="/install/optimize/">scalable</a> to millions of users and posts.</li>
+				<li><a href="/install/security/">Safe from</a> XSS, CSRF and SQL injection attacks.</li>
+				<li>Beat spam with captchas, moderation and/or flagging.</li>
+			</ul>
+		{% endcapture %}
+		{% include card-showcase.html icon="policy" title="Fast and secure" answer=answerText %}
+
+		{% capture answerText %}
+			<p>Contribute <a href="https://github.com/q2a/question2answer">via Github</a>,
+				create a <a href="/themes/">theme</a>,
+				<a href="/plugins/">plugin</a> or
+				<a href="/translate/">translation</a>.</p>
+		{% endcapture %}
+		{% include card-showcase.html icon="translate" title="How can I help?" answer=answerText %}
+
+</div>

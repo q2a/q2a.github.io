@@ -10,7 +10,7 @@ The following websites and providers specialize in Question2Answer services and 
 
 ## Community support
 
-The [Question2Answer Q&A site][QA] provides free support from the community. Check out these help posts to ensure you have the best chances of getting your questions answered:
+The [Question2Answer Q&A site](https://www.question2answer.org/qa/) provides free support from the community. Check out these help posts to ensure you have the best chances of getting your questions answered:
 
 - [How to ask a good question?](https://www.question2answer.org/qa/82349/how-to-ask-a-good-question)
 - [What does it mean if my question is closed?](https://www.question2answer.org/qa/82357/what-does-it-mean-if-my-question-is-closed)
@@ -23,7 +23,6 @@ We also have a [Discord channel](https://discord.gg/QSAubQr) if you'd like to ch
 
 - [Q2A Market](http://www.q2amarket.com/) --- premium themes and custom theme development.
 - [pupi1985](http://www.question2answer.org/qa/user/pupi1985) --- custom plugin development and customizations. [Get a quote!](http://form.jotformz.com/63018196663662)
-- [JacksiroKe](https://appsmata.github.io/q2a/) --- affordable custom and premium plugin development and support.
 
 
 ## Easy hosting for Q2A
@@ -34,12 +33,7 @@ We also have a [Discord channel](https://discord.gg/QSAubQr) if you'd like to ch
 - [RoseHosting](https://www.rosehosting.com) --- web hosting with free installation of Q2A (contact their support team or [follow their guide here](https://www.rosehosting.com/blog/install-question2answer-on-an-ubuntu-14-04-vps/)).
 - [ThisHosting.Rocks](https://www.thishosting.rocks/support/q2a/) --- web hosting with Q2A support services.
 
-Also check out [Cloudlook](http://www.cloudlook.com/) which can help you evaluate some popular cloud hosting providers.
-
 
 ## International sites
 
-- [Question2Answer Farsi](http://question2answer-farsi.com/) --- Persian information for Q2A users in Iran and beyond.
-
-
-[QA]: https://www.question2answer.org/qa/
+- [Question2Answer Chinese](http://q2adoc.ostack.cn/) --- Q2A Introduction in Chinese (Q2A简体中文介绍).

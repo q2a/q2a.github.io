@@ -12,7 +12,7 @@ In most cases, installing Question2Answer for your website should be dead easy. 
 
 Make sure you have:
 
-- A web server which you can access via [FTP](http://en.wikipedia.org/wiki/File_Transfer_Protocol) or [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol). You might find [Cloudlook](http://www.cloudlook.com/ "Live Performance Benchmarks from the Cloud") helpful to evaluate cloud hosting providers.
+- A web server which you can access via [FTP](http://en.wikipedia.org/wiki/File_Transfer_Protocol) or [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol).
 - A [text editor](http://en.wikipedia.org/wiki/Text_editor).
 - A web browser.
 

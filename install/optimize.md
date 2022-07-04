@@ -8,7 +8,7 @@ title: "Question2Answer - Optimization"
 
 Question2Answer is built to run quickly and efficiently on your web and database servers. Nonetheless, if your Q2A site starts receiving a lot of traffic, you may wish to consider these additional steps to help it operate at maximum speed:
 
-1. Switch on the [query cache](http://dev.mysql.com/doc/refman/5.1/en/query-cache.html) in your MySQL server. This allows MySQL to store the results of Question2Answer's queries, instead of recalculating them each time. It's especially relevant if your site receives a lot more views than edits.
+1. Switch on the [query cache](http://dev.mysql.com/doc/refman/5.7/en/query-cache.html) in your MySQL server. This allows MySQL to store the results of Question2Answer's queries, instead of recalculating them each time. It is especially relevant if your site receives a lot more views than edits. Note this MySQL feature has been removed in MySQL 8.
 
 2. Upgrade to the latest version of PHP. Newer versions contain many performance enhancements, in particular PHP 7 which is up to twice as fast as PHP 5.6.
 
