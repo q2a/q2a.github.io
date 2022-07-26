@@ -10,7 +10,7 @@ The language files below are marked by the corresponding Question2Answer version
 
 ## Q2A 1.8
 
-- [Q2A 1.8.x - Arabic (العربية)](http://www.mediafire.com/file/j33or1rf9z6owjn/ar.zip) by Musab Alqaiduh @ [Soalwjwab](https://soalwjwab.com/).
+- [Q2A 1.8.x - Arabic (العربية)](https://github.com/mbassiouny33/q2a-arabic-translation) by [Mohamed Bassiouny](https://mohamedh.me/) based on [this](http://www.mediafire.com/file/j33or1rf9z6owjn/ar.zip) by Musab Alqaiduh @ [Soalwjwab](https://soalwjwab.com/).
 - [Q2A 1.8.x - Brazilian Portuguese (Português)](http://www.question2answer.org/third-party/question2answer-1.8-language-pt-BR.zip) by [Pergunte Direito](http://www.perguntedireito.com.br/).
 - [Q2A 1.8.x - Chinese Simplified (简体中文)](https://github.com/yinhongbo/q2a-lang-cn) by Hongbo Yin.
 - [Q2A 1.8.x - Danish (Dansk)](https://github.com/ejvindh/q2a-da) by [Ejvind Hansen](http://ejvindh.net/en).
