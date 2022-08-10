@@ -29,7 +29,6 @@ We also have a [Discord channel](https://discord.gg/QSAubQr) if you'd like to ch
 
 - [LogicWeb](http://www.logicweb.com/question2answer-hosting/) --- web hosting with one-click installation of Q2A.
 - [CiviHosting](http://civihosting.com/question2answer-hosting) --- web hosting with free installation of Q2A.
-- [Publicity Port](https://publicityport.com/host-question-answer-site-easily-publicity-port) --- web hosting with one-click installation of Q2A and supporting services.
 - [RoseHosting](https://www.rosehosting.com) --- web hosting with free installation of Q2A (contact their support team or [follow their guide here](https://www.rosehosting.com/blog/install-question2answer-on-an-ubuntu-14-04-vps/)).
 - [ThisHosting.Rocks](https://www.thishosting.rocks/support/q2a/) --- web hosting with Q2A support services.
 
