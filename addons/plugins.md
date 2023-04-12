@@ -13,7 +13,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY), [updated](https://github.com/heliochun/q2a-badges/) by [Chun](https://github.com/heliochun). Provides user badges which recognize users' activities and achievements.
 - [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http://gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins.
 - [Category Experts](https://github.com/arjunsuresh/q2a-categoryexperts) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget on Category pages showing the best performing users in that category. A good way to identify Category Experts.
-- [Extra Question Field](https://github.com/jacksiro254/q2a-extra-question-field) by [jacksiro254](http://www.question2answer.org/qa/user/jacksiro254). Enhance your Extra Question fields with file management among other extra fields.
+- [Extra Question Field](https://github.com/JacksiroKe/q2a-extra-question-field) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). Enhance your Extra Question fields with file management among other extra fields.
 - [Network Sites Plugin](https://github.com/NoahY/q2a-network) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows the creation of a network of interlinked Q2A sites.
 - [Quizx](https://github.com/ProThoughts/q2apro-quizx) by [q2apro.com](https://github.com/q2apro). Transforms your question2answer forum into a community quiz.
 
@@ -70,7 +70,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ## Additional page types
 
 - [Best Users per Month](https://github.com/ProThoughts/q2apro-best-users-pro) by [q2apro.com](https://github.com/q2apro). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup) which supports Jalali calendar.
-- [Blog Post](https://github.com/jacksiro254/q2a-blog-post) by [jacksiro254](https://question2answer.org/qa/user/jacksiro254). Allows registered users to maintain a blog on their Q2A site.
+- [Blog Post](https://github.com/JacksiroKe/q2a-blog-post) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). Allows registered users to maintain a blog on their Q2A site.
 - [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers. Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http://gateoverflow.in/user/Arjun) which adds more question filtering options and better styling options.
 - [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 - [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
@@ -100,7 +100,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Recent Events Widget](https://github.com/fullstack412/Q2A-Recent-Events-Widget) by [q2apro.com](https://github.com/q2apro/). Displays all recent events in the sidebar or main area.
 - [Recent Questions Widget](http://www.q2amarket.com/market/q2am-recent-questions/) by [Q2A Market](http://www.q2amarket.com/). Shows a list of recent questions in the sidebar or other locations.
 - [RSS Feed Widget](https://github.com/mbentley3123/q2a-rss-feed) by Mark Bentle by Mark Bentleyy. Displays posts from an RSS feed in the sidebar.
-- [Simple Slider](https://github.com/jacksiro254/q2a-simple-slider) by [jacksiro254](https://question2answer.org/qa/user/jacksiro254). A simple image slider for the tops of pages, showing titles, descriptions and links.
+- [Simple Slider](https://github.com/JacksiroKe/q2a-simple-slider) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). A simple image slider for the tops of pages, showing titles, descriptions and links.
 - [Social Share](https://github.com/amiyasahu/q2a-social-share) by [Amiya Sahu](http://amiyasahu.com/). Adds clickable social sharing buttons below questions.
 - [Tab Widget](https://github.com/Towhidn/Q2A-Tab-Widget) by [Towhid](http://TowhidN.com/). Shows popular and recent questions in two tabs, responsive design.
 - [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
@@ -119,7 +119,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Ask Notices Plugin](https://github.com/svivian/q2a-ask-notices) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays warnings/hints for users asking questions with specific keywords.
 - [Ask with Tags List](https://q2a.io/product/ask-a-new-question-with-tags-list/) by [q2a.io](https://q2a.io/). Allows tags for a new question to be pre-filled using a URL parameter for the 'Ask a Question' page.
 - [Bookmarking Plugin](https://github.com/NoahY/q2a-bookmarks) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be bookmarked by users.
-- [Closed Site](https://github.com/jacksiro254/Q2A-Closed-Site) by [jacksiro254](https://question2answer.org/qa/user/jacksiro254). Allows a Q2A site to be locked to allow in registered users only.
+- [Closed Site](https://github.com/JacksiroKe/Q2A-Closed-Site) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). Allows a Q2A site to be locked to allow in registered users only.
 - [Confirm Plugin](https://github.com/NoahY/q2a-confirm) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a browser warning when leaving a page in which text has been entered.
 - [Cool Tooltips](https://github.com/ProThoughts/q2apro-cool-tooltips) by [q2apro.com](https://github.com/q2apro).Transforms all your tooltips into nice black semi-transparent rounded boxes
 - [Featured Questions](https://github.com/NoahY/q2a-featured) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows featured questions to be kept at the top of question lists.
@@ -129,7 +129,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Hide answer for unlogin user](https://github.com/ostack/q2a-hide-answers-for-unlogin-user) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146). [Demo](https://www.ostack.cn). Only show answers for logged in users or users with enough points, to encourage registrations.
 - [Pretty-tags](https://github.com/ProThoughts/q2apro-pretty-tags) by [q2apro.com](https://github.com/q2apro). Provides a pretty autocomplete for tags on the ask page.
 - [Privilege Management](https://github.com/NoahY/q2a-privileges) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a tab to user profile pages showing progress towards additional privileges.
-- [Private Message Adapter](https://github.com/jacksiro254/q2a-pm-adapter) by [jacksiro254](https://question2answer.org/qa/user/jacksiro254). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
+- [Private Message Adapter](https://github.com/JacksiroKe/q2a-pm-adapter) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). Adds an editor of your choice on the private message and feedback pages, including support for HTML messages.
 - [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
 - [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 - [Quick-login](https://github.com/ProThoughts/q2apro-quick-login) by [q2apro.com](https://github.com/q2apro). Provides a quick login field for all your users.
