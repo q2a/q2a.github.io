@@ -21,7 +21,7 @@ We also have a [Discord channel](https://discord.gg/QSAubQr) if you'd like to ch
 
 ## Q2A support and development
 
-- [Q2A Market](http://www.q2amarket.com/) --- premium themes and custom theme development.
+- [Bleez Labs](https://bleezlabs.com/) --- premium themes and plugins.
 - [pupi1985](http://www.question2answer.org/qa/user/pupi1985) --- custom plugin development and customizations. [Get a quote!](http://form.jotformz.com/63018196663662)
 
 
