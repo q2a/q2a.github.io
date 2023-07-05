@@ -6,6 +6,12 @@ title: "Question2Answer - Version History"
 
 # Version History
 
+## Version 1.8.7 [Download](https://www.question2answer.org/releases/question2answer-1.8.7.zip)
+
+Minor bug fixes, 5th July 2023.
+
+- Fix various PHP notices/errors on PHP 8.1 and 8.2.
+
 ## Version 1.8.6 [Download](https://www.question2answer.org/releases/question2answer-1.8.6.zip)
 
 Minor bug fixes, 20th April 2021.
