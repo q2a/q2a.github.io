@@ -28,7 +28,7 @@ If you are not sure about this, please check with your web hosting provider.
 
 The instructions below are for installing Question2Answer where it manages user accounts and logins for you. If you would like Question2Answer to integrate with your existing user database and account system, see the instructions for [single sign-on](/install/single-sign-on/) installation. From version 1.4, Question2Answer also offers easy [integration with a WordPress 3.x](/install/wordpress/) site and user database.
 
-1. Download the [latest version of Question2Answer](https://github.com/q2a/question2answer/releases) to your computer or web server (also available [on GitHub](https://github.com/q2a/question2answer)).
+1. Download the [latest version of Question2Answer](https://www.question2answer.org/question2answer-latest.zip) to your computer or web server (also available [on GitHub](https://github.com/q2a/question2answer/tree/master) - make sure to use the master branch for the latest stable version).
 
 2. Unzip the download using a tool such as [WinZip](http://www.winzip.com/) (or `unzip` in the Unix shell).
 
