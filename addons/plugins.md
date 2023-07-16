@@ -10,7 +10,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ## Major features
 
-- [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY), [updated](https://github.com/heliochun/q2a-badges/) by [Chun](https://github.com/heliochun). Provides user badges which recognize users' activities and achievements.
+- [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY) ➔ [updated](https://github.com/heliochun/q2a-badges/) by [Chun](https://heliochun.github.io/). Provides user badges which recognize users' activities and achievements.
 - [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http://gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins.
 - [Category Experts](https://github.com/arjunsuresh/q2a-categoryexperts) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget on Category pages showing the best performing users in that category. A good way to identify Category Experts.
 - [Extra Question Field](https://github.com/JacksiroKe/q2a-extra-question-field) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). Enhance your Extra Question fields with file management among other extra fields.
