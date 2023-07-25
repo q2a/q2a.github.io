@@ -11,15 +11,21 @@ Question2Answer has a (currently small) unit test suite. Unit tests check 'units
 
 ## Running the unit tests
 
-Testing requires [PHPUnit](https://phpunit.de/). The latest version of PHPUnit requires PHP 5.6 so most users will want v4.8 which supports PHP 5.3+. For Mac or Linux you can follow these steps:
+Testing requires [PHPUnit](https://phpunit.de/). The version linked below requires PHP 7.2+. For Mac or Linux you can follow these steps:
 
-1. Download [PHPUnit 4.8](https://phar.phpunit.de/phpunit-4.8.35.phar) (PHP archive file).
+1. Download [PHPUnit 8.5](https://phar.phpunit.de/phpunit-8.5.phar) (PHP archive file).
 2. Mark it as executable using the command `chmod +x phpunit.phar`
 3. Move it to your executable directory: `mv phpunit.phar /usr/local/bin/phpunit`
 4. Navigate to the Question2Answer root directory.
-5. Run `phpunit --bootstrap qa-tests/autoload.php qa-tests`
+5. To run the basic (non-database) tests, use: `phpunit --bootstrap qa-tests/autoload.php --exclude-group database qa-tests`
 
-Windows users can find [detailed instructions here](https://phpunit.de/manual/current/en/installation.html).
+To run the full test suite including database tests, a stand-in database is required:
+
+1. Create your test database and a user for that database. (All Q2A tables in that database will be removed and recreated from scratch so it's recommended to keep things separate for safety.)
+2. In the `qa-tests` directory, copy the file `phpunit-qa-config-example.php` to `phpunit-qa-config.php` and enter the appropriate details for the test database.
+3. Run: `phpunit --bootstrap qa-tests/autoload.php qa-tests`
+
+Windows users can find [detailed instructions here](https://phpunit.de/manual/current/en/installation.html), or alternatively use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) and follow the above instructions.
 
 Also check out the [PHPunit documentation](https://phpunit.de/getting-started-with-phpunit.html) for more information about PHPUnit and unit testing in general.
 
