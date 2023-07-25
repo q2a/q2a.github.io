@@ -6,6 +6,20 @@ title: "Question2Answer - Version History"
 
 # Version History
 
+## Version 1.8.8 [Download](https://www.question2answer.org/releases/question2answer-1.8.8.zip)
+
+Database performance improvements and various bug fixes, 25th July 2023.
+
+- Significant database performance improvements (PRs from @pupi1985)
+- Other miscellaneous performance improvements.
+- Avoid SMTP credentials in Admin area from being autofilled (PR #972 from @pupi1985).
+- Allow pagination of element lists that exceed QA_MAX_LIMIT_START (PR #932 from @pupi1985).
+- Handle image resource changes in PHP 8.
+- Fix microdata error (PR #909 from @pupi1985).
+- Switch to rawurlencode/rawurldecode functions (PR #966 from @pupi1985).
+- Paginate special users page (PR #953 from @pupi1985).
+- Invalidate cache when new answers/comments added (PR #949 from @pupi1985).
+
 ## Version 1.8.7 [Download](https://www.question2answer.org/releases/question2answer-1.8.7.zip)
 
 Minor bug fixes, 5th July 2023.
