@@ -94,7 +94,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Feed Widget](https://github.com/Towhidn/Q2A-feed-widget) by [Towhid](http://TowhidN.com/). Lists recent items from an external RSS feed. Useful for blog posts, articles, etc...
 - [Logarithmic Tag Cloud](https://github.com/NoahY/q2a-log-tags) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a list of tags with logarithmic size indicating popularity.
 - [Most Active Users](https://github.com/yshiga/q2apro-most-active-users) by [q2apro.com](https://github.com/q2apro). Shows a list of users who were most active in the past week or month.
-- [Online User Count](http://question2answer-farsi.com/files/plugins/en/show-online-user-count.zip) by Ali Sayahiyan @ [Question2Answer Farsi](http://question2answer-farsi.com/). Shows a list of users who are currently online as well as total visitors.
+- [Online User Count](https://github.com/pupi1985/q2a-onlineusers/tree/a1e555b77b5a0585f8c336d9e37e1e4a2bece437) by Ali Sayahiyan. Shows a list of users who are currently online as well as total visitors. Also [forked here](https://github.com/pupi1985/q2a-onlineusers) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
 - [Popular Questions](https://github.com/ProThoughts/q2apro-popular-questions-widget) by [q2apro.com](https://github.com/q2apro). Shows a list of the most viewed questions.
 - [Random Question Widget](https://github.com/NoahY/qa-random-question) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Displays a random question in the sidebar.
 - [Recent Events Widget](https://github.com/fullstack412/Q2A-Recent-Events-Widget) by [q2apro.com](https://github.com/q2apro/). Displays all recent events in the sidebar or main area.
