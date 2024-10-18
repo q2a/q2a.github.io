@@ -6,7 +6,7 @@ title: "Question2Answer - Developers - Login Modules"
 
 # Login Modules
 
-[« Back to modules](/plugins/modules/)
+[« Back to modules]({{ site.baseurl }}/plugins/modules/)
 
 A login module enables users to log in to Q2A via an external identity provider, such as [Open ID](http://openid.net/). The module can display some HTML alongside Q2A's login and register links in the navigation menu, and/or on Q2A's login and register pages. This HTML can use a variety of methods to obtain the user's credentials, such as linking to a separate form or showing a pop-up via Javascript.
 
@@ -39,6 +39,6 @@ The PHP `class` for a login module can contain the following functions (all are 
 
 - **`logout_html($tourl)`** allows your module to display some HTML for logging out the user, to be displayed in the top right menu. Your `logout_html()` function is only called if the current Q2A user was logged in via `qa_log_in_external_user()` and your `match_source()` function returns `true` for the `$source` value that was used. The `$tourl` parameter contains the URL of the Q2A logout page, to which you **must** redirect the user once your own logout process is complete.
 
-You may choose to request the user's external login credentials on a page which is served by Q2A. In this case you would include both a login module and a [page module](/plugins/modules-page/) in your plugin. The HTML displayed by the login module would link to your custom page, and the page module would display the appropriate form and call `qa_log_in_external_user()` when the form was submitted.
+You may choose to request the user's external login credentials on a page which is served by Q2A. In this case you would include both a login module and a [page module]({{ site.baseurl }}/plugins/modules-page/) in your plugin. The HTML displayed by the login module would link to your custom page, and the page module would display the appropriate form and call `qa_log_in_external_user()` when the form was submitted.
 
-[« Back to modules](/plugins/modules/)
+[« Back to modules]({{ site.baseurl }}/plugins/modules/)
