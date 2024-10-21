@@ -94,6 +94,12 @@ pre code {
 	font-size: 13px;
 }
 
+blockquote {
+    background-color: #FFE0B2;
+    padding: .1rem 1rem;
+    margin: 0;
+}
+
 
 
 /* ==================
@@ -183,6 +189,41 @@ a.main-nav-link-separate {
 	background-color: #fff;
 	box-shadow: 2px 2px 4px rgba(80, 80, 80, 0.1);
 }
+
+#question2answer-plugins ~ ul li,
+#question2answer-themes ~ ul li {
+    border-bottom: 1px solid #e0e0e0;
+    margin: .3rem 0;
+}
+
+.rep-date {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 0px 6px;
+    border-radius: 3px;
+    margin-inline-end: 3px;
+    margin-bottom: 6px;
+}
+
+.rep-date-0, .rep-date-1 {
+    background-color: #18ab60; /* Green */
+    color: #ffffff;
+}
+.rep-date-2 {
+    background-color: #3498db; /* Blue */
+    color: #ffffff;
+}
+.rep-date-3 {
+    background-color: #ffeb3b; /* Yellow */
+}
+.rep-date-4, .rep-date-5 {
+    background-color: #e0e0e0; /* Grey */
+}
+.rep-date-bad {
+    background-color: #e74c3c; /* Red */
+	color: #ffffff;
+}
+
 .page-sidebar {
 	padding: 1.5rem 1rem;
 }

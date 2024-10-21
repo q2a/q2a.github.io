@@ -8,6 +8,10 @@ title: "Question2Answer Add-ons - Themes"
 
 To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](/services/)**. Below is a list of other recently updated themes:
 
+> 🟢 Status: up-to-date | 🔵 Status: Likely up-to-date | 🟡 Status: Hasn't been updated in a while | 🔘 Status: Inactive for a while | 🔴 Status: Unknown.  
+> Note that "*Inactive*" & "*Unknown*" themes doesn't necessarily mean that they do not work. Some themes just don't require to be updated as frequently.
+
+
 - [MayroPro](https://github.com/MominRaza/MayroPro) (A Google Material Design Theme with Dark Mode, RTL, PWA Support) by [Momin Raza](https://mominraza.github.io).
 - [Blog Theme](https://github.com/ostack/qa-ostack-blog-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat. [Demo](https://www.ostack.cn). This theme can show pictures and content in question lists, to make the Q2A site look like a blog.
 - [FatSnowFlat](https://github.com/ostack/qa-FatSnowFlat-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat. [Demo](https://www.ostack.cn). This theme can show pictures and content in question lists.
