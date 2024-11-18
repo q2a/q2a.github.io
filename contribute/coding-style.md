@@ -2,6 +2,7 @@
 layout: page
 menu: contribute
 title: "Question2Answer Coding Style guidelines"
+slug: contribute-coding-style
 ---
 
 # Question2Answer Coding Style guidelines

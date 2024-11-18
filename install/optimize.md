@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Question2Answer - Optimization"
+slug: install-optimization
 ---
 
 # Optimizing the performance of Question2Answer

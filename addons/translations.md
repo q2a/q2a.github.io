@@ -2,11 +2,12 @@
 layout: page
 menu: addons
 title: "Question2Answer - Add-ons - Language files"
+slug: addons-translate
 ---
 
 # Question2Answer Language Files
 
-The language files below are marked by the corresponding Question2Answer version. You can safely install a language file from a different version, and [update it with the missing phrases](/translate/). To install a language, place its directory (such as `fr` or `ru`) in Q2A's `qa-lang` directory, then open the General section of the Admin panel and choose the language from the menu provided.
+The language files below are marked by the corresponding Question2Answer version. You can safely install a language file from a different version, and [update it with the missing phrases]({{ site.baseurl }}/translate/). To install a language, place its directory (such as `fr` or `ru`) in Q2A's `qa-lang` directory, then open the General section of the Admin panel and choose the language from the menu provided.
 
 ## Q2A 1.8
 
@@ -89,6 +90,6 @@ The language files below are marked by the corresponding Question2Answer version
 - [Q2A 1.6.x - Ukrainian (Українська)](http://sourceforge.net/projects/q2a-lang-uk/) by Andriy Bokiy.
 - [Q2A 1.6.x - Vietnamese (Tiếng Việt)](http://annguyenco.com/hoidap/vi-qa-lang.zip) by [AnNguyenCo](http://www.annguyenco.com). Also: [Updated version](https://www.dropbox.com/s/z1gzuow0rz4rkyu/vi.zip?dl=0) by [NTHQ Team](https://namgivu.wordpress.com/2015/01/09/vietnamese-translation-for-question2answer-website/).
 
-_View [older language files](/addons/translations-old/)._
+_View [older language files]({{ site.baseurl }}/addons/translations-old/)._
 
-If your language is not listed, or is out-of-date, you can [create or update language files](/translate/) using a text editor.
+If your language is not listed, or is out-of-date, you can [create or update language files]({{ site.baseurl }}/translate/) using a text editor.

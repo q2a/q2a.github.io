@@ -1,7 +1,8 @@
 ---
 layout: page
 menu: install
-title: "Question2Answer - Optimization"
+title: "Question2Answer - Security"
+slug: install-security
 ---
 
 # Making Question2Answer extra secure

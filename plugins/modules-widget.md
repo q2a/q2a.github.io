@@ -2,11 +2,12 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Widget Modules"
+slug: modules-widget
 ---
 
 # Widget Modules
 
-[« Back to modules](/plugins/modules/)
+[« Back to modules]({{ site.baseurl }}/plugins/modules/)
 
 A widget module (requires Q2A 1.4+) displays some extra HTML content on one or more of Q2A's pages. The widget specifies which types of pages ("templates") it can be displayed on, and where it can be displayed on the page. The Q2A site admin then chooses exactly where and when the widget is shown, out of those options that the widget makes available.
 
@@ -52,4 +53,4 @@ The PHP class for a widget module must contain the following functions (all are 
     - `$request` - the Q2A request that generated the page, e.g. `'user/John Doe'`. The `$request` uses slash as a separator, independent of the type of URLs a particular Q2A site is using.
     - `$qa_content` - the nested Q2A array containing the full content for the page being displayed, as it was passed to the theme object. Use PHP's `print_r()` function to see what's inside and find any bits you need.
 
-[« Back to modules](/plugins/modules/)
+[« Back to modules]({{ site.baseurl }}/plugins/modules/)

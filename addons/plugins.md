@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer Add-ons - Plugins"
+slug: addons-plugins
 ---
 
 # Question2Answer Plugins
@@ -140,7 +141,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Social Sharing Plugin](https://github.com/NoahY/q2a-share) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds social sharing buttons to question pages.
 - [Sort Answers](https://github.com/amiyasahu/q2a-sort-answers) by [Amiya Sahu](http://amiyasahu.com/). Allows answers on a question page to be sorted by oldest, newest and highest voted.
 - [Tag Search](https://github.com/arjunsuresh/tag-search) by [Arjun](http://gateoverflow.in/user/Arjun). Allows tags to be searched via AJAX and with auto complete.
-- [Tag Descriptions Plugin](http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial](/plugins/tutorial/). Allows tag descriptions to be shown on tag pages and in tooltips.
+- [Tag Descriptions Plugin](http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial]({{ site.baseurl }}/plugins/tutorial/). Allows tag descriptions to be shown on tag pages and in tooltips.
 - [Theme Switcher Plugin](https://github.com/arjunsuresh/q2a-theme-switch) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://gateoverflow.in/user/Arjun). Allows users to choose their own theme on their profile page for normal as well as mobile view.
 - [Top Searches](https://github.com/arjunsuresh/q2a-top-search) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget to display the top searched words. Also have an option to display top seacrhed tags if using [Tag Search](https://github.com/arjunsuresh/tag-search) plugin.
 - [User Signatures Plugin](https://github.com/NoahY/q2a-signatures) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to define a signature for all of their posts. Also [forked here](https://github.com/pupi1985/q2a-signatures) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
@@ -165,7 +166,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Newsletter-favtags](https://github.com/ProThoughts/q2apro-newsletter-favtags) by [q2apro.com](https://github.com/q2apro).Users can subscribe to their favorite tags and the plugin emails them daily if there are new questions.
 - [Newsletter Plugin](https://github.com/NoahY/q2a-newsletter) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to receive an HTML newsletter of the latest top questions, answers and comments.
 - [Tag and Category Notification](https://github.com/amiyasahu/q2a-email-notification) by [Amiya Sahu](http://amiyasahu.com/). When a question is asked with a tag/category, emails users who favorited that tag/category.
-- [Votes-manager](https://github.com/ProThoughts/q2apro-votes-manager) by [q2apro.com](https://github.com/q2apro).Lists all votes made in your forum.](https://github.com/q2apro).Sends emails to users about activities on questions they have favorited.
+- [Votes-manager](https://github.com/ProThoughts/q2apro-votes-manager) by [q2apro.com](https://github.com/q2apro). Lists all votes made in your forum. Sends emails to users about activities on questions they have favorited.
 
 ## Anti-spam tools
 
@@ -216,4 +217,4 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Comment Voting Plugin](https://github.com/NoahY/q2a-comment-voting) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows comments to be voted on, similarly to questions and answers.
 - [Question Closing](https://github.com/NoahY/q2a-close) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows questions to be closed in Q2A 1.4.x.
 
-Click for documentation on [creating Q2A plugins](/plugins/) (requires PHP programming).
+Click for documentation on [creating Q2A plugins]({{ site.baseurl }}/plugins/) (requires PHP programming).
