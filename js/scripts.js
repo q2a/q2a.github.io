@@ -155,11 +155,6 @@ const handleClick = e => {
 } // End handleClick()
 document.addEventListener('click', handleClick);
 
-// Deal with Notice saved state
-const q2adocsNotice = localStorage.getItem('q2adocs_notice');
-if (localStorage.q2adocsNotice && noticeContainer != null) {
-	noticeContainer.classList.add('display-none');
-}
 
 // Quick fix to close Mega Menu, when clicking secondary nav items
 document.querySelectorAll('.nav-main-second .toggleChildren').forEach(element => {

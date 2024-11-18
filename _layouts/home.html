@@ -17,6 +17,15 @@ layout: default
 	</div>
 	<div class="close-sheet"></div>
 </div>
+<script>
+	// Deal with Notice saved state
+	// Check it here early to avoid showing the PopUp for a split second
+	const noticeCont = document.querySelector('.notice-container');
+	const q2adocsNotice = localStorage.getItem('q2adocs_notice');
+	if (localStorage.q2adocsNotice && noticeCont != null) {
+		noticeCont.classList.add('display-none');
+	}
+</script>
 
 <article class="showcase-cols">
 
