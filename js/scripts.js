@@ -363,7 +363,10 @@ if(gitLinks != null && gitLinks.length) {
 		setTimeout(function(){
 			document.querySelector('.page-status-container').innerHTML = '\
 				<div class="page-status">\
-					There has been an update to this page. Please reload.\
+					<div>\
+						<span class="twbb">There has been an update to this page.</span>\
+						<span class="twbb">Please reload.</span>\
+					</div>\
 					<span class="close-page-status material-icons noSelect" title="Reload this page">refresh</span>\
 				</div>\
 			';

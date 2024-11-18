@@ -498,7 +498,7 @@ ul.sub-nav {
     background-color: #ffffff;
     width: 70%;
     max-width: 90vw;
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -1093,7 +1093,7 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     }
     .notice-text {
         padding: 1rem;
-        max-height: calc(80vh - 80px);
+        max-height: calc(70vh - 80px - 1rem);
     }
     .notice-image {
         height: 100px;
@@ -1119,6 +1119,13 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .page-status {
         padding: .6rem 1rem;
     }
+}
+@media (max-width: 375px) {
+	.twbb {
+		display: block;
+		font-size: 12px;
+		margin-right: .5rem;
+	}
 }
 
 
