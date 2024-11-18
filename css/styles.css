@@ -785,6 +785,7 @@ ul.sub-nav {
     margin: 0 auto;
     text-align: center;
     font-size: 1.5rem;
+    line-height: initial;
     font-weight: normal;
 }
 
