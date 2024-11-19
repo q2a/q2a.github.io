@@ -373,7 +373,7 @@ if(gitLinks != null && gitLinks.length) {
 					<span class="close-page-status material-icons noSelect" title="Reload this page">refresh</span>\
 				</div>\
 			';
-		}, 2000);
+		}, 1500);
 	}
 	
 	// Get saved data from LocalStorage
