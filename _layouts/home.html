@@ -6,7 +6,7 @@ layout: default
 	<h1 class="home-intro"><strong>Question2Answer</strong> (Q2A) is a popular open source Q&A platform for PHP/MySQL, currently running on <a href="https://www.question2answer.org/sites.php">24,500+ sites in 40 languages</a>.</h1>
 </div>
 
-<div class="notice-container">
+<div class="notice-container display-none">
 	<div class="notice">
 		<div class="close-notice material-icons">close</div>
 		<div class="notice-image"></div>
@@ -17,15 +17,6 @@ layout: default
 	</div>
 	<div class="close-sheet"></div>
 </div>
-<script>
-	// Deal with Notice saved state
-	// Check it here early to avoid showing the PopUp for a split second
-	const noticeCont = document.querySelector('.notice-container');
-	const q2adocsNotice = localStorage.getItem('q2adocs_notice');
-	if (localStorage.q2adocsNotice && noticeCont != null) {
-		noticeCont.classList.add('display-none');
-	}
-</script>
 
 <article class="showcase-cols">
 

@@ -152,12 +152,16 @@ const handleClick = e => {
 	if (e.target.className.includes('close-notice') || e.target.className.includes('close-sheet')) {
 		noticeContainer.classList.add('display-none');
 		// set Notice localStorage
-		localStorage.q2adocsNotice = 'closed';
+		localStorage.q2adocs_notice = 'closed';
 	}
 	
 } // End handleClick()
 document.addEventListener('click', handleClick);
 
+// Show / Hide Notice on the front page
+if (localStorage.getItem('q2adocs_notice') === null && noticeContainer != null) {
+	noticeContainer.classList.remove('display-none'); 
+}
 
 // Quick fix to close Mega Menu, when clicking secondary nav items
 document.querySelectorAll('.nav-main-second .toggleChildren').forEach(element => {
