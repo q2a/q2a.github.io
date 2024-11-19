@@ -64,7 +64,10 @@ if (document.querySelectorAll('.nav-main .selected-nav').length > 0) {
 	document.querySelector('.mega-menu-trigger .nav-item').classList.add('selected-nav');
 }
 // Add selected nav to the top level parent (second nav)
-if (document.querySelectorAll('.nav-main-second .selected-nav').length > 0 && !document.body.classList.contains('template-contribute')) {
+if (
+	document.querySelectorAll('.nav-main-second .selected-nav').length > 0 && 
+	!document.body.classList.contains('template-contribute') && 
+	!document.body.classList.contains('template-addons')) {
 	document.querySelector('.nav-main-second .selected-nav').closest('.sub-nav').previousElementSibling.classList.add('selected-nav');
 }
 
