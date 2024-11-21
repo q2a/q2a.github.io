@@ -637,16 +637,20 @@ ul.sub-nav {
     background-color: #3498db; /* Blue */
     color: #ffffff;
 }
-.rep-date-3 {
-    background-color: #ffeb3b; /* Yellow */
+.rep-date-3, .rep-date-4 {
+    background-color: #ffe252; /* Yellow */
 }
-.rep-date-4, .rep-date-5 {
-    background-color: #e0e0e0; /* Grey */
-}
-.rep-date-bad {
-    background-color: #e74c3c; /* Red */
+.rep-date-5 {
+    /* background-color: #e0e0e0; */ /* Grey */
+	background-color: #e74c3c;
     color: #ffffff;
 }
+/*
+.rep-date-bad {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+*/
 
 .rep-date + .rep-date {
     display: none;

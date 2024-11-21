@@ -1,6 +1,6 @@
 
 // Days until next fetch for Github repository links
-const daysUntilNextFetch = 90; // 3 months
+const daysUntilNextFetch = 7;
 
 class githubList {
     constructor() {
@@ -287,8 +287,10 @@ const calcYears = param => {
 		yearGap = 2;
 	} else if ( diffYears > 730 && diffYears <= 1095) {
 		yearGap = 3;
-	} else if ( diffYears > 1095) {
+	} else if ( diffYears > 1095 && diffYears <= 1460) {
 		yearGap = 4;
+	} else if ( diffYears > 1460) {
+		yearGap = 5;
 	}
 	return yearGap;
 }

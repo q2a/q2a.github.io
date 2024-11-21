@@ -9,7 +9,8 @@ slug: addons-themes
 
 To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](/services/)**. Below is a list of other recently updated themes:
 
-> 🟢 Status: up-to-date | 🔵 Status: Likely up-to-date | 🟡 Status: Hasn't been updated in a while | 🔘 Status: Inactive for a while | 🔴 Status: Unknown.  
+> Status description:  
+> 🟢 Up-to-date | 🔵 Likely up-to-date | 🟡 Hasn't been updated in a while | 🔴 Inactive for a while | 🔘 Unknown.  
 > Note that "*Inactive*" & "*Unknown*" themes doesn't necessarily mean that they do not work. Some themes just don't require to be updated as frequently.
 
 ## Free Themes
