@@ -425,26 +425,26 @@ if(gitLinks != null && gitLinks.length) {
 		return Object.values(storage);
 	}
 	
+	// Change Emoji colors for actual color element
+	const colorLegends = document.querySelector('.template-addons-plugins blockquote, .template-addons-themes blockquote');
+	const colorLegendsUpdated = colorLegends.innerHTML.replace(
+		'🟢','<span class="rep-date rep-date-1"></span>'
+	).replace(
+		'🔵','<span class="rep-date  rep-date-2"></span>'
+	).replace(
+		'🟡','<span class="rep-date rep-date-3"></span>'
+	).replace(
+		'🔴','<span class="rep-date rep-date-5"></span>'
+	).replace(
+		'🔘','<span class="rep-date"></span>'
+	);
+	colorLegends.innerHTML = colorLegendsUpdated;
+	
 	// Create tags for both - Plugins and Themes
 	const createTags = (param) => {
 		
 		// get stored current Q2A version
 		const currentQ2aVersion = Object.values(param[0] || {} )[3];
-		
-		// Change Emoji colors for actual color element
-		const colorLegends = document.querySelector('.template-addons-plugins blockquote, .template-addons-themes blockquote');
-		const colorLegendsUpdated = colorLegends.innerHTML.replace(
-			'🟢','<span class="rep-date rep-date-1"></span>'
-		).replace(
-			'🔵','<span class="rep-date  rep-date-2"></span>'
-		).replace(
-			'🟡','<span class="rep-date rep-date-3"></span>'
-		).replace(
-			'🔴','<span class="rep-date rep-date-5"></span>'
-		).replace(
-			'🔘','<span class="rep-date"></span>'
-		);
-		colorLegends.innerHTML = colorLegendsUpdated;
 		
 		param.forEach((item, index) => {
 
