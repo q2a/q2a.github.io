@@ -1172,9 +1172,15 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .page-content {
         padding: 0;
     }
-    #question2answer-plugins ~ ul, #question2answer-themes ~ ul {
-        padding-left: 1rem;
-    }
+	#question2answer-plugins ~ ul .child-repository, #question2answer-themes ~ ul .child-repository {
+		padding-left: 1.5rem;
+	}
+	.child-repository:before {
+		left: .5rem;
+	}
+	.rep-date-true {
+		white-space: nowrap;
+	}
     .page-status {
         padding: .6rem 1rem;
     }
