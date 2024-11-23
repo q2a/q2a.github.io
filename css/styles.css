@@ -661,7 +661,7 @@ ul.sub-nav {
     background-color: rgb(0 0 0 / 2%);
 }
 
-#question2answer-plugins ~ ul li a:first-child, #question2answer-themes ~ ul li a:first-child {
+#question2answer-plugins ~ ul li a:first-of-type, #question2answer-themes ~ ul li a:first-of-type {
     font-weight: bold;
 }
 
