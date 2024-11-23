@@ -8,12 +8,22 @@ class githubList {
 		this.themeList = [];
     }
 
-	addListLink(listType, index, linkInfo, dateInfo) {
+	addListLink(listType, index, linkInfo, dateInfo, q2aVersion) {
         // Push object to array, that later will be saved locally
 		if(listType === 'plugins') {
-			this.pluginList.push({id: index.toString(), link: linkInfo.toString(), date: dateInfo.toString()});
+			this.pluginList.push({
+				id: index.toString(), 
+				link: linkInfo.toString(), 
+				date: dateInfo.toString(), 
+				max_q2a: q2aVersion.toString()
+			});
 		} else {
-			this.themeList.push({id: index.toString(), link: linkInfo.toString(), date: dateInfo.toString()});
+			this.themeList.push({
+				id: index.toString(), 
+				link: linkInfo.toString(), 
+				date: dateInfo.toString(), 
+				max_q2a: q2aVersion.toString()
+			});
 		}
     }
 	
@@ -295,6 +305,27 @@ const calcYears = param => {
 	return yearGap;
 }
 
+const calcVersion = (pluginVersion, q2aVersion) => {
+	pluginVersion = pluginVersion.split('.').join('');
+	q2aVersion = q2aVersion.split('.').join('');
+	
+	let versionGap = 0;
+	const calcVersionGap = (q2aVersion - pluginVersion);
+	
+	if ( calcVersionGap === 1) {
+		versionGap = 1;
+	} else if ( calcVersionGap === 2) {
+		versionGap = 2;
+	} else if ( calcVersionGap === 3) {
+		versionGap = 3;
+	} else if ( calcVersionGap === 4) {
+		versionGap = 4;
+	} else if ( calcVersionGap >= 5) {
+		versionGap = 5;
+	}
+	return versionGap;
+}
+
 // Checks for Github repository links, and prepends a tag with their date "year-month-day". (fetched from their metadata.js files)
 const gitLinks = document.querySelectorAll('\
 	.template-addons-plugins .page-content li a[href*="https://github.com/"],\
@@ -317,15 +348,34 @@ if(gitLinks != null && gitLinks.length) {
 	// Fetch Links
 	const fetchLinks = () => {
 		
+		// Get Q2A version
+		let q2aVersion;
+		const getQ2aVersion = 'https://raw.githubusercontent.com/q2a/question2answer/master/VERSION.txt';
+		let rawFile = new XMLHttpRequest();
+		rawFile.open('GET', getQ2aVersion, false);
+		rawFile.onreadystatechange = function ()
+		{
+			if(rawFile.readyState === 4)
+			{
+				if(rawFile.status === 200 || rawFile.status == 0)
+				{
+					q2aVersion = rawFile.responseText;
+					console.log(allText);
+				}
+			}
+		}
+		rawFile.send(null);
+		
 		// Set list headers
 		if(isPluginsPage) {
-			pluginsList.addListLink('plugins', '1000', 'List_length', pluginLinks.length);
-			pluginsList.addListLink('plugins', '1001', 'updated', new Date());
+			pluginsList.addListLink('plugins', '1000', 'List_length', pluginLinks.length, q2aVersion);
+			pluginsList.addListLink('plugins', '1001', 'updated', new Date(), q2aVersion);
 		} else if (isThemesPage) {
-			themesList.addListLink('themes', '1000', 'List_length', themeLinks.length);
-			themesList.addListLink('themes', '1001', 'updated', new Date());
+			themesList.addListLink('themes', '1000', 'List_length', themeLinks.length, q2aVersion);
+			themesList.addListLink('themes', '1001', 'updated', new Date(), q2aVersion);
 		}
 		
+		// Create list
 		for(let i=0; i<gitLinks.length; i++) {
 			
 			const getGithubHref = gitLinks[i].getAttribute('href');
@@ -340,10 +390,12 @@ if(gitLinks != null && gitLinks.length) {
 			.then(jsonResponse => {
 				if(isRepository) {
 					// Add link to list
+					const getQ2aVersion = (jsonResponse.max_q2a != null) ? jsonResponse.max_q2a : '0'; 
+					
 					if(isPluginsPage) {
-						pluginsList.addListLink('plugins', [i], gitLinks[i], jsonResponse.date);
+						pluginsList.addListLink('plugins', [i], gitLinks[i], jsonResponse.date, getQ2aVersion);
 					} else if (isThemesPage) {
-						themesList.addListLink('themes', [i], gitLinks[i], jsonResponse.date);
+						themesList.addListLink('themes', [i], gitLinks[i], jsonResponse.date, getQ2aVersion);
 					}
 				}
 			})
@@ -353,9 +405,9 @@ if(gitLinks != null && gitLinks.length) {
 				// We can remove the display tag in the createPluginTags() functions instead, by removing the "else" statement.
 				if(isRepository) {
 					if(isPluginsPage) {
-						pluginsList.addListLink('plugins', [i], gitLinks[i], 'unknown');
+						pluginsList.addListLink('plugins', [i], gitLinks[i], 'unknown', '0');
 					} else if (isThemesPage) {
-						themesList.addListLink('themes', [i], gitLinks[i], 'unknown');
+						themesList.addListLink('themes', [i], gitLinks[i], 'unknown', '0');
 					}
 				}
 			})
@@ -396,38 +448,58 @@ if(gitLinks != null && gitLinks.length) {
 	
 	// Create tags for both - Plugins and Themes
 	const createTags = (param) => {
+		
+		// get stored current Q2A version
+		const currentQ2aVersion = Object.values(param[0] || {} )[3];
+		
 		param.forEach((item, index) => {
-			
-				const test = param.slice(2); // Remove list header (metadata) indexes
-				const id = Object.values(test[index] || {} )[0];
-				const link = Object.values(test[index] || {} )[1];
-				const date = Object.values(test[index] || {} )[2];
+
+				const list = param.slice(2); // Remove list header (metadata) indexes
+				const id = Object.values(list[index] || {} )[0];
+				const link = Object.values(list[index] || {} )[1];
+				const date = Object.values(list[index] || {} )[2];
+				const max_q2a = Object.values(list[index] || {} )[3];
 				
 				// console.log(`${id} === ${link} === ${date}`);
 				
-				if(id != null && link != null && date != null) {	
+				if(id != null && link != null && date != null && max_q2a != null) {
 					// Preppend based on stored id/index, because DOM link order may not be accurate when looping
-					// index order will be updated when information is stored/fetched again
-					if(date != 'unknown') {
-						const yearGapClass = 'rep-date-' + calcYears(date);
-						gitLinks[id].insertAdjacentHTML(
-							'beforebegin',
-							`<span class="rep-date rep-date-true ${yearGapClass}" title="Last updated: ${date}">${date}</span>`,
-						);
-					} else if(date == 'unknown') {
-						// If response is 'bad request' or '404', show "unknown" tag
-						gitLinks[id].insertAdjacentHTML(
-							'beforebegin',
-							`<span class="rep-date rep-date-bad" title="Last updated: Unknown">Unknown</span>`,
-						);
+					// index order will be updated when information is fetched again
+					
+					// if 'max_q2a' key was available at the time of fetching
+					if(max_q2a != '0') {
+						if(date != 'unknown') { // prevention of worst case, 'max_q2a' available but not 'date'.
+							const versionGapClass = 'rep-date-' + calcVersion(max_q2a, currentQ2aVersion);
+							gitLinks[id].insertAdjacentHTML(
+								'beforebegin',
+								`<span class="rep-date rep-date-true ${versionGapClass}" title="Last updated: ${date}">${date}</span>`,
+							);
+						}
+					} else {
+					// else determine badge based on date
+						if(date != 'unknown') {
+							const yearGapClass = 'rep-date-' + calcYears(date);
+							gitLinks[id].insertAdjacentHTML(
+								'beforebegin',
+								`<span class="rep-date rep-date-true ${yearGapClass}" title="Last updated: ${date}">${date}</span>`,
+							);
+						} else if(date == 'unknown') {
+							// If response is 'bad request' or '404', show "unknown" tag
+							gitLinks[id].insertAdjacentHTML(
+								'beforebegin',
+								`<span class="rep-date rep-date-bad" title="Last updated: Unknown">Unknown</span>`,
+							);
+						}
 					}
 				}
 		});
+		// console.log(JSON.parse(localStorage.getItem('q2adocs_gitHub_plugins')));
 	}
 	
 	// Start at zero, in case not fetched yet
 	let pluginsListUpdated = currentDate();
 	let pluginListLength = 0;
+	
 	let themesListUpdated = currentDate();
 	let themeListLength = 0;
 	
@@ -443,6 +515,7 @@ if(gitLinks != null && gitLinks.length) {
 		themesListUpdated = new Date(themesListUpdated).toISOString().split('T')[0];
 		themeListLength = singleValue(retrievedThemes[0])[2];
 	}
+	
 	// ----------------------------
 	// Create the tags / badges ---
 	// ----------------------------
