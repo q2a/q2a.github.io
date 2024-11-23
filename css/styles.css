@@ -135,7 +135,8 @@ pre code {
 }
 
 blockquote {
-    background-color: #FFE0B2;
+    background-color: #fff9e1;
+    border-left: 3px solid #ffef95;
     padding: .1rem 1rem;
     margin: 0;
 }
@@ -613,22 +614,76 @@ ul.sub-nav {
     border-radius: 0.5rem;
 }
 
+#question2answer-plugins ~ ul, #question2answer-themes ~ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 #question2answer-plugins ~ ul li,
 #question2answer-themes ~ ul li {
     border-bottom: 1px solid #e0e0e0;
-    margin: .3rem 0;
+    padding: .8rem 1rem;
+}
+
+#question2answer-plugins ~ ul .child-repository,
+#question2answer-themes ~ ul .child-repository {
+    padding-left: 2rem;
+}
+
+.child-repository {
+	position: relative;
+}
+
+.child-repository:before {
+    content: "";
+    position: absolute;
+    top: .8rem;
+    left: 1rem;
+    bottom: .8rem;
+    width: 4px;
+    background-color: rgb(0 0 0 / 10%);
+}
+
+#question2answer-plugins ~ ul li:hover,
+#question2answer-themes ~ ul li:hover {
+    background-color: rgb(0 0 0 / 2%);
+}
+
+#question2answer-plugins ~ ul li a:first-child, #question2answer-themes ~ ul li a:first-child {
+    font-weight: bold;
+}
+
+.repository-footer {
+    display: flex;
+	margin-top: .5rem;
+	color: rgb(95, 99, 104);
+    font-size: 88%;
+}
+
+.rf-item:first-child {
+    margin-right: 1rem;
+}
+
+.rf-item ~ .rf-item {
+    margin-left: auto;
+}
+
+.rf-item .docs-svg {
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
 }
 
 .rep-date {
     display: inline-block;
     background-color: #e0e0e0;
-    padding: 0px 6px;
-    border-radius: 3px;
-    margin-inline-end: 6px;
-    margin-bottom: 6px;
-    cursor: help;
-	font-size: 88%;
-    vertical-align: top;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    min-width: 18px;
+    min-height: 10px;
+    vertical-align: middle;
+    border-radius: 30px;
 }
 
 .rep-date-0, .rep-date-1 {
@@ -654,9 +709,6 @@ ul.sub-nav {
 }
 */
 
-.rep-date + .rep-date {
-    display: none;
-}
 
 .page-sidebar {
     width: 21.125rem;

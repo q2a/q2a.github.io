@@ -11,11 +11,12 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 > Status description:  
 > 🟢 Up-to-date | 🔵 Likely up-to-date | 🟡 Hasn't been updated in a while | 🔴 Inactive for a while | 🔘 Unknown.  
-> Note that "*Inactive*" & "*Unknown*" plugins doesn't necessarily mean that they do not work. Some plugins just don't require to be updated as frequently.
+> Note that "*Inactive*" & "*Unknown*" plugins doesn't necessarily mean that they do not work. Some plugins just don't require to be updated as frequently. Look for the "Q2A Tested" tag as well.
 
 ## Major features
 
-- [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY) ➔ [updated](https://github.com/rxchun/q2a-badges/) by [Chun](https://rxchun.github.io/). Provides user badges which recognize users' activities and achievements.
+- [Badges Plugin](https://github.com/NoahY/q2a-badges) by [NoahY](http://www.question2answer.org/qa/user/NoahY) Provides user badges which recognize users' activities and achievements.
+- ➔ [Badges Plugin updated](https://github.com/rxchun/q2a-badges/) by [Chun](https://rxchun.github.io/).
 - [Better Points](https://github.com/arjunsuresh/q2a-betterpoints) by [Arjun](http://gateoverflow.in/user/Arjun). Extends the default Q2A point system by adding points for giving comments, receiving comment upvotes/downvotes. Also, has an option to give points for blog/exam postings which are supported by paid plugins.
 - [Category Experts](https://github.com/arjunsuresh/q2a-categoryexperts) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget on Category pages showing the best performing users in that category. A good way to identify Category Experts.
 - [Extra Question Field](https://github.com/JacksiroKe/q2a-extra-question-field) by [Jack Siro](https://www.linkedin.com/in/jacksiroke/). Enhance your Extra Question fields with file management among other extra fields.
@@ -28,15 +29,21 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Embed Youtube Plugin](https://github.com/NoahY/q2a-embed) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Converts links to YouTube videos into embedded videos when displaying questions, answers or comments.
 - [Express Editor](https://github.com/amiyasahu/q2a-express-editor) by [Amiya Sahu](http://amiyasahu.com/). Recent version of [CKEditor](http://ckeditor.com/) bundled with [Ace Editor](http://ace.c9.io/) for smooth code editing.
 - [Lightbox-images](https://github.com/ProThoughts/q2apro-lightbox-images) by [q2apro.com](https://github.com/q2apro). Provides a Lightbox Effect for all images in posts.
-- [Markdown Editor Plugin](https://github.com/ProThoughts/markdown-editor-for-q2a) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/), ➔ updated for Q2A 1.8.6 [here](https://github.com/fardina/markdown-editor-for-q2a).
+- [Markdown Editor Plugin](https://github.com/ProThoughts/markdown-editor-for-q2a) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/).
+- ➔ [Markdown Editor Plugin Updated](https://github.com/fardina/markdown-editor-for-q2a) updated for Q2A 1.8.6
 - [Memes for Text](https://github.com/thibaultduponchelle/q2a-memes) by [Thibault Duponchelle](https://github.com/thibaultduponchelle). Post *lolfaces* in your answers or comments.
 - [Miranda](http://www.question2answer.org/qa/51849/tinymcewrapper-miranda-updated-most-powerful-editor-joins) [Tinymcse Wrapper](https://www.tinymce.com/) by Don Shakespeare. Adds Tinymcse to be used across posts as well as other text areas like messages, wall posts and is higly customizable.
-- [Prevent Simultaneous Edits](https://github.com/ElephantsGroup/q2a-prevent-simultaneous-edits) by [q2apro.com](https://github.com/q2apro). Prevent two users editing the same post simultaneously. Also [forked](https://github.com/ElephantsGroup/q2a-prevent-simultaneous-edits) by [Jalal Jaberi](https://github.com/ElephantsGroup).
+- [Prevent Simultaneous Edits](https://github.com/ElephantsGroup/q2a-prevent-simultaneous-edits) by [q2apro.com](https://github.com/q2apro). Prevent two users editing the same post simultaneously.
+- ➔ [Prevent Simultaneous Edits also forked](https://github.com/ElephantsGroup/q2a-prevent-simultaneous-edits) by [Jalal Jaberi](https://github.com/ElephantsGroup).
 - [SCEditor Plugin](https://github.com/q2apro/SCEditor) by [q2apro.com](https://github.com/q2apro). Provides [SCEditor](http://www.sceditor.com) as a WYSIWYG rich text editor. Some functionality requires the Premium version.
 - [Shortcode Plugin](https://github.com/NoahY/q2a-shortcode) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows posts to be displayed with text substitutions, including support for regular expressions.
-- [Smilies for Text](https://github.com/NoahY/q2a-smilies) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows smilies to be embedded in plain text or Markdown content. Also [forked](https://github.com/thibaultduponchelle/q2a-smilies) by [Thibault Duponchelle](https://github.com/thibaultduponchelle) to support multiboxes, add a lot of smilies and slightly improve the style.
+- [Smilies for Text](https://github.com/NoahY/q2a-smilies) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows smilies to be embedded in plain text or Markdown content.
+- ➔ [Smilies for Text also forked](https://github.com/thibaultduponchelle/q2a-smilies) by [Thibault Duponchelle](https://github.com/thibaultduponchelle) to support multiboxes, add a lot of smilies and slightly improve the style.
 - [Syntax Highlighter](https://github.com/amiyasahu/q2a-syntax-highlighter) by [Amiya Sahu](http://amiyasahu.com/). Code syntax highlighting based on [highlight.js](https://highlightjs.org/) with over 40 built-in themes.
-- [WYSIWYG Math Editor](https://github.com/thibaultduponchelle/q2a-wysiwyg-matheditor) by [Thibault Duponchelle](https://github.com/thibaultduponchelle). A CKEditor 4 editor plugin *with math capabilities*. Allow users to add math formulas (MathJax) in questions, answers and comments. Other math editors based on *preview zone* like [SCEditor](https://github.com/ProThoughts/q2apro-sceditor-free) were already mentioned above. Also: [q2a-formatter](https://github.com/tangruize/q2a-formatter) (or [Google Code Prettify and MathJax](https://github.com/arjunsuresh/mathjax) from [Arjun Suresh](https://github.com/arjunsuresh) from which [q2a-formatter](https://github.com/tangruize/q2a-formatter) was forked).
+- [WYSIWYG Math Editor](https://github.com/thibaultduponchelle/q2a-wysiwyg-matheditor) by [Thibault Duponchelle](https://github.com/thibaultduponchelle). A CKEditor 4 editor plugin *with math capabilities*. Allow users to add math formulas (MathJax) in questions, answers and comments.
+- ➔ Other math editors based on *preview zone* like [SCEditor](https://github.com/ProThoughts/q2apro-sceditor-free) were already mentioned above.
+- ➔ Also: [q2a-formatter](https://github.com/tangruize/q2a-formatter) by [tangruize](https://github.com/tangruizer).
+- ➔ Or [Google Code Prettify and MathJax](https://github.com/arjunsuresh/mathjax) from [Arjun Suresh](https://github.com/arjunsuresh) from which **q2a-formatter** was forked.
 - [Paid] [DM - Dynamic Mentions](https://www.question2answer.org/qa/66929) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to be mentioned using the @user syntax.
 
 
@@ -74,13 +81,17 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 ## Additional page types
 
-- [Best Users per Month](https://github.com/ProThoughts/q2apro-best-users-pro) by [q2apro.com](https://github.com/q2apro). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue). Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup) which supports Jalali calendar.
+- [Best Users per Month](https://github.com/ProThoughts/q2apro-best-users-pro) by [q2apro.com](https://github.com/q2apro). Displays the users with the most points each month (for large sites there is a premium plugin which does not have performance issue).
+- ➔ Also [forked](https://github.com/ElephantsGroup/q2a-best-users-per-month) by [Jalal Jaberi](https://github.com/ElephantsGroup) which supports Jalali calendar.
 - [Blog Post](https://github.com/JaxiroKe/q2a-blog-post) by [Jack Siro](https://www.linkedin.com/in/JaxiroKe/). Allows registered users to maintain a blog on their Q2A site.
-- [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers. Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http://gateoverflow.in/user/Arjun) which adds more question filtering options and better styling options.
+- [Book Plugin](https://github.com/NoahY/q2a-book) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Creates an HTML (or PDF) book of a site's top questions and answers.
+- ➔ Also [forked](https://github.com/arjunsuresh/q2a-book) by [Arjun](http://gateoverflow.in/user/Arjun) which adds more question filtering options and better styling options.
 - [Chat Room](https://github.com/svivian/q2a-chat-room) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Adds a simple chat room to a Q2A site.
 - [Custom 404 Page](https://github.com/amiyasahu/q2a-custom-404-page) by [Amiya Sahu](http://amiyasahu.com/). Allows the content of the 404 (page not found) page to be customized.
-- [Edit History](https://github.com/svivian/q2a-edit-history) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Stores all edits to posts and allows users to see what changed. Also [forked](https://github.com/ElephantsGroup/q2a-edit-history) by [Jalal Jaberi](https://github.com/ElephantsGroup).
-- [FAQ Page](https://github.com/gturri/q2a-faq/) forked from [older version](https://github.com/NoahY/q2a-faq) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a customizable FAQs page which can include an explanation of the points system on your Q2A site.
+- [Edit History](https://github.com/svivian/q2a-edit-history) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Stores all edits to posts and allows users to see what changed.
+- ➔ Also [forked](https://github.com/ElephantsGroup/q2a-edit-history) by [Jalal Jaberi](https://github.com/ElephantsGroup).
+- [FAQ Page](https://github.com/NoahY/q2a-faq) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a customizable FAQs page which can include an explanation of the points system on your Q2A site.
+- ➔ [FAQ Page forked](https://github.com/gturri/q2a-faq/) from NoahY's older version by [gturri](https://github.com/gturri).
 - [Open Questions Plugin](https://github.com/nakov/q2a-plugin-open-questions) by [Svetlin Nakov](http://www.nakov.com/). Provides a page displaying all questions with no answers and which have not been closed.
 - [Polls Plugin](https://github.com/NoahY/q2a-poll) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows some questions to be created as polls.
 - [Print View Plugin](https://github.com/NoahY/q2a-print) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds a simplified print view for questions.
@@ -99,7 +110,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Feed Widget](https://github.com/Towhidn/Q2A-feed-widget) by [Towhid](http://TowhidN.com/). Lists recent items from an external RSS feed. Useful for blog posts, articles, etc...
 - [Logarithmic Tag Cloud](https://github.com/NoahY/q2a-log-tags) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Provides a list of tags with logarithmic size indicating popularity.
 - [Most Active Users](https://github.com/yshiga/q2apro-most-active-users) by [q2apro.com](https://github.com/q2apro). Shows a list of users who were most active in the past week or month.
-- [Online User Count](https://github.com/pupi1985/q2a-onlineusers/tree/a1e555b77b5a0585f8c336d9e37e1e4a2bece437) by Ali Sayahiyan. Shows a list of users who are currently online as well as total visitors. Also [forked here](https://github.com/pupi1985/q2a-onlineusers) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
+- [Online User Count](https://github.com/pupi1985/q2a-onlineusers/tree/a1e555b77b5a0585f8c336d9e37e1e4a2bece437) by Ali Sayahiyan. Shows a list of users who are currently online as well as total visitors.
+- ➔ Also [forked here](https://github.com/pupi1985/q2a-onlineusers) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
 - [Popular Questions](https://github.com/ProThoughts/q2apro-popular-questions-widget) by [q2apro.com](https://github.com/q2apro). Shows a list of the most viewed questions.
 - [Random Question Widget](https://github.com/NoahY/qa-random-question) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Displays a random question in the sidebar.
 - [Recent Events Widget](https://github.com/fullstack412/Q2A-Recent-Events-Widget) by [q2apro.com](https://github.com/q2apro). Displays all recent events in the sidebar or main area.
@@ -111,7 +123,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Tag List Widget](https://github.com/svivian/q2a-tag-list-widget) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Displays the most popular tags in a simple list.
 - [Twitter Widget](https://github.com/Towhidn/q2a-twitter) by [Towhid](http://TowhidN.com/). Shows recent tweets from your twitter account.
 - [Widget Anywhere Plugin](https://github.com/svivian/q2a-widget-anywhere) by [Scott Vivian](http://codelair.co.uk/) of [PokéBase](http://pokemondb.net/pokebase/). Allows custom content to be added on any page, in a variety of locations.
-- [Simple Ads Manager](https://github.com/ProThoughts/q2a-simple-ads-manager) by [ProThoughts](http://ProThoughts.com). Allow you to add advertisements in listed spots. You can use Google adsense or any HTML ad code. Also [forked](https://github.com/arjunsuresh/q2a-simple-ads-manager) by [Arjun](http://gateoverflow.in/user/Arjun) to add more options like Ads after first question hiding ads for certain user level and above etc.
+- [Simple Ads Manager](https://github.com/ProThoughts/q2a-simple-ads-manager) by [ProThoughts](http://ProThoughts.com). Allow you to add advertisements in listed spots. You can use Google adsense or any HTML ad code.
+- ➔ Also [forked](https://github.com/arjunsuresh/q2a-simple-ads-manager) by [Arjun](http://gateoverflow.in/user/Arjun) to add more options like Ads after first question hiding ads for certain user level and above etc.
 - [Paid] [AS - Advanced Search](https://www.question2answer.org/qa/54072) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Extends the way in which Q2A searches for posts and allows the user to get better results when searching.
 
 ## User interface
@@ -138,14 +151,17 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Question Filter](https://github.com/ganbox/qa-filter) by Georgi Stefanov @ [Ganbox](http://ganbox.com/). Adds filtering of user input when asking questions, to check duplication, capitalization, etc...
 - [Question Numbering](https://github.com/arjunsuresh/q2a-qnumbering) by [Arjun](http://gateoverflow.in/user/Arjun). Adds numbering to questions in question listing pages.
 - [Quick-login](https://github.com/ProThoughts/q2apro-quick-login) by [q2apro.com](https://github.com/q2apro). Provides a quick login field for all your users.
-- [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges. Also [forked](https://github.com/zakkak/q2a-role-markers) by [Zakkak](https://github.com/zakkak).
+- [Role Markers](https://github.com/NoahY/q2a-role-markers) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds markers to the avatars displayed for users with special privileges.
+- ➔ Also [forked](https://github.com/zakkak/q2a-role-markers) by [Zakkak](https://github.com/zakkak).
 - [Social Sharing Plugin](https://github.com/NoahY/q2a-share) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Adds social sharing buttons to question pages.
 - [Sort Answers](https://github.com/amiyasahu/q2a-sort-answers) by [Amiya Sahu](http://amiyasahu.com/). Allows answers on a question page to be sorted by oldest, newest and highest voted.
 - [Tag Search](https://github.com/arjunsuresh/tag-search) by [Arjun](http://gateoverflow.in/user/Arjun). Allows tags to be searched via AJAX and with auto complete.
 - [Tag Descriptions Plugin](http://www.question2answer.org/releases/q2a-tag-descriptions-tutorial.zip) from the [plugin tutorial]({{ site.baseurl }}/plugins/tutorial/). Allows tag descriptions to be shown on tag pages and in tooltips.
 - [Theme Switcher Plugin](https://github.com/arjunsuresh/q2a-theme-switch) by [NoahY](http://www.question2answer.org/qa/user/NoahY) and updated by [Arjun](http://gateoverflow.in/user/Arjun). Allows users to choose their own theme on their profile page for normal as well as mobile view.
-- [Top Searches](https://github.com/arjunsuresh/q2a-top-search) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget to display the top searched words. Also have an option to display top seacrhed tags if using [Tag Search](https://github.com/arjunsuresh/tag-search) plugin.
-- [User Signatures Plugin](https://github.com/NoahY/q2a-signatures) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to define a signature for all of their posts. Also [forked here](https://github.com/pupi1985/q2a-signatures) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
+- [Top Searches](https://github.com/arjunsuresh/q2a-top-search) by [Arjun](http://gateoverflow.in/user/Arjun). Adds a widget to display the top searched words.
+- ➔ Also have an option to display top searched tags if using [Tag Search](https://github.com/arjunsuresh/tag-search) plugin.
+- [User Signatures Plugin](https://github.com/NoahY/q2a-signatures) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to define a signature for all of their posts.
+- ➔ Also [forked here](https://github.com/pupi1985/q2a-signatures) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
 - [Userinfo](https://github.com/ProThoughts/q2apro-userinfo) by [q2apro.com](https://github.com/q2apro). Mouse over a username to display user profile information: Avatar image, account age, total points, monthly points, answers, best answers, ratio, questions posted, badges.
 - [Userslist-locations](https://github.com/ProThoughts/q2apro-userslist-locations) by [q2apro.com](https://github.com/q2apro). Add Location to users list
 - [Warn on Leave](https://github.com/yshiga/q2apro-warn-on-leave) by [q2apro.com](https://github.com/q2apro). Warns users before leaving a page with text they have entered (also support WYSIWYG editor).
@@ -182,7 +198,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 ## Administrative tools
 
 - [Admin Plus Plugin](https://github.com/NoahY/q2a-admin-plus) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Extends the admin area by allowing PHP commands to be executed. (Use with caution!)
-- [Batch Import Users](https://github.com/ostack/q2a-user-import) updated and fixed by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146). [Original](https://github.com/thisliquidspace/q2a-user-import). Batch import users from CSV files.  
+- [Batch Import Users](https://github.com/thisliquidspace/q2a-user-import). Batch import users from CSV files.  
+- ➔ [Batch Import Users Updated](https://github.com/ostack/q2a-user-import) updated and fixed by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146).
 - [Categorization Plugin](https://github.com/NoahY/q2a-cat) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows individual categorization of uncategorized posts via the categories admin panel.
 - [Change Post Owner](https://github.com/ProThoughts/q2apro-change-post-owner) by [q2apro.com](https://github.com/q2apro). Allows the author of a post to be changed, or to make it anonymous.
 - [Convert Comment to Answer](https://github.com/ellcupakabra/q2apro-comment-to-answer) by [q2apro.com](https://github.com/q2apro). Convert a comment to an answer, optionally move the succeeding comments.
@@ -203,7 +220,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Translator](https://github.com/pedjas/q2a-translator) by [Pedja Supurovic](http://pedja.supurovic.net). Allows translations to be created online through pages in the administration interface.
 - [Webmaster Tools](https://github.com/Towhidn/Q2A-Webmaster) by [Towhid](http://TowhidN.com). Reports include server info and memory usage, SEO analysis, security warnings.
 - [Quick-edit](https://github.com/ProThoughts/q2apro-quick-edit) by [q2apro.com](https://github.com/q2apro). Update all question titles and tags quickly on one page and save hours of time.
-- [Ultimate SEO](https://github.com/q2a-projects/Q2A-Ultimate-SEO) by [Towhid](http://TowhidN.com). Enhances Question2Answer for better search engine optimization and offers valuable customization features. Also [forked here](https://github.com/pupi1985/q2a-ultimate-seo) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
+- [Ultimate SEO](https://github.com/q2a-projects/Q2A-Ultimate-SEO) by [Towhid](http://TowhidN.com). Enhances Question2Answer for better search engine optimization and offers valuable customization features.
+- ➔ Also [forked here](https://github.com/pupi1985/q2a-ultimate-seo) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985).
 - [Uploadmanager](https://github.com/ProThoughts/q2apro-uploadmanager) by [q2apro.com](https://github.com/q2apro). A complete upload manager for question2answer with upload details and image rotate features.
 - [Userstatistics](https://github.com/ProThoughts/q2apro-userstatistics) by [q2apro.com](https://github.com/q2apro). A complete user statistic with detailed points per post and thumbs and more.
 - [Votes-manager](https://github.com/ProThoughts/q2apro-votes-manager) by [q2apro.com](https://github.com/q2apro). Lists all votes made in your forum.

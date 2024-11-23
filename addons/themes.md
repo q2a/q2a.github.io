@@ -11,7 +11,7 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 
 > Status description:  
 > 🟢 Up-to-date | 🔵 Likely up-to-date | 🟡 Hasn't been updated in a while | 🔴 Inactive for a while | 🔘 Unknown.  
-> Note that "*Inactive*" & "*Unknown*" themes doesn't necessarily mean that they do not work. Some themes just don't require to be updated as frequently.
+> Note that "*Inactive*" & "*Unknown*" themes doesn't necessarily mean that they do not work. Some themes just don't require to be updated as frequently. Look for the "Q2A Tested" tag as well.
 
 ## Free Themes
 
