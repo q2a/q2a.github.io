@@ -627,6 +627,8 @@ ul.sub-nav {
     margin-inline-end: 6px;
     margin-bottom: 6px;
     cursor: help;
+	font-size: 88%;
+    vertical-align: top;
 }
 
 .rep-date-0, .rep-date-1 {

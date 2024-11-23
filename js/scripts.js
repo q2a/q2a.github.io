@@ -472,7 +472,7 @@ if(gitLinks != null && gitLinks.length) {
 							const versionGapClass = 'rep-date-' + calcVersion(max_q2a, currentQ2aVersion);
 							gitLinks[id].insertAdjacentHTML(
 								'beforebegin',
-								`<span class="rep-date rep-date-true ${versionGapClass}" title="Last updated: ${date}">${date}</span>`,
+								`<span class="rep-date rep-date-true ${versionGapClass}" title="Last updated: ${date}">Tested with Q2A ${max_q2a}</span>`,
 							);
 						}
 					} else {
@@ -481,7 +481,7 @@ if(gitLinks != null && gitLinks.length) {
 							const yearGapClass = 'rep-date-' + calcYears(date);
 							gitLinks[id].insertAdjacentHTML(
 								'beforebegin',
-								`<span class="rep-date rep-date-true ${yearGapClass}" title="Last updated: ${date}">${date}</span>`,
+								`<span class="rep-date rep-date-true ${yearGapClass}" title="Last updated: ${date}">Updated ${date}</span>`,
 							);
 						} else if(date == 'unknown') {
 							// If response is 'bad request' or '404', show "unknown" tag
