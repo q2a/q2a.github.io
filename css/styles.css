@@ -614,10 +614,21 @@ ul.sub-nav {
     border-radius: 0.5rem;
 }
 
+.template-addons-plugins .sectionTitle {
+    margin-top: 3rem;
+}
+.template-addons-plugins .page-content blockquote ~ .sectionTitle {
+    margin-top: revert;
+}
+
 #question2answer-plugins ~ ul, #question2answer-themes ~ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+#question2answer-plugins ~ ul:not(:nth-last-child(2)) {
+    margin-bottom: 3rem;
 }
 
 #question2answer-plugins ~ ul li,
@@ -656,7 +667,7 @@ ul.sub-nav {
 
 .repository-footer {
     display: flex;
-	margin-top: .5rem;
+	margin-top: .2rem;
 	color: rgb(95, 99, 104);
     font-size: 88%;
 }
@@ -1172,6 +1183,9 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .page-content {
         padding: 0;
     }
+	#question2answer-plugins ~ ul:not(:nth-last-child(2)) {
+		margin-bottom: 2rem;
+	}
 	#question2answer-plugins ~ ul .child-repository, #question2answer-themes ~ ul .child-repository {
 		padding-left: 1.5rem;
 	}
