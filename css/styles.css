@@ -627,7 +627,8 @@ ul.sub-nav {
     padding: 0;
 }
 
-#question2answer-plugins ~ ul:not(:nth-last-child(2)) {
+#question2answer-plugins ~ ul:not(:nth-last-child(2)),
+#question2answer-themes ~ ul:not(:nth-last-child(2)) {
     margin-bottom: 3rem;
 }
 
@@ -1183,7 +1184,8 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .page-content {
         padding: 0;
     }
-	#question2answer-plugins ~ ul:not(:nth-last-child(2)) {
+	#question2answer-plugins ~ ul:not(:nth-last-child(2)),
+	#question2answer-themes ~ ul:not(:nth-last-child(2))	{
 		margin-bottom: 2rem;
 	}
 	#question2answer-plugins ~ ul .child-repository, #question2answer-themes ~ ul .child-repository {
