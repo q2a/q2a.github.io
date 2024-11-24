@@ -1,5 +1,5 @@
 /* ==================
-	Base styles
+    Base styles
 ================== */
 
 /* Colors:
@@ -48,40 +48,40 @@ h1, h2, h3 {
 
 /*
 h1, h2, h3, h4, h5, h6 {
-	color: #424242;
+    color: #424242;
 }
 
 h1 {
-	font-size: 2rem;
-	line-height: 2.5rem;
-	margin: 0 0 .5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 0 0 .5rem;
 }
 
 h2 {
-	font-size: 1.5rem;
-	line-height: 2rem;
-	margin: 2rem 0 .5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 2rem 0 .5rem;
 }
 
 h3 {
-	font-size: 1.25rem;
-	font-weight: 500;
-	line-height: 1.75rem;
-	margin: 1.5rem 0 .5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin: 1.5rem 0 .5rem;
 }
 
 h4 {
-	font-size: 1rem;
-	font-weight: 500;
-	line-height: 1.5rem;
-	margin: 1.25rem 0 .25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 1.25rem 0 .25rem;
 }
 
 h5 {
-	font-size: .875rem;
-	font-weight: inherit;
-	line-height: 1.5rem;
-	margin: 1rem 0 .25rem;
+    font-size: .875rem;
+    font-weight: inherit;
+    line-height: 1.5rem;
+    margin: 1rem 0 .25rem;
 }
 */
 
@@ -125,13 +125,13 @@ pre {
 pre code {
     background-color: #f6f6f6;
     padding: 0;
-	max-height: 600px;
+    max-height: 600px;
     color: inherit;
     font-family: inherit;
     tab-size: 4;
     font-size: 13px;
-	overflow: auto;
-	padding: 12px;
+    overflow: auto;
+    padding: 12px;
 }
 
 blockquote {
@@ -142,7 +142,7 @@ blockquote {
 }
 
 /* ===================
-	PREDEFINED CLASSES
+    PREDEFINED CLASSES
 ======================= */
 
 .no-select, .noSelect, .noselect {
@@ -237,7 +237,7 @@ blockquote {
 
 
 /* ==================
-	LAYOUT
+    LAYOUT
 ================== */
 
 body.page {
@@ -443,7 +443,7 @@ ul.sub-nav {
 }
 
 /* ===============
-	BREADCRUMBS
+    BREADCRUMBS
 =============== */
 
 .breadcrumbs {
@@ -478,7 +478,7 @@ ul.sub-nav {
 
 
 /* ===============
-	MAIN SECTION
+    MAIN SECTION
 ================ */
 
 .notice-container {
@@ -644,7 +644,7 @@ ul.sub-nav {
 }
 
 .child-repository {
-	position: relative;
+    position: relative;
 }
 
 .child-repository:before {
@@ -668,8 +668,8 @@ ul.sub-nav {
 
 .repository-footer {
     display: flex;
-	margin-top: .2rem;
-	color: rgb(95, 99, 104);
+    margin-top: .2rem;
+    color: rgb(95, 99, 104);
     font-size: 88%;
 }
 
@@ -711,7 +711,7 @@ ul.sub-nav {
 }
 .rep-date-5 {
     /* background-color: #e0e0e0; */ /* Grey */
-	background-color: #e74c3c;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 /*
@@ -847,7 +847,7 @@ ul.sub-nav {
 
 
 /* ==================
-	HOMEPAGE
+    HOMEPAGE
 ================== */
 
 .home-intro {
@@ -921,7 +921,7 @@ ul.sub-nav {
 
 
 /* ===============
-	DOCS PAGES
+    DOCS PAGES
 =============== */
 
 a[href*="/releases/question2answer"][href$=".zip"] {
@@ -942,7 +942,7 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
 
 
 /* ===============
-	MEDIA QUERIES
+    MEDIA QUERIES
 ================= */
 
 @media (min-width: 1500px) {
@@ -1014,9 +1014,9 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .page-content {
         padding: 3rem;
     }
-	.page-content .sectionTitle:first-child {
-		margin-top: 0;
-	}
+    .page-content .sectionTitle:first-child {
+        margin-top: 0;
+    }
     .page-sidebar {
         padding: 2rem 1rem;
     }
@@ -1029,7 +1029,7 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
 
 
 /* ========================
-	MEDIA QUERIES MAX-WIDTH
+    MEDIA QUERIES MAX-WIDTH
 =========================== */
 
 @media (max-width: 1120px) {
@@ -1135,7 +1135,7 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
 
     .showcase-cols {
         grid-gap: 1rem;
-		margin: 2rem 1rem;
+        margin: 2rem 1rem;
     }
     .card-showcase {
         padding: 1rem .5rem;
@@ -1147,11 +1147,11 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
         font-size: 1rem;
         margin-right: .5rem;
     }
-	.card-showcase-info p {
-		margin-top: .5rem;
-	}
-	
-	.page-content {
+    .card-showcase-info p {
+        margin-top: .5rem;
+    }
+    
+    .page-content {
         border: none;
     }
 
@@ -1184,34 +1184,34 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .page-content {
         padding: 0;
     }
-	#question2answer-plugins ~ ul:not(:nth-last-child(2)),
-	#question2answer-themes ~ ul:not(:nth-last-child(2))	{
-		margin-bottom: 2rem;
-	}
-	#question2answer-plugins ~ ul .child-repository, #question2answer-themes ~ ul .child-repository {
-		padding-left: 1.5rem;
-	}
-	.child-repository:before {
-		left: .5rem;
-	}
-	.rep-date-true {
-		white-space: nowrap;
-	}
+    #question2answer-plugins ~ ul:not(:nth-last-child(2)),
+    #question2answer-themes ~ ul:not(:nth-last-child(2))	{
+        margin-bottom: 2rem;
+    }
+    #question2answer-plugins ~ ul .child-repository, #question2answer-themes ~ ul .child-repository {
+        padding-left: 1.5rem;
+    }
+    .child-repository:before {
+        left: .5rem;
+    }
+    .rep-date-true {
+        white-space: nowrap;
+    }
     .page-status {
         padding: .6rem 1rem;
     }
 }
 @media (max-width: 375px) {
-	.twbb {
-		display: block;
-		font-size: 12px;
-		margin-right: .5rem;
-	}
+    .twbb {
+        display: block;
+        font-size: 12px;
+        margin-right: .5rem;
+    }
 }
 
 
 /* ====================
-	Syntax highlighting
+    Syntax highlighting
 ======================= */
 
 .highlight .hll { background-color: #ffffcc }
