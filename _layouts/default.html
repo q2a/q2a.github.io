@@ -30,5 +30,10 @@
 		{% include footer.html %}
 
 		<script src="{{ site.baseurl }}/js/scripts.js"></script>
+		
+		{% if (page.slug == 'addons-plugins') or (page.slug == 'addons-themes') %}
+		<script src="{{ site.baseurl }}/js/GithubLinks.js"></script>
+		{% endif %}
+		
 	</body>
 </html>
