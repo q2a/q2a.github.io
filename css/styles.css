@@ -423,8 +423,7 @@ ul.sub-nav {
 .header ul.sub-nav {
     top: 40px;
 }
-.mega-menu .nav-main:before, 
-.header .nav-main-second ul.sub-nav:before {
+.mega-menu .nav-main:before, .header ul.sub-nav:before {
     content: '';
     position: absolute;
     left: 30px;
@@ -1087,6 +1086,27 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     }
     .nav-item .docs-svg {
         vertical-align: text-bottom;
+    }
+    ul.sub-nav {
+        box-shadow: 0 2px 10px 0 rgb(0 0 0 / 30%);
+    }
+    .header ul.sub-nav:after {
+        content: "";
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 100vh;
+        background-color: #fff;
+        opacity: .5;
+    }
+    .sub-nav .sub-nav-item, .sub-nav a.sub-nav-item {
+        line-height: 24px;
+        padding: .5rem 1rem .5rem 2rem;
+        border-radius: 0 !important;
+        font-weight: 500;
     }
 
     .jump-top-container {
