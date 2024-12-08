@@ -3,21 +3,31 @@
 // --------------------------------
 
 // Check for Parents
-const hasParent = (element, ...parents) => parents.some((parent) => parent.includes(element));
+const hasParent = (element, ...parents) => parents.some( parent => parent.includes(element));
 
 // Loop add class
 const loopAddClass = (targetClass, addClass) => {
-    document.querySelectorAll(targetClass).forEach(element => {
+    document.querySelectorAll(targetClass).forEach( element => {
         element.classList.add(addClass);
     });
 }
 
 // Loop remove class
 const loopRemoveClass = (targetClass, removeClass) => {
-    document.querySelectorAll(targetClass).forEach(element => {
+    document.querySelectorAll(targetClass).forEach( element => {
         element.classList.remove(removeClass);
     });
 }
+
+// Loop toggle class
+const loopToggleClass = (targetClass, toggleClass) => {
+    document.querySelectorAll(targetClass).forEach( element => {
+        element.classList.toggle(toggleClass);
+    });
+}
+
+// Toggle Visibility.
+const toggleVisibility = e => e.classList.toggle('display-none');
 
 // Scroll to Elements
 const scrollToElement = e => {
@@ -44,12 +54,14 @@ if (document.querySelectorAll('.nav-main-second .selected-nav').length > 0 &&
 
 // toggle menu children
 let opened = null;
-const toggleVisibility = e => e.classList.toggle('display-none');
-
 const handleDropdown = e => {
     const clickedItem = e.parentElement.lastChild.previousSibling;
 
     toggleVisibility(clickedItem);
+    if (window.screen.width < 1024) {
+        loopAddClass('.nav-container .nav > li', 'obfuscate');
+        e.parentElement.classList.remove('obfuscate'); // Remove it for the current List item
+    }
 
     if (!opened) {
         opened = clickedItem;
@@ -82,7 +94,7 @@ const handleClick = e => {
 
     // Mega Menu
     if (e.target.parentElement.className.includes('mega-menu-trigger')) {
-        navMain.classList.toggle('display-none');
+        toggleVisibility(navMain);
     } else if (!hasParent(e.target, '.nav-main')) {
         navMain.classList.add('display-none');
     }
@@ -92,6 +104,8 @@ const handleClick = e => {
         handleDropdown(e.target);
     } else if (opened) {
         toggleVisibility(opened);
+        if (window.screen.width < 1024)
+            loopRemoveClass('.nav-container .nav > li', 'obfuscate');
         opened = null;
     }
 

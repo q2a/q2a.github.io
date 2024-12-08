@@ -235,6 +235,13 @@ blockquote {
     clear: both;
 }
 
+.nav-container .nav > li {
+    transition: opacity .05s linear;
+}
+.obfuscate {
+    opacity: .5;
+}
+
 
 /* ==================
     LAYOUT
@@ -1099,7 +1106,7 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
         bottom: 0;
         z-index: -1;
         height: 100vh;
-        background-color: #fff;
+        /* background-color: #fff; */
         opacity: .5;
     }
     .sub-nav .sub-nav-item, .sub-nav a.sub-nav-item {
