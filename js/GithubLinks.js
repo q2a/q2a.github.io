@@ -29,14 +29,14 @@ class githubList {
     
     // Store Repositories locally
     savePluginsList() {
-        localStorage.setItem('q2adocs_gitHub_plugins', JSON.stringify(this.pluginList));
+        localStorage.setItem('q2adocs_github_plugins', JSON.stringify(this.pluginList));
     }
     saveThemesList() {
-        localStorage.setItem('q2adocs_gitHub_themes', JSON.stringify(this.themeList));
+        localStorage.setItem('q2adocs_github_themes', JSON.stringify(this.themeList));
     }
     
     getList(listType) {
-        // List param, will contain either: q2adocs_gitHub_plugins or q2adocs_gitHub_themes
+        // List param, will contain either: q2adocs_github_plugins or q2adocs_github_themes
         return JSON.parse(localStorage.getItem(listType));
     }
     
@@ -195,8 +195,8 @@ if(gitLinks != null && gitLinks.length) {
     }
     
     // Get saved data from LocalStorage
-    const retrievedPlugins = pluginsList.getList('q2adocs_gitHub_plugins');
-    const retrievedThemes = themesList.getList('q2adocs_gitHub_themes');
+    const retrievedPlugins = pluginsList.getList('q2adocs_github_plugins');
+    const retrievedThemes = themesList.getList('q2adocs_github_themes');
     
     // Retrieve single data
     const singleKey = (storage)  => {
@@ -291,7 +291,7 @@ if(gitLinks != null && gitLinks.length) {
             
             }
         });
-        // console.log(JSON.parse(localStorage.getItem('q2adocs_gitHub_plugins')));
+        // console.log(JSON.parse(localStorage.getItem('q2adocs_github_plugins')));
     }
     
     // Start at zero, in case not fetched yet
@@ -301,13 +301,13 @@ if(gitLinks != null && gitLinks.length) {
     let themesListUpdated = currentDate();
     let themeListLength = 0;
     
-    if(localStorage.q2adocs_gitHub_plugins) {
+    if(localStorage.q2adocs_github_plugins) {
         // Get saved list length for Plugins
         pluginsListUpdated = singleValue(retrievedPlugins[1])[2];
         pluginsListUpdated = new Date(pluginsListUpdated).toISOString().split('T')[0];
         pluginListLength = singleValue(retrievedPlugins[0])[2];
     }
-    if(localStorage.q2adocs_gitHub_themes) {
+    if(localStorage.q2adocs_github_themes) {
         // Get saved list length for Themes
         themesListUpdated = singleValue(retrievedThemes[1])[2];
         themesListUpdated = new Date(themesListUpdated).toISOString().split('T')[0];
