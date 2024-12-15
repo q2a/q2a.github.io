@@ -237,8 +237,8 @@ if(gitLinks != null && gitLinks.length) {
             
             // console.log(`${id} === ${link} === ${date}`);
             
-            if(gitLinks[index].parentElement.innerHTML.includes('➔')){
-                gitLinks[index].closest('li').classList.add('child-repository');
+            if(id != null && gitLinks[id].parentElement.innerHTML.includes('➔')){
+                gitLinks[id].closest('li').classList.add('child-repository');
             }
             
             if(id != null && link != null && date != null && max_q2a != null) {
