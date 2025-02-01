@@ -736,7 +736,6 @@ ul.sub-nav {
     margin: 0;
     list-style: none;
     max-height: calc(100vh - 66px);
-    overflow: auto;
     height: max-content; /* Fix for position:sticky stopped being sticky short */
 }
 
@@ -760,10 +759,17 @@ ul.sub-nav {
     padding-left: 1rem;
     margin: 0;
     list-style: none;
+    max-height: calc(100vh - 66px - 4rem);
+    overflow: auto;
+}
+
+.template-addons-plugins .docs-nav,
+.template-addons-plugins .docs-nav {
+    max-height: calc(100vh - 66px - 4rem - 60px);
 }
 
 .docs-nav-item {
-    padding: .3rem 0 .3rem 3rem;
+    padding: .3rem 0 .3rem 2rem;
     position: relative;
     cursor: pointer;
 }
@@ -784,6 +790,31 @@ ul.sub-nav {
 
 .docs-nav-item.active {
     font-weight: bold;
+}
+
+.docs-nav-q2a-version {
+    border-top: 1px solid rgb(0 0 0 / 20%);
+    margin-top: 1rem;
+    padding: .5rem 1rem 1rem 1rem;
+    font-style: italic;
+}
+.docs-nav-q2a-version a {
+    font-weight: bold;
+    background-color: rgb(255 107 43 / 20%);
+    padding: 3px;
+    border-radius: 3px;
+    margin: 0 3px;
+    border: 1px solid rgb(255 255 255 / 0%);
+    transition: border-color .25s ease;
+}
+.docs-nav-q2a-version a:hover {
+    border: 1px solid;
+}
+.docs-nav-q2a-version .qa-svg {
+    vertical-align: sub;
+    width: 18px;
+    height: 18px;
+    fill: #ff6b2b;
 }
 
 .jump-top-container {

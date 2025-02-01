@@ -90,10 +90,10 @@ const calcYears = param => {
 }
 
 // Checks for Github repository links, and prepends a tag with their date "year-month-day". (fetched from their metadata.js files)
-const gitLinks = document.querySelectorAll('\
-    .template-addons-plugins .page-content li a[href*="https://github.com/"],\
-    .template-addons-themes .page-content li a[href*="https://github.com/"]\
-');
+const gitLinks = document.querySelectorAll(`
+    .template-addons-plugins .page-content li a[href*="https://github.com/"],
+    .template-addons-themes .page-content li a[href*="https://github.com/"]
+`);
 
 const pluginLinks = document.querySelectorAll('.template-addons-plugins .page-content li a[href*="https://github.com/"]');
 const themeLinks = document.querySelectorAll('.template-addons-themes .page-content li a[href*="https://github.com/"]');
@@ -109,6 +109,11 @@ if(gitLinks != null && gitLinks.length) {
     const githubDomain = 'https://github.com/';
     
     // Fetch Links
+    // Async would take longer to update the page, due to dozens of broken links.
+    // They'd need to wait for the response back from each broken request, to move to the next link.
+
+    // Since most old plugins aren't going to be updated, we store their "bad" information as well for display.
+    // Making it faster to update the page, when fetching.
     const fetchLinks = () => {
         
         // Get Q2A version
@@ -116,7 +121,7 @@ if(gitLinks != null && gitLinks.length) {
         const getQ2aVersion = 'https://raw.githubusercontent.com/q2a/question2answer/master/VERSION.txt';
         let rawFile = new XMLHttpRequest();
         rawFile.open('GET', getQ2aVersion, false);
-        rawFile.onreadystatechange = function () {
+        rawFile.onreadystatechange = () => {
             if(rawFile.readyState === 4) {
                 if(rawFile.status === 200 || rawFile.status == 0) {
                     q2aVersion = rawFile.responseText;
@@ -128,11 +133,11 @@ if(gitLinks != null && gitLinks.length) {
         
         // Set list headers
         if(isPluginsPage) {
-            pluginsList.addListLink('plugins', '1000', 'List_length', pluginLinks.length, q2aVersion);
-            pluginsList.addListLink('plugins', '1001', 'updated', new Date(), q2aVersion);
+            pluginsList.addListLink('plugins', 'metadata_list_size', 'List_length', pluginLinks.length, q2aVersion);
+            pluginsList.addListLink('plugins', 'metadata_list_updated', 'updated', new Date(), q2aVersion);
         } else if (isThemesPage) {
-            themesList.addListLink('themes', '1000', 'List_length', themeLinks.length, q2aVersion);
-            themesList.addListLink('themes', '1001', 'updated', new Date(), q2aVersion);
+            themesList.addListLink('themes', 'metadata_list_size', 'List_length', themeLinks.length, q2aVersion);
+            themesList.addListLink('themes', 'metadata_list_updated', 'updated', new Date(), q2aVersion);
         }
         
         // Create list
@@ -159,10 +164,11 @@ if(gitLinks != null && gitLinks.length) {
                     }
                 }
             })
-                .catch(error => {
+            .catch(error => {
                 console.log(error)
                 // Save Unknowns as well. Prevents null Objects.
-                // We can remove the display tag in the createPluginTags() functions instead, by removing the "else" statement.
+                // We can remove the display tag in the createTags() functions instead, 
+                // if necessary, by removing the "else" statement.
                 if(isRepository) {
                     if(isPluginsPage) {
                         pluginsList.addListLink('plugins', [i], gitLinks[i], 'unknown', '0');
@@ -171,7 +177,7 @@ if(gitLinks != null && gitLinks.length) {
                     }
                 }
             })
-                .finally(result => {
+            .finally(result => {
                 if(isPluginsPage) {
                     pluginsList.savePluginsList();
                 } else {
@@ -181,30 +187,22 @@ if(gitLinks != null && gitLinks.length) {
         
         } // End of for loop
         
-        setTimeout(function() {
-            document.querySelector('.page-status-container').innerHTML = '\
-            <div class="page-status">\
-                <div>\
-                    <span class="twbb">This page has been updated.</span>\
-                    <span class="twbb">Please reload.</span>\
-                </div>\
-                <span class="close-page-status material-icons noSelect" title="Reload this page">refresh</span>\
-            </div>\
-            ';
+        setTimeout(() => {
+            document.querySelector('.page-status-container').innerHTML = `
+            <div class="page-status">
+                <div>
+                    <span class="twbb">This page has been updated.</span>
+                    <span class="twbb">Please reload.</span>
+                </div>
+                <span class="close-page-status material-icons noSelect" title="Reload this page">refresh</span>
+            </div>
+            `;
         }, 1500);
     }
-    
+
     // Get saved data from LocalStorage
     const retrievedPlugins = pluginsList.getList('q2adocs_github_plugins');
     const retrievedThemes = themesList.getList('q2adocs_github_themes');
-    
-    // Retrieve single data
-    const singleKey = (storage)  => {
-        return Object.keys(storage);
-    }
-    const singleValue = (storage)  => {
-        return Object.values(storage);
-    }
     
     // Change Emoji colors for actual color element
     const colorLegends = document.querySelector('.template-addons-plugins blockquote, .template-addons-themes blockquote');
@@ -225,7 +223,18 @@ if(gitLinks != null && gitLinks.length) {
     const createTags = (param) => {
         
         // get stored current Q2A version
-        const currentQ2aVersion = Object.values(param[0] || {} )[3];
+        const currentQ2aVersion = param[0].max_q2a;
+
+        // Show current Q2A version on the sidebar, for comparison with plugins/themes.
+        const currentVersionEl = document.createElement('div');
+        currentVersionEl.className = 'docs-nav-q2a-version';
+        currentVersionEl.innerHTML = `Q2A current version: <b>${currentQ2aVersion}</b>
+        <a href="/q2adocs-preview/install/versions/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="qa-svg" width="18px" height="18px" viewBox="0 -960 960 960" fill="#5f6368"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"></path></svg>
+        </a>
+        `;
+        const docsNavEl = document.querySelector('.docs-nav');
+        docsNavEl.parentNode.insertBefore(currentVersionEl, docsNavEl.nextSibling);
         
         param.forEach((item, index) => {
             
@@ -288,11 +297,9 @@ if(gitLinks != null && gitLinks.length) {
                         </span>`,
                     );
                 }
-            
-            }
+            } // close if() null
         });
-        // console.log(JSON.parse(localStorage.getItem('q2adocs_github_plugins')));
-    }
+    } // close createTags()
     
     // Start at zero, in case not fetched yet
     let pluginsListUpdated = currentDate();
@@ -303,15 +310,15 @@ if(gitLinks != null && gitLinks.length) {
     
     if(localStorage.q2adocs_github_plugins) {
         // Get saved list length for Plugins
-        pluginsListUpdated = singleValue(retrievedPlugins[1])[2];
+        pluginsListUpdated = retrievedPlugins[1].date;
         pluginsListUpdated = new Date(pluginsListUpdated).toISOString().split('T')[0];
-        pluginListLength = singleValue(retrievedPlugins[0])[2];
+        pluginListLength = retrievedPlugins[0].date
     }
     if(localStorage.q2adocs_github_themes) {
         // Get saved list length for Themes
-        themesListUpdated = singleValue(retrievedThemes[1])[2];
+        themesListUpdated = retrievedThemes[1].date;
         themesListUpdated = new Date(themesListUpdated).toISOString().split('T')[0];
-        themeListLength = singleValue(retrievedThemes[0])[2];
+        themeListLength = retrievedThemes[0].date;
     }
     
     // ----------------------------
@@ -321,7 +328,7 @@ if(gitLinks != null && gitLinks.length) {
     // Test remaining days
     // console.log('Days passed since Plugins list updated: ' + calcDays(pluginsListUpdated));
     // console.log('Days passed since Themes list updated: ' + calcDays(themesListUpdated));
-    const generateTags = () => {
+    const createFooters = () => {
         if(isPluginsPage) {
             // Calculate number of days until next fetch
             // if "N" days have passed, or the number of links no longer matches the number of saved links, request Fetch
@@ -330,17 +337,15 @@ if(gitLinks != null && gitLinks.length) {
             }
             createTags(retrievedPlugins);
             // console.log('retrieved Plugins Object: ', retrievedPlugins);
-            // console.log('github plugin links length: '+ pluginLinks.length +'; saved: ' + pluginListLength);
         } else if (isThemesPage) {
             if(retrievedThemes === null || calcDays(themesListUpdated) >= daysUntilNextFetch || themeLinks.length != themeListLength) {
                 fetchLinks();
             }
             createTags(retrievedThemes);
             // console.log('retrieved Themes Object: ', retrievedThemes);
-            // console.log('github theme links length: '+ themeLinks.length +'; saved: ' + themeListLength);
         }
     }
-    generateTags();
+    createFooters();
     
 } // End of if gitLinks.length
 
