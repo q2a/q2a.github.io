@@ -795,7 +795,7 @@ ul.sub-nav {
 .docs-nav-q2a-version {
     border-top: 1px solid rgb(0 0 0 / 20%);
     margin-top: 1rem;
-    padding: .5rem 1rem 1rem 1rem;
+    padding: 1rem;
     font-style: italic;
 }
 .docs-nav-q2a-version a {
@@ -965,7 +965,7 @@ a[href*="/releases/question2answer"][href$=".zip"] {
     margin-left: 2px;
     padding: 0.5rem;
     vertical-align: bottom;
-    border-radius: 8px;
+    border-radius: 6px;
     background: #ff773d;
     color: #fff;
     font-size: 0.75rem;
