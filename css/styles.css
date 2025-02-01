@@ -962,7 +962,7 @@ ul.sub-nav {
 =============== */
 
 a[href*="/releases/question2answer"][href$=".zip"] {
-    margin-left: 1rem;
+    margin-left: 2px;
     padding: 0.5rem;
     vertical-align: bottom;
     border-radius: 8px;
