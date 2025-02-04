@@ -125,7 +125,6 @@ if(gitLinks != null && gitLinks.length) {
             if(rawFile.readyState === 4) {
                 if(rawFile.status === 200 || rawFile.status == 0) {
                     q2aVersion = rawFile.responseText;
-                    console.log(allText);
                 }
             }
         }
@@ -222,83 +221,85 @@ if(gitLinks != null && gitLinks.length) {
     // Create tags for both - Plugins and Themes
     const createTags = (param) => {
         
-        // get stored current Q2A version
-        const currentQ2aVersion = param[0].max_q2a;
+        if (param) {
+            // Get the stored value for Q2A current version
+            const currentQ2aVersion = param[0].max_q2a;
 
-        // Show current Q2A version on the sidebar, for comparison with plugins/themes.
-        const currentVersionEl = document.createElement('div');
-        currentVersionEl.className = 'docs-nav-q2a-version';
-        currentVersionEl.innerHTML = `Q2A current version: <b>${currentQ2aVersion}</b>
-        <a href="/q2adocs-preview/install/versions/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="qa-svg" width="18px" height="18px" viewBox="0 -960 960 960" fill="#5f6368"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"></path></svg>
-        </a>
-        `;
-        const docsNavEl = document.querySelector('.docs-nav');
-        docsNavEl.parentNode.insertBefore(currentVersionEl, docsNavEl.nextSibling);
-        
-        param.forEach((item, index) => {
+            // Show current Q2A version on the sidebar, for comparison with plugins/themes.
+            const currentVersionEl = document.createElement('div');
+            currentVersionEl.className = 'docs-nav-q2a-version';
+            currentVersionEl.innerHTML = `Q2A current version: <b>${currentQ2aVersion}</b>
+            <a href="/q2adocs-preview/install/versions/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="qa-svg" width="18px" height="18px" viewBox="0 -960 960 960" fill="#5f6368"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"></path></svg>
+            </a>
+            `;
+            const docsNavEl = document.querySelector('.docs-nav');
+            docsNavEl.parentNode.insertBefore(currentVersionEl, docsNavEl.nextSibling);
             
-            const list = param.slice(2); // Remove list header (metadata) indexes
-            const id = Object.values(list[index] || {} )[0];
-            const link = Object.values(list[index] || {} )[1];
-            const date = Object.values(list[index] || {} )[2];
-            const max_q2a = Object.values(list[index] || {} )[3];
-            
-            // console.log(`${id} === ${link} === ${date}`);
-            
-            if(id != null && gitLinks[id].parentElement.innerHTML.includes('➔')){
-                gitLinks[id].closest('li').classList.add('child-repository');
-            }
-            
-            if(id != null && link != null && date != null && max_q2a != null) {
-                // Preppend based on stored id/index, because DOM link order may not be accurate when looping
-                // index order will be updated when information is fetched again
+            param.forEach((item, index) => {
                 
-                const yearGapClass = 'rep-date-' + calcYears(date);
+                const list = param.slice(2); // Remove list header (metadata) indexes
+                const id = Object.values(list[index] || {} )[0];
+                const link = Object.values(list[index] || {} )[1];
+                const date = Object.values(list[index] || {} )[2];
+                const max_q2a = Object.values(list[index] || {} )[3];
                 
-                if (date != 'unknown') {
-                    // if 'max_q2a' key is available
-                    if(max_q2a != '0') {
+                // console.log(`${id} === ${link} === ${date}`);
+                
+                if(id != null && gitLinks[id].parentElement.innerHTML.includes('➔')){
+                    gitLinks[id].closest('li').classList.add('child-repository');
+                }
+                
+                if(id != null && link != null && date != null && max_q2a != null) {
+                    // Preppend based on stored id/index, because DOM link order may not be accurate when looping
+                    // index order will be updated when information is fetched again
+                    
+                    const yearGapClass = 'rep-date-' + calcYears(date);
+                    
+                    if (date != 'unknown') {
+                        // if 'max_q2a' key is available
+                        if(max_q2a != '0') {
+                            gitLinks[id].parentElement.insertAdjacentHTML(
+                                'beforeend',
+                                `<span class="repository-footer">
+                                    <span class="rf-item">
+                                        Last updated: 
+                                        <span class="rep-date ${yearGapClass}"></span> 
+                                        <span class="rep-date-true">${date}</span>
+                                    </span>
+                                    <span class="rf-item">
+                                        <svg class="docs-svg" width="35" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0, 0, 400,192"><g class="svgg"><path class="path0" d="M199.125 9.516 C 157.924 16.977,134.439 51.317,168.872 53.754 C 181.220 54.628,188.021 51.060,192.647 41.282 C 197.761 30.471,224.848 24.605,228.566 33.503 C 235.849 50.934,223.140 74.064,185.833 111.278 C 162.762 134.291,162.293 134.990,166.932 139.435 C 176.110 148.227,213.452 144.113,257.500 129.455 C 281.012 121.632,280.387 121.599,229.400 128.000 C 207.495 130.750,189.417 133.000,189.227 133.000 C 187.964 133.000,191.981 129.471,204.841 119.286 C 272.717 65.523,284.935 17.240,232.651 9.388 C 221.409 7.700,208.889 7.748,199.125 9.516 M57.500 12.567 C 28.001 18.377,4.566 47.191,1.035 81.992 C -4.867 140.148,40.328 177.218,99.178 162.493 C 100.830 162.080,103.375 163.080,108.000 165.962 C 134.665 182.575,148.253 184.328,154.518 171.964 C 158.852 163.412,158.189 161.412,150.584 160.088 C 141.590 158.522,124.000 151.861,124.000 150.021 C 124.000 149.633,127.220 145.082,131.156 139.908 C 152.719 111.561,157.130 72.222,141.804 44.946 C 127.036 18.663,92.972 5.580,57.500 12.567 M321.487 17.250 C 320.166 20.138,310.030 47.700,298.963 78.500 C 278.086 136.602,272.539 150.841,268.428 156.891 C 264.249 163.040,265.591 164.954,274.102 164.986 C 283.797 165.023,287.251 159.239,297.487 125.826 L 301.064 114.152 307.282 113.603 C 310.702 113.301,322.284 112.778,333.021 112.441 L 352.542 111.828 358.820 132.664 C 367.820 162.534,370.516 165.616,386.933 164.802 C 397.061 164.300,400.975 162.758,398.693 160.170 C 393.332 154.090,379.411 118.445,362.502 67.500 C 348.093 24.090,345.722 19.590,334.500 14.353 C 326.414 10.580,324.327 11.044,321.487 17.250 M89.935 25.454 C 123.357 37.420,134.797 103.497,109.073 136.000 L 107.095 138.500 101.450 133.000 C 98.346 129.975,93.198 124.125,90.010 120.000 C 75.287 100.951,67.974 100.113,74.058 118.171 C 76.692 125.992,82.184 136.897,87.239 144.347 C 91.911 151.233,91.671 151.699,82.682 153.188 C 52.430 158.201,28.930 129.564,28.777 87.500 C 28.605 40.143,55.304 13.056,89.935 25.454 M330.320 48.634 C 335.148 61.022,348.000 98.810,348.000 100.617 C 348.000 101.751,344.135 102.000,326.500 102.000 C 314.675 102.000,305.001 101.662,305.003 101.250 C 305.017 97.985,324.878 39.000,325.963 39.000 C 326.295 39.000,328.256 43.335,330.320 48.634 M202.692 158.910 C 190.855 163.688,187.995 169.154,194.392 174.771 C 203.405 182.684,223.211 180.534,230.074 170.897 C 236.287 162.171,216.295 153.420,202.692 158.910 " stroke="none" fill="#000000" fill-rule="evenodd"></path></g></svg>
+                                        <span>Tested with ${max_q2a}</span>
+                                    </span>
+                                </span>`,
+                            );
+                        } else {
+                            gitLinks[id].parentElement.insertAdjacentHTML(
+                                'beforeend',
+                                `<span class="repository-footer">
+                                    <span class="rf-item">
+                                        Last updated: 
+                                        <span class="rep-date rep-date-true ${yearGapClass}"></span> 
+                                        <span>${date}</span>
+                                    </span>
+                                </span>`,
+                            );
+                        }
+                    } else if (date == 'unknown') {
+                        // If response is 'bad request' or '404', show "unknown" tag
                         gitLinks[id].parentElement.insertAdjacentHTML(
                             'beforeend',
                             `<span class="repository-footer">
                                 <span class="rf-item">
                                     Last updated: 
-                                    <span class="rep-date ${yearGapClass}"></span> 
-                                    <span class="rep-date-true">${date}</span>
-                                </span>
-                                <span class="rf-item">
-                                    <svg class="docs-svg" width="35" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0, 0, 400,192"><g class="svgg"><path class="path0" d="M199.125 9.516 C 157.924 16.977,134.439 51.317,168.872 53.754 C 181.220 54.628,188.021 51.060,192.647 41.282 C 197.761 30.471,224.848 24.605,228.566 33.503 C 235.849 50.934,223.140 74.064,185.833 111.278 C 162.762 134.291,162.293 134.990,166.932 139.435 C 176.110 148.227,213.452 144.113,257.500 129.455 C 281.012 121.632,280.387 121.599,229.400 128.000 C 207.495 130.750,189.417 133.000,189.227 133.000 C 187.964 133.000,191.981 129.471,204.841 119.286 C 272.717 65.523,284.935 17.240,232.651 9.388 C 221.409 7.700,208.889 7.748,199.125 9.516 M57.500 12.567 C 28.001 18.377,4.566 47.191,1.035 81.992 C -4.867 140.148,40.328 177.218,99.178 162.493 C 100.830 162.080,103.375 163.080,108.000 165.962 C 134.665 182.575,148.253 184.328,154.518 171.964 C 158.852 163.412,158.189 161.412,150.584 160.088 C 141.590 158.522,124.000 151.861,124.000 150.021 C 124.000 149.633,127.220 145.082,131.156 139.908 C 152.719 111.561,157.130 72.222,141.804 44.946 C 127.036 18.663,92.972 5.580,57.500 12.567 M321.487 17.250 C 320.166 20.138,310.030 47.700,298.963 78.500 C 278.086 136.602,272.539 150.841,268.428 156.891 C 264.249 163.040,265.591 164.954,274.102 164.986 C 283.797 165.023,287.251 159.239,297.487 125.826 L 301.064 114.152 307.282 113.603 C 310.702 113.301,322.284 112.778,333.021 112.441 L 352.542 111.828 358.820 132.664 C 367.820 162.534,370.516 165.616,386.933 164.802 C 397.061 164.300,400.975 162.758,398.693 160.170 C 393.332 154.090,379.411 118.445,362.502 67.500 C 348.093 24.090,345.722 19.590,334.500 14.353 C 326.414 10.580,324.327 11.044,321.487 17.250 M89.935 25.454 C 123.357 37.420,134.797 103.497,109.073 136.000 L 107.095 138.500 101.450 133.000 C 98.346 129.975,93.198 124.125,90.010 120.000 C 75.287 100.951,67.974 100.113,74.058 118.171 C 76.692 125.992,82.184 136.897,87.239 144.347 C 91.911 151.233,91.671 151.699,82.682 153.188 C 52.430 158.201,28.930 129.564,28.777 87.500 C 28.605 40.143,55.304 13.056,89.935 25.454 M330.320 48.634 C 335.148 61.022,348.000 98.810,348.000 100.617 C 348.000 101.751,344.135 102.000,326.500 102.000 C 314.675 102.000,305.001 101.662,305.003 101.250 C 305.017 97.985,324.878 39.000,325.963 39.000 C 326.295 39.000,328.256 43.335,330.320 48.634 M202.692 158.910 C 190.855 163.688,187.995 169.154,194.392 174.771 C 203.405 182.684,223.211 180.534,230.074 170.897 C 236.287 162.171,216.295 153.420,202.692 158.910 " stroke="none" fill="#000000" fill-rule="evenodd"></path></g></svg>
-                                    <span>Tested with ${max_q2a}</span>
-                                </span>
-                            </span>`,
-                        );
-                    } else {
-                        gitLinks[id].parentElement.insertAdjacentHTML(
-                            'beforeend',
-                            `<span class="repository-footer">
-                                <span class="rf-item">
-                                    Last updated: 
-                                    <span class="rep-date rep-date-true ${yearGapClass}"></span> 
-                                    <span>${date}</span>
+                                    <span class="rep-date rep-date-bad"></span> <span>Unknown</span>
                                 </span>
                             </span>`,
                         );
                     }
-                } else if (date == 'unknown') {
-                    // If response is 'bad request' or '404', show "unknown" tag
-                    gitLinks[id].parentElement.insertAdjacentHTML(
-                        'beforeend',
-                        `<span class="repository-footer">
-                            <span class="rf-item">
-                                Last updated: 
-                                <span class="rep-date rep-date-bad"></span> <span>Unknown</span>
-                            </span>
-                        </span>`,
-                    );
-                }
-            } // close if() null
-        });
+                } // close if() null
+            });
+        }
     } // close createTags()
     
     // Start at zero, in case not fetched yet
