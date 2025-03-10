@@ -688,9 +688,32 @@ ul.sub-nav {
 }
 
 .rf-item .docs-svg {
-    width: 35px;
     height: auto;
     vertical-align: middle;
+}
+
+.tooltip-wrapper {
+    position: relative;
+}
+
+.tooltip-wrapper:hover .tooltip {
+    display: initial;
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 150%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 80vw;
+    max-width: max-content;
+    margin: 0 auto;
+    background-color: rgb(0 0 0 / 90%);
+    color: #fff;
+    font-size: smaller;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
 }
 
 .rep-date {
@@ -1079,6 +1102,14 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     .desktop-only {
         display: none;
     }
+
+    .tooltip {
+        left: initial;
+        right: 0;
+        bottom: 120%;
+        transform: none;
+    }
+
     .header .nav-container {
         color: initial;
         fill: initial;
@@ -1257,6 +1288,13 @@ a[href*="/releases/question2answer"][href$=".zip"]:hover {
     }
     .page-status {
         padding: .6rem 1rem;
+    }
+
+    .rf-item:nth-child(even) {
+        text-align: right;
+    }
+    .rf-item * {
+        text-align: left;
     }
 }
 @media (max-width: 375px) {
