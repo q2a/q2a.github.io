@@ -2,6 +2,7 @@
 layout: page
 menu: contribute
 title: "Contribute"
+slug: contribute
 ---
 
 # Contributing to Question2Answer

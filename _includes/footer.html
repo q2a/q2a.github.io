@@ -1,11 +1,23 @@
+<div class="jump-top-container">
+	<div id="jump-top" class="jump-top noSelect desktop-only"><span class="material-icons">arrow_upward</span></div>
+</div>
+
+<div class="page-status-container"></div>
+
 <footer class="footer">
-	<nav class="footer-nav">
-		{% for navpage in site.nav.footer %}
-			<a class="footer-nav-link" href="{{ navpage.url }}">{{ navpage.name }}</a>
-		{% endfor %}
-	</nav>
-	<div class="credit">
-		Created by <a href="http://www.gidgreen.com/">Gideon Greenspan</a>, <a href="https://github.com/svivian">Scott Vivian</a>,
-		and <a href="https://github.com/q2a/question2answer/graphs/contributors">contributors</a>
+	<div class="footer-container">
+		<nav class="footer-nav">
+			<ul>
+			{% for navpage in site.nav.footer %}
+				<li>
+					<a class="footer-nav-link" href="{% if navpage.url contains 'http' %}{{ navpage.url }}{% else %}{{ site.baseurl }}{{ navpage.url }}{% endif %}">{{ navpage.name }}</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</nav>
+		<div class="credit">
+			Created by <a href="http://www.gidgreen.com/">Gideon Greenspan</a>, <a href="https://github.com/svivian">Scott Vivian</a>,
+			and <a href="https://github.com/q2a/question2answer/graphs/contributors">contributors</a>
+		</div>
 	</div>
 </footer>

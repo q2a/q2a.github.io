@@ -1,49 +1,39 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="/css/styles2020.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
 
-	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="description" content="{{ site.description }}">
+		<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="description" content="{{ site.description }}">
 
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	{% include analytics.html %}
-</head>
+		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+		{% include analytics.html %}
+	</head>
 
-<body class="page">
+	<body class="page{% if page.slug %} template-{{ page.slug }}{% endif %}">
 
-	{% include header.html %}
+		{% include header.html %}
 
-	<main class="page-container">
-		{{ content }}
-	</main>
+		<main class="page-container">
+			{{ content }}
+		</main>
 
-	{% include footer.html %}
+		{% include footer.html %}
 
-	<script>
-	window.addEventListener('load', stickyHeader);
-	window.addEventListener('scroll', stickyHeader, {passive: true});
-
-	// Get the offset position of the navbar
-	var header = document.querySelector('header.header');
-	var stickyPos = header ? header.offsetTop : 0;
-
-	function stickyHeader() {
-		if (window.scrollY > stickyPos) {
-			header.classList.add('sticky');
-		} else {
-			header.classList.remove('sticky');
-		}
-	}
-	</script>
-</body>
+		<script src="{{ site.baseurl }}/js/scripts.js"></script>
+		
+		{% if page.slug == 'addons-plugins' or page.slug == 'addons-themes' %}
+		<script src="{{ site.baseurl }}/js/GithubLinks.js"></script>
+		{% endif %}
+		
+	</body>
 </html>

@@ -24,17 +24,18 @@ nav:
     - name: Code
       path: /code/external/
       sub: code
+
+  second:
     - name: Contribute
       path: /contribute/
       sub: contribute
     - name: Add-Ons
       path: /addons/
       sub: addons
-
-  second:
+  
+  third:
     - name: Services
       url: /services/
-      class: main-nav-link-separate
     - name: Sites
       url: https://www.question2answer.org/sites.php
     - name: Q&A
@@ -103,12 +104,12 @@ nav:
       path: /contribute/docs/
 
   addons:
-    - name: Translations
-      path: /addons/translations/
     - name: Themes
       path: /addons/themes/
     - name: Plugins
       path: /addons/plugins/
     - name: Clients
       path: /addons/clients/
+    - name: Translations
+      path: /addons/translations/
 
