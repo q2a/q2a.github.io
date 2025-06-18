@@ -24,7 +24,7 @@ All HTTP requests for Q2A are routed through the root `index.php` file. This fil
 
 For the latter four types above, we include `qa-include/qa-base.php` which initializes the PHP environment, various constants and settings, and then connects to the database. It also defines an autoloader (from v1.7+) which automatically loads core classes of a specific format:
 
-1. From Q2A 1.9 namespaces are used. The main core namespace is `Q2A` which maps to the `qa-src/` directory. So a class of the form `\Q2A\Storage\FileCacheDriver` will automatically load the file `qa-src/Storage/FileCacheDriver.php`. See the [coding style](/contribute/coding-style/#new-autoloaded-classes) page for full details.
+1. From Q2A 1.9 namespaces are used. The main core namespace is `Q2A` which maps to the `qa-src/` directory. So a class of the form `\Q2A\Storage\FileCacheDriver` will automatically load the file `qa-src/Storage/FileCacheDriver.php`. See the [coding style]({{ site.baseurl }}/contribute/coding-style/#new-autoloaded-classes) page for full details.
 2. In Q2A 1.7-1.8, classes of the form `Q2A_Util_Usage` map to files in the `qa-include/Q2A/` directory, e.g. `qa-include/Q2A/Util/Usage.php`. These are being phased out in favor of namespaces.
 
 Here we "normalize" the request, which converts the URL from one of multiple formats (parameters or SEO-friendly) into a standard format such as `/activity` or `/question/1234/title`.

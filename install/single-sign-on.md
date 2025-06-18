@@ -7,7 +7,7 @@ slug: install-single-sign-on
 
 # Installing Question2Answer with single sign-on
 
-Question2Answer is designed to integrate with websites which have an existing user database and management system. If your site is running WordPress 3.x, you should follow the instructions for [WordPress integration](/install/wordpress/). To implement single sign-on for other sites, a small amount of PHP programming is required. Please follow the instructions below:
+Question2Answer is designed to integrate with websites which have an existing user database and management system. If your site is running WordPress 3.x, you should follow the instructions for [WordPress integration]({{ site.baseurl }}/install/wordpress/). To implement single sign-on for other sites, a small amount of PHP programming is required. Please follow the instructions below:
 
 1. Download the [latest version of Question2Answer](https://github.com/q2a/question2answer/releases) to your computer or web server (also available [on GitHub](https://github.com/q2a/question2answer)).
 

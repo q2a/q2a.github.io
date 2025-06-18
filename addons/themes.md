@@ -9,6 +9,8 @@ slug: addons-themes
 
 To install a theme, place its directory in Q2A's `qa-theme` directory, then open the General section of the Admin panel and choose the theme from the menu provided. **Many good themes can be found at [Q2A service providers](/services/)**. Below is a list of other recently updated themes:
 
+## Free Themes
+
 - [MayroPro](https://github.com/MominRaza/MayroPro) (A Google Material Design Theme with Dark Mode, RTL, PWA Support) by [Momin Raza](https://mominraza.github.io).
 - [Blog Theme](https://github.com/ostack/qa-ostack-blog-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat. [Demo](https://www.ostack.cn). This theme can show pictures and content in question lists, to make the Q2A site look like a blog.
 - [FatSnowFlat](https://github.com/ostack/qa-FatSnowFlat-theme) by [ZhaoGuangyue](https://www.linkedin.com/in/%E5%85%89%E8%B7%83-%E8%B5%B5-b58234146) based on SnowFlat. [Demo](https://www.ostack.cn). This theme can show pictures and content in question lists.
@@ -31,9 +33,12 @@ To install a theme, place its directory in Q2A's `qa-theme` directory, then open
 - [Twenty Eleven](http://devmx.de/en/themes/twentyeleven-fur-q2a) by [Maximilian Narr](http://devmx.de/). For use with the WordPress theme of the same name.
 - [TwentyTwelve](https://github.com/q2a-projects/Q2A-TwentyTwelve) by [Towhidn](https://github.com/q2a-projects). Based on WordPress default theme, TwentyTwelve.
 - [Twitter Bootstrap](https://github.com/harshjv/q2a-bootstrap) by [Harsh J. Vakharia](http://twitter.com/harshjv). For Q2A 1.5.3 only, since it heavily modifies the core to work with [Bootstrap](https://github.com/twitter/bootstrap).
+
+## Paid Themes
+
 - [Paid] [Polaris theme](https://rxchun.github.io/shop/polaris/) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Polaris is a carefully thought Material Design theme, Ranking all 100's on Google PageSpeed for Performance, Structure, Best Practices & SEO. Mobile App like theme with Dark Mode toggle. RTL ready and supports [plugins](https://www.question2answer.org/qa/102051/premium-theme-polaris-current-v2-14).
 - [Paid] [AVEN theme](https://rxchun.github.io/shop/aven/) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Shape shifter. Blog type of theme with thumbnail switch. RTL ready.
 - [Paid] [Frapuchino theme](https://rxchun.github.io/shop/frapuchino/) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Shape shifter. Blog type of theme with thumbnail switch. RTL ready.
 - [Paid] [Legacy theme](https://rxchun.github.io/shop/legacy/) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Fast, Simple, Material Design theme with inbuilt support for Q2A Blog Tool and other plugins. RTL ready.
 
-You can also [create your own themes](/themes/) using CSS only, or (optionally) [modify the HTML code](/themes/#creating-an-advanced-theme-for-question2answer).
+You can also [create your own themes]({{ site.baseurl }}/themes/) using CSS only, or (optionally) [modify the HTML code]({{ site.baseurl }}/themes/#creating-an-advanced-theme-for-question2answer).

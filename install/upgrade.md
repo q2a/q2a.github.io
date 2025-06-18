@@ -7,7 +7,7 @@ slug: install-upgrade
 
 # Upgrading to the latest version of Question2Answer
 
-Question2Answer regularly has [new releases](/install/versions/) that fix bugs and add new features. Updating your Q2A site is usually a simple process of uploading the new files and visiting your site to check for any database upgrades. Instructions in more detail:
+Question2Answer regularly has [new releases]({{ site.baseurl }}/install/versions/) that fix bugs and add new features. Updating your Q2A site is usually a simple process of uploading the new files and visiting your site to check for any database upgrades. Instructions in more detail:
 
 1. Before upgrading, it is recommended to make a backup of your website, and of your MySQL database using `mysqldump` or a similar tool.
 
