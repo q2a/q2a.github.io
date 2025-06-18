@@ -102,6 +102,14 @@ if (gitLinks != null && gitLinks.length) {
 	const isPluginsPage = (document.querySelector('.template-addons-plugins') != null ? true : false);
 	const isThemesPage = (document.querySelector('.template-addons-themes') != null ? true : false);
 	
+	// Add child-repository class
+	gitLinks.forEach(link => {
+		const listItem = link.closest('li');
+		if (listItem && listItem.textContent.trim().startsWith('➔')) {
+			listItem.classList.add('child-repository');
+		}
+	});
+	
 	/**
 	 * Adds an entry to the appropriate list (plugins or themes) with repository type.
 	 *
@@ -283,10 +291,6 @@ if (gitLinks != null && gitLinks.length) {
 				
 				// Uncomment to check if list is being stored correctly
 				// console.log(`${id} === ${link} === ${date}`);
-				
-				if (id != null && gitLinks[index].parentElement.innerHTML.includes('➔')){
-					gitLinks[id].closest('li').classList.add('child-repository');
-				}
 				
 				if (id != null && link != null && date != null && max_q2a != null) {
 					
