@@ -2,6 +2,7 @@
 layout: page
 menu: contribute
 title: "Question2Answer unit test guidelines"
+slug: contribute-unit-tests
 ---
 
 # Writing unit tests for Question2Answer

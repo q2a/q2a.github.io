@@ -2,11 +2,12 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Process Modules"
+slug: modules-process
 ---
 
 # Process Modules
 
-[« Back to modules](/plugins/modules/)
+[« Back to modules]({{ site.baseurl }}/plugins/modules/)
 
 A process module (requires Q2A 1.5+) can perform any task at specific stages of Q2A's response processing. For example, process modules could provide logging, implement a page cache, change database settings, or perform extra user authentication.
 
@@ -32,4 +33,4 @@ The PHP `class` for a process module can define one or more of the following fun
 
 - **`shutdown($reason)`** will be called at the end of Q2A's response processing. The `$reason` parameter will be `'error'` if an error occurred, `'redirect'` if there was a redirection, otherwise it will be `null`. More values may be added in future.
 
-[« Back to modules](/plugins/modules/)
+[« Back to modules]({{ site.baseurl }}/plugins/modules/)

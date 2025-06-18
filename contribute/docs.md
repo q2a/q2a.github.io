@@ -2,6 +2,7 @@
 layout: page
 menu: contribute
 title: "Question2Answer Jekyll docs"
+slug: contribute-docs
 ---
 
 # Contributing to the Q2A documentation
