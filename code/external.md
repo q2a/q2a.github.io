@@ -2,6 +2,7 @@
 layout: page
 menu: code
 title: "Question2Answer - Developers - External Access"
+slug: code-external
 ---
 
 # Accessing Question2Answer from external PHP code

@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Layers Modules"
+slug: modules-layers
 ---
 
 # Implementing plugin layers

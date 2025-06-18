@@ -3,11 +3,10 @@ layout: default
 ---
 
 <div class="docs-container">
-	<div class="page-sidebar">
-		{% include nav-sub.html %}
-	</div>
-
-	<div class="page-content">
+	<article class="page-content">
 		{{ content }}
-	</div>
+	</article>
+	<aside class="page-sidebar desktop-only">
+		{% include sidebar.html %}
+	</aside>
 </div>

@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Upgrading Question2Answer"
+slug: install-upgrade
 ---
 
 # Upgrading to the latest version of Question2Answer

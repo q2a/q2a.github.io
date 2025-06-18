@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer - Add-ons - Language files"
+slug: addons-translate
 ---
 
 # Question2Answer Language Files

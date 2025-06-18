@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer Add-ons - Themes"
+slug: addons-themes
 ---
 
 # Question2Answer Themes

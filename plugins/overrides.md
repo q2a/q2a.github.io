@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Overrides"
+slug: overrides
 ---
 
 # Implementing plugin overrides

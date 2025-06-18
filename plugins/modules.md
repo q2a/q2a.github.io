@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Plugin Modules"
+slug: modules-modules
 ---
 
 # Implementing plugin modules

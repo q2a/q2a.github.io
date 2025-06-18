@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Question2Answer - Version History"
+slug: install-version-history
 ---
 
 # Version History

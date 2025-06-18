@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Search Modules"
+slug: modules-search
 ---
 
 # Search Modules

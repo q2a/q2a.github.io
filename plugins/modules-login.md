@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Login Modules"
+slug: modules-login
 ---
 
 # Login Modules

@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Install Question2Answer"
+slug: install
 ---
 
 # Question2Answer takes 5 minutes <span class="highlight">(or less!)</span> to install.

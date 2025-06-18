@@ -19,7 +19,7 @@
 		{% include analytics.html %}
 	</head>
 
-	<body class="page">
+	<body class="page{% if page.slug %} template-{{ page.slug }}{% endif %}">
 
 		{% include header.html %}
 

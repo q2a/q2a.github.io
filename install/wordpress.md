@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Question2Answer - WordPress Integration"
+slug: install-wordpress
 ---
 
 # Installing Question2Answer with WordPress integration

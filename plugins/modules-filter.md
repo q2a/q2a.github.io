@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Filter Modules"
+slug: modules-filter
 ---
 
 # Filter Modules

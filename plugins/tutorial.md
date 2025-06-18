@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Tutorial - Writing a Plugin"
+slug: tutorial
 ---
 
 # Tutorial: Writing a Question2Answer plugin

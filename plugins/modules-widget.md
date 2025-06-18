@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Widget Modules"
+slug: modules-widget
 ---
 
 # Widget Modules

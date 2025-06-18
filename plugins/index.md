@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Creating Plugins"
+slug: modules
 ---
 
 # Creating plugins for Question2Answer

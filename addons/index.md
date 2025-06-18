@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer - Add-ons"
+slug: addons
 ---
 
 # Question2Answer is being extended by the community.

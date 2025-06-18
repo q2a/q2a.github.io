@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Event Modules"
+slug: modules-event
 ---
 
 # Event Modules

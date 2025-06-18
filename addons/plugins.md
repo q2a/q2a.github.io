@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer Add-ons - Plugins"
+slug: addons-plugins
 ---
 
 # Question2Answer Plugins

@@ -1,6 +1,7 @@
 ---
 layout: home
 title: "Question2Answer documentation"
+slug: homepage
 ---
 
 Welcome to the Question2Answer docs! This is a community-focused initiative to improve the documentation for Q2A. The docs contains information about installing and using Q2A, as well as developing themes/plugins and an API reference.

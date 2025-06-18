@@ -2,6 +2,7 @@
 layout: page
 menu: code
 title: "Question2Answer - Developers - Q2A code structure"
+slug: code-structure
 ---
 
 # Question2Answer application structure

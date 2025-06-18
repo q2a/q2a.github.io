@@ -2,6 +2,7 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Viewer Modules"
+slug: modules-viewer
 ---
 
 # Viewer Modules

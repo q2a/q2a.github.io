@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Question2Answer - Single Sign-On Integration"
+slug: install-single-sign-on
 ---
 
 # Installing Question2Answer with single sign-on

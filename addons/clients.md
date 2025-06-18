@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer - Add-ons - Clients"
+slug: addons-clients
 ---
 
 # Question2Answer Clients

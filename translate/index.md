@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Question2Answer - Developers - Translation / Localization"
+slug: translate
 ---
 
 # Translating Question2Answer into another language

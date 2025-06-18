@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Question2Answer - Developers - Themes"
+slug: themes
 ---
 
 # Creating themes for Question2Answer

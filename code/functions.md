@@ -2,6 +2,7 @@
 layout: page
 menu: code
 title: "Question2Answer - Developers - Selected Functions"
+slug: code-functions
 ---
 
 # Selected functions in Question2Answer
