@@ -13,3 +13,8 @@
 		{% endfor %}
 	</nav>
 </header>
+
+{% if page.slug != 'homepage' %}
+	{% include breadcrumbs.html %}
+{% endif %}
+
