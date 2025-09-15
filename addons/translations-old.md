@@ -2,6 +2,7 @@
 layout: page
 menu: addons
 title: "Question2Answer - old language packs"
+slug: addons-translate-old
 ---
 
 # Question2Answer old language files

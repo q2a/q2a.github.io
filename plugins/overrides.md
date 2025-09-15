@@ -2,11 +2,12 @@
 layout: page
 menu: plugins
 title: "Question2Answer - Developers - Overrides"
+slug: overrides
 ---
 
 # Implementing plugin overrides
 
-Plugin overrides (requires Q2A 1.5+) can replace or wrap over 150 functions defined within the Q2A core. Overrides can be very powerful, but they run a risk of incompatibility with future versions of Q2A. If possible, it is recommended to use [modules](/plugins/modules/) or [layers](/plugins/layers/) instead. Nonetheless, some things can only be done via overrides, and future versions of Q2A will try not to break them.
+Plugin overrides (requires Q2A 1.5+) can replace or wrap over 150 functions defined within the Q2A core. Overrides can be very powerful, but they run a risk of incompatibility with future versions of Q2A. If possible, it is recommended to use [modules]({{ site.baseurl }}/plugins/modules/) or [layers]({{ site.baseurl }}/plugins/layers/) instead. Nonetheless, some things can only be done via overrides, and future versions of Q2A will try not to break them.
 
 Not all functions in Q2A can be overridden. To check a particular function, see whether its definition begins with:
 

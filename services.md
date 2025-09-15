@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Question2Answer - Services"
+slug: singlepage-services
 ---
 
 # Question2Answer service providers

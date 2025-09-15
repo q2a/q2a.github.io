@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Question2Answer .htaccess file"
+slug: install-htaccess
 ---
 
 # Why is my .htaccess file not OK?

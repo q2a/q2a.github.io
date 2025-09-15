@@ -1,15 +1,84 @@
+{% if page.slug == 'homepage' %}
 <div class="wave-container"></div>
+{% endif %}
 
 <header class="header">
-	<div class="header-logo">
-		<a href="/"><img class="logo-img normal-logo" src="/images/question2answer-logo-white-350x40.png" alt="Question2Answer logo"></a>
+	<div class="header-container flex-row">
+		<div class="flex-item logo-container">
+			<div id="main-nav-trigger" class="material-icons noSelect mobile-only">menu</div>
+			<a href="{% if site.baseurl == '/' %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}" class="header-logo">
+				<img class="logo-img normal-logo" src="{{ site.baseurl }}/images/question2answer-logo-350x40.webp" alt="Question2Answer logo">
+				{% if page.slug == 'homepage' %}
+				<img class="logo-img white-logo" src="{{ site.baseurl }}/images/question2answer-logo-white-350x40.webp" alt="Question2Answer logo">
+				{% endif %}
+			</a>
+		</div>
+		
+		<nav class="nav-container flex-item flex-middle no-select">
+			<a href="{% if site.baseurl == '/' %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}" class="header-logo mobile-only">
+				<img class="logo-img normal-logo" src="{{ site.baseurl }}/images/question2answer-logo-350x40.webp" alt="Question2Answer logo">
+			</a>
+			<ul class="nav mega-menu flex-item">
+				<span class="mega-menu-trigger">
+					<span class="nav-item" tabindex="0">
+						Documentation
+						<span class="docs-caret"></span>
+					</span>
+				</span>
+				
+				<ul class="nav nav-main flex-item display-none">
+					{% for navpage in site.nav.main %}{% capture parent_url %}{{ navpage.path }}{% endcapture %}
+						<li>
+							<span class="nav-item toggleChildren{% if page.url == parent_url %} selected-nav{% endif %}" tabindex="0">
+								{{ navpage.name }}
+								<span class="docs-caret"></span>
+							</span>
+							{% if navpage.sub %}
+								<ul class="sub-nav display-none">
+									{% for subnavpage in site.nav[navpage.sub] %}{% capture child_url %}{{ subnavpage.path }}{% endcapture %}
+										<li><a href="{{ site.baseurl }}{{ subnavpage.path }}"
+										class="sub-nav-item{% if page.url == child_url %} selected-nav{% endif %}">{{ subnavpage.name }}</a></li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+				<ul class="nav nav-main-second flex-item">
+					{% for navpage in site.nav.second %}{% capture parent_url %}{{ navpage.path }}{% endcapture %}
+						<li>
+							<span class="nav-item toggleChildren{% if page.url == parent_url %} selected-nav{% endif %}" tabindex="0">
+								{{ navpage.name }}
+								<span class="docs-caret"></span>
+							</span>
+							{% if navpage.sub %}
+								<ul class="sub-nav display-none">
+									{% for subnavpage in site.nav[navpage.sub] %}{% capture child_url %}{{ subnavpage.path }}{% endcapture %}
+										<li><a href="{{ site.baseurl }}{{ subnavpage.path }}"
+										class="sub-nav-item{% if page.url == child_url %} selected-nav{% endif %}">{{ subnavpage.name }}</a></li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</ul>
+			<ul class="nav nav-main-third flex-item">
+				{% for navpage in site.nav.third %}{% capture parent_url %}{{ navpage.path }}{% endcapture %}
+				<li>
+					<a class="nav-item
+					{% if page.url == parent_url %} selected-nav {% endif %}
+					{{ navpage.class | default: '' }}" 
+					href="{% if navpage.url contains 'http' %}{{ navpage.url }}{% else %}{{ site.baseurl }}{{ navpage.url }}{% endif %}">{{ navpage.name }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		
+		<div class="darkPane"></div>
 	</div>
-	<nav class="top-nav main-nav">
-		{% for navpage in site.nav.main %}
-			<a class="main-nav-link" href="{{ navpage.path }}">{{ navpage.name }}</a>
-		{% endfor %}
-		{% for navpage in site.nav.second %}
-			<a class="main-nav-link {{ navpage.class | default: '' }}" href="{{ navpage.url }}">{{ navpage.name }}</a>
-		{% endfor %}
-	</nav>
 </header>
+
+{% if page.slug != 'homepage' %}
+	{% include breadcrumbs.html %}
+{% endif %}

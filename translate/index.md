@@ -1,11 +1,12 @@
 ---
 layout: page
 title: "Question2Answer - Developers - Translation / Localization"
+slug: translate
 ---
 
 # Translating Question2Answer into another language
 
-Question2Answer fully supports non-English languages and is easy to translate. Before proceeding, it's worth [checking here](/addons/translations/) to see if a translation is already available. You may be able to use this immediately, or only have to add some missing phrases.
+Question2Answer fully supports non-English languages and is easy to translate. Before proceeding, it's worth [checking here]({{ site.baseurl }}/addons/translations/) to see if a translation is already available. You may be able to use this immediately, or only have to add some missing phrases.
 
 
 ## Creating a new translation
@@ -31,7 +32,7 @@ To create a new Question2Answer translation from scratch, follow the steps below
 
 7. **`qa-check-lang.php` is your friend!** As you work, use your web browser to view the `qa-include/qa-check-lang.php` page within your Question2Answer site. This will check your language files for any omitted phrases or substitutions.
 
-8. Please consider sending us your translation or making it available online, so that we can [link to it here](/addons/translations/).
+8. Please consider sending us your translation or making it available online, so that we can [link to it here]({{ site.baseurl }}/addons/translations/).
 
 
 ## Updating an existing translation
@@ -52,7 +53,7 @@ An incomplete Question2Answer translation may be available for your language, fo
 
 5. As you work, refresh `qa-include/qa-check-lang.php` in your web browser and ensure that you resolve all issues shown. You can also browse around your Q2A site to see how the translated phrases are used in context.
 
-6. Please consider sending us your translation or making it available online, so that we can [link to it here](/addons/translations/).
+6. Please consider sending us your translation or making it available online, so that we can [link to it here]({{ site.baseurl }}/addons/translations/).
 
 
 ## Customizing selected URLs or phrases
