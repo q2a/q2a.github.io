@@ -168,10 +168,10 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Userinfo](https://github.com/ProThoughts/q2apro-userinfo) by [q2apro.com](https://github.com/q2apro). Mouse over a username to display user profile information: Avatar image, account age, total points, monthly points, answers, best answers, ratio, questions posted, badges.
 - [Userslist-locations](https://github.com/ProThoughts/q2apro-userslist-locations) by [q2apro.com](https://github.com/q2apro). Add Location to users list
 - [Warn on Leave](https://github.com/yshiga/q2apro-warn-on-leave) by [q2apro.com](https://github.com/q2apro). Warns users before leaving a page with text they have entered (also support WYSIWYG editor).
+- [MTL - Maximum Tag Length](https://www.question2answer.org/qa/41822) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Limits the amount of characters allowed per each question tag.
+- [RA - Random Avatar](https://www.question2answer.org/qa/39812) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Assigns new users a random avatar from a given set immediately after registering.
 - [Paid] [Avatar Cropper](https://rxchun.github.io/shop/avatar-cropper/?ref=q2a-docs) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Crops new and existing user avatars to a square format (1:1).
 - [Paid] [PC - Profile Customizer](https://www.question2answer.org/qa/36952) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows the customization of the profile page by adding additional features not present in the core, including tracking of point changes.
-- [Paid] [Report Master](https://rxchun.github.io/shop/report-master/?ref=q2a-docs) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Report reasons &amp; user suspension.  
-  With Report Master, users can easily submit detailed reports, specifying issues like spam, abuse, off-topic content, or inappropriate behavior. Moderators can review reports, suspend users if necessary, and leave notes for team collaboration.
 - [Paid] [SNP - Social Network Profiles](https://www.question2answer.org/qa/46857) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to add information about social networks they are part of and share it with the community.
 - [Paid] [UR - User Reactions](https://www.question2answer.org/qa/62711) by [pupi1985](https://www.question2answer.org/qa/user/pupi1985). Allows users to react to questions, answers and comments.
 
@@ -201,6 +201,8 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Spammer Checker](https://github.com/sawtoothsoftware/Q2A-Spammer-Checker) by Walter Williams @ [Sawtooth Software](http://www.sawtoothsoftware.com/). On IP address pages, checks [stopforumspam.com](http://www.stopforumspam.com/) and [botscout.com](http://botscout.com/) to see if the IP belong to a known spammer.
 - [SRS - SPAM Registration Stopper](https://github.com/pupi1985/q2a-pupi-srs) by [pupi1985](https://question2answer.org/qa/user/pupi1985). SPAM Registration Stopper is a plugin that prevents highly probable SPAM user registrations based on well-known SPAM checking services. [Learn more](https://question2answer.org/qa/98717/new-free-plugin-srs-spam-registration-stopper)
 - [Stop-spam](https://github.com/ProThoughts/q2apro-stop-spam) by [q2apro.com](https://github.com/q2apro). An easy to use customizable captcha with a honeypot that keeps 99 % of the daily spam away.
+- [Paid] [Report Master](https://rxchun.github.io/shop/report-master/?ref=q2a-docs) by [Chun](https://www.question2answer.org/qa/user/gold-developer). Report reasons &amp; user suspension.  
+  With Report Master, users can easily submit detailed reports, specifying issues like spam, abuse, off-topic content, or inappropriate behavior. Moderators can review reports, suspend users if necessary, and leave notes for team collaboration.
 
 ## Administrative tools
 
