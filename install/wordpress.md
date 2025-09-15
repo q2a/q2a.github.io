@@ -2,6 +2,7 @@
 layout: page
 menu: install
 title: "Question2Answer - WordPress Integration"
+slug: install-wordpress
 ---
 
 # Installing Question2Answer with WordPress integration
@@ -52,4 +53,4 @@ From version 1.4, Question2Answer offers out-of-the-box integration with your [W
 
 8. Follow the on-screen instructions to set up your database and Question2Answer functionality.
 
-9. You can now integrate the styling of Question2Answer with your WordPress site by [creating a Question2Answer theme](/themes/).
+9. You can now integrate the styling of Question2Answer with your WordPress site by [creating a Question2Answer theme]({{ site.baseurl }}/themes/).

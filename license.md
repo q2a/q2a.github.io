@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Question2Answer - Versions"
+slug: singlepage-license
 ---
 
 # Question2Answer is free and open source.

@@ -2,17 +2,18 @@
 layout: page
 menu: addons
 title: "Question2Answer - Add-ons"
+slug: addons
 ---
 
 # Question2Answer is being extended by the community.
 
 This page links to add-ons created by Question2Answer users. These are not endorsed for quality or suitability, but we hope they are useful. If you have something to contribute, please submit a pull request to [the docs](https://github.com/q2a/q2a.github.io/) or [get in touch](https://www.question2answer.org/feedback.php) - your help is much appreciated!
 
-## [Translations](/addons/translations/)
+## [Translations]({{ site.baseurl }}/addons/translations/)
 
-## [Themes](/addons/themes/)
+## [Themes]({{ site.baseurl }}/addons/themes/)
 
-## [Plugins](/addons/plugins/)
+## [Plugins]({{ site.baseurl }}/addons/plugins/)
 
-## [Clients](/addons/clients/)
+## [Clients]({{ site.baseurl }}/addons/clients/)
 

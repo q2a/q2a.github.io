@@ -3,23 +3,10 @@ layout: default
 ---
 
 <div class="docs-container">
-	<div class="page-sidebar">
-		{% include nav-sub.html %}
-	</div>
-
-	<div class="page-content">
+	<article class="page-content">
 		{{ content }}
-	</div>
+	</article>
+	<aside class="page-sidebar desktop-only">
+		{% include sidebar.html %}
+	</aside>
 </div>
-
-<script>
-// toggle sub-menu
-var menuToggle = document.querySelector('.page-sidebar-toggle');
-menuToggle.addEventListener('click', function(ev) {
-	var nav = this.nextElementSibling;
-	if (nav.classList.contains('expanded'))
-		nav.classList.remove('expanded');
-	else
-		nav.classList.add('expanded');
-});
-</script>
