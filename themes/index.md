@@ -31,7 +31,7 @@ Question2Answer supports multiple themes, and makes it easy for you to create yo
 
     Some of this metadata will be displayed next to the theme setting in the Q2A admin interface. In addition, `Theme Update Check URI` allows you to inform users about new versions of the theme. Q2A will retrieve the content from `Theme Update Check URI`, and look for metadata in the same format as above. If the `Theme Version` values don't match, a message will show up, along with a link to the `Theme URI` from the online metadata. The simplest way to use this mechanism is to keep the latest version of `qa-styles.css` at a particular location online, and set that location as the `Theme Update Check URI`.
 
-6. Please consider offering your theme online as a .zip file for others to download, then [telling us](http://www.question2answer.org/feedback.php) so we can [link to it here](/addons/).
+6. Please consider offering your theme online as a .zip file for others to download, then [telling us](http://www.question2answer.org/feedback.php) so we can [link to it here]({{ site.baseurl }}/addons/).
 
 
 ## Creating an advanced theme for Question2Answer

@@ -140,7 +140,7 @@ First beta of major feature release, 26th September 2017.
 - Performance has been improved by around 20% on average (even more on questions with many answers).
 - Added caching system. Currently caches question data, related questions and category list for anonymous users. Caches can be stored in files or in memory (requires Memcached PHP extension).
 - Added comment voting. Comments may be voted up or down, and points may be given as with answers (default is no points).
-- Added ability to enable/disable plugins. For backwards compatibility, by default plugins cannot be disabled (except by removing the plugin folder entirely). Plugin developers must "opt-in" to this feature using the `load_order` property in the plugin's `metadata.json`. See the [plugin documentation](/plugins/#plugin-metadata).
+- Added ability to enable/disable plugins. For backwards compatibility, by default plugins cannot be disabled (except by removing the plugin folder entirely). Plugin developers must "opt-in" to this feature using the `load_order` property in the plugin's `metadata.json`. See the [plugin documentation]({{ site.baseurl }}/plugins/#plugin-metadata).
 - Added support for IPv6 addresses.
 - Schema.org microdata is now used throughout Q2A.
 - Number formatting characters (decimal point, thousands separator) can be specified in language files.
@@ -434,4 +434,4 @@ First community-developed version of Question2Answer, 6th November 2014.
 - `qa-theme-base.php/ranking_spacer`: same as above.
 
 
-## [Changelog for older versions](/install/versions/1/)
+## [Changelog for older versions]({{ site.baseurl }}/install/versions/1/)
