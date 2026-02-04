@@ -23,6 +23,7 @@ We also have a [Discord channel](https://discord.gg/QSAubQr) if you'd like to ch
 
 - [Bleez Labs](https://bleezlabs.com/) --- premium themes and plugins.
 - [pupi1985](http://www.question2answer.org/qa/user/pupi1985) --- custom plugin development and customizations. [Get a quote!](http://form.jotformz.com/63018196663662)
+- [Siro Devs](https://sirodevs.vercel.app) --- custom plugin development and customizations. [Get a quote!](http:s//t.me/sirodevs)
 
 
 ## Easy hosting for Q2A
