@@ -7,7 +7,7 @@
 		{% if navpage.sub %}
 			<ul class="docs-nav">
 				{% for subnavpage in site.nav[navpage.sub] %}
-					<li class="docs-nav-item"><a href="{{ subnavpage.path }}">{{ subnavpage.name }}</a></li>
+					<li class="docs-nav-item"><a href="{{ site.baseurl }}{{ subnavpage.path }}">{{ subnavpage.name }}</a></li>
 				{% endfor %}
 			</ul>
 		{% endif %}
