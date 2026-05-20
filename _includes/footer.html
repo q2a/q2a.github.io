@@ -1,7 +1,7 @@
 <footer class="footer">
 	<nav class="footer-nav">
 		{% for navpage in site.nav.footer %}
-			<a class="footer-nav-link" href="{{ navpage.url }}">{{ navpage.name }}</a>
+			<a class="footer-nav-link" href="{% if navpage.url contains 'http' %}{{ navpage.url }}{% else %}{{ site.baseurl }}{{ navpage.url }}{% endif %}">{{ navpage.name }}</a>
 		{% endfor %}
 	</nav>
 	<div class="credit">
