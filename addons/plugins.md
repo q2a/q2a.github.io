@@ -39,6 +39,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 
 - [AddThis Social Sharing](https://q2a.io/product/addthis-social-sharing/) by [q2a.io](https://q2a.io/). Shows a pop-up message to encourage users to share their questions using the [AddThis](http://www.addthis.com) sharing widget.
 - [Amazon SES Email](https://github.com/fauguste/qa-mail-ses) by Frédéric AUGUSTE. Sends outgoing emails through [Amazon SES](http://aws.amazon.com/ses/) (Simple Email Service) rather than SMTP.
+- [Asyntai AI Chatbot](https://asyntai.com/documentation/installation/question2answer/) by [Asyntai](https://asyntai.com). Adds an AI chatbot that answers visitor questions from your own Q2A pages, 24/7, in more than 80 languages. Free plugin, works with Q2A 1.8.
 - [BuddyPress Integration](https://github.com/NoahY/q2a-buddypress) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Basic integration with the [BuddyPress](http://buddypress.org/) social networking plugin for [WordPress](http://wordpress.org/).
 - [CloudFlare User IP](https://github.com/InfinityLF/q2a-cloudflare) by [InfinityLF](https://github.com/InfinityLF). Get visitors' real IP address instead of the IP address of the [CloudFlare](http://www.cloudflare.com) proxy.
 - [Disqus Widget](https://github.com/alain75007/q2a-disqus-widget) by [Alain Beauvois](http://fr.linkedin.com/in/alainbeauvois). Allows [Disqus](https://disqus.com) comment threads to be embedded in any page.
